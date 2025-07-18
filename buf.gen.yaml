@@ -1,6 +1,10 @@
 version: v2
 clean: true
 plugins:
+  - remote: buf.build/connectrpc/dart
+    out: lib/src/generated
+    include_wkt: true
+    include_imports: true
   - remote: buf.build/protocolbuffers/dart
     out: lib/src/generated
     include_wkt: true
