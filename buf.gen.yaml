@@ -1,0 +1,11 @@
+version: v2
+clean: true
+managed:
+  enabled: true # default: false
+plugins:
+  - remote: buf.build/protocolbuffers/dart
+    out: lib/src/generated
+    include_wkt: true
+    include_imports: true
+inputs:
+  - module: buf.build/namespace/cloud:main
