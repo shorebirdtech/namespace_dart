@@ -3,3 +3,4 @@ words:
   - protocolbuffers
   - bufbuild
   - protoc
+  - fixnum
