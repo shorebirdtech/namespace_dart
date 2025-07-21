@@ -3,13 +3,14 @@ import 'dart:io';
 import 'package:connectrpc/connect.dart';
 import 'package:connectrpc/http2.dart';
 import 'package:connectrpc/protobuf.dart';
-import 'package:connectrpc/protocol/connect.dart' as protocol;
+import 'package:connectrpc/protocol/grpc.dart' as protocol;
 import 'package:namespace/namespace.dart';
 
 final transport = protocol.Transport(
   baseUrl: "https://us.compute.namespaceapis.com",
   codec: const ProtoCodec(), // Or JsonCodec()
   httpClient: createHttpClient(),
+  statusParser: const StatusParser(),
 );
 
 String getNSCToken() {
