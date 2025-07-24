@@ -149,7 +149,9 @@ abstract final class TenantService {
   static const ensureTenantForExternalAccount = connect.Spec(
     '/$name/EnsureTenantForExternalAccount',
     connect.StreamType.unary,
-    protonamespacecloudiamv1betatenants.EnsureTenantForExternalAccountRequest.new,
+    protonamespacecloudiamv1betatenants
+        .EnsureTenantForExternalAccountRequest
+        .new,
     protonamespacecloudiamv1betatenants.TenantResponse.new,
   );
 
@@ -197,7 +199,9 @@ abstract final class TenantService {
     '/$name/IssueTenantClientCertificate',
     connect.StreamType.unary,
     protonamespacecloudiamv1betatenants.IssueTenantClientCertificateRequest.new,
-    protonamespacecloudiamv1betatenants.IssueTenantClientCertificateResponse.new,
+    protonamespacecloudiamv1betatenants
+        .IssueTenantClientCertificateResponse
+        .new,
   );
 
   /// Suspending a Tenant prevents it from creating new resources, but does not

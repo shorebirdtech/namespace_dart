@@ -26,7 +26,7 @@ import "usage.connect.spec.dart" as specs;
 /// may also constrain the set of actions that the caller may do.
 /// A *tenant token* can be obtained using the
 /// [IAM API](https://buf.build/namespace/cloud/docs/main:namespace.cloud.iam.v1beta).
-extension type UsageServiceClient (connect.Transport _transport) {
+extension type UsageServiceClient(connect.Transport _transport) {
   /// Returns the compute usage of a tenant starting from the provided start date. If no start
   /// date is provided, then it returns the compute usage starting from first day of the
   /// current month.

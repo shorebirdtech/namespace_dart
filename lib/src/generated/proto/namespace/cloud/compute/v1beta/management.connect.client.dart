@@ -8,7 +8,7 @@ import "../../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 import "management.pb.dart" as protonamespacecloudcomputev1betamanagement;
 import "management.connect.spec.dart" as specs;
 
-extension type ManagementServiceClient (connect.Transport _transport) {
+extension type ManagementServiceClient(connect.Transport _transport) {
   /// Sets the list of known images.
   /// Known images are optimized in Namespace systems to allow fast booting time of agent instances.
   /// Access requires a partner token trusted by Namespace (OIDC token).
@@ -33,7 +33,8 @@ extension type ManagementServiceClient (connect.Transport _transport) {
   /// Returns the list of known images, previously registered via SetKnownImages API.
   /// Access requires a partner token trusted by Namespace (OIDC token).
   /// Authentication: partner token.
-  Future<protonamespacecloudcomputev1betamanagement.GetKnownImagesResponse> getKnownImages(
+  Future<protonamespacecloudcomputev1betamanagement.GetKnownImagesResponse>
+  getKnownImages(
     googleprotobufempty.Empty input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,

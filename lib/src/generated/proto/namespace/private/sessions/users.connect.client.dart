@@ -8,7 +8,7 @@ import "users.pb.dart" as protonamespaceprivatesessionsusers;
 import "../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 import "users.connect.spec.dart" as specs;
 
-extension type UserSessionsServiceClient (connect.Transport _transport) {
+extension type UserSessionsServiceClient(connect.Transport _transport) {
   Future<protonamespaceprivatesessionsusers.ListSessionsResponse> listSessions(
     googleprotobufempty.Empty input, {
     connect.Headers? headers,
@@ -43,7 +43,8 @@ extension type UserSessionsServiceClient (connect.Transport _transport) {
     );
   }
 
-  Future<protonamespaceprivatesessionsusers.InvalidateAllSessionsResponse> invalidateAllSessions(
+  Future<protonamespaceprivatesessionsusers.InvalidateAllSessionsResponse>
+  invalidateAllSessions(
     googleprotobufempty.Empty input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -60,8 +61,10 @@ extension type UserSessionsServiceClient (connect.Transport _transport) {
     );
   }
 
-  Future<protonamespaceprivatesessionsusers.IssueTenantTokenFromSessionResponse> issueTenantTokenFromSession(
-    protonamespaceprivatesessionsusers.IssueTenantTokenFromSessionRequest input, {
+  Future<protonamespaceprivatesessionsusers.IssueTenantTokenFromSessionResponse>
+  issueTenantTokenFromSession(
+    protonamespaceprivatesessionsusers.IssueTenantTokenFromSessionRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,

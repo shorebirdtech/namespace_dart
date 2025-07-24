@@ -1,3 +1,6 @@
+export 'src/generated/proto/namespace/private/images/baseimage.pbjson.dart';
+export 'src/generated/proto/namespace/private/images/baseimage.pbenum.dart';
+export 'src/generated/proto/namespace/private/images/baseimage.pb.dart';
 export 'src/generated/proto/namespace/private/devbox/service.pbjson.dart';
 export 'src/generated/proto/namespace/private/devbox/service.pbserver.dart';
 export 'src/generated/proto/namespace/private/devbox/service.pb.dart';

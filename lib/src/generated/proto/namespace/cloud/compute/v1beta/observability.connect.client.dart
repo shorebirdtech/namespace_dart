@@ -26,14 +26,16 @@ import "observability.connect.spec.dart" as specs;
 /// may also constrain the set of actions that the caller may do.
 /// A *tenant token* can be obtained using the
 /// [IAM API](https://buf.build/namespace/cloud/docs/main:namespace.cloud.iam.v1beta).
-extension type ObservabilityServiceClient (connect.Transport _transport) {
+extension type ObservabilityServiceClient(connect.Transport _transport) {
   /// Stream logs of a particular instance. If `follow` is set, waits for additional logs
   /// as well. If following, and the instance is shut down, the log stream will terminate.
   /// ### Errors
   /// - If no instance id is provided, a `InvalidArgument` status is returned.
   /// - If the provided id does not match any known instance, a `NotFound` status is returned.
-  Stream<protonamespacecloudcomputev1betaobservability.LogBlock> streamInstanceLogs(
-    protonamespacecloudcomputev1betaobservability.StreamInstanceLogsRequest input, {
+  Stream<protonamespacecloudcomputev1betaobservability.LogBlock>
+  streamInstanceLogs(
+    protonamespacecloudcomputev1betaobservability.StreamInstanceLogsRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,
@@ -55,8 +57,12 @@ extension type ObservabilityServiceClient (connect.Transport _transport) {
   /// pass those to the API.
   /// If no time range is specified, the serving cost might be too high, and the API server may
   /// elect to reject the call.
-  Future<protonamespacecloudcomputev1betaobservability.FetchInstanceLogsResponse> fetchInstanceLogs(
-    protonamespacecloudcomputev1betaobservability.FetchInstanceLogsRequest input, {
+  Future<
+    protonamespacecloudcomputev1betaobservability.FetchInstanceLogsResponse
+  >
+  fetchInstanceLogs(
+    protonamespacecloudcomputev1betaobservability.FetchInstanceLogsRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,

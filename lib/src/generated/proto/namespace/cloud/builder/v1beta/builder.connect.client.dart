@@ -32,10 +32,11 @@ import "builder.connect.spec.dart" as specs;
 /// automatically made available to services running inside the instance.
 /// A *tenant token* can be obtained using the
 /// [IAM API](https://buf.build/namespace/cloud/docs/main:namespace.cloud.iam.v1beta).
-extension type BuilderServiceClient (connect.Transport _transport) {
+extension type BuilderServiceClient(connect.Transport _transport) {
   /// Creates a builder for the specified platform for the specified tenant, or
   /// returns an existing one if one is already running.
-  Future<protonamespacecloudbuilderv1betabuilder.EnsureBuildInstanceResponse> ensureBuildInstance(
+  Future<protonamespacecloudbuilderv1betabuilder.EnsureBuildInstanceResponse>
+  ensureBuildInstance(
     protonamespacecloudbuilderv1betabuilder.EnsureBuildInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -89,7 +90,8 @@ extension type BuilderServiceClient (connect.Transport _transport) {
   }
 
   /// Returns build usage for a specified period.
-  Future<protonamespacecloudbuilderv1betabuilder.GetBuilderUsageResponse> getBuilderUsage(
+  Future<protonamespacecloudbuilderv1betabuilder.GetBuilderUsageResponse>
+  getBuilderUsage(
     protonamespacecloudbuilderv1betabuilder.GetBuilderUsageRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -107,8 +109,12 @@ extension type BuilderServiceClient (connect.Transport _transport) {
   }
 
   /// Returns the configuration of a builder.
-  Future<protonamespacecloudbuilderv1betabuilder.GetBuilderConfigurationResponse> getBuilderConfiguration(
-    protonamespacecloudbuilderv1betabuilder.GetBuilderConfigurationRequest input, {
+  Future<
+    protonamespacecloudbuilderv1betabuilder.GetBuilderConfigurationResponse
+  >
+  getBuilderConfiguration(
+    protonamespacecloudbuilderv1betabuilder.GetBuilderConfigurationRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,

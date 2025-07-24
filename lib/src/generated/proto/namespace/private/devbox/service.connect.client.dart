@@ -8,7 +8,7 @@ import "service.pb.dart" as protonamespaceprivatedevboxservice;
 import "service.connect.spec.dart" as specs;
 import "../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 
-extension type DevBoxServiceClient (connect.Transport _transport) {
+extension type DevBoxServiceClient(connect.Transport _transport) {
   Future<protonamespaceprivatedevboxservice.CreateDevBoxResponse> createDevBox(
     protonamespaceprivatedevboxservice.CreateDevBoxRequest input, {
     connect.Headers? headers,
