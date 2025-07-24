@@ -53,8 +53,22 @@ const EnsureBuildInstanceRequest$json = {
   '1': 'EnsureBuildInstanceRequest',
   '2': [
     {'1': 'platform', '3': 1, '4': 1, '5': 9, '10': 'platform'},
-    {'1': 'experimental_consistency_key', '3': 2, '4': 1, '5': 9, '10': 'experimentalConsistencyKey'},
-    {'1': 'experimental', '3': 3, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest.ExperimentalFeatures', '10': 'experimental'},
+    {
+      '1': 'experimental_consistency_key',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'experimentalConsistencyKey'
+    },
+    {
+      '1': 'experimental',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest.ExperimentalFeatures',
+      '10': 'experimental'
+    },
   ],
   '3': [EnsureBuildInstanceRequest_ExperimentalFeatures$json],
 };
@@ -63,7 +77,14 @@ const EnsureBuildInstanceRequest$json = {
 const EnsureBuildInstanceRequest_ExperimentalFeatures$json = {
   '1': 'ExperimentalFeatures',
   '2': [
-    {'1': 'shape', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.InstanceShape', '10': 'shape'},
+    {
+      '1': 'shape',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.InstanceShape',
+      '10': 'shape'
+    },
     {'1': 'cache_size_mb', '3': 2, '4': 1, '5': 3, '10': 'cacheSizeMb'},
     {'1': 'builder_name', '3': 3, '4': 1, '5': 9, '10': 'builderName'},
     {'1': 'sku', '3': 4, '4': 1, '5': 9, '10': 'sku'},
@@ -87,8 +108,22 @@ const EnsureBuildInstanceResponse$json = {
   '2': [
     {'1': 'instance_id', '3': 1, '4': 1, '5': 9, '10': 'instanceId'},
     {'1': 'endpoint', '3': 2, '4': 1, '5': 9, '10': 'endpoint'},
-    {'1': 'encapsulation', '3': 3, '4': 1, '5': 14, '6': '.namespace.cloud.builder.v1beta.Encapsulation', '10': 'encapsulation'},
-    {'1': 'authentication', '3': 4, '4': 1, '5': 14, '6': '.namespace.cloud.builder.v1beta.Authentication', '10': 'authentication'},
+    {
+      '1': 'encapsulation',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.builder.v1beta.Encapsulation',
+      '10': 'encapsulation'
+    },
+    {
+      '1': 'authentication',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.builder.v1beta.Authentication',
+      '10': 'authentication'
+    },
   ],
 };
 
@@ -117,8 +152,22 @@ const ListBuildsRequest$json = {
   '1': 'ListBuildsRequest',
   '2': [
     {'1': 'max_entries', '3': 1, '4': 1, '5': 3, '10': 'maxEntries'},
-    {'1': 'older_than', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'olderThan'},
-    {'1': 'not_older_than', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'notOlderThan'},
+    {
+      '1': 'older_than',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'olderThan'
+    },
+    {
+      '1': 'not_older_than',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'notOlderThan'
+    },
   ],
 };
 
@@ -133,7 +182,14 @@ final $typed_data.Uint8List listBuildsRequestDescriptor = $convert.base64Decode(
 const ListBuildsChunk$json = {
   '1': 'ListBuildsChunk',
   '2': [
-    {'1': 'build', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.builder.v1beta.BuildRecord', '10': 'build'},
+    {
+      '1': 'build',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.BuildRecord',
+      '10': 'build'
+    },
   ],
 };
 
@@ -147,10 +203,38 @@ const BuildRecord$json = {
   '1': 'BuildRecord',
   '2': [
     {'1': 'build_ref', '3': 1, '4': 1, '5': 9, '10': 'buildRef'},
-    {'1': 'started_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startedAt'},
-    {'1': 'completed_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'completedAt'},
-    {'1': 'status', '3': 4, '4': 1, '5': 14, '6': '.namespace.cloud.builder.v1beta.BuildRecord.Status', '10': 'status'},
-    {'1': 'build_machine', '3': 5, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.BuildMachine', '10': 'buildMachine'},
+    {
+      '1': 'started_at',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startedAt'
+    },
+    {
+      '1': 'completed_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'completedAt'
+    },
+    {
+      '1': 'status',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.builder.v1beta.BuildRecord.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'build_machine',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.BuildMachine',
+      '10': 'buildMachine'
+    },
   ],
   '4': [BuildRecord_Status$json],
 };
@@ -180,7 +264,14 @@ const BuildMachine$json = {
   '1': 'BuildMachine',
   '2': [
     {'1': 'instance_id', '3': 1, '4': 1, '5': 9, '10': 'instanceId'},
-    {'1': 'shape', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.InstanceShape', '10': 'shape'},
+    {
+      '1': 'shape',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.InstanceShape',
+      '10': 'shape'
+    },
     {'1': 'local', '3': 3, '4': 1, '5': 8, '10': 'local'},
   ],
 };
@@ -195,8 +286,22 @@ final $typed_data.Uint8List buildMachineDescriptor = $convert.base64Decode(
 const GetBuilderUsageRequest$json = {
   '1': 'GetBuilderUsageRequest',
   '2': [
-    {'1': 'period_start', '3': 1, '4': 1, '5': 11, '6': '.namespace.stdlib.time.Date', '10': 'periodStart'},
-    {'1': 'period_end', '3': 2, '4': 1, '5': 11, '6': '.namespace.stdlib.time.Date', '10': 'periodEnd'},
+    {
+      '1': 'period_start',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.time.Date',
+      '10': 'periodStart'
+    },
+    {
+      '1': 'period_end',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.time.Date',
+      '10': 'periodEnd'
+    },
   ],
 };
 
@@ -210,20 +315,65 @@ final $typed_data.Uint8List getBuilderUsageRequestDescriptor = $convert.base64De
 const GetBuilderUsageResponse$json = {
   '1': 'GetBuilderUsageResponse',
   '2': [
-    {'1': 'per_day', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.PerDay', '10': 'perDay'},
-    {'1': 'total', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage', '10': 'total'},
-    {'1': 'pending_total', '3': 3, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage', '10': 'pendingTotal'},
+    {
+      '1': 'per_day',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.PerDay',
+      '10': 'perDay'
+    },
+    {
+      '1': 'total',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage',
+      '10': 'total'
+    },
+    {
+      '1': 'pending_total',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage',
+      '10': 'pendingTotal'
+    },
   ],
-  '3': [GetBuilderUsageResponse_PerDay$json, GetBuilderUsageResponse_Usage$json],
+  '3': [
+    GetBuilderUsageResponse_PerDay$json,
+    GetBuilderUsageResponse_Usage$json
+  ],
 };
 
 @$core.Deprecated('Use getBuilderUsageResponseDescriptor instead')
 const GetBuilderUsageResponse_PerDay$json = {
   '1': 'PerDay',
   '2': [
-    {'1': 'date', '3': 1, '4': 1, '5': 11, '6': '.namespace.stdlib.time.Date', '10': 'date'},
-    {'1': 'usage', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage', '10': 'usage'},
-    {'1': 'pending_usage', '3': 3, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage', '10': 'pendingUsage'},
+    {
+      '1': 'date',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.time.Date',
+      '10': 'date'
+    },
+    {
+      '1': 'usage',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage',
+      '10': 'usage'
+    },
+    {
+      '1': 'pending_usage',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage',
+      '10': 'pendingUsage'
+    },
   ],
 };
 
@@ -232,8 +382,20 @@ const GetBuilderUsageResponse_Usage$json = {
   '1': 'Usage',
   '2': [
     {'1': 'build_count', '3': 1, '4': 1, '5': 3, '10': 'buildCount'},
-    {'1': 'build_wall_minutes', '3': 2, '4': 1, '5': 3, '10': 'buildWallMinutes'},
-    {'1': 'build_unit_minutes', '3': 3, '4': 1, '5': 3, '10': 'buildUnitMinutes'},
+    {
+      '1': 'build_wall_minutes',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'buildWallMinutes'
+    },
+    {
+      '1': 'build_unit_minutes',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '10': 'buildUnitMinutes'
+    },
   ],
 };
 
@@ -258,10 +420,29 @@ const GetBuilderConfigurationRequest$json = {
   '1': 'GetBuilderConfigurationRequest',
   '2': [
     {'1': 'platform', '3': 1, '4': 1, '5': 9, '10': 'platform'},
-    {'1': 'skip_builder_pre_spawn', '3': 2, '4': 1, '5': 8, '10': 'skipBuilderPreSpawn'},
-    {'1': 'return_new_credentials', '3': 3, '4': 1, '5': 8, '10': 'returnNewCredentials'},
+    {
+      '1': 'skip_builder_pre_spawn',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'skipBuilderPreSpawn'
+    },
+    {
+      '1': 'return_new_credentials',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'returnNewCredentials'
+    },
     {'1': 'builder_name', '3': 4, '4': 1, '5': 9, '10': 'builderName'},
-    {'1': 'builder_shape', '3': 5, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.InstanceShape', '10': 'builderShape'},
+    {
+      '1': 'builder_shape',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.InstanceShape',
+      '10': 'builderShape'
+    },
     {'1': 'cache_size_mb', '3': 6, '4': 1, '5': 3, '10': 'cacheSizeMb'},
     {'1': 'experimental', '3': 7, '4': 1, '5': 9, '10': 'experimental'},
   ],
@@ -281,12 +462,38 @@ final $typed_data.Uint8List getBuilderConfigurationRequestDescriptor = $convert.
 const GetBuilderConfigurationResponse$json = {
   '1': 'GetBuilderConfigurationResponse',
   '2': [
-    {'1': 'shape', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.InstanceShape', '10': 'shape'},
+    {
+      '1': 'shape',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.InstanceShape',
+      '10': 'shape'
+    },
     {'1': 'cache_size_mb', '3': 6, '4': 1, '5': 3, '10': 'cacheSizeMb'},
-    {'1': 'buildkit_endpoint', '3': 2, '4': 1, '5': 9, '10': 'buildkitEndpoint'},
-    {'1': 'full_buildkit_endpoint', '3': 4, '4': 1, '5': 9, '10': 'fullBuildkitEndpoint'},
+    {
+      '1': 'buildkit_endpoint',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'buildkitEndpoint'
+    },
+    {
+      '1': 'full_buildkit_endpoint',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'fullBuildkitEndpoint'
+    },
     {'1': 'server_ca_pem', '3': 3, '4': 1, '5': 9, '10': 'serverCaPem'},
-    {'1': 'credentials', '3': 5, '4': 1, '5': 11, '6': '.namespace.cloud.builder.v1beta.BuilderCredentials', '10': 'credentials'},
+    {
+      '1': 'credentials',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.builder.v1beta.BuilderCredentials',
+      '10': 'credentials'
+    },
   ],
 };
 
@@ -304,9 +511,22 @@ final $typed_data.Uint8List getBuilderConfigurationResponseDescriptor = $convert
 const BuilderCredentials$json = {
   '1': 'BuilderCredentials',
   '2': [
-    {'1': 'client_certificate_pem', '3': 1, '4': 1, '5': 9, '10': 'clientCertificatePem'},
+    {
+      '1': 'client_certificate_pem',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'clientCertificatePem'
+    },
     {'1': 'private_key_pem', '3': 2, '4': 1, '5': 9, '10': 'privateKeyPem'},
-    {'1': 'expires_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
+    {
+      '1': 'expires_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
   ],
 };
 
@@ -320,33 +540,65 @@ final $typed_data.Uint8List builderCredentialsDescriptor = $convert.base64Decode
 const $core.Map<$core.String, $core.dynamic> BuilderServiceBase$json = {
   '1': 'BuilderService',
   '2': [
-    {'1': 'EnsureBuildInstance', '2': '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest', '3': '.namespace.cloud.builder.v1beta.EnsureBuildInstanceResponse'},
-    {'1': 'GetBuildRecord', '2': '.namespace.cloud.builder.v1beta.GetBuildRecordRequest', '3': '.namespace.cloud.builder.v1beta.BuildRecord'},
-    {'1': 'ListBuilds', '2': '.namespace.cloud.builder.v1beta.ListBuildsRequest', '3': '.namespace.cloud.builder.v1beta.ListBuildsChunk', '6': true},
-    {'1': 'GetBuilderUsage', '2': '.namespace.cloud.builder.v1beta.GetBuilderUsageRequest', '3': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse'},
-    {'1': 'GetBuilderConfiguration', '2': '.namespace.cloud.builder.v1beta.GetBuilderConfigurationRequest', '3': '.namespace.cloud.builder.v1beta.GetBuilderConfigurationResponse'},
+    {
+      '1': 'EnsureBuildInstance',
+      '2': '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest',
+      '3': '.namespace.cloud.builder.v1beta.EnsureBuildInstanceResponse'
+    },
+    {
+      '1': 'GetBuildRecord',
+      '2': '.namespace.cloud.builder.v1beta.GetBuildRecordRequest',
+      '3': '.namespace.cloud.builder.v1beta.BuildRecord'
+    },
+    {
+      '1': 'ListBuilds',
+      '2': '.namespace.cloud.builder.v1beta.ListBuildsRequest',
+      '3': '.namespace.cloud.builder.v1beta.ListBuildsChunk',
+      '6': true
+    },
+    {
+      '1': 'GetBuilderUsage',
+      '2': '.namespace.cloud.builder.v1beta.GetBuilderUsageRequest',
+      '3': '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse'
+    },
+    {
+      '1': 'GetBuilderConfiguration',
+      '2': '.namespace.cloud.builder.v1beta.GetBuilderConfigurationRequest',
+      '3': '.namespace.cloud.builder.v1beta.GetBuilderConfigurationResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use builderServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> BuilderServiceBase$messageJson = {
-  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest': EnsureBuildInstanceRequest$json,
-  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest.ExperimentalFeatures': EnsureBuildInstanceRequest_ExperimentalFeatures$json,
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    BuilderServiceBase$messageJson = {
+  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest':
+      EnsureBuildInstanceRequest$json,
+  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceRequest.ExperimentalFeatures':
+      EnsureBuildInstanceRequest_ExperimentalFeatures$json,
   '.namespace.cloud.compute.v1beta.InstanceShape': $0.InstanceShape$json,
-  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceResponse': EnsureBuildInstanceResponse$json,
-  '.namespace.cloud.builder.v1beta.GetBuildRecordRequest': GetBuildRecordRequest$json,
+  '.namespace.cloud.builder.v1beta.EnsureBuildInstanceResponse':
+      EnsureBuildInstanceResponse$json,
+  '.namespace.cloud.builder.v1beta.GetBuildRecordRequest':
+      GetBuildRecordRequest$json,
   '.namespace.cloud.builder.v1beta.BuildRecord': BuildRecord$json,
   '.google.protobuf.Timestamp': $1.Timestamp$json,
   '.namespace.cloud.builder.v1beta.BuildMachine': BuildMachine$json,
   '.namespace.cloud.builder.v1beta.ListBuildsRequest': ListBuildsRequest$json,
   '.namespace.cloud.builder.v1beta.ListBuildsChunk': ListBuildsChunk$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderUsageRequest': GetBuilderUsageRequest$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderUsageRequest':
+      GetBuilderUsageRequest$json,
   '.namespace.stdlib.time.Date': $2.Date$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse': GetBuilderUsageResponse$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.PerDay': GetBuilderUsageResponse_PerDay$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage': GetBuilderUsageResponse_Usage$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderConfigurationRequest': GetBuilderConfigurationRequest$json,
-  '.namespace.cloud.builder.v1beta.GetBuilderConfigurationResponse': GetBuilderConfigurationResponse$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse':
+      GetBuilderUsageResponse$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.PerDay':
+      GetBuilderUsageResponse_PerDay$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderUsageResponse.Usage':
+      GetBuilderUsageResponse_Usage$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderConfigurationRequest':
+      GetBuilderConfigurationRequest$json,
+  '.namespace.cloud.builder.v1beta.GetBuilderConfigurationResponse':
+      GetBuilderConfigurationResponse$json,
   '.namespace.cloud.builder.v1beta.BuilderCredentials': BuilderCredentials$json,
 };
 
@@ -365,4 +617,3 @@ final $typed_data.Uint8List builderServiceDescriptor = $convert.base64Decode(
     'bhI+Lm5hbWVzcGFjZS5jbG91ZC5idWlsZGVyLnYxYmV0YS5HZXRCdWlsZGVyQ29uZmlndXJhdG'
     'lvblJlcXVlc3QaPy5uYW1lc3BhY2UuY2xvdWQuYnVpbGRlci52MWJldGEuR2V0QnVpbGRlckNv'
     'bmZpZ3VyYXRpb25SZXNwb25zZQ==');
-

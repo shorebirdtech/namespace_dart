@@ -55,7 +55,7 @@ import "../../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 /// `x-nsc-ingress-auth` as a query string argument.
 /// After the WebSocket is established, any frames received or sent of type
 /// BinaryMessage carry application-specific payload.
-extension type ComputeServiceClient (connect.Transport _transport) {
+extension type ComputeServiceClient(connect.Transport _transport) {
   /// Creates a new instance. Instances are micro-vm backed environments which
   /// are optimized to run containers. Each instance is deployed with
   /// `containerd`, and with optionally `dockerd` and Kubernetes.
@@ -90,7 +90,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   ///   returned.
   /// - If the request refers to an invalid argument, e.g. a non-existing
   ///   region, an `InvalidArgument` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.DescribeInstanceResponse> createInstance(
+  Future<protonamespacecloudcomputev1betacompute.DescribeInstanceResponse>
+  createInstance(
     protonamespacecloudcomputev1betacompute.CreateInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -120,7 +121,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// - If instance creation is unsuccessful, `Internal` error is returned.
   ///   Refer to the InstanceMetadata.status in the last response for detailed
   ///   status.
-  Stream<protonamespacecloudcomputev1betacompute.WaitInstanceResponse> waitInstance(
+  Stream<protonamespacecloudcomputev1betacompute.WaitInstanceResponse>
+  waitInstance(
     protonamespacecloudcomputev1betacompute.WaitInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -143,7 +145,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// use the streaming version of this method — `WaitInstance`.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.WaitInstanceResponse> waitInstanceSync(
+  Future<protonamespacecloudcomputev1betacompute.WaitInstanceResponse>
+  waitInstanceSync(
     protonamespacecloudcomputev1betacompute.WaitInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -163,7 +166,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// Extend the lifetime of an instance by the provided duration.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.ExtendInstanceResponse> extendInstance(
+  Future<protonamespacecloudcomputev1betacompute.ExtendInstanceResponse>
+  extendInstance(
     protonamespacecloudcomputev1betacompute.ExtendInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -183,7 +187,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// Adds the specified set of containers to a running instance.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.StartContainersResponse> startContainers(
+  Future<protonamespacecloudcomputev1betacompute.StartContainersResponse>
+  startContainers(
     protonamespacecloudcomputev1betacompute.StartContainersRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -204,7 +209,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// instance.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.DescribeInstanceResponse> describeInstance(
+  Future<protonamespacecloudcomputev1betacompute.DescribeInstanceResponse>
+  describeInstance(
     protonamespacecloudcomputev1betacompute.DescribeInstanceRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -242,7 +248,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   }
 
   /// Returns a list of all instances that match the specified filter.
-  Future<protonamespacecloudcomputev1betacompute.ListInstancesResponse> listInstances(
+  Future<protonamespacecloudcomputev1betacompute.ListInstancesResponse>
+  listInstances(
     protonamespacecloudcomputev1betacompute.ListInstancesRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -308,7 +315,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// container running inside the instance.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.CreateIngressResponse> createIngress(
+  Future<protonamespacecloudcomputev1betacompute.CreateIngressResponse>
+  createIngress(
     protonamespacecloudcomputev1betacompute.CreateIngressRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -333,7 +341,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// - If the instance does not exist, a `NotFound` status is returned.
   /// - If the instance is already terminated, a `FailedPrecondition`
   ///   status is returned.
-  Future<protonamespacecloudcomputev1betacompute.ListIngressesResponse> listIngresses(
+  Future<protonamespacecloudcomputev1betacompute.ListIngressesResponse>
+  listIngresses(
     protonamespacecloudcomputev1betacompute.ListIngressesRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -356,7 +365,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// - If the instance does not exist, a `NotFound` status is returned.
   /// - If the instance is not running Kubernetes, an `FailedPrecondition`
   ///   status is returned.
-  Future<protonamespacecloudcomputev1betacompute.GetKubernetesConfigResponse> getKubernetesConfig(
+  Future<protonamespacecloudcomputev1betacompute.GetKubernetesConfigResponse>
+  getKubernetesConfig(
     protonamespacecloudcomputev1betacompute.GetKubernetesConfigRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -377,7 +387,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// Metrics can also be queried from instances that are still running.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.GetInstanceMetricsResponse> getInstanceMetrics(
+  Future<protonamespacecloudcomputev1betacompute.GetInstanceMetricsResponse>
+  getInstanceMetrics(
     protonamespacecloudcomputev1betacompute.GetInstanceMetricsRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -395,8 +406,12 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   }
 
   /// Returns the network configuration used within the target workspace.
-  Future<protonamespacecloudcomputev1betacompute.GetNetworkConfigurationResponse> getNetworkConfiguration(
-    protonamespacecloudcomputev1betacompute.GetNetworkConfigurationRequest input, {
+  Future<
+    protonamespacecloudcomputev1betacompute.GetNetworkConfigurationResponse
+  >
+  getNetworkConfiguration(
+    protonamespacecloudcomputev1betacompute.GetNetworkConfigurationRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,
@@ -415,7 +430,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// Returns a configuration that can be used to access the instance with SSH.
   /// ### Errors
   /// - If the instance does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.GetSSHConfigResponse> getSSHConfig(
+  Future<protonamespacecloudcomputev1betacompute.GetSSHConfigResponse>
+  getSSHConfig(
     protonamespacecloudcomputev1betacompute.GetSSHConfigRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -438,7 +454,8 @@ extension type ComputeServiceClient (connect.Transport _transport) {
   /// Our [SDK](https://github.com/namespacelabs/integrations?tab=readme-ov-file#namespace-integrations) handles this automatically.
   /// ### Errors
   /// - If the unique tag does not exist, a `NotFound` status is returned.
-  Future<protonamespacecloudcomputev1betacompute.ReleaseUniqueTagResponse> releaseUniqueTag(
+  Future<protonamespacecloudcomputev1betacompute.ReleaseUniqueTagResponse>
+  releaseUniqueTag(
     protonamespacecloudcomputev1betacompute.ReleaseUniqueTagRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,

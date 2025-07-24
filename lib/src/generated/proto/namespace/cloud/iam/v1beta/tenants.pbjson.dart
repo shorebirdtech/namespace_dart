@@ -31,9 +31,29 @@ const CreateTenantRequest$json = {
       '10': 'creatorId',
     },
     {'1': 'visible_name', '3': 2, '4': 1, '5': 9, '10': 'visibleName'},
-    {'1': 'policies', '3': 3, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantPolicy', '10': 'policies'},
-    {'1': 'external_account_id', '3': 4, '4': 1, '5': 9, '10': 'externalAccountId'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'policies',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantPolicy',
+      '10': 'policies'
+    },
+    {
+      '1': 'external_account_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'externalAccountId'
+    },
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
   ],
 };
 
@@ -51,8 +71,22 @@ const UpdateTenantRequest$json = {
   '2': [
     {'1': 'tenant_id', '3': 1, '4': 1, '5': 9, '10': 'tenantId'},
     {'1': 'visible_name', '3': 2, '4': 1, '5': 9, '10': 'visibleName'},
-    {'1': 'policies', '3': 3, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantPolicy', '10': 'policies'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'policies',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantPolicy',
+      '10': 'policies'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
   ],
 };
 
@@ -68,7 +102,14 @@ const UpdatePoliciesRequest$json = {
   '1': 'UpdatePoliciesRequest',
   '2': [
     {'1': 'tenant_id', '3': 1, '4': 1, '5': 9, '10': 'tenantId'},
-    {'1': 'policies', '3': 2, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantPolicy',
+      '10': 'policies'
+    },
     {'1': 'revision', '3': 3, '4': 1, '5': 3, '10': 'revision'},
   ],
 };
@@ -84,9 +125,29 @@ const EnsureTenantForExternalAccountRequest$json = {
   '1': 'EnsureTenantForExternalAccountRequest',
   '2': [
     {'1': 'visible_name', '3': 2, '4': 1, '5': 9, '10': 'visibleName'},
-    {'1': 'policies', '3': 3, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantPolicy', '10': 'policies'},
-    {'1': 'external_account_id', '3': 1, '4': 1, '5': 9, '10': 'externalAccountId'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'policies',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantPolicy',
+      '10': 'policies'
+    },
+    {
+      '1': 'external_account_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'externalAccountId'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
     {'1': 'enrolled_groups', '3': 5, '4': 3, '5': 9, '10': 'enrolledGroups'},
   ],
 };
@@ -106,14 +167,21 @@ const DescribePoliciesRequest$json = {
 };
 
 /// Descriptor for `DescribePoliciesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List describePoliciesRequestDescriptor = $convert.base64Decode(
-    'ChdEZXNjcmliZVBvbGljaWVzUmVxdWVzdA==');
+final $typed_data.Uint8List describePoliciesRequestDescriptor =
+    $convert.base64Decode('ChdEZXNjcmliZVBvbGljaWVzUmVxdWVzdA==');
 
 @$core.Deprecated('Use describePoliciesResponseDescriptor instead')
 const DescribePoliciesResponse$json = {
   '1': 'DescribePoliciesResponse',
   '2': [
-    {'1': 'policies', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantPolicy',
+      '10': 'policies'
+    },
     {'1': 'revision', '3': 2, '4': 1, '5': 3, '10': 'revision'},
   ],
 };
@@ -143,7 +211,14 @@ final $typed_data.Uint8List tenantPolicyDescriptor = $convert.base64Decode(
 const TenantResponse$json = {
   '1': 'TenantResponse',
   '2': [
-    {'1': 'tenant', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.iam.v1beta.Tenant', '10': 'tenant'},
+    {
+      '1': 'tenant',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.Tenant',
+      '10': 'tenant'
+    },
   ],
 };
 
@@ -165,10 +240,30 @@ const Tenant$json = {
       '8': {'3': true},
       '10': 'creatorId',
     },
-    {'1': 'external_account_id', '3': 5, '4': 1, '5': 9, '10': 'externalAccountId'},
-    {'1': 'created_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
+    {
+      '1': 'external_account_id',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'externalAccountId'
+    },
+    {
+      '1': 'created_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createdAt'
+    },
     {'1': 'visible_name', '3': 4, '4': 1, '5': 9, '10': 'visibleName'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
   ],
 };
 
@@ -199,7 +294,13 @@ const ListTenantsRequest$json = {
     {'1': 'limit', '3': 1, '4': 1, '5': 5, '10': 'limit'},
     {'1': 'cursor', '3': 2, '4': 1, '5': 9, '10': 'cursor'},
     {'1': 'creator_id', '3': 3, '4': 1, '5': 9, '10': 'creatorId'},
-    {'1': 'external_account_id', '3': 4, '4': 1, '5': 9, '10': 'externalAccountId'},
+    {
+      '1': 'external_account_id',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'externalAccountId'
+    },
   ],
 };
 
@@ -213,7 +314,14 @@ final $typed_data.Uint8List listTenantsRequestDescriptor = $convert.base64Decode
 const ListTenantsResponse$json = {
   '1': 'ListTenantsResponse',
   '2': [
-    {'1': 'tenants', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.Tenant', '10': 'tenants'},
+    {
+      '1': 'tenants',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.Tenant',
+      '10': 'tenants'
+    },
     {'1': 'cursor', '3': 2, '4': 1, '5': 9, '10': 'cursor'},
   ],
 };
@@ -230,7 +338,14 @@ const IssueTenantTokenRequest$json = {
     {'1': 'tenant_id', '3': 1, '4': 1, '5': 9, '10': 'tenantId'},
     {'1': 'actor_id', '3': 2, '4': 1, '5': 9, '10': 'actorId'},
     {'1': 'duration_secs', '3': 3, '4': 1, '5': 3, '10': 'durationSecs'},
-    {'1': 'policies', '3': 4, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantTokenPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantTokenPolicy',
+      '10': 'policies'
+    },
   ],
 };
 
@@ -250,9 +365,10 @@ const IssueTenantTokenResponse$json = {
 };
 
 /// Descriptor for `IssueTenantTokenResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueTenantTokenResponseDescriptor = $convert.base64Decode(
-    'ChhJc3N1ZVRlbmFudFRva2VuUmVzcG9uc2USIQoMYmVhcmVyX3Rva2VuGAEgASgJUgtiZWFyZX'
-    'JUb2tlbg==');
+final $typed_data.Uint8List issueTenantTokenResponseDescriptor =
+    $convert.base64Decode(
+        'ChhJc3N1ZVRlbmFudFRva2VuUmVzcG9uc2USIQoMYmVhcmVyX3Rva2VuGAEgASgJUgtiZWFyZX'
+        'JUb2tlbg==');
 
 @$core.Deprecated('Use issueTenantClientCertificateRequestDescriptor instead')
 const IssueTenantClientCertificateRequest$json = {
@@ -261,24 +377,38 @@ const IssueTenantClientCertificateRequest$json = {
     {'1': 'tenant_id', '3': 1, '4': 1, '5': 9, '10': 'tenantId'},
     {'1': 'actor_id', '3': 2, '4': 1, '5': 9, '10': 'actorId'},
     {'1': 'duration_secs', '3': 3, '4': 1, '5': 3, '10': 'durationSecs'},
-    {'1': 'policies', '3': 4, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantTokenPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantTokenPolicy',
+      '10': 'policies'
+    },
     {'1': 'public_key_pem', '3': 5, '4': 1, '5': 9, '10': 'publicKeyPem'},
   ],
 };
 
 /// Descriptor for `IssueTenantClientCertificateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueTenantClientCertificateRequestDescriptor = $convert.base64Decode(
-    'CiNJc3N1ZVRlbmFudENsaWVudENlcnRpZmljYXRlUmVxdWVzdBIbCgl0ZW5hbnRfaWQYASABKA'
-    'lSCHRlbmFudElkEhkKCGFjdG9yX2lkGAIgASgJUgdhY3RvcklkEiMKDWR1cmF0aW9uX3NlY3MY'
-    'AyABKANSDGR1cmF0aW9uU2VjcxJJCghwb2xpY2llcxgEIAMoCzItLm5hbWVzcGFjZS5jbG91ZC'
-    '5pYW0udjFiZXRhLlRlbmFudFRva2VuUG9saWN5Ughwb2xpY2llcxIkCg5wdWJsaWNfa2V5X3Bl'
-    'bRgFIAEoCVIMcHVibGljS2V5UGVt');
+final $typed_data.Uint8List issueTenantClientCertificateRequestDescriptor =
+    $convert.base64Decode(
+        'CiNJc3N1ZVRlbmFudENsaWVudENlcnRpZmljYXRlUmVxdWVzdBIbCgl0ZW5hbnRfaWQYASABKA'
+        'lSCHRlbmFudElkEhkKCGFjdG9yX2lkGAIgASgJUgdhY3RvcklkEiMKDWR1cmF0aW9uX3NlY3MY'
+        'AyABKANSDGR1cmF0aW9uU2VjcxJJCghwb2xpY2llcxgEIAMoCzItLm5hbWVzcGFjZS5jbG91ZC'
+        '5pYW0udjFiZXRhLlRlbmFudFRva2VuUG9saWN5Ughwb2xpY2llcxIkCg5wdWJsaWNfa2V5X3Bl'
+        'bRgFIAEoCVIMcHVibGljS2V5UGVt');
 
 @$core.Deprecated('Use issueTenantClientCertificateResponseDescriptor instead')
 const IssueTenantClientCertificateResponse$json = {
   '1': 'IssueTenantClientCertificateResponse',
   '2': [
-    {'1': 'client_certificate_pem', '3': 1, '4': 1, '5': 9, '10': 'clientCertificatePem'},
+    {
+      '1': 'client_certificate_pem',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'clientCertificatePem'
+    },
     {'1': 'private_key_pem', '3': 2, '4': 1, '5': 9, '10': 'privateKeyPem'},
   ],
   '9': [
@@ -287,10 +417,11 @@ const IssueTenantClientCertificateResponse$json = {
 };
 
 /// Descriptor for `IssueTenantClientCertificateResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueTenantClientCertificateResponseDescriptor = $convert.base64Decode(
-    'CiRJc3N1ZVRlbmFudENsaWVudENlcnRpZmljYXRlUmVzcG9uc2USNAoWY2xpZW50X2NlcnRpZm'
-    'ljYXRlX3BlbRgBIAEoCVIUY2xpZW50Q2VydGlmaWNhdGVQZW0SJgoPcHJpdmF0ZV9rZXlfcGVt'
-    'GAIgASgJUg1wcml2YXRlS2V5UGVtSgQIAxAE');
+final $typed_data.Uint8List issueTenantClientCertificateResponseDescriptor =
+    $convert.base64Decode(
+        'CiRJc3N1ZVRlbmFudENsaWVudENlcnRpZmljYXRlUmVzcG9uc2USNAoWY2xpZW50X2NlcnRpZm'
+        'ljYXRlX3BlbRgBIAEoCVIUY2xpZW50Q2VydGlmaWNhdGVQZW0SJgoPcHJpdmF0ZV9rZXlfcGVt'
+        'GAIgASgJUg1wcml2YXRlS2V5UGVtSgQIAxAE');
 
 @$core.Deprecated('Use tenantTokenPolicyDescriptor instead')
 const TenantTokenPolicy$json = {
@@ -311,7 +442,14 @@ const EnsureTenantGroupRequest$json = {
   '1': 'EnsureTenantGroupRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'policies', '3': 2, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy',
+      '10': 'policies'
+    },
   ],
 };
 
@@ -330,8 +468,8 @@ const TenantGroupResponse$json = {
 };
 
 /// Descriptor for `TenantGroupResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List tenantGroupResponseDescriptor = $convert.base64Decode(
-    'ChNUZW5hbnRHcm91cFJlc3BvbnNlEhIKBG5hbWUYASABKAlSBG5hbWU=');
+final $typed_data.Uint8List tenantGroupResponseDescriptor = $convert
+    .base64Decode('ChNUZW5hbnRHcm91cFJlc3BvbnNlEhIKBG5hbWUYASABKAlSBG5hbWU=');
 
 @$core.Deprecated('Use tenantGroupPolicyDescriptor instead')
 const TenantGroupPolicy$json = {
@@ -353,14 +491,21 @@ const ListTenantGroupsRequest$json = {
 };
 
 /// Descriptor for `ListTenantGroupsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTenantGroupsRequestDescriptor = $convert.base64Decode(
-    'ChdMaXN0VGVuYW50R3JvdXBzUmVxdWVzdA==');
+final $typed_data.Uint8List listTenantGroupsRequestDescriptor =
+    $convert.base64Decode('ChdMaXN0VGVuYW50R3JvdXBzUmVxdWVzdA==');
 
 @$core.Deprecated('Use listTenantGroupsResponseDescriptor instead')
 const ListTenantGroupsResponse$json = {
   '1': 'ListTenantGroupsResponse',
   '2': [
-    {'1': 'tenant_groups', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse.TenantGroup', '10': 'tenantGroups'},
+    {
+      '1': 'tenant_groups',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse.TenantGroup',
+      '10': 'tenantGroups'
+    },
   ],
   '3': [ListTenantGroupsResponse_TenantGroup$json],
 };
@@ -370,7 +515,14 @@ const ListTenantGroupsResponse_TenantGroup$json = {
   '1': 'TenantGroup',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'policies', '3': 2, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy', '10': 'policies'},
+    {
+      '1': 'policies',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy',
+      '10': 'policies'
+    },
   ],
 };
 
@@ -391,16 +543,29 @@ const TenantGroupReference$json = {
 };
 
 /// Descriptor for `TenantGroupReference`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List tenantGroupReferenceDescriptor = $convert.base64Decode(
-    'ChRUZW5hbnRHcm91cFJlZmVyZW5jZRISCgRuYW1lGAEgASgJUgRuYW1l');
+final $typed_data.Uint8List tenantGroupReferenceDescriptor = $convert
+    .base64Decode('ChRUZW5hbnRHcm91cFJlZmVyZW5jZRISCgRuYW1lGAEgASgJUgRuYW1l');
 
 @$core.Deprecated('Use describeTenantGroupResponseDescriptor instead')
 const DescribeTenantGroupResponse$json = {
   '1': 'DescribeTenantGroupResponse',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'policies', '3': 2, '4': 3, '5': 11, '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy', '10': 'policies'},
-    {'1': 'enrolled_tenant_ids', '3': 3, '4': 3, '5': 9, '10': 'enrolledTenantIds'},
+    {
+      '1': 'policies',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.iam.v1beta.TenantGroupPolicy',
+      '10': 'policies'
+    },
+    {
+      '1': 'enrolled_tenant_ids',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'enrolledTenantIds'
+    },
   ],
 };
 
@@ -414,25 +579,82 @@ final $typed_data.Uint8List describeTenantGroupResponseDescriptor = $convert.bas
 const $core.Map<$core.String, $core.dynamic> TenantServiceBase$json = {
   '1': 'TenantService',
   '2': [
-    {'1': 'CreateTenant', '2': '.namespace.cloud.iam.v1beta.CreateTenantRequest', '3': '.namespace.cloud.iam.v1beta.TenantResponse'},
-    {'1': 'UpdateTenant', '2': '.namespace.cloud.iam.v1beta.UpdateTenantRequest', '3': '.namespace.cloud.iam.v1beta.TenantResponse'},
-    {'1': 'DescribePolicies', '2': '.namespace.cloud.iam.v1beta.DescribePoliciesRequest', '3': '.namespace.cloud.iam.v1beta.DescribePoliciesResponse'},
-    {'1': 'UpdatePolicies', '2': '.namespace.cloud.iam.v1beta.UpdatePoliciesRequest', '3': '.google.protobuf.Empty'},
-    {'1': 'EnsureTenantForExternalAccount', '2': '.namespace.cloud.iam.v1beta.EnsureTenantForExternalAccountRequest', '3': '.namespace.cloud.iam.v1beta.TenantResponse'},
-    {'1': 'RemoveTenant', '2': '.namespace.cloud.iam.v1beta.TenantReference', '3': '.google.protobuf.Empty'},
-    {'1': 'ListTenants', '2': '.namespace.cloud.iam.v1beta.ListTenantsRequest', '3': '.namespace.cloud.iam.v1beta.ListTenantsResponse'},
-    {'1': 'IssueTenantToken', '2': '.namespace.cloud.iam.v1beta.IssueTenantTokenRequest', '3': '.namespace.cloud.iam.v1beta.IssueTenantTokenResponse'},
-    {'1': 'IssueTenantClientCertificate', '2': '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateRequest', '3': '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateResponse'},
-    {'1': 'SuspendTenant', '2': '.namespace.cloud.iam.v1beta.TenantReference', '3': '.google.protobuf.Empty'},
-    {'1': 'ResumeTenant', '2': '.namespace.cloud.iam.v1beta.TenantReference', '3': '.google.protobuf.Empty'},
-    {'1': 'EnsureTenantGroup', '2': '.namespace.cloud.iam.v1beta.EnsureTenantGroupRequest', '3': '.namespace.cloud.iam.v1beta.TenantGroupResponse'},
-    {'1': 'ListTenantGroups', '2': '.namespace.cloud.iam.v1beta.ListTenantGroupsRequest', '3': '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse'},
-    {'1': 'DescribeTenantGroup', '2': '.namespace.cloud.iam.v1beta.TenantGroupReference', '3': '.namespace.cloud.iam.v1beta.DescribeTenantGroupResponse'},
+    {
+      '1': 'CreateTenant',
+      '2': '.namespace.cloud.iam.v1beta.CreateTenantRequest',
+      '3': '.namespace.cloud.iam.v1beta.TenantResponse'
+    },
+    {
+      '1': 'UpdateTenant',
+      '2': '.namespace.cloud.iam.v1beta.UpdateTenantRequest',
+      '3': '.namespace.cloud.iam.v1beta.TenantResponse'
+    },
+    {
+      '1': 'DescribePolicies',
+      '2': '.namespace.cloud.iam.v1beta.DescribePoliciesRequest',
+      '3': '.namespace.cloud.iam.v1beta.DescribePoliciesResponse'
+    },
+    {
+      '1': 'UpdatePolicies',
+      '2': '.namespace.cloud.iam.v1beta.UpdatePoliciesRequest',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'EnsureTenantForExternalAccount',
+      '2': '.namespace.cloud.iam.v1beta.EnsureTenantForExternalAccountRequest',
+      '3': '.namespace.cloud.iam.v1beta.TenantResponse'
+    },
+    {
+      '1': 'RemoveTenant',
+      '2': '.namespace.cloud.iam.v1beta.TenantReference',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'ListTenants',
+      '2': '.namespace.cloud.iam.v1beta.ListTenantsRequest',
+      '3': '.namespace.cloud.iam.v1beta.ListTenantsResponse'
+    },
+    {
+      '1': 'IssueTenantToken',
+      '2': '.namespace.cloud.iam.v1beta.IssueTenantTokenRequest',
+      '3': '.namespace.cloud.iam.v1beta.IssueTenantTokenResponse'
+    },
+    {
+      '1': 'IssueTenantClientCertificate',
+      '2': '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateRequest',
+      '3': '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateResponse'
+    },
+    {
+      '1': 'SuspendTenant',
+      '2': '.namespace.cloud.iam.v1beta.TenantReference',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'ResumeTenant',
+      '2': '.namespace.cloud.iam.v1beta.TenantReference',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'EnsureTenantGroup',
+      '2': '.namespace.cloud.iam.v1beta.EnsureTenantGroupRequest',
+      '3': '.namespace.cloud.iam.v1beta.TenantGroupResponse'
+    },
+    {
+      '1': 'ListTenantGroups',
+      '2': '.namespace.cloud.iam.v1beta.ListTenantGroupsRequest',
+      '3': '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse'
+    },
+    {
+      '1': 'DescribeTenantGroup',
+      '2': '.namespace.cloud.iam.v1beta.TenantGroupReference',
+      '3': '.namespace.cloud.iam.v1beta.DescribeTenantGroupResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use tenantServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> TenantServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    TenantServiceBase$messageJson = {
   '.namespace.cloud.iam.v1beta.CreateTenantRequest': CreateTenantRequest$json,
   '.namespace.cloud.iam.v1beta.TenantPolicy': TenantPolicy$json,
   '.namespace.stdlib.Label': $0.Label$json,
@@ -440,27 +662,40 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> TenantServ
   '.namespace.cloud.iam.v1beta.Tenant': Tenant$json,
   '.google.protobuf.Timestamp': $1.Timestamp$json,
   '.namespace.cloud.iam.v1beta.UpdateTenantRequest': UpdateTenantRequest$json,
-  '.namespace.cloud.iam.v1beta.DescribePoliciesRequest': DescribePoliciesRequest$json,
-  '.namespace.cloud.iam.v1beta.DescribePoliciesResponse': DescribePoliciesResponse$json,
-  '.namespace.cloud.iam.v1beta.UpdatePoliciesRequest': UpdatePoliciesRequest$json,
+  '.namespace.cloud.iam.v1beta.DescribePoliciesRequest':
+      DescribePoliciesRequest$json,
+  '.namespace.cloud.iam.v1beta.DescribePoliciesResponse':
+      DescribePoliciesResponse$json,
+  '.namespace.cloud.iam.v1beta.UpdatePoliciesRequest':
+      UpdatePoliciesRequest$json,
   '.google.protobuf.Empty': $2.Empty$json,
-  '.namespace.cloud.iam.v1beta.EnsureTenantForExternalAccountRequest': EnsureTenantForExternalAccountRequest$json,
+  '.namespace.cloud.iam.v1beta.EnsureTenantForExternalAccountRequest':
+      EnsureTenantForExternalAccountRequest$json,
   '.namespace.cloud.iam.v1beta.TenantReference': TenantReference$json,
   '.namespace.cloud.iam.v1beta.ListTenantsRequest': ListTenantsRequest$json,
   '.namespace.cloud.iam.v1beta.ListTenantsResponse': ListTenantsResponse$json,
-  '.namespace.cloud.iam.v1beta.IssueTenantTokenRequest': IssueTenantTokenRequest$json,
+  '.namespace.cloud.iam.v1beta.IssueTenantTokenRequest':
+      IssueTenantTokenRequest$json,
   '.namespace.cloud.iam.v1beta.TenantTokenPolicy': TenantTokenPolicy$json,
-  '.namespace.cloud.iam.v1beta.IssueTenantTokenResponse': IssueTenantTokenResponse$json,
-  '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateRequest': IssueTenantClientCertificateRequest$json,
-  '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateResponse': IssueTenantClientCertificateResponse$json,
-  '.namespace.cloud.iam.v1beta.EnsureTenantGroupRequest': EnsureTenantGroupRequest$json,
+  '.namespace.cloud.iam.v1beta.IssueTenantTokenResponse':
+      IssueTenantTokenResponse$json,
+  '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateRequest':
+      IssueTenantClientCertificateRequest$json,
+  '.namespace.cloud.iam.v1beta.IssueTenantClientCertificateResponse':
+      IssueTenantClientCertificateResponse$json,
+  '.namespace.cloud.iam.v1beta.EnsureTenantGroupRequest':
+      EnsureTenantGroupRequest$json,
   '.namespace.cloud.iam.v1beta.TenantGroupPolicy': TenantGroupPolicy$json,
   '.namespace.cloud.iam.v1beta.TenantGroupResponse': TenantGroupResponse$json,
-  '.namespace.cloud.iam.v1beta.ListTenantGroupsRequest': ListTenantGroupsRequest$json,
-  '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse': ListTenantGroupsResponse$json,
-  '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse.TenantGroup': ListTenantGroupsResponse_TenantGroup$json,
+  '.namespace.cloud.iam.v1beta.ListTenantGroupsRequest':
+      ListTenantGroupsRequest$json,
+  '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse':
+      ListTenantGroupsResponse$json,
+  '.namespace.cloud.iam.v1beta.ListTenantGroupsResponse.TenantGroup':
+      ListTenantGroupsResponse_TenantGroup$json,
   '.namespace.cloud.iam.v1beta.TenantGroupReference': TenantGroupReference$json,
-  '.namespace.cloud.iam.v1beta.DescribeTenantGroupResponse': DescribeTenantGroupResponse$json,
+  '.namespace.cloud.iam.v1beta.DescribeTenantGroupResponse':
+      DescribeTenantGroupResponse$json,
 };
 
 /// Descriptor for `TenantService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -495,4 +730,3 @@ final $typed_data.Uint8List tenantServiceDescriptor = $convert.base64Decode(
     'Vwc1Jlc3BvbnNlEoABChNEZXNjcmliZVRlbmFudEdyb3VwEjAubmFtZXNwYWNlLmNsb3VkLmlh'
     'bS52MWJldGEuVGVuYW50R3JvdXBSZWZlcmVuY2UaNy5uYW1lc3BhY2UuY2xvdWQuaWFtLnYxYm'
     'V0YS5EZXNjcmliZVRlbmFudEdyb3VwUmVzcG9uc2U=');
-

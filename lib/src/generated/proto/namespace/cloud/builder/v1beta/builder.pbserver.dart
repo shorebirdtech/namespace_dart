@@ -21,35 +21,55 @@ import 'builder.pbjson.dart';
 export 'builder.pb.dart';
 
 abstract class BuilderServiceBase extends $pb.GeneratedService {
-  $async.Future<$3.EnsureBuildInstanceResponse> ensureBuildInstance($pb.ServerContext ctx, $3.EnsureBuildInstanceRequest request);
-  $async.Future<$3.BuildRecord> getBuildRecord($pb.ServerContext ctx, $3.GetBuildRecordRequest request);
-  $async.Future<$3.ListBuildsChunk> listBuilds($pb.ServerContext ctx, $3.ListBuildsRequest request);
-  $async.Future<$3.GetBuilderUsageResponse> getBuilderUsage($pb.ServerContext ctx, $3.GetBuilderUsageRequest request);
-  $async.Future<$3.GetBuilderConfigurationResponse> getBuilderConfiguration($pb.ServerContext ctx, $3.GetBuilderConfigurationRequest request);
+  $async.Future<$3.EnsureBuildInstanceResponse> ensureBuildInstance(
+      $pb.ServerContext ctx, $3.EnsureBuildInstanceRequest request);
+  $async.Future<$3.BuildRecord> getBuildRecord(
+      $pb.ServerContext ctx, $3.GetBuildRecordRequest request);
+  $async.Future<$3.ListBuildsChunk> listBuilds(
+      $pb.ServerContext ctx, $3.ListBuildsRequest request);
+  $async.Future<$3.GetBuilderUsageResponse> getBuilderUsage(
+      $pb.ServerContext ctx, $3.GetBuilderUsageRequest request);
+  $async.Future<$3.GetBuilderConfigurationResponse> getBuilderConfiguration(
+      $pb.ServerContext ctx, $3.GetBuilderConfigurationRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'EnsureBuildInstance': return $3.EnsureBuildInstanceRequest();
-      case 'GetBuildRecord': return $3.GetBuildRecordRequest();
-      case 'ListBuilds': return $3.ListBuildsRequest();
-      case 'GetBuilderUsage': return $3.GetBuilderUsageRequest();
-      case 'GetBuilderConfiguration': return $3.GetBuilderConfigurationRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'EnsureBuildInstance':
+        return $3.EnsureBuildInstanceRequest();
+      case 'GetBuildRecord':
+        return $3.GetBuildRecordRequest();
+      case 'ListBuilds':
+        return $3.ListBuildsRequest();
+      case 'GetBuilderUsage':
+        return $3.GetBuilderUsageRequest();
+      case 'GetBuilderConfiguration':
+        return $3.GetBuilderConfigurationRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'EnsureBuildInstance': return ensureBuildInstance(ctx, request as $3.EnsureBuildInstanceRequest);
-      case 'GetBuildRecord': return getBuildRecord(ctx, request as $3.GetBuildRecordRequest);
-      case 'ListBuilds': return listBuilds(ctx, request as $3.ListBuildsRequest);
-      case 'GetBuilderUsage': return getBuilderUsage(ctx, request as $3.GetBuilderUsageRequest);
-      case 'GetBuilderConfiguration': return getBuilderConfiguration(ctx, request as $3.GetBuilderConfigurationRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'EnsureBuildInstance':
+        return ensureBuildInstance(
+            ctx, request as $3.EnsureBuildInstanceRequest);
+      case 'GetBuildRecord':
+        return getBuildRecord(ctx, request as $3.GetBuildRecordRequest);
+      case 'ListBuilds':
+        return listBuilds(ctx, request as $3.ListBuildsRequest);
+      case 'GetBuilderUsage':
+        return getBuilderUsage(ctx, request as $3.GetBuilderUsageRequest);
+      case 'GetBuilderConfiguration':
+        return getBuilderConfiguration(
+            ctx, request as $3.GetBuilderConfigurationRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => BuilderServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => BuilderServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => BuilderServiceBase$messageJson;
 }
-

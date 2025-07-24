@@ -20,7 +20,14 @@ import '../../../../google/protobuf/empty.pbjson.dart' as $0;
 const AddAttachmentRequest$json = {
   '1': 'AddAttachmentRequest',
   '2': [
-    {'1': 'build_attachment', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.instance.v1beta.BuildAttachment', '10': 'buildAttachment'},
+    {
+      '1': 'build_attachment',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.instance.v1beta.BuildAttachment',
+      '10': 'buildAttachment'
+    },
   ],
 };
 
@@ -45,13 +52,19 @@ final $typed_data.Uint8List buildAttachmentDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> InstanceServiceBase$json = {
   '1': 'InstanceService',
   '2': [
-    {'1': 'AddAttachment', '2': '.namespace.private.instance.v1beta.AddAttachmentRequest', '3': '.google.protobuf.Empty'},
+    {
+      '1': 'AddAttachment',
+      '2': '.namespace.private.instance.v1beta.AddAttachmentRequest',
+      '3': '.google.protobuf.Empty'
+    },
   ],
 };
 
 @$core.Deprecated('Use instanceServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> InstanceServiceBase$messageJson = {
-  '.namespace.private.instance.v1beta.AddAttachmentRequest': AddAttachmentRequest$json,
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    InstanceServiceBase$messageJson = {
+  '.namespace.private.instance.v1beta.AddAttachmentRequest':
+      AddAttachmentRequest$json,
   '.namespace.private.instance.v1beta.BuildAttachment': BuildAttachment$json,
   '.google.protobuf.Empty': $0.Empty$json,
 };
@@ -61,4 +74,3 @@ final $typed_data.Uint8List instanceServiceDescriptor = $convert.base64Decode(
     'Cg9JbnN0YW5jZVNlcnZpY2USYAoNQWRkQXR0YWNobWVudBI3Lm5hbWVzcGFjZS5wcml2YXRlLm'
     'luc3RhbmNlLnYxYmV0YS5BZGRBdHRhY2htZW50UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5F'
     'bXB0eQ==');
-

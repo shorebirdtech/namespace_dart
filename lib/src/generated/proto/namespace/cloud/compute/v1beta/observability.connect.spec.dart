@@ -32,12 +32,25 @@ abstract final class ObservabilityService {
   /// Stream logs of a particular instance. If `follow` is set, waits for additional logs
   /// as well. If following, and the instance is shut down, the log stream will terminate.
   /// ### Errors
-  /// - If no volume tag is provided, a `InvalidArgument` status is returned.
-  /// - If the provided volume tag does not match any known volume tag, a `NotFound` status is returned.
+  /// - If no instance id is provided, a `InvalidArgument` status is returned.
+  /// - If the provided id does not match any known instance, a `NotFound` status is returned.
   static const streamInstanceLogs = connect.Spec(
     '/$name/StreamInstanceLogs',
     connect.StreamType.server,
     protonamespacecloudcomputev1betaobservability.StreamInstanceLogsRequest.new,
     protonamespacecloudcomputev1betaobservability.LogBlock.new,
+  );
+
+  /// Fetches logs of a particular instance (or instances). The instances can still be running.
+  /// A time range is required to use this API. Either the lookups being done have naturally a
+  /// range, e.g. last 30 minutes, or you should lookup the time that the instances ran and
+  /// pass those to the API.
+  /// If no time range is specified, the serving cost might be too high, and the API server may
+  /// elect to reject the call.
+  static const fetchInstanceLogs = connect.Spec(
+    '/$name/FetchInstanceLogs',
+    connect.StreamType.unary,
+    protonamespacecloudcomputev1betaobservability.FetchInstanceLogsRequest.new,
+    protonamespacecloudcomputev1betaobservability.FetchInstanceLogsResponse.new,
   );
 }

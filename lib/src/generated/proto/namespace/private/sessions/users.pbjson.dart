@@ -23,7 +23,14 @@ import 'session.pbjson.dart' as $0;
 const ListSessionsResponse$json = {
   '1': 'ListSessionsResponse',
   '2': [
-    {'1': 'session', '3': 1, '4': 3, '5': 11, '6': '.namespace.private.sessions.v1beta.Session', '10': 'session'},
+    {
+      '1': 'session',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.private.sessions.v1beta.Session',
+      '10': 'session'
+    },
   ],
 };
 
@@ -41,9 +48,10 @@ const InvalidateSessionRequest$json = {
 };
 
 /// Descriptor for `InvalidateSessionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List invalidateSessionRequestDescriptor = $convert.base64Decode(
-    'ChhJbnZhbGlkYXRlU2Vzc2lvblJlcXVlc3QSHQoKc2Vzc2lvbl9pZBgBIAEoCVIJc2Vzc2lvbk'
-    'lk');
+final $typed_data.Uint8List invalidateSessionRequestDescriptor =
+    $convert.base64Decode(
+        'ChhJbnZhbGlkYXRlU2Vzc2lvblJlcXVlc3QSHQoKc2Vzc2lvbl9pZBgBIAEoCVIJc2Vzc2lvbk'
+        'lk');
 
 @$core.Deprecated('Use invalidateAllSessionsResponseDescriptor instead')
 const InvalidateAllSessionsResponse$json = {
@@ -54,22 +62,31 @@ const InvalidateAllSessionsResponse$json = {
 };
 
 /// Descriptor for `InvalidateAllSessionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List invalidateAllSessionsResponseDescriptor = $convert.base64Decode(
-    'Ch1JbnZhbGlkYXRlQWxsU2Vzc2lvbnNSZXNwb25zZRIdCgpzZXNzaW9uX2lkGAEgAygJUglzZX'
-    'NzaW9uSWQ=');
+final $typed_data.Uint8List invalidateAllSessionsResponseDescriptor =
+    $convert.base64Decode(
+        'Ch1JbnZhbGlkYXRlQWxsU2Vzc2lvbnNSZXNwb25zZRIdCgpzZXNzaW9uX2lkGAEgAygJUglzZX'
+        'NzaW9uSWQ=');
 
 @$core.Deprecated('Use issueTenantTokenFromSessionRequestDescriptor instead')
 const IssueTenantTokenFromSessionRequest$json = {
   '1': 'IssueTenantTokenFromSessionRequest',
   '2': [
-    {'1': 'token_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'tokenDuration'},
+    {
+      '1': 'token_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'tokenDuration'
+    },
   ],
 };
 
 /// Descriptor for `IssueTenantTokenFromSessionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueTenantTokenFromSessionRequestDescriptor = $convert.base64Decode(
-    'CiJJc3N1ZVRlbmFudFRva2VuRnJvbVNlc3Npb25SZXF1ZXN0EkAKDnRva2VuX2R1cmF0aW9uGA'
-    'EgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUg10b2tlbkR1cmF0aW9u');
+final $typed_data.Uint8List issueTenantTokenFromSessionRequestDescriptor =
+    $convert.base64Decode(
+        'CiJJc3N1ZVRlbmFudFRva2VuRnJvbVNlc3Npb25SZXF1ZXN0EkAKDnRva2VuX2R1cmF0aW9uGA'
+        'EgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUg10b2tlbkR1cmF0aW9u');
 
 @$core.Deprecated('Use issueTenantTokenFromSessionResponseDescriptor instead')
 const IssueTenantTokenFromSessionResponse$json = {
@@ -80,32 +97,57 @@ const IssueTenantTokenFromSessionResponse$json = {
 };
 
 /// Descriptor for `IssueTenantTokenFromSessionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueTenantTokenFromSessionResponseDescriptor = $convert.base64Decode(
-    'CiNJc3N1ZVRlbmFudFRva2VuRnJvbVNlc3Npb25SZXNwb25zZRIhCgx0ZW5hbnRfdG9rZW4YAS'
-    'ABKAlSC3RlbmFudFRva2Vu');
+final $typed_data.Uint8List issueTenantTokenFromSessionResponseDescriptor =
+    $convert.base64Decode(
+        'CiNJc3N1ZVRlbmFudFRva2VuRnJvbVNlc3Npb25SZXNwb25zZRIhCgx0ZW5hbnRfdG9rZW4YAS'
+        'ABKAlSC3RlbmFudFRva2Vu');
 
 const $core.Map<$core.String, $core.dynamic> UserSessionsServiceBase$json = {
   '1': 'UserSessionsService',
   '2': [
-    {'1': 'ListSessions', '2': '.google.protobuf.Empty', '3': '.namespace.private.sessions.v1beta.ListSessionsResponse'},
-    {'1': 'InvalidateSession', '2': '.namespace.private.sessions.v1beta.InvalidateSessionRequest', '3': '.google.protobuf.Empty'},
-    {'1': 'InvalidateAllSessions', '2': '.google.protobuf.Empty', '3': '.namespace.private.sessions.v1beta.InvalidateAllSessionsResponse'},
-    {'1': 'IssueTenantTokenFromSession', '2': '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionRequest', '3': '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionResponse'},
+    {
+      '1': 'ListSessions',
+      '2': '.google.protobuf.Empty',
+      '3': '.namespace.private.sessions.v1beta.ListSessionsResponse'
+    },
+    {
+      '1': 'InvalidateSession',
+      '2': '.namespace.private.sessions.v1beta.InvalidateSessionRequest',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'InvalidateAllSessions',
+      '2': '.google.protobuf.Empty',
+      '3': '.namespace.private.sessions.v1beta.InvalidateAllSessionsResponse'
+    },
+    {
+      '1': 'IssueTenantTokenFromSession',
+      '2':
+          '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionRequest',
+      '3':
+          '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use userSessionsServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> UserSessionsServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    UserSessionsServiceBase$messageJson = {
   '.google.protobuf.Empty': $2.Empty$json,
-  '.namespace.private.sessions.v1beta.ListSessionsResponse': ListSessionsResponse$json,
+  '.namespace.private.sessions.v1beta.ListSessionsResponse':
+      ListSessionsResponse$json,
   '.namespace.private.sessions.v1beta.Session': $0.Session$json,
   '.google.protobuf.Timestamp': $3.Timestamp$json,
   '.namespace.private.sessions.v1beta.RequestMetadata': $0.RequestMetadata$json,
-  '.namespace.private.sessions.v1beta.InvalidateSessionRequest': InvalidateSessionRequest$json,
-  '.namespace.private.sessions.v1beta.InvalidateAllSessionsResponse': InvalidateAllSessionsResponse$json,
-  '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionRequest': IssueTenantTokenFromSessionRequest$json,
+  '.namespace.private.sessions.v1beta.InvalidateSessionRequest':
+      InvalidateSessionRequest$json,
+  '.namespace.private.sessions.v1beta.InvalidateAllSessionsResponse':
+      InvalidateAllSessionsResponse$json,
+  '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionRequest':
+      IssueTenantTokenFromSessionRequest$json,
   '.google.protobuf.Duration': $1.Duration$json,
-  '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionResponse': IssueTenantTokenFromSessionResponse$json,
+  '.namespace.private.sessions.v1beta.IssueTenantTokenFromSessionResponse':
+      IssueTenantTokenFromSessionResponse$json,
 };
 
 /// Descriptor for `UserSessionsService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -120,4 +162,3 @@ final $typed_data.Uint8List userSessionsServiceDescriptor = $convert.base64Decod
     'F0ZS5zZXNzaW9ucy52MWJldGEuSXNzdWVUZW5hbnRUb2tlbkZyb21TZXNzaW9uUmVxdWVzdBpG'
     'Lm5hbWVzcGFjZS5wcml2YXRlLnNlc3Npb25zLnYxYmV0YS5Jc3N1ZVRlbmFudFRva2VuRnJvbV'
     'Nlc3Npb25SZXNwb25zZQ==');
-

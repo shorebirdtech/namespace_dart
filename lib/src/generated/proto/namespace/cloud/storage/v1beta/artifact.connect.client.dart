@@ -24,11 +24,12 @@ import "../../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 /// may also constrain the set of actions that the caller may do.
 /// A *tenant token* can be obtained using the
 /// [IAM API](https://buf.build/namespace/cloud/docs/main:namespace.cloud.iam.v1beta).
-extension type ArtifactsServiceClient (connect.Transport _transport) {
+extension type ArtifactsServiceClient(connect.Transport _transport) {
   /// Artifact creation follows a two-phase commit model.
   /// Creating an artifact generates an upload URL.
   /// After uploading all data, a call to FinalizeArtifact is required to commit the content.
-  Future<protonamespacecloudstoragev1betaartifact.CreateArtifactResponse> createArtifact(
+  Future<protonamespacecloudstoragev1betaartifact.CreateArtifactResponse>
+  createArtifact(
     protonamespacecloudstoragev1betaartifact.CreateArtifactRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -46,7 +47,8 @@ extension type ArtifactsServiceClient (connect.Transport _transport) {
   }
 
   /// Finalize a fully uploaded artifact (making it available for download).
-  Future<protonamespacecloudstoragev1betaartifact.FinalizeArtifactResponse> finalizeArtifact(
+  Future<protonamespacecloudstoragev1betaartifact.FinalizeArtifactResponse>
+  finalizeArtifact(
     protonamespacecloudstoragev1betaartifact.FinalizeArtifactRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -64,7 +66,8 @@ extension type ArtifactsServiceClient (connect.Transport _transport) {
   }
 
   /// Resolves a finalized artifact and generates a download URL.
-  Future<protonamespacecloudstoragev1betaartifact.ResolveArtifactResponse> resolveArtifact(
+  Future<protonamespacecloudstoragev1betaartifact.ResolveArtifactResponse>
+  resolveArtifact(
     protonamespacecloudstoragev1betaartifact.ResolveArtifactRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -82,7 +85,8 @@ extension type ArtifactsServiceClient (connect.Transport _transport) {
   }
 
   /// List finalized artifacts.
-  Future<protonamespacecloudstoragev1betaartifact.ListArtifactsResponse> listArtifacts(
+  Future<protonamespacecloudstoragev1betaartifact.ListArtifactsResponse>
+  listArtifacts(
     protonamespacecloudstoragev1betaartifact.ListArtifactsRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,

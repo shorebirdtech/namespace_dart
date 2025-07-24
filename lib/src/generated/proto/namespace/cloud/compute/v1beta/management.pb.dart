@@ -34,18 +34,31 @@ class SetKnownImagesRequest extends $pb.GeneratedMessage {
 
   SetKnownImagesRequest._();
 
-  factory SetKnownImagesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory SetKnownImagesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory SetKnownImagesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory SetKnownImagesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetKnownImagesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..pc<KnownImage>(1, _omitFieldNames ? '' : 'knownImages', $pb.PbFieldType.PM, subBuilder: KnownImage.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SetKnownImagesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..pc<KnownImage>(
+        1, _omitFieldNames ? '' : 'knownImages', $pb.PbFieldType.PM,
+        subBuilder: KnownImage.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SetKnownImagesRequest clone() => SetKnownImagesRequest()..mergeFromMessage(this);
+  SetKnownImagesRequest clone() =>
+      SetKnownImagesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SetKnownImagesRequest copyWith(void Function(SetKnownImagesRequest) updates) => super.copyWith((message) => updates(message as SetKnownImagesRequest)) as SetKnownImagesRequest;
+  SetKnownImagesRequest copyWith(
+          void Function(SetKnownImagesRequest) updates) =>
+      super.copyWith((message) => updates(message as SetKnownImagesRequest))
+          as SetKnownImagesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -54,9 +67,11 @@ class SetKnownImagesRequest extends $pb.GeneratedMessage {
   static SetKnownImagesRequest create() => SetKnownImagesRequest._();
   @$core.override
   SetKnownImagesRequest createEmptyInstance() => create();
-  static $pb.PbList<SetKnownImagesRequest> createRepeated() => $pb.PbList<SetKnownImagesRequest>();
+  static $pb.PbList<SetKnownImagesRequest> createRepeated() =>
+      $pb.PbList<SetKnownImagesRequest>();
   @$core.pragma('dart2js:noInline')
-  static SetKnownImagesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SetKnownImagesRequest>(create);
+  static SetKnownImagesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SetKnownImagesRequest>(create);
   static SetKnownImagesRequest? _defaultInstance;
 
   /// Exhaustive of full image refs.
@@ -77,18 +92,30 @@ class GetKnownImagesResponse extends $pb.GeneratedMessage {
 
   GetKnownImagesResponse._();
 
-  factory GetKnownImagesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetKnownImagesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetKnownImagesResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetKnownImagesResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetKnownImagesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..pc<ImageState>(1, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: ImageState.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetKnownImagesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..pc<ImageState>(1, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM,
+        subBuilder: ImageState.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetKnownImagesResponse clone() => GetKnownImagesResponse()..mergeFromMessage(this);
+  GetKnownImagesResponse clone() =>
+      GetKnownImagesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetKnownImagesResponse copyWith(void Function(GetKnownImagesResponse) updates) => super.copyWith((message) => updates(message as GetKnownImagesResponse)) as GetKnownImagesResponse;
+  GetKnownImagesResponse copyWith(
+          void Function(GetKnownImagesResponse) updates) =>
+      super.copyWith((message) => updates(message as GetKnownImagesResponse))
+          as GetKnownImagesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -97,9 +124,11 @@ class GetKnownImagesResponse extends $pb.GeneratedMessage {
   static GetKnownImagesResponse create() => GetKnownImagesResponse._();
   @$core.override
   GetKnownImagesResponse createEmptyInstance() => create();
-  static $pb.PbList<GetKnownImagesResponse> createRepeated() => $pb.PbList<GetKnownImagesResponse>();
+  static $pb.PbList<GetKnownImagesResponse> createRepeated() =>
+      $pb.PbList<GetKnownImagesResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetKnownImagesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetKnownImagesResponse>(create);
+  static GetKnownImagesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetKnownImagesResponse>(create);
   static GetKnownImagesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -119,19 +148,31 @@ class KnownImage extends $pb.GeneratedMessage {
 
   KnownImage._();
 
-  factory KnownImage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory KnownImage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory KnownImage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory KnownImage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KnownImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KnownImage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageRef')
-    ..e<KnownImage_Purpose>(2, _omitFieldNames ? '' : 'purpose', $pb.PbFieldType.OE, defaultOrMaker: KnownImage_Purpose.PURPOSE_UNKNOWN, valueOf: KnownImage_Purpose.valueOf, enumValues: KnownImage_Purpose.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<KnownImage_Purpose>(
+        2, _omitFieldNames ? '' : 'purpose', $pb.PbFieldType.OE,
+        defaultOrMaker: KnownImage_Purpose.PURPOSE_UNKNOWN,
+        valueOf: KnownImage_Purpose.valueOf,
+        enumValues: KnownImage_Purpose.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KnownImage clone() => KnownImage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  KnownImage copyWith(void Function(KnownImage) updates) => super.copyWith((message) => updates(message as KnownImage)) as KnownImage;
+  KnownImage copyWith(void Function(KnownImage) updates) =>
+      super.copyWith((message) => updates(message as KnownImage)) as KnownImage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -142,7 +183,8 @@ class KnownImage extends $pb.GeneratedMessage {
   KnownImage createEmptyInstance() => create();
   static $pb.PbList<KnownImage> createRepeated() => $pb.PbList<KnownImage>();
   @$core.pragma('dart2js:noInline')
-  static KnownImage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KnownImage>(create);
+  static KnownImage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<KnownImage>(create);
   static KnownImage? _defaultInstance;
 
   /// Full image reference.
@@ -181,20 +223,34 @@ class ImageState extends $pb.GeneratedMessage {
 
   ImageState._();
 
-  factory ImageState.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ImageState.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ImageState.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ImageState.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageState', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<KnownImage>(1, _omitFieldNames ? '' : 'knownImage', subBuilder: KnownImage.create)
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'knownAt', subBuilder: $0.Timestamp.create)
-    ..e<ImageState_DistributionState>(3, _omitFieldNames ? '' : 'distributionState', $pb.PbFieldType.OE, defaultOrMaker: ImageState_DistributionState.DISTRIBUTION_STATE_UNKNOWN, valueOf: ImageState_DistributionState.valueOf, enumValues: ImageState_DistributionState.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageState',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<KnownImage>(1, _omitFieldNames ? '' : 'knownImage',
+        subBuilder: KnownImage.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'knownAt',
+        subBuilder: $0.Timestamp.create)
+    ..e<ImageState_DistributionState>(
+        3, _omitFieldNames ? '' : 'distributionState', $pb.PbFieldType.OE,
+        defaultOrMaker: ImageState_DistributionState.DISTRIBUTION_STATE_UNKNOWN,
+        valueOf: ImageState_DistributionState.valueOf,
+        enumValues: ImageState_DistributionState.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ImageState clone() => ImageState()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ImageState copyWith(void Function(ImageState) updates) => super.copyWith((message) => updates(message as ImageState)) as ImageState;
+  ImageState copyWith(void Function(ImageState) updates) =>
+      super.copyWith((message) => updates(message as ImageState)) as ImageState;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -205,7 +261,8 @@ class ImageState extends $pb.GeneratedMessage {
   ImageState createEmptyInstance() => create();
   static $pb.PbList<ImageState> createRepeated() => $pb.PbList<ImageState>();
   @$core.pragma('dart2js:noInline')
-  static ImageState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageState>(create);
+  static ImageState getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImageState>(create);
   static ImageState? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -235,7 +292,8 @@ class ImageState extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ImageState_DistributionState get distributionState => $_getN(2);
   @$pb.TagNumber(3)
-  set distributionState(ImageState_DistributionState value) => $_setField(3, value);
+  set distributionState(ImageState_DistributionState value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasDistributionState() => $_has(2);
   @$pb.TagNumber(3)
@@ -253,19 +311,23 @@ class ManagementServiceApi {
   /// Access requires a partner token trusted by Namespace (OIDC token).
   ///
   /// Authentication: partner token.
-  $async.Future<$1.Empty> setKnownImages($pb.ClientContext? ctx, SetKnownImagesRequest request) =>
-    _client.invoke<$1.Empty>(ctx, 'ManagementService', 'SetKnownImages', request, $1.Empty())
-  ;
+  $async.Future<$1.Empty> setKnownImages(
+          $pb.ClientContext? ctx, SetKnownImagesRequest request) =>
+      _client.invoke<$1.Empty>(
+          ctx, 'ManagementService', 'SetKnownImages', request, $1.Empty());
+
   /// Returns the list of known images, previously registered via SetKnownImages API.
   ///
   /// Access requires a partner token trusted by Namespace (OIDC token).
   ///
   /// Authentication: partner token.
-  $async.Future<GetKnownImagesResponse> getKnownImages($pb.ClientContext? ctx, $1.Empty request) =>
-    _client.invoke<GetKnownImagesResponse>(ctx, 'ManagementService', 'GetKnownImages', request, GetKnownImagesResponse())
-  ;
+  $async.Future<GetKnownImagesResponse> getKnownImages(
+          $pb.ClientContext? ctx, $1.Empty request) =>
+      _client.invoke<GetKnownImagesResponse>(ctx, 'ManagementService',
+          'GetKnownImages', request, GetKnownImagesResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

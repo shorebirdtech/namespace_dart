@@ -21,23 +21,29 @@ import 'usage.pbjson.dart';
 export 'usage.pb.dart';
 
 abstract class UsageServiceBase extends $pb.GeneratedService {
-  $async.Future<$0.GetUsageResponse> getUsage($pb.ServerContext ctx, $0.GetUsageRequest request);
+  $async.Future<$0.GetUsageResponse> getUsage(
+      $pb.ServerContext ctx, $0.GetUsageRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'GetUsage': return $0.GetUsageRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'GetUsage':
+        return $0.GetUsageRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'GetUsage': return getUsage(ctx, request as $0.GetUsageRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'GetUsage':
+        return getUsage(ctx, request as $0.GetUsageRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => UsageServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => UsageServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => UsageServiceBase$messageJson;
 }
-

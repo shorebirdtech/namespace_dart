@@ -54,28 +54,44 @@ class BaseImage extends $pb.GeneratedMessage {
 
   BaseImage._();
 
-  factory BaseImage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BaseImage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BaseImage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BaseImage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BaseImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.images.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BaseImage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.images.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'ref')
     ..aOS(2, _omitFieldNames ? '' : 'os')
     ..aOS(3, _omitFieldNames ? '' : 'osName')
     ..aOS(4, _omitFieldNames ? '' : 'osVersion')
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
-    ..pc<Package>(7, _omitFieldNames ? '' : 'packages', $pb.PbFieldType.PM, subBuilder: Package.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt',
+        subBuilder: $0.Timestamp.create)
+    ..pc<Package>(7, _omitFieldNames ? '' : 'packages', $pb.PbFieldType.PM,
+        subBuilder: Package.create)
     ..aOS(8, _omitFieldNames ? '' : 'id')
-    ..e<BaseImage_ReleaseStage>(9, _omitFieldNames ? '' : 'releaseStage', $pb.PbFieldType.OE, defaultOrMaker: BaseImage_ReleaseStage.STAGE_UNKNOWN, valueOf: BaseImage_ReleaseStage.valueOf, enumValues: BaseImage_ReleaseStage.values)
+    ..e<BaseImage_ReleaseStage>(
+        9, _omitFieldNames ? '' : 'releaseStage', $pb.PbFieldType.OE,
+        defaultOrMaker: BaseImage_ReleaseStage.STAGE_UNKNOWN,
+        valueOf: BaseImage_ReleaseStage.valueOf,
+        enumValues: BaseImage_ReleaseStage.values)
     ..pPS(10, _omitFieldNames ? '' : 'features')
-    ..pc<Package>(11, _omitFieldNames ? '' : 'defaultPackages', $pb.PbFieldType.PM, subBuilder: Package.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<Package>(
+        11, _omitFieldNames ? '' : 'defaultPackages', $pb.PbFieldType.PM,
+        subBuilder: Package.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BaseImage clone() => BaseImage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BaseImage copyWith(void Function(BaseImage) updates) => super.copyWith((message) => updates(message as BaseImage)) as BaseImage;
+  BaseImage copyWith(void Function(BaseImage) updates) =>
+      super.copyWith((message) => updates(message as BaseImage)) as BaseImage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -86,7 +102,8 @@ class BaseImage extends $pb.GeneratedMessage {
   BaseImage createEmptyInstance() => create();
   static $pb.PbList<BaseImage> createRepeated() => $pb.PbList<BaseImage>();
   @$core.pragma('dart2js:noInline')
-  static BaseImage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BaseImage>(create);
+  static BaseImage getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BaseImage>(create);
   static BaseImage? _defaultInstance;
 
   /// Deprecated. Use id instead.
@@ -200,20 +217,28 @@ class Package extends $pb.GeneratedMessage {
 
   Package._();
 
-  factory Package.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Package.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Package.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Package.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Package', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.images.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Package',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.images.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..aOS(3, _omitFieldNames ? '' : 'version')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Package clone() => Package()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Package copyWith(void Function(Package) updates) => super.copyWith((message) => updates(message as Package)) as Package;
+  Package copyWith(void Function(Package) updates) =>
+      super.copyWith((message) => updates(message as Package)) as Package;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -224,7 +249,8 @@ class Package extends $pb.GeneratedMessage {
   Package createEmptyInstance() => create();
   static $pb.PbList<Package> createRepeated() => $pb.PbList<Package>();
   @$core.pragma('dart2js:noInline')
-  static Package getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Package>(create);
+  static Package getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Package>(create);
   static Package? _defaultInstance;
 
   /// E.g. "XCode", "iOS SDK", aws-cli, Rust, Docker, etc.
@@ -271,19 +297,30 @@ class ResolvedBaseImage extends $pb.GeneratedMessage {
 
   ResolvedBaseImage._();
 
-  factory ResolvedBaseImage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ResolvedBaseImage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ResolvedBaseImage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResolvedBaseImage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResolvedBaseImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.images.v1beta'), createEmptyInstance: create)
-    ..aOM<BaseImage>(1, _omitFieldNames ? '' : 'spec', subBuilder: BaseImage.create)
-    ..aOM<BaseImageStatus>(2, _omitFieldNames ? '' : 'status', subBuilder: BaseImageStatus.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResolvedBaseImage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.images.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<BaseImage>(1, _omitFieldNames ? '' : 'spec',
+        subBuilder: BaseImage.create)
+    ..aOM<BaseImageStatus>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: BaseImageStatus.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResolvedBaseImage clone() => ResolvedBaseImage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolvedBaseImage copyWith(void Function(ResolvedBaseImage) updates) => super.copyWith((message) => updates(message as ResolvedBaseImage)) as ResolvedBaseImage;
+  ResolvedBaseImage copyWith(void Function(ResolvedBaseImage) updates) =>
+      super.copyWith((message) => updates(message as ResolvedBaseImage))
+          as ResolvedBaseImage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -292,9 +329,11 @@ class ResolvedBaseImage extends $pb.GeneratedMessage {
   static ResolvedBaseImage create() => ResolvedBaseImage._();
   @$core.override
   ResolvedBaseImage createEmptyInstance() => create();
-  static $pb.PbList<ResolvedBaseImage> createRepeated() => $pb.PbList<ResolvedBaseImage>();
+  static $pb.PbList<ResolvedBaseImage> createRepeated() =>
+      $pb.PbList<ResolvedBaseImage>();
   @$core.pragma('dart2js:noInline')
-  static ResolvedBaseImage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResolvedBaseImage>(create);
+  static ResolvedBaseImage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResolvedBaseImage>(create);
   static ResolvedBaseImage? _defaultInstance;
 
   /// Specification of Base Image.
@@ -336,8 +375,10 @@ class BaseImageStatus extends $pb.GeneratedMessage {
     if (imageRef != null) result.imageRef = imageRef;
     if (builtAt != null) result.builtAt = builtAt;
     if (prewarmAfter != null) result.prewarmAfter = prewarmAfter;
-    if (prewarmInRegions != null) result.prewarmInRegions.addAll(prewarmInRegions);
-    if (skipStaggeredBaking != null) result.skipStaggeredBaking = skipStaggeredBaking;
+    if (prewarmInRegions != null)
+      result.prewarmInRegions.addAll(prewarmInRegions);
+    if (skipStaggeredBaking != null)
+      result.skipStaggeredBaking = skipStaggeredBaking;
     if (imageRepository != null) result.imageRepository = imageRepository;
     if (imageDigest != null) result.imageDigest = imageDigest;
     return result;
@@ -345,24 +386,35 @@ class BaseImageStatus extends $pb.GeneratedMessage {
 
   BaseImageStatus._();
 
-  factory BaseImageStatus.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BaseImageStatus.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BaseImageStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BaseImageStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BaseImageStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.images.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BaseImageStatus',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.images.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageRef')
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'builtAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'prewarmAfter', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'builtAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'prewarmAfter',
+        subBuilder: $0.Timestamp.create)
     ..pPS(4, _omitFieldNames ? '' : 'prewarmInRegions')
     ..aOB(5, _omitFieldNames ? '' : 'skipStaggeredBaking')
     ..aOS(6, _omitFieldNames ? '' : 'imageRepository')
     ..aOS(7, _omitFieldNames ? '' : 'imageDigest')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BaseImageStatus clone() => BaseImageStatus()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BaseImageStatus copyWith(void Function(BaseImageStatus) updates) => super.copyWith((message) => updates(message as BaseImageStatus)) as BaseImageStatus;
+  BaseImageStatus copyWith(void Function(BaseImageStatus) updates) =>
+      super.copyWith((message) => updates(message as BaseImageStatus))
+          as BaseImageStatus;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -371,9 +423,11 @@ class BaseImageStatus extends $pb.GeneratedMessage {
   static BaseImageStatus create() => BaseImageStatus._();
   @$core.override
   BaseImageStatus createEmptyInstance() => create();
-  static $pb.PbList<BaseImageStatus> createRepeated() => $pb.PbList<BaseImageStatus>();
+  static $pb.PbList<BaseImageStatus> createRepeated() =>
+      $pb.PbList<BaseImageStatus>();
   @$core.pragma('dart2js:noInline')
-  static BaseImageStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BaseImageStatus>(create);
+  static BaseImageStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BaseImageStatus>(create);
   static BaseImageStatus? _defaultInstance;
 
   /// Operating-system dependent image reference.
@@ -445,6 +499,7 @@ class BaseImageStatus extends $pb.GeneratedMessage {
   void clearImageDigest() => $_clearField(7);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

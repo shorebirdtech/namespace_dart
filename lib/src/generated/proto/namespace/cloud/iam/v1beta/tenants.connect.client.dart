@@ -83,7 +83,7 @@ import "../../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 /// ```
 /// Authorization: Bearer oidc_{token}
 /// ```
-extension type TenantServiceClient (connect.Transport _transport) {
+extension type TenantServiceClient(connect.Transport _transport) {
   /// Creates a new Tenant. After a tenant creation call returns, the Tenant
   /// can be used immediately. Tenants can be cordoned temporarily (via
   /// `SuspendTenant`) or removed permanently (via `RemoveTenant`).
@@ -135,7 +135,8 @@ extension type TenantServiceClient (connect.Transport _transport) {
   /// ### Errors
   /// - If the tenant referenced does not exist, a `NotFound` status is
   ///   returned.
-  Future<protonamespacecloudiamv1betatenants.DescribePoliciesResponse> describePolicies(
+  Future<protonamespacecloudiamv1betatenants.DescribePoliciesResponse>
+  describePolicies(
     protonamespacecloudiamv1betatenants.DescribePoliciesRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -184,8 +185,10 @@ extension type TenantServiceClient (connect.Transport _transport) {
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  Future<protonamespacecloudiamv1betatenants.TenantResponse> ensureTenantForExternalAccount(
-    protonamespacecloudiamv1betatenants.EnsureTenantForExternalAccountRequest input, {
+  Future<protonamespacecloudiamv1betatenants.TenantResponse>
+  ensureTenantForExternalAccount(
+    protonamespacecloudiamv1betatenants.EnsureTenantForExternalAccountRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,
@@ -250,7 +253,8 @@ extension type TenantServiceClient (connect.Transport _transport) {
   /// Produces credentials in the form of a Bearer token that grant access to
   /// the specified Tenant. The credentials provided to the `IssueTenantToken`
   /// call are validated to verify they are capable of requesting credentials.
-  Future<protonamespacecloudiamv1betatenants.IssueTenantTokenResponse> issueTenantToken(
+  Future<protonamespacecloudiamv1betatenants.IssueTenantTokenResponse>
+  issueTenantToken(
     protonamespacecloudiamv1betatenants.IssueTenantTokenRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -271,8 +275,12 @@ extension type TenantServiceClient (connect.Transport _transport) {
   /// access to the specified Tenant. The credentials provided to the
   /// `IssueTenantClientCertificate` call are validated to verify they are
   /// capable of requesting credentials.
-  Future<protonamespacecloudiamv1betatenants.IssueTenantClientCertificateResponse> issueTenantClientCertificate(
-    protonamespacecloudiamv1betatenants.IssueTenantClientCertificateRequest input, {
+  Future<
+    protonamespacecloudiamv1betatenants.IssueTenantClientCertificateResponse
+  >
+  issueTenantClientCertificate(
+    protonamespacecloudiamv1betatenants.IssueTenantClientCertificateRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,
@@ -340,7 +348,8 @@ extension type TenantServiceClient (connect.Transport _transport) {
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  Future<protonamespacecloudiamv1betatenants.TenantGroupResponse> ensureTenantGroup(
+  Future<protonamespacecloudiamv1betatenants.TenantGroupResponse>
+  ensureTenantGroup(
     protonamespacecloudiamv1betatenants.EnsureTenantGroupRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -358,7 +367,8 @@ extension type TenantServiceClient (connect.Transport _transport) {
   }
 
   /// Lists all Tenant Groups owned by the Namespace Partner Account.
-  Future<protonamespacecloudiamv1betatenants.ListTenantGroupsResponse> listTenantGroups(
+  Future<protonamespacecloudiamv1betatenants.ListTenantGroupsResponse>
+  listTenantGroups(
     protonamespacecloudiamv1betatenants.ListTenantGroupsRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -376,7 +386,8 @@ extension type TenantServiceClient (connect.Transport _transport) {
   }
 
   /// Lists all Tenant Groups owned by the Namespace Partner Account.
-  Future<protonamespacecloudiamv1betatenants.DescribeTenantGroupResponse> describeTenantGroup(
+  Future<protonamespacecloudiamv1betatenants.DescribeTenantGroupResponse>
+  describeTenantGroup(
     protonamespacecloudiamv1betatenants.TenantGroupReference input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,

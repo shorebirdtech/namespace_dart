@@ -24,8 +24,7 @@ export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 class CreateTenantRequest extends $pb.GeneratedMessage {
   factory CreateTenantRequest({
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? creatorId,
+    @$core.Deprecated('This field is deprecated.') $core.String? creatorId,
     $core.String? visibleName,
     $core.Iterable<TenantPolicy>? policies,
     $core.String? externalAccountId,
@@ -42,22 +41,33 @@ class CreateTenantRequest extends $pb.GeneratedMessage {
 
   CreateTenantRequest._();
 
-  factory CreateTenantRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CreateTenantRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CreateTenantRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CreateTenantRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTenantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateTenantRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'creatorId')
     ..aOS(2, _omitFieldNames ? '' : 'visibleName')
-    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantPolicy.create)
+    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantPolicy.create)
     ..aOS(4, _omitFieldNames ? '' : 'externalAccountId')
-    ..pc<$0.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $0.Label.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$0.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $0.Label.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateTenantRequest clone() => CreateTenantRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateTenantRequest copyWith(void Function(CreateTenantRequest) updates) => super.copyWith((message) => updates(message as CreateTenantRequest)) as CreateTenantRequest;
+  CreateTenantRequest copyWith(void Function(CreateTenantRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateTenantRequest))
+          as CreateTenantRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -66,9 +76,11 @@ class CreateTenantRequest extends $pb.GeneratedMessage {
   static CreateTenantRequest create() => CreateTenantRequest._();
   @$core.override
   CreateTenantRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateTenantRequest> createRepeated() => $pb.PbList<CreateTenantRequest>();
+  static $pb.PbList<CreateTenantRequest> createRepeated() =>
+      $pb.PbList<CreateTenantRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateTenantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateTenantRequest>(create);
+  static CreateTenantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateTenantRequest>(create);
   static CreateTenantRequest? _defaultInstance;
 
   /// An opaque value that represents the identity of the user that created
@@ -141,21 +153,32 @@ class UpdateTenantRequest extends $pb.GeneratedMessage {
 
   UpdateTenantRequest._();
 
-  factory UpdateTenantRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UpdateTenantRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UpdateTenantRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UpdateTenantRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTenantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateTenantRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tenantId')
     ..aOS(2, _omitFieldNames ? '' : 'visibleName')
-    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantPolicy.create)
-    ..pc<$0.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $0.Label.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantPolicy.create)
+    ..pc<$0.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $0.Label.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateTenantRequest clone() => UpdateTenantRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateTenantRequest copyWith(void Function(UpdateTenantRequest) updates) => super.copyWith((message) => updates(message as UpdateTenantRequest)) as UpdateTenantRequest;
+  UpdateTenantRequest copyWith(void Function(UpdateTenantRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateTenantRequest))
+          as UpdateTenantRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -164,9 +187,11 @@ class UpdateTenantRequest extends $pb.GeneratedMessage {
   static UpdateTenantRequest create() => UpdateTenantRequest._();
   @$core.override
   UpdateTenantRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateTenantRequest> createRepeated() => $pb.PbList<UpdateTenantRequest>();
+  static $pb.PbList<UpdateTenantRequest> createRepeated() =>
+      $pb.PbList<UpdateTenantRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateTenantRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateTenantRequest>(create);
+  static UpdateTenantRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateTenantRequest>(create);
   static UpdateTenantRequest? _defaultInstance;
 
   /// The ID of the Tenant that is the target of a particular call.
@@ -217,20 +242,32 @@ class UpdatePoliciesRequest extends $pb.GeneratedMessage {
 
   UpdatePoliciesRequest._();
 
-  factory UpdatePoliciesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UpdatePoliciesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UpdatePoliciesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UpdatePoliciesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePoliciesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdatePoliciesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tenantId')
-    ..pc<TenantPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantPolicy.create)
+    ..pc<TenantPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantPolicy.create)
     ..aInt64(3, _omitFieldNames ? '' : 'revision')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdatePoliciesRequest clone() => UpdatePoliciesRequest()..mergeFromMessage(this);
+  UpdatePoliciesRequest clone() =>
+      UpdatePoliciesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdatePoliciesRequest copyWith(void Function(UpdatePoliciesRequest) updates) => super.copyWith((message) => updates(message as UpdatePoliciesRequest)) as UpdatePoliciesRequest;
+  UpdatePoliciesRequest copyWith(
+          void Function(UpdatePoliciesRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdatePoliciesRequest))
+          as UpdatePoliciesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -239,9 +276,11 @@ class UpdatePoliciesRequest extends $pb.GeneratedMessage {
   static UpdatePoliciesRequest create() => UpdatePoliciesRequest._();
   @$core.override
   UpdatePoliciesRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdatePoliciesRequest> createRepeated() => $pb.PbList<UpdatePoliciesRequest>();
+  static $pb.PbList<UpdatePoliciesRequest> createRepeated() =>
+      $pb.PbList<UpdatePoliciesRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdatePoliciesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdatePoliciesRequest>(create);
+  static UpdatePoliciesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdatePoliciesRequest>(create);
   static UpdatePoliciesRequest? _defaultInstance;
 
   /// The ID of the Tenant that is the target of a particular call.
@@ -289,33 +328,52 @@ class EnsureTenantForExternalAccountRequest extends $pb.GeneratedMessage {
 
   EnsureTenantForExternalAccountRequest._();
 
-  factory EnsureTenantForExternalAccountRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureTenantForExternalAccountRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureTenantForExternalAccountRequest.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureTenantForExternalAccountRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureTenantForExternalAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureTenantForExternalAccountRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'externalAccountId')
     ..aOS(2, _omitFieldNames ? '' : 'visibleName')
-    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantPolicy.create)
-    ..pc<$0.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $0.Label.create)
+    ..pc<TenantPolicy>(3, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantPolicy.create)
+    ..pc<$0.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $0.Label.create)
     ..pPS(5, _omitFieldNames ? '' : 'enrolledGroups')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureTenantForExternalAccountRequest clone() => EnsureTenantForExternalAccountRequest()..mergeFromMessage(this);
+  EnsureTenantForExternalAccountRequest clone() =>
+      EnsureTenantForExternalAccountRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureTenantForExternalAccountRequest copyWith(void Function(EnsureTenantForExternalAccountRequest) updates) => super.copyWith((message) => updates(message as EnsureTenantForExternalAccountRequest)) as EnsureTenantForExternalAccountRequest;
+  EnsureTenantForExternalAccountRequest copyWith(
+          void Function(EnsureTenantForExternalAccountRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as EnsureTenantForExternalAccountRequest))
+          as EnsureTenantForExternalAccountRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EnsureTenantForExternalAccountRequest create() => EnsureTenantForExternalAccountRequest._();
+  static EnsureTenantForExternalAccountRequest create() =>
+      EnsureTenantForExternalAccountRequest._();
   @$core.override
   EnsureTenantForExternalAccountRequest createEmptyInstance() => create();
-  static $pb.PbList<EnsureTenantForExternalAccountRequest> createRepeated() => $pb.PbList<EnsureTenantForExternalAccountRequest>();
+  static $pb.PbList<EnsureTenantForExternalAccountRequest> createRepeated() =>
+      $pb.PbList<EnsureTenantForExternalAccountRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnsureTenantForExternalAccountRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureTenantForExternalAccountRequest>(create);
+  static EnsureTenantForExternalAccountRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          EnsureTenantForExternalAccountRequest>(create);
   static EnsureTenantForExternalAccountRequest? _defaultInstance;
 
   /// A string, opaque to Namespace, that identifies an external account
@@ -365,17 +423,28 @@ class DescribePoliciesRequest extends $pb.GeneratedMessage {
 
   DescribePoliciesRequest._();
 
-  factory DescribePoliciesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DescribePoliciesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DescribePoliciesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DescribePoliciesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DescribePoliciesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DescribePoliciesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribePoliciesRequest clone() => DescribePoliciesRequest()..mergeFromMessage(this);
+  DescribePoliciesRequest clone() =>
+      DescribePoliciesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribePoliciesRequest copyWith(void Function(DescribePoliciesRequest) updates) => super.copyWith((message) => updates(message as DescribePoliciesRequest)) as DescribePoliciesRequest;
+  DescribePoliciesRequest copyWith(
+          void Function(DescribePoliciesRequest) updates) =>
+      super.copyWith((message) => updates(message as DescribePoliciesRequest))
+          as DescribePoliciesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -384,9 +453,11 @@ class DescribePoliciesRequest extends $pb.GeneratedMessage {
   static DescribePoliciesRequest create() => DescribePoliciesRequest._();
   @$core.override
   DescribePoliciesRequest createEmptyInstance() => create();
-  static $pb.PbList<DescribePoliciesRequest> createRepeated() => $pb.PbList<DescribePoliciesRequest>();
+  static $pb.PbList<DescribePoliciesRequest> createRepeated() =>
+      $pb.PbList<DescribePoliciesRequest>();
   @$core.pragma('dart2js:noInline')
-  static DescribePoliciesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DescribePoliciesRequest>(create);
+  static DescribePoliciesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DescribePoliciesRequest>(create);
   static DescribePoliciesRequest? _defaultInstance;
 }
 
@@ -403,19 +474,31 @@ class DescribePoliciesResponse extends $pb.GeneratedMessage {
 
   DescribePoliciesResponse._();
 
-  factory DescribePoliciesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DescribePoliciesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DescribePoliciesResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DescribePoliciesResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DescribePoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
-    ..pc<TenantPolicy>(1, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantPolicy.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DescribePoliciesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
+    ..pc<TenantPolicy>(1, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantPolicy.create)
     ..aInt64(2, _omitFieldNames ? '' : 'revision')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribePoliciesResponse clone() => DescribePoliciesResponse()..mergeFromMessage(this);
+  DescribePoliciesResponse clone() =>
+      DescribePoliciesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribePoliciesResponse copyWith(void Function(DescribePoliciesResponse) updates) => super.copyWith((message) => updates(message as DescribePoliciesResponse)) as DescribePoliciesResponse;
+  DescribePoliciesResponse copyWith(
+          void Function(DescribePoliciesResponse) updates) =>
+      super.copyWith((message) => updates(message as DescribePoliciesResponse))
+          as DescribePoliciesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -424,9 +507,11 @@ class DescribePoliciesResponse extends $pb.GeneratedMessage {
   static DescribePoliciesResponse create() => DescribePoliciesResponse._();
   @$core.override
   DescribePoliciesResponse createEmptyInstance() => create();
-  static $pb.PbList<DescribePoliciesResponse> createRepeated() => $pb.PbList<DescribePoliciesResponse>();
+  static $pb.PbList<DescribePoliciesResponse> createRepeated() =>
+      $pb.PbList<DescribePoliciesResponse>();
   @$core.pragma('dart2js:noInline')
-  static DescribePoliciesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DescribePoliciesResponse>(create);
+  static DescribePoliciesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DescribePoliciesResponse>(create);
   static DescribePoliciesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -457,20 +542,29 @@ class TenantPolicy extends $pb.GeneratedMessage {
 
   TenantPolicy._();
 
-  factory TenantPolicy.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantPolicy.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'policy')
     ..aOS(3, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantPolicy clone() => TenantPolicy()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantPolicy copyWith(void Function(TenantPolicy) updates) => super.copyWith((message) => updates(message as TenantPolicy)) as TenantPolicy;
+  TenantPolicy copyWith(void Function(TenantPolicy) updates) =>
+      super.copyWith((message) => updates(message as TenantPolicy))
+          as TenantPolicy;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -479,9 +573,11 @@ class TenantPolicy extends $pb.GeneratedMessage {
   static TenantPolicy create() => TenantPolicy._();
   @$core.override
   TenantPolicy createEmptyInstance() => create();
-  static $pb.PbList<TenantPolicy> createRepeated() => $pb.PbList<TenantPolicy>();
+  static $pb.PbList<TenantPolicy> createRepeated() =>
+      $pb.PbList<TenantPolicy>();
   @$core.pragma('dart2js:noInline')
-  static TenantPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantPolicy>(create);
+  static TenantPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantPolicy>(create);
   static TenantPolicy? _defaultInstance;
 
   /// A unique identifier that represents this policy. If none is provided, one
@@ -536,18 +632,27 @@ class TenantResponse extends $pb.GeneratedMessage {
 
   TenantResponse._();
 
-  factory TenantResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOM<Tenant>(1, _omitFieldNames ? '' : 'tenant', subBuilder: Tenant.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantResponse clone() => TenantResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantResponse copyWith(void Function(TenantResponse) updates) => super.copyWith((message) => updates(message as TenantResponse)) as TenantResponse;
+  TenantResponse copyWith(void Function(TenantResponse) updates) =>
+      super.copyWith((message) => updates(message as TenantResponse))
+          as TenantResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -556,9 +661,11 @@ class TenantResponse extends $pb.GeneratedMessage {
   static TenantResponse create() => TenantResponse._();
   @$core.override
   TenantResponse createEmptyInstance() => create();
-  static $pb.PbList<TenantResponse> createRepeated() => $pb.PbList<TenantResponse>();
+  static $pb.PbList<TenantResponse> createRepeated() =>
+      $pb.PbList<TenantResponse>();
   @$core.pragma('dart2js:noInline')
-  static TenantResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantResponse>(create);
+  static TenantResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantResponse>(create);
   static TenantResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -576,8 +683,7 @@ class TenantResponse extends $pb.GeneratedMessage {
 class Tenant extends $pb.GeneratedMessage {
   factory Tenant({
     $core.String? id,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? creatorId,
+    @$core.Deprecated('This field is deprecated.') $core.String? creatorId,
     $1.Timestamp? createdAt,
     $core.String? visibleName,
     $core.String? externalAccountId,
@@ -595,23 +701,33 @@ class Tenant extends $pb.GeneratedMessage {
 
   Tenant._();
 
-  factory Tenant.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Tenant.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Tenant.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Tenant.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Tenant', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Tenant',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'creatorId')
-    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'createdAt', subBuilder: $1.Timestamp.create)
+    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $1.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'visibleName')
     ..aOS(5, _omitFieldNames ? '' : 'externalAccountId')
-    ..pc<$0.Label>(6, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $0.Label.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$0.Label>(6, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $0.Label.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Tenant clone() => Tenant()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Tenant copyWith(void Function(Tenant) updates) => super.copyWith((message) => updates(message as Tenant)) as Tenant;
+  Tenant copyWith(void Function(Tenant) updates) =>
+      super.copyWith((message) => updates(message as Tenant)) as Tenant;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -622,7 +738,8 @@ class Tenant extends $pb.GeneratedMessage {
   Tenant createEmptyInstance() => create();
   static $pb.PbList<Tenant> createRepeated() => $pb.PbList<Tenant>();
   @$core.pragma('dart2js:noInline')
-  static Tenant getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Tenant>(create);
+  static Tenant getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Tenant>(create);
   static Tenant? _defaultInstance;
 
   /// The ID of the tenant. Tenant IDs should be treated as opaque by clients.
@@ -703,18 +820,27 @@ class TenantReference extends $pb.GeneratedMessage {
 
   TenantReference._();
 
-  factory TenantReference.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantReference.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantReference.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantReference.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tenantId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantReference clone() => TenantReference()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantReference copyWith(void Function(TenantReference) updates) => super.copyWith((message) => updates(message as TenantReference)) as TenantReference;
+  TenantReference copyWith(void Function(TenantReference) updates) =>
+      super.copyWith((message) => updates(message as TenantReference))
+          as TenantReference;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -723,9 +849,11 @@ class TenantReference extends $pb.GeneratedMessage {
   static TenantReference create() => TenantReference._();
   @$core.override
   TenantReference createEmptyInstance() => create();
-  static $pb.PbList<TenantReference> createRepeated() => $pb.PbList<TenantReference>();
+  static $pb.PbList<TenantReference> createRepeated() =>
+      $pb.PbList<TenantReference>();
   @$core.pragma('dart2js:noInline')
-  static TenantReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantReference>(create);
+  static TenantReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantReference>(create);
   static TenantReference? _defaultInstance;
 
   /// The ID of the Tenant that is the target of a particular call.
@@ -756,21 +884,30 @@ class ListTenantsRequest extends $pb.GeneratedMessage {
 
   ListTenantsRequest._();
 
-  factory ListTenantsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListTenantsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListTenantsRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListTenantsRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTenantsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTenantsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'limit', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'cursor')
     ..aOS(3, _omitFieldNames ? '' : 'creatorId')
     ..aOS(4, _omitFieldNames ? '' : 'externalAccountId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListTenantsRequest clone() => ListTenantsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantsRequest copyWith(void Function(ListTenantsRequest) updates) => super.copyWith((message) => updates(message as ListTenantsRequest)) as ListTenantsRequest;
+  ListTenantsRequest copyWith(void Function(ListTenantsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListTenantsRequest))
+          as ListTenantsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -779,9 +916,11 @@ class ListTenantsRequest extends $pb.GeneratedMessage {
   static ListTenantsRequest create() => ListTenantsRequest._();
   @$core.override
   ListTenantsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListTenantsRequest> createRepeated() => $pb.PbList<ListTenantsRequest>();
+  static $pb.PbList<ListTenantsRequest> createRepeated() =>
+      $pb.PbList<ListTenantsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListTenantsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTenantsRequest>(create);
+  static ListTenantsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTenantsRequest>(create);
   static ListTenantsRequest? _defaultInstance;
 
   /// If specified, limits the number of returned Tenants to be at most
@@ -845,19 +984,29 @@ class ListTenantsResponse extends $pb.GeneratedMessage {
 
   ListTenantsResponse._();
 
-  factory ListTenantsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListTenantsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListTenantsResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListTenantsResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTenantsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
-    ..pc<Tenant>(1, _omitFieldNames ? '' : 'tenants', $pb.PbFieldType.PM, subBuilder: Tenant.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTenantsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Tenant>(1, _omitFieldNames ? '' : 'tenants', $pb.PbFieldType.PM,
+        subBuilder: Tenant.create)
     ..aOS(2, _omitFieldNames ? '' : 'cursor')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListTenantsResponse clone() => ListTenantsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantsResponse copyWith(void Function(ListTenantsResponse) updates) => super.copyWith((message) => updates(message as ListTenantsResponse)) as ListTenantsResponse;
+  ListTenantsResponse copyWith(void Function(ListTenantsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListTenantsResponse))
+          as ListTenantsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -866,9 +1015,11 @@ class ListTenantsResponse extends $pb.GeneratedMessage {
   static ListTenantsResponse create() => ListTenantsResponse._();
   @$core.override
   ListTenantsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListTenantsResponse> createRepeated() => $pb.PbList<ListTenantsResponse>();
+  static $pb.PbList<ListTenantsResponse> createRepeated() =>
+      $pb.PbList<ListTenantsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListTenantsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTenantsResponse>(create);
+  static ListTenantsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTenantsResponse>(create);
   static ListTenantsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -904,21 +1055,34 @@ class IssueTenantTokenRequest extends $pb.GeneratedMessage {
 
   IssueTenantTokenRequest._();
 
-  factory IssueTenantTokenRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueTenantTokenRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueTenantTokenRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueTenantTokenRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueTenantTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueTenantTokenRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tenantId')
     ..aOS(2, _omitFieldNames ? '' : 'actorId')
     ..aInt64(3, _omitFieldNames ? '' : 'durationSecs')
-    ..pc<TenantTokenPolicy>(4, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantTokenPolicy.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TenantTokenPolicy>(
+        4, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantTokenPolicy.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantTokenRequest clone() => IssueTenantTokenRequest()..mergeFromMessage(this);
+  IssueTenantTokenRequest clone() =>
+      IssueTenantTokenRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantTokenRequest copyWith(void Function(IssueTenantTokenRequest) updates) => super.copyWith((message) => updates(message as IssueTenantTokenRequest)) as IssueTenantTokenRequest;
+  IssueTenantTokenRequest copyWith(
+          void Function(IssueTenantTokenRequest) updates) =>
+      super.copyWith((message) => updates(message as IssueTenantTokenRequest))
+          as IssueTenantTokenRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -927,9 +1091,11 @@ class IssueTenantTokenRequest extends $pb.GeneratedMessage {
   static IssueTenantTokenRequest create() => IssueTenantTokenRequest._();
   @$core.override
   IssueTenantTokenRequest createEmptyInstance() => create();
-  static $pb.PbList<IssueTenantTokenRequest> createRepeated() => $pb.PbList<IssueTenantTokenRequest>();
+  static $pb.PbList<IssueTenantTokenRequest> createRepeated() =>
+      $pb.PbList<IssueTenantTokenRequest>();
   @$core.pragma('dart2js:noInline')
-  static IssueTenantTokenRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueTenantTokenRequest>(create);
+  static IssueTenantTokenRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IssueTenantTokenRequest>(create);
   static IssueTenantTokenRequest? _defaultInstance;
 
   /// Which tenant credentials should be produced for.
@@ -981,18 +1147,29 @@ class IssueTenantTokenResponse extends $pb.GeneratedMessage {
 
   IssueTenantTokenResponse._();
 
-  factory IssueTenantTokenResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueTenantTokenResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueTenantTokenResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueTenantTokenResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueTenantTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueTenantTokenResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bearerToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantTokenResponse clone() => IssueTenantTokenResponse()..mergeFromMessage(this);
+  IssueTenantTokenResponse clone() =>
+      IssueTenantTokenResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantTokenResponse copyWith(void Function(IssueTenantTokenResponse) updates) => super.copyWith((message) => updates(message as IssueTenantTokenResponse)) as IssueTenantTokenResponse;
+  IssueTenantTokenResponse copyWith(
+          void Function(IssueTenantTokenResponse) updates) =>
+      super.copyWith((message) => updates(message as IssueTenantTokenResponse))
+          as IssueTenantTokenResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1001,9 +1178,11 @@ class IssueTenantTokenResponse extends $pb.GeneratedMessage {
   static IssueTenantTokenResponse create() => IssueTenantTokenResponse._();
   @$core.override
   IssueTenantTokenResponse createEmptyInstance() => create();
-  static $pb.PbList<IssueTenantTokenResponse> createRepeated() => $pb.PbList<IssueTenantTokenResponse>();
+  static $pb.PbList<IssueTenantTokenResponse> createRepeated() =>
+      $pb.PbList<IssueTenantTokenResponse>();
   @$core.pragma('dart2js:noInline')
-  static IssueTenantTokenResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueTenantTokenResponse>(create);
+  static IssueTenantTokenResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IssueTenantTokenResponse>(create);
   static IssueTenantTokenResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1035,33 +1214,52 @@ class IssueTenantClientCertificateRequest extends $pb.GeneratedMessage {
 
   IssueTenantClientCertificateRequest._();
 
-  factory IssueTenantClientCertificateRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueTenantClientCertificateRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueTenantClientCertificateRequest.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueTenantClientCertificateRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueTenantClientCertificateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueTenantClientCertificateRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tenantId')
     ..aOS(2, _omitFieldNames ? '' : 'actorId')
     ..aInt64(3, _omitFieldNames ? '' : 'durationSecs')
-    ..pc<TenantTokenPolicy>(4, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantTokenPolicy.create)
+    ..pc<TenantTokenPolicy>(
+        4, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantTokenPolicy.create)
     ..aOS(5, _omitFieldNames ? '' : 'publicKeyPem')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantClientCertificateRequest clone() => IssueTenantClientCertificateRequest()..mergeFromMessage(this);
+  IssueTenantClientCertificateRequest clone() =>
+      IssueTenantClientCertificateRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantClientCertificateRequest copyWith(void Function(IssueTenantClientCertificateRequest) updates) => super.copyWith((message) => updates(message as IssueTenantClientCertificateRequest)) as IssueTenantClientCertificateRequest;
+  IssueTenantClientCertificateRequest copyWith(
+          void Function(IssueTenantClientCertificateRequest) updates) =>
+      super.copyWith((message) =>
+              updates(message as IssueTenantClientCertificateRequest))
+          as IssueTenantClientCertificateRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static IssueTenantClientCertificateRequest create() => IssueTenantClientCertificateRequest._();
+  static IssueTenantClientCertificateRequest create() =>
+      IssueTenantClientCertificateRequest._();
   @$core.override
   IssueTenantClientCertificateRequest createEmptyInstance() => create();
-  static $pb.PbList<IssueTenantClientCertificateRequest> createRepeated() => $pb.PbList<IssueTenantClientCertificateRequest>();
+  static $pb.PbList<IssueTenantClientCertificateRequest> createRepeated() =>
+      $pb.PbList<IssueTenantClientCertificateRequest>();
   @$core.pragma('dart2js:noInline')
-  static IssueTenantClientCertificateRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueTenantClientCertificateRequest>(create);
+  static IssueTenantClientCertificateRequest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IssueTenantClientCertificateRequest>(create);
   static IssueTenantClientCertificateRequest? _defaultInstance;
 
   /// Which tenant credentials should be produced for.
@@ -1124,37 +1322,55 @@ class IssueTenantClientCertificateResponse extends $pb.GeneratedMessage {
     $core.String? privateKeyPem,
   }) {
     final result = create();
-    if (clientCertificatePem != null) result.clientCertificatePem = clientCertificatePem;
+    if (clientCertificatePem != null)
+      result.clientCertificatePem = clientCertificatePem;
     if (privateKeyPem != null) result.privateKeyPem = privateKeyPem;
     return result;
   }
 
   IssueTenantClientCertificateResponse._();
 
-  factory IssueTenantClientCertificateResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueTenantClientCertificateResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueTenantClientCertificateResponse.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueTenantClientCertificateResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueTenantClientCertificateResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueTenantClientCertificateResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'clientCertificatePem')
     ..aOS(2, _omitFieldNames ? '' : 'privateKeyPem')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantClientCertificateResponse clone() => IssueTenantClientCertificateResponse()..mergeFromMessage(this);
+  IssueTenantClientCertificateResponse clone() =>
+      IssueTenantClientCertificateResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueTenantClientCertificateResponse copyWith(void Function(IssueTenantClientCertificateResponse) updates) => super.copyWith((message) => updates(message as IssueTenantClientCertificateResponse)) as IssueTenantClientCertificateResponse;
+  IssueTenantClientCertificateResponse copyWith(
+          void Function(IssueTenantClientCertificateResponse) updates) =>
+      super.copyWith((message) =>
+              updates(message as IssueTenantClientCertificateResponse))
+          as IssueTenantClientCertificateResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static IssueTenantClientCertificateResponse create() => IssueTenantClientCertificateResponse._();
+  static IssueTenantClientCertificateResponse create() =>
+      IssueTenantClientCertificateResponse._();
   @$core.override
   IssueTenantClientCertificateResponse createEmptyInstance() => create();
-  static $pb.PbList<IssueTenantClientCertificateResponse> createRepeated() => $pb.PbList<IssueTenantClientCertificateResponse>();
+  static $pb.PbList<IssueTenantClientCertificateResponse> createRepeated() =>
+      $pb.PbList<IssueTenantClientCertificateResponse>();
   @$core.pragma('dart2js:noInline')
-  static IssueTenantClientCertificateResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueTenantClientCertificateResponse>(create);
+  static IssueTenantClientCertificateResponse getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IssueTenantClientCertificateResponse>(create);
   static IssueTenantClientCertificateResponse? _defaultInstance;
 
   /// The PEM-encoded client certificate that has been issued. The PEM
@@ -1196,19 +1412,28 @@ class TenantTokenPolicy extends $pb.GeneratedMessage {
 
   TenantTokenPolicy._();
 
-  factory TenantTokenPolicy.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantTokenPolicy.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantTokenPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantTokenPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantTokenPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantTokenPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'policyType')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantTokenPolicy clone() => TenantTokenPolicy()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantTokenPolicy copyWith(void Function(TenantTokenPolicy) updates) => super.copyWith((message) => updates(message as TenantTokenPolicy)) as TenantTokenPolicy;
+  TenantTokenPolicy copyWith(void Function(TenantTokenPolicy) updates) =>
+      super.copyWith((message) => updates(message as TenantTokenPolicy))
+          as TenantTokenPolicy;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1217,9 +1442,11 @@ class TenantTokenPolicy extends $pb.GeneratedMessage {
   static TenantTokenPolicy create() => TenantTokenPolicy._();
   @$core.override
   TenantTokenPolicy createEmptyInstance() => create();
-  static $pb.PbList<TenantTokenPolicy> createRepeated() => $pb.PbList<TenantTokenPolicy>();
+  static $pb.PbList<TenantTokenPolicy> createRepeated() =>
+      $pb.PbList<TenantTokenPolicy>();
   @$core.pragma('dart2js:noInline')
-  static TenantTokenPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantTokenPolicy>(create);
+  static TenantTokenPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantTokenPolicy>(create);
   static TenantTokenPolicy? _defaultInstance;
 
   /// The policy type being set.
@@ -1259,19 +1486,32 @@ class EnsureTenantGroupRequest extends $pb.GeneratedMessage {
 
   EnsureTenantGroupRequest._();
 
-  factory EnsureTenantGroupRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureTenantGroupRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureTenantGroupRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureTenantGroupRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureTenantGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureTenantGroupRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<TenantGroupPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantGroupPolicy.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TenantGroupPolicy>(
+        2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantGroupPolicy.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureTenantGroupRequest clone() => EnsureTenantGroupRequest()..mergeFromMessage(this);
+  EnsureTenantGroupRequest clone() =>
+      EnsureTenantGroupRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureTenantGroupRequest copyWith(void Function(EnsureTenantGroupRequest) updates) => super.copyWith((message) => updates(message as EnsureTenantGroupRequest)) as EnsureTenantGroupRequest;
+  EnsureTenantGroupRequest copyWith(
+          void Function(EnsureTenantGroupRequest) updates) =>
+      super.copyWith((message) => updates(message as EnsureTenantGroupRequest))
+          as EnsureTenantGroupRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1280,9 +1520,11 @@ class EnsureTenantGroupRequest extends $pb.GeneratedMessage {
   static EnsureTenantGroupRequest create() => EnsureTenantGroupRequest._();
   @$core.override
   EnsureTenantGroupRequest createEmptyInstance() => create();
-  static $pb.PbList<EnsureTenantGroupRequest> createRepeated() => $pb.PbList<EnsureTenantGroupRequest>();
+  static $pb.PbList<EnsureTenantGroupRequest> createRepeated() =>
+      $pb.PbList<EnsureTenantGroupRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnsureTenantGroupRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureTenantGroupRequest>(create);
+  static EnsureTenantGroupRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnsureTenantGroupRequest>(create);
   static EnsureTenantGroupRequest? _defaultInstance;
 
   /// A canonical name for the Tenant group.
@@ -1313,18 +1555,27 @@ class TenantGroupResponse extends $pb.GeneratedMessage {
 
   TenantGroupResponse._();
 
-  factory TenantGroupResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantGroupResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantGroupResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantGroupResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantGroupResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantGroupResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantGroupResponse clone() => TenantGroupResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantGroupResponse copyWith(void Function(TenantGroupResponse) updates) => super.copyWith((message) => updates(message as TenantGroupResponse)) as TenantGroupResponse;
+  TenantGroupResponse copyWith(void Function(TenantGroupResponse) updates) =>
+      super.copyWith((message) => updates(message as TenantGroupResponse))
+          as TenantGroupResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1333,9 +1584,11 @@ class TenantGroupResponse extends $pb.GeneratedMessage {
   static TenantGroupResponse create() => TenantGroupResponse._();
   @$core.override
   TenantGroupResponse createEmptyInstance() => create();
-  static $pb.PbList<TenantGroupResponse> createRepeated() => $pb.PbList<TenantGroupResponse>();
+  static $pb.PbList<TenantGroupResponse> createRepeated() =>
+      $pb.PbList<TenantGroupResponse>();
   @$core.pragma('dart2js:noInline')
-  static TenantGroupResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantGroupResponse>(create);
+  static TenantGroupResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantGroupResponse>(create);
   static TenantGroupResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1361,19 +1614,28 @@ class TenantGroupPolicy extends $pb.GeneratedMessage {
 
   TenantGroupPolicy._();
 
-  factory TenantGroupPolicy.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantGroupPolicy.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantGroupPolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantGroupPolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantGroupPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantGroupPolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'policy')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TenantGroupPolicy clone() => TenantGroupPolicy()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantGroupPolicy copyWith(void Function(TenantGroupPolicy) updates) => super.copyWith((message) => updates(message as TenantGroupPolicy)) as TenantGroupPolicy;
+  TenantGroupPolicy copyWith(void Function(TenantGroupPolicy) updates) =>
+      super.copyWith((message) => updates(message as TenantGroupPolicy))
+          as TenantGroupPolicy;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1382,9 +1644,11 @@ class TenantGroupPolicy extends $pb.GeneratedMessage {
   static TenantGroupPolicy create() => TenantGroupPolicy._();
   @$core.override
   TenantGroupPolicy createEmptyInstance() => create();
-  static $pb.PbList<TenantGroupPolicy> createRepeated() => $pb.PbList<TenantGroupPolicy>();
+  static $pb.PbList<TenantGroupPolicy> createRepeated() =>
+      $pb.PbList<TenantGroupPolicy>();
   @$core.pragma('dart2js:noInline')
-  static TenantGroupPolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantGroupPolicy>(create);
+  static TenantGroupPolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantGroupPolicy>(create);
   static TenantGroupPolicy? _defaultInstance;
 
   /// The policy being set.
@@ -1422,17 +1686,28 @@ class ListTenantGroupsRequest extends $pb.GeneratedMessage {
 
   ListTenantGroupsRequest._();
 
-  factory ListTenantGroupsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListTenantGroupsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListTenantGroupsRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListTenantGroupsRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTenantGroupsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTenantGroupsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsRequest clone() => ListTenantGroupsRequest()..mergeFromMessage(this);
+  ListTenantGroupsRequest clone() =>
+      ListTenantGroupsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsRequest copyWith(void Function(ListTenantGroupsRequest) updates) => super.copyWith((message) => updates(message as ListTenantGroupsRequest)) as ListTenantGroupsRequest;
+  ListTenantGroupsRequest copyWith(
+          void Function(ListTenantGroupsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListTenantGroupsRequest))
+          as ListTenantGroupsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1441,9 +1716,11 @@ class ListTenantGroupsRequest extends $pb.GeneratedMessage {
   static ListTenantGroupsRequest create() => ListTenantGroupsRequest._();
   @$core.override
   ListTenantGroupsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListTenantGroupsRequest> createRepeated() => $pb.PbList<ListTenantGroupsRequest>();
+  static $pb.PbList<ListTenantGroupsRequest> createRepeated() =>
+      $pb.PbList<ListTenantGroupsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListTenantGroupsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTenantGroupsRequest>(create);
+  static ListTenantGroupsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTenantGroupsRequest>(create);
   static ListTenantGroupsRequest? _defaultInstance;
 }
 
@@ -1460,30 +1737,49 @@ class ListTenantGroupsResponse_TenantGroup extends $pb.GeneratedMessage {
 
   ListTenantGroupsResponse_TenantGroup._();
 
-  factory ListTenantGroupsResponse_TenantGroup.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListTenantGroupsResponse_TenantGroup.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListTenantGroupsResponse_TenantGroup.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListTenantGroupsResponse_TenantGroup.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTenantGroupsResponse.TenantGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTenantGroupsResponse.TenantGroup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<TenantGroupPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantGroupPolicy.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<TenantGroupPolicy>(
+        2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantGroupPolicy.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsResponse_TenantGroup clone() => ListTenantGroupsResponse_TenantGroup()..mergeFromMessage(this);
+  ListTenantGroupsResponse_TenantGroup clone() =>
+      ListTenantGroupsResponse_TenantGroup()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsResponse_TenantGroup copyWith(void Function(ListTenantGroupsResponse_TenantGroup) updates) => super.copyWith((message) => updates(message as ListTenantGroupsResponse_TenantGroup)) as ListTenantGroupsResponse_TenantGroup;
+  ListTenantGroupsResponse_TenantGroup copyWith(
+          void Function(ListTenantGroupsResponse_TenantGroup) updates) =>
+      super.copyWith((message) =>
+              updates(message as ListTenantGroupsResponse_TenantGroup))
+          as ListTenantGroupsResponse_TenantGroup;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListTenantGroupsResponse_TenantGroup create() => ListTenantGroupsResponse_TenantGroup._();
+  static ListTenantGroupsResponse_TenantGroup create() =>
+      ListTenantGroupsResponse_TenantGroup._();
   @$core.override
   ListTenantGroupsResponse_TenantGroup createEmptyInstance() => create();
-  static $pb.PbList<ListTenantGroupsResponse_TenantGroup> createRepeated() => $pb.PbList<ListTenantGroupsResponse_TenantGroup>();
+  static $pb.PbList<ListTenantGroupsResponse_TenantGroup> createRepeated() =>
+      $pb.PbList<ListTenantGroupsResponse_TenantGroup>();
   @$core.pragma('dart2js:noInline')
-  static ListTenantGroupsResponse_TenantGroup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTenantGroupsResponse_TenantGroup>(create);
+  static ListTenantGroupsResponse_TenantGroup getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ListTenantGroupsResponse_TenantGroup>(create);
   static ListTenantGroupsResponse_TenantGroup? _defaultInstance;
 
   /// A canonical name for the Tenant group.
@@ -1513,18 +1809,31 @@ class ListTenantGroupsResponse extends $pb.GeneratedMessage {
 
   ListTenantGroupsResponse._();
 
-  factory ListTenantGroupsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListTenantGroupsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListTenantGroupsResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListTenantGroupsResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTenantGroupsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
-    ..pc<ListTenantGroupsResponse_TenantGroup>(1, _omitFieldNames ? '' : 'tenantGroups', $pb.PbFieldType.PM, subBuilder: ListTenantGroupsResponse_TenantGroup.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListTenantGroupsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
+    ..pc<ListTenantGroupsResponse_TenantGroup>(
+        1, _omitFieldNames ? '' : 'tenantGroups', $pb.PbFieldType.PM,
+        subBuilder: ListTenantGroupsResponse_TenantGroup.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsResponse clone() => ListTenantGroupsResponse()..mergeFromMessage(this);
+  ListTenantGroupsResponse clone() =>
+      ListTenantGroupsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListTenantGroupsResponse copyWith(void Function(ListTenantGroupsResponse) updates) => super.copyWith((message) => updates(message as ListTenantGroupsResponse)) as ListTenantGroupsResponse;
+  ListTenantGroupsResponse copyWith(
+          void Function(ListTenantGroupsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListTenantGroupsResponse))
+          as ListTenantGroupsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1533,13 +1842,16 @@ class ListTenantGroupsResponse extends $pb.GeneratedMessage {
   static ListTenantGroupsResponse create() => ListTenantGroupsResponse._();
   @$core.override
   ListTenantGroupsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListTenantGroupsResponse> createRepeated() => $pb.PbList<ListTenantGroupsResponse>();
+  static $pb.PbList<ListTenantGroupsResponse> createRepeated() =>
+      $pb.PbList<ListTenantGroupsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListTenantGroupsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListTenantGroupsResponse>(create);
+  static ListTenantGroupsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListTenantGroupsResponse>(create);
   static ListTenantGroupsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $pb.PbList<ListTenantGroupsResponse_TenantGroup> get tenantGroups => $_getList(0);
+  $pb.PbList<ListTenantGroupsResponse_TenantGroup> get tenantGroups =>
+      $_getList(0);
 }
 
 class TenantGroupReference extends $pb.GeneratedMessage {
@@ -1553,18 +1865,28 @@ class TenantGroupReference extends $pb.GeneratedMessage {
 
   TenantGroupReference._();
 
-  factory TenantGroupReference.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TenantGroupReference.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TenantGroupReference.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TenantGroupReference.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TenantGroupReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TenantGroupReference',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantGroupReference clone() => TenantGroupReference()..mergeFromMessage(this);
+  TenantGroupReference clone() =>
+      TenantGroupReference()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TenantGroupReference copyWith(void Function(TenantGroupReference) updates) => super.copyWith((message) => updates(message as TenantGroupReference)) as TenantGroupReference;
+  TenantGroupReference copyWith(void Function(TenantGroupReference) updates) =>
+      super.copyWith((message) => updates(message as TenantGroupReference))
+          as TenantGroupReference;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1573,9 +1895,11 @@ class TenantGroupReference extends $pb.GeneratedMessage {
   static TenantGroupReference create() => TenantGroupReference._();
   @$core.override
   TenantGroupReference createEmptyInstance() => create();
-  static $pb.PbList<TenantGroupReference> createRepeated() => $pb.PbList<TenantGroupReference>();
+  static $pb.PbList<TenantGroupReference> createRepeated() =>
+      $pb.PbList<TenantGroupReference>();
   @$core.pragma('dart2js:noInline')
-  static TenantGroupReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TenantGroupReference>(create);
+  static TenantGroupReference getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TenantGroupReference>(create);
   static TenantGroupReference? _defaultInstance;
 
   /// A canonical name for the Tenant group.
@@ -1599,37 +1923,55 @@ class DescribeTenantGroupResponse extends $pb.GeneratedMessage {
     final result = create();
     if (name != null) result.name = name;
     if (policies != null) result.policies.addAll(policies);
-    if (enrolledTenantIds != null) result.enrolledTenantIds.addAll(enrolledTenantIds);
+    if (enrolledTenantIds != null)
+      result.enrolledTenantIds.addAll(enrolledTenantIds);
     return result;
   }
 
   DescribeTenantGroupResponse._();
 
-  factory DescribeTenantGroupResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DescribeTenantGroupResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DescribeTenantGroupResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DescribeTenantGroupResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DescribeTenantGroupResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DescribeTenantGroupResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<TenantGroupPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: TenantGroupPolicy.create)
+    ..pc<TenantGroupPolicy>(
+        2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM,
+        subBuilder: TenantGroupPolicy.create)
     ..pPS(3, _omitFieldNames ? '' : 'enrolledTenantIds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribeTenantGroupResponse clone() => DescribeTenantGroupResponse()..mergeFromMessage(this);
+  DescribeTenantGroupResponse clone() =>
+      DescribeTenantGroupResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DescribeTenantGroupResponse copyWith(void Function(DescribeTenantGroupResponse) updates) => super.copyWith((message) => updates(message as DescribeTenantGroupResponse)) as DescribeTenantGroupResponse;
+  DescribeTenantGroupResponse copyWith(
+          void Function(DescribeTenantGroupResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as DescribeTenantGroupResponse))
+          as DescribeTenantGroupResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DescribeTenantGroupResponse create() => DescribeTenantGroupResponse._();
+  static DescribeTenantGroupResponse create() =>
+      DescribeTenantGroupResponse._();
   @$core.override
   DescribeTenantGroupResponse createEmptyInstance() => create();
-  static $pb.PbList<DescribeTenantGroupResponse> createRepeated() => $pb.PbList<DescribeTenantGroupResponse>();
+  static $pb.PbList<DescribeTenantGroupResponse> createRepeated() =>
+      $pb.PbList<DescribeTenantGroupResponse>();
   @$core.pragma('dart2js:noInline')
-  static DescribeTenantGroupResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DescribeTenantGroupResponse>(create);
+  static DescribeTenantGroupResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DescribeTenantGroupResponse>(create);
   static DescribeTenantGroupResponse? _defaultInstance;
 
   /// A canonical name for the Tenant group.
@@ -1767,17 +2109,21 @@ class TenantServiceApi {
   ///   `InvalidArgument` error is returned.
   /// - If a tenant with the specified `external_account_id` already exists
   ///   `FailedPrecondition` error is returned.
-  $async.Future<TenantResponse> createTenant($pb.ClientContext? ctx, CreateTenantRequest request) =>
-    _client.invoke<TenantResponse>(ctx, 'TenantService', 'CreateTenant', request, TenantResponse())
-  ;
+  $async.Future<TenantResponse> createTenant(
+          $pb.ClientContext? ctx, CreateTenantRequest request) =>
+      _client.invoke<TenantResponse>(
+          ctx, 'TenantService', 'CreateTenant', request, TenantResponse());
+
   /// Updates policies attached to a Tenant.
   ///
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  $async.Future<TenantResponse> updateTenant($pb.ClientContext? ctx, UpdateTenantRequest request) =>
-    _client.invoke<TenantResponse>(ctx, 'TenantService', 'UpdateTenant', request, TenantResponse())
-  ;
+  $async.Future<TenantResponse> updateTenant(
+          $pb.ClientContext? ctx, UpdateTenantRequest request) =>
+      _client.invoke<TenantResponse>(
+          ctx, 'TenantService', 'UpdateTenant', request, TenantResponse());
+
   /// Retrieves the policies that apply to the tenant.
   ///
   /// Requires either a partner token, or an admin-scoped tenant token.
@@ -1785,9 +2131,11 @@ class TenantServiceApi {
   /// ### Errors
   /// - If the tenant referenced does not exist, a `NotFound` status is
   ///   returned.
-  $async.Future<DescribePoliciesResponse> describePolicies($pb.ClientContext? ctx, DescribePoliciesRequest request) =>
-    _client.invoke<DescribePoliciesResponse>(ctx, 'TenantService', 'DescribePolicies', request, DescribePoliciesResponse())
-  ;
+  $async.Future<DescribePoliciesResponse> describePolicies(
+          $pb.ClientContext? ctx, DescribePoliciesRequest request) =>
+      _client.invoke<DescribePoliciesResponse>(ctx, 'TenantService',
+          'DescribePolicies', request, DescribePoliciesResponse());
+
   /// Updates policies attached to a Tenant.
   ///
   /// Requires either a partner token, or an admin-scoped tenant token.
@@ -1795,9 +2143,11 @@ class TenantServiceApi {
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  $async.Future<$2.Empty> updatePolicies($pb.ClientContext? ctx, UpdatePoliciesRequest request) =>
-    _client.invoke<$2.Empty>(ctx, 'TenantService', 'UpdatePolicies', request, $2.Empty())
-  ;
+  $async.Future<$2.Empty> updatePolicies(
+          $pb.ClientContext? ctx, UpdatePoliciesRequest request) =>
+      _client.invoke<$2.Empty>(
+          ctx, 'TenantService', 'UpdatePolicies', request, $2.Empty());
+
   /// Creates or updates a tenant associated with an external account.
   ///
   /// Namespace allows to associate a unique tenant to an opaque external
@@ -1811,9 +2161,12 @@ class TenantServiceApi {
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  $async.Future<TenantResponse> ensureTenantForExternalAccount($pb.ClientContext? ctx, EnsureTenantForExternalAccountRequest request) =>
-    _client.invoke<TenantResponse>(ctx, 'TenantService', 'EnsureTenantForExternalAccount', request, TenantResponse())
-  ;
+  $async.Future<TenantResponse> ensureTenantForExternalAccount(
+          $pb.ClientContext? ctx,
+          EnsureTenantForExternalAccountRequest request) =>
+      _client.invoke<TenantResponse>(ctx, 'TenantService',
+          'EnsureTenantForExternalAccount', request, TenantResponse());
+
   /// Instructs the platform to remove a Tenant. Removing a Tenant is
   /// unreversible. It both prevents new tenant credentials to be generated,
   /// but will also propagate to Compute and other infrastructure to remove or
@@ -1827,26 +2180,39 @@ class TenantServiceApi {
   /// ### Errors
   /// - If the tenant referenced does not exist, a `NotFound` status is
   ///   returned.
-  $async.Future<$2.Empty> removeTenant($pb.ClientContext? ctx, TenantReference request) =>
-    _client.invoke<$2.Empty>(ctx, 'TenantService', 'RemoveTenant', request, $2.Empty())
-  ;
+  $async.Future<$2.Empty> removeTenant(
+          $pb.ClientContext? ctx, TenantReference request) =>
+      _client.invoke<$2.Empty>(
+          ctx, 'TenantService', 'RemoveTenant', request, $2.Empty());
+
   /// Lists all tenants that match the criteria specified.
-  $async.Future<ListTenantsResponse> listTenants($pb.ClientContext? ctx, ListTenantsRequest request) =>
-    _client.invoke<ListTenantsResponse>(ctx, 'TenantService', 'ListTenants', request, ListTenantsResponse())
-  ;
+  $async.Future<ListTenantsResponse> listTenants(
+          $pb.ClientContext? ctx, ListTenantsRequest request) =>
+      _client.invoke<ListTenantsResponse>(
+          ctx, 'TenantService', 'ListTenants', request, ListTenantsResponse());
+
   /// Produces credentials in the form of a Bearer token that grant access to
   /// the specified Tenant. The credentials provided to the `IssueTenantToken`
   /// call are validated to verify they are capable of requesting credentials.
-  $async.Future<IssueTenantTokenResponse> issueTenantToken($pb.ClientContext? ctx, IssueTenantTokenRequest request) =>
-    _client.invoke<IssueTenantTokenResponse>(ctx, 'TenantService', 'IssueTenantToken', request, IssueTenantTokenResponse())
-  ;
+  $async.Future<IssueTenantTokenResponse> issueTenantToken(
+          $pb.ClientContext? ctx, IssueTenantTokenRequest request) =>
+      _client.invoke<IssueTenantTokenResponse>(ctx, 'TenantService',
+          'IssueTenantToken', request, IssueTenantTokenResponse());
+
   /// Produces credentials in the form of a X.509 client certificate that grant
   /// access to the specified Tenant. The credentials provided to the
   /// `IssueTenantClientCertificate` call are validated to verify they are
   /// capable of requesting credentials.
-  $async.Future<IssueTenantClientCertificateResponse> issueTenantClientCertificate($pb.ClientContext? ctx, IssueTenantClientCertificateRequest request) =>
-    _client.invoke<IssueTenantClientCertificateResponse>(ctx, 'TenantService', 'IssueTenantClientCertificate', request, IssueTenantClientCertificateResponse())
-  ;
+  $async.Future<IssueTenantClientCertificateResponse>
+      issueTenantClientCertificate($pb.ClientContext? ctx,
+              IssueTenantClientCertificateRequest request) =>
+          _client.invoke<IssueTenantClientCertificateResponse>(
+              ctx,
+              'TenantService',
+              'IssueTenantClientCertificate',
+              request,
+              IssueTenantClientCertificateResponse());
+
   /// Suspending a Tenant prevents it from creating new resources, but does not
   /// immediately terminate resources it owns that may be running. Suspending a
   /// tenant is a useful operational utility that can be used to cordon a
@@ -1856,18 +2222,22 @@ class TenantServiceApi {
   /// ### Errors
   /// - If the tenant referenced does not exist, a `NotFound` status is
   ///   returned.
-  $async.Future<$2.Empty> suspendTenant($pb.ClientContext? ctx, TenantReference request) =>
-    _client.invoke<$2.Empty>(ctx, 'TenantService', 'SuspendTenant', request, $2.Empty())
-  ;
+  $async.Future<$2.Empty> suspendTenant(
+          $pb.ClientContext? ctx, TenantReference request) =>
+      _client.invoke<$2.Empty>(
+          ctx, 'TenantService', 'SuspendTenant', request, $2.Empty());
+
   /// Un-suspends a previously suspended Tenant. If the Tenant was not
   /// suspended, it is a no-op.
   ///
   /// ### Errors
   /// - If the tenant referenced does not exist, a `NotFound` status is
   ///   returned.
-  $async.Future<$2.Empty> resumeTenant($pb.ClientContext? ctx, TenantReference request) =>
-    _client.invoke<$2.Empty>(ctx, 'TenantService', 'ResumeTenant', request, $2.Empty())
-  ;
+  $async.Future<$2.Empty> resumeTenant(
+          $pb.ClientContext? ctx, TenantReference request) =>
+      _client.invoke<$2.Empty>(
+          ctx, 'TenantService', 'ResumeTenant', request, $2.Empty());
+
   /// Creates or updates a Tenant Group.
   ///
   /// Tenant Groups are identified by name and scoped by the Namespace Partner Account.
@@ -1875,19 +2245,25 @@ class TenantServiceApi {
   /// ### Errors
   /// - If one of the properties that are passed in is invalid, an
   ///   `InvalidArgument` error is returned.
-  $async.Future<TenantGroupResponse> ensureTenantGroup($pb.ClientContext? ctx, EnsureTenantGroupRequest request) =>
-    _client.invoke<TenantGroupResponse>(ctx, 'TenantService', 'EnsureTenantGroup', request, TenantGroupResponse())
-  ;
+  $async.Future<TenantGroupResponse> ensureTenantGroup(
+          $pb.ClientContext? ctx, EnsureTenantGroupRequest request) =>
+      _client.invoke<TenantGroupResponse>(ctx, 'TenantService',
+          'EnsureTenantGroup', request, TenantGroupResponse());
+
   /// Lists all Tenant Groups owned by the Namespace Partner Account.
-  $async.Future<ListTenantGroupsResponse> listTenantGroups($pb.ClientContext? ctx, ListTenantGroupsRequest request) =>
-    _client.invoke<ListTenantGroupsResponse>(ctx, 'TenantService', 'ListTenantGroups', request, ListTenantGroupsResponse())
-  ;
+  $async.Future<ListTenantGroupsResponse> listTenantGroups(
+          $pb.ClientContext? ctx, ListTenantGroupsRequest request) =>
+      _client.invoke<ListTenantGroupsResponse>(ctx, 'TenantService',
+          'ListTenantGroups', request, ListTenantGroupsResponse());
+
   /// Lists all Tenant Groups owned by the Namespace Partner Account.
-  $async.Future<DescribeTenantGroupResponse> describeTenantGroup($pb.ClientContext? ctx, TenantGroupReference request) =>
-    _client.invoke<DescribeTenantGroupResponse>(ctx, 'TenantService', 'DescribeTenantGroup', request, DescribeTenantGroupResponse())
-  ;
+  $async.Future<DescribeTenantGroupResponse> describeTenantGroup(
+          $pb.ClientContext? ctx, TenantGroupReference request) =>
+      _client.invoke<DescribeTenantGroupResponse>(ctx, 'TenantService',
+          'DescribeTenantGroup', request, DescribeTenantGroupResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -28,18 +28,27 @@ class TimeSeries_Doubles extends $pb.GeneratedMessage {
 
   TimeSeries_Doubles._();
 
-  factory TimeSeries_Doubles.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TimeSeries_Doubles.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TimeSeries_Doubles.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TimeSeries_Doubles.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeries.Doubles', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeSeries.Doubles',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..p<$core.double>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.KD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSeries_Doubles clone() => TimeSeries_Doubles()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TimeSeries_Doubles copyWith(void Function(TimeSeries_Doubles) updates) => super.copyWith((message) => updates(message as TimeSeries_Doubles)) as TimeSeries_Doubles;
+  TimeSeries_Doubles copyWith(void Function(TimeSeries_Doubles) updates) =>
+      super.copyWith((message) => updates(message as TimeSeries_Doubles))
+          as TimeSeries_Doubles;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -48,9 +57,11 @@ class TimeSeries_Doubles extends $pb.GeneratedMessage {
   static TimeSeries_Doubles create() => TimeSeries_Doubles._();
   @$core.override
   TimeSeries_Doubles createEmptyInstance() => create();
-  static $pb.PbList<TimeSeries_Doubles> createRepeated() => $pb.PbList<TimeSeries_Doubles>();
+  static $pb.PbList<TimeSeries_Doubles> createRepeated() =>
+      $pb.PbList<TimeSeries_Doubles>();
   @$core.pragma('dart2js:noInline')
-  static TimeSeries_Doubles getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeSeries_Doubles>(create);
+  static TimeSeries_Doubles getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeSeries_Doubles>(create);
   static TimeSeries_Doubles? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -68,18 +79,27 @@ class TimeSeries_Integers extends $pb.GeneratedMessage {
 
   TimeSeries_Integers._();
 
-  factory TimeSeries_Integers.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TimeSeries_Integers.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TimeSeries_Integers.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TimeSeries_Integers.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeries.Integers', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeSeries.Integers',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.K6)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSeries_Integers clone() => TimeSeries_Integers()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TimeSeries_Integers copyWith(void Function(TimeSeries_Integers) updates) => super.copyWith((message) => updates(message as TimeSeries_Integers)) as TimeSeries_Integers;
+  TimeSeries_Integers copyWith(void Function(TimeSeries_Integers) updates) =>
+      super.copyWith((message) => updates(message as TimeSeries_Integers))
+          as TimeSeries_Integers;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -88,9 +108,11 @@ class TimeSeries_Integers extends $pb.GeneratedMessage {
   static TimeSeries_Integers create() => TimeSeries_Integers._();
   @$core.override
   TimeSeries_Integers createEmptyInstance() => create();
-  static $pb.PbList<TimeSeries_Integers> createRepeated() => $pb.PbList<TimeSeries_Integers>();
+  static $pb.PbList<TimeSeries_Integers> createRepeated() =>
+      $pb.PbList<TimeSeries_Integers>();
   @$core.pragma('dart2js:noInline')
-  static TimeSeries_Integers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeSeries_Integers>(create);
+  static TimeSeries_Integers getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeSeries_Integers>(create);
   static TimeSeries_Integers? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -108,18 +130,27 @@ class TimeSeries_Strings extends $pb.GeneratedMessage {
 
   TimeSeries_Strings._();
 
-  factory TimeSeries_Strings.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TimeSeries_Strings.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TimeSeries_Strings.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TimeSeries_Strings.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeries.Strings', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeSeries.Strings',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'values')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSeries_Strings clone() => TimeSeries_Strings()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TimeSeries_Strings copyWith(void Function(TimeSeries_Strings) updates) => super.copyWith((message) => updates(message as TimeSeries_Strings)) as TimeSeries_Strings;
+  TimeSeries_Strings copyWith(void Function(TimeSeries_Strings) updates) =>
+      super.copyWith((message) => updates(message as TimeSeries_Strings))
+          as TimeSeries_Strings;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -128,9 +159,11 @@ class TimeSeries_Strings extends $pb.GeneratedMessage {
   static TimeSeries_Strings create() => TimeSeries_Strings._();
   @$core.override
   TimeSeries_Strings createEmptyInstance() => create();
-  static $pb.PbList<TimeSeries_Strings> createRepeated() => $pb.PbList<TimeSeries_Strings>();
+  static $pb.PbList<TimeSeries_Strings> createRepeated() =>
+      $pb.PbList<TimeSeries_Strings>();
   @$core.pragma('dart2js:noInline')
-  static TimeSeries_Strings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeSeries_Strings>(create);
+  static TimeSeries_Strings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeSeries_Strings>(create);
   static TimeSeries_Strings? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -164,21 +197,48 @@ class TimeSeries extends $pb.GeneratedMessage {
 
   TimeSeries._();
 
-  factory TimeSeries.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TimeSeries.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TimeSeries.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TimeSeries.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeries', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
-    ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'timestamps', $pb.PbFieldType.K6)
-    ..m<$core.String, TimeSeries_Doubles>(2, _omitFieldNames ? '' : 'doubles', entryClassName: 'TimeSeries.DoublesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: TimeSeries_Doubles.create, valueDefaultOrMaker: TimeSeries_Doubles.getDefault, packageName: const $pb.PackageName('namespace.stdlib'))
-    ..m<$core.String, TimeSeries_Integers>(3, _omitFieldNames ? '' : 'integers', entryClassName: 'TimeSeries.IntegersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: TimeSeries_Integers.create, valueDefaultOrMaker: TimeSeries_Integers.getDefault, packageName: const $pb.PackageName('namespace.stdlib'))
-    ..m<$core.String, TimeSeries_Strings>(4, _omitFieldNames ? '' : 'strings', entryClassName: 'TimeSeries.StringsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: TimeSeries_Strings.create, valueDefaultOrMaker: TimeSeries_Strings.getDefault, packageName: const $pb.PackageName('namespace.stdlib'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeSeries',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
+    ..p<$fixnum.Int64>(
+        1, _omitFieldNames ? '' : 'timestamps', $pb.PbFieldType.K6)
+    ..m<$core.String, TimeSeries_Doubles>(2, _omitFieldNames ? '' : 'doubles',
+        entryClassName: 'TimeSeries.DoublesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: TimeSeries_Doubles.create,
+        valueDefaultOrMaker: TimeSeries_Doubles.getDefault,
+        packageName: const $pb.PackageName('namespace.stdlib'))
+    ..m<$core.String, TimeSeries_Integers>(3, _omitFieldNames ? '' : 'integers',
+        entryClassName: 'TimeSeries.IntegersEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: TimeSeries_Integers.create,
+        valueDefaultOrMaker: TimeSeries_Integers.getDefault,
+        packageName: const $pb.PackageName('namespace.stdlib'))
+    ..m<$core.String, TimeSeries_Strings>(4, _omitFieldNames ? '' : 'strings',
+        entryClassName: 'TimeSeries.StringsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: TimeSeries_Strings.create,
+        valueDefaultOrMaker: TimeSeries_Strings.getDefault,
+        packageName: const $pb.PackageName('namespace.stdlib'))
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSeries clone() => TimeSeries()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TimeSeries copyWith(void Function(TimeSeries) updates) => super.copyWith((message) => updates(message as TimeSeries)) as TimeSeries;
+  TimeSeries copyWith(void Function(TimeSeries) updates) =>
+      super.copyWith((message) => updates(message as TimeSeries)) as TimeSeries;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -189,7 +249,8 @@ class TimeSeries extends $pb.GeneratedMessage {
   TimeSeries createEmptyInstance() => create();
   static $pb.PbList<TimeSeries> createRepeated() => $pb.PbList<TimeSeries>();
   @$core.pragma('dart2js:noInline')
-  static TimeSeries getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeSeries>(create);
+  static TimeSeries getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TimeSeries>(create);
   static TimeSeries? _defaultInstance;
 
   /// timestamps are represented as the number of nanoseconds elapsed since
@@ -207,6 +268,7 @@ class TimeSeries extends $pb.GeneratedMessage {
   $pb.PbMap<$core.String, TimeSeries_Strings> get strings => $_getMap(3);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

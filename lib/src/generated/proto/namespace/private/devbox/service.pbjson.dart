@@ -21,7 +21,14 @@ import '../../../../google/protobuf/timestamp.pbjson.dart' as $0;
 const CreateDevBoxRequest$json = {
   '1': 'CreateDevBoxRequest',
   '2': [
-    {'1': 'devbox_spec', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBoxSpec', '10': 'devboxSpec'},
+    {
+      '1': 'devbox_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBoxSpec',
+      '10': 'devboxSpec'
+    },
   ],
 };
 
@@ -34,7 +41,14 @@ final $typed_data.Uint8List createDevBoxRequestDescriptor = $convert.base64Decod
 const CreateDevBoxResponse$json = {
   '1': 'CreateDevBoxResponse',
   '2': [
-    {'1': 'devbox', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBox', '10': 'devbox'},
+    {
+      '1': 'devbox',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBox',
+      '10': 'devbox'
+    },
   ],
 };
 
@@ -47,7 +61,14 @@ final $typed_data.Uint8List createDevBoxResponseDescriptor = $convert.base64Deco
 const UpdateDevBoxRequest$json = {
   '1': 'UpdateDevBoxRequest',
   '2': [
-    {'1': 'devbox_spec', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBoxSpec', '10': 'devboxSpec'},
+    {
+      '1': 'devbox_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBoxSpec',
+      '10': 'devboxSpec'
+    },
     {'1': 'update_version', '3': 2, '4': 1, '5': 3, '10': 'updateVersion'},
   ],
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List updateDevBoxRequestDescriptor = $convert.base64Decod
 const UpdateDevBoxResponse$json = {
   '1': 'UpdateDevBoxResponse',
   '2': [
-    {'1': 'devbox', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBox', '10': 'devbox'},
+    {
+      '1': 'devbox',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBox',
+      '10': 'devbox'
+    },
   ],
 };
 
@@ -103,7 +131,14 @@ final $typed_data.Uint8List listDevBoxesRequestDescriptor = $convert.base64Decod
 const ListDevBoxesResponse$json = {
   '1': 'ListDevBoxesResponse',
   '2': [
-    {'1': 'dev_boxes', '3': 1, '4': 3, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBox', '10': 'devBoxes'},
+    {
+      '1': 'dev_boxes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBox',
+      '10': 'devBoxes'
+    },
   ],
 };
 
@@ -128,9 +163,28 @@ final $typed_data.Uint8List ensureDevBoxRequestDescriptor = $convert.base64Decod
 const EnsureDevBoxResponse$json = {
   '1': 'EnsureDevBoxResponse',
   '2': [
-    {'1': 'devbox', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBox', '10': 'devbox'},
-    {'1': 'regional_ssh_endpoint', '3': 2, '4': 1, '5': 9, '10': 'regionalSshEndpoint'},
-    {'1': 'regional_instance_id', '3': 3, '4': 1, '5': 9, '10': 'regionalInstanceId'},
+    {
+      '1': 'devbox',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBox',
+      '10': 'devbox'
+    },
+    {
+      '1': 'regional_ssh_endpoint',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'regionalSshEndpoint'
+    },
+    {
+      '1': 'regional_instance_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'regionalInstanceId'
+    },
   ],
 };
 
@@ -145,8 +199,22 @@ final $typed_data.Uint8List ensureDevBoxResponseDescriptor = $convert.base64Deco
 const DevBox$json = {
   '1': 'DevBox',
   '2': [
-    {'1': 'devbox_spec', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBoxSpec', '10': 'devboxSpec'},
-    {'1': 'devbox_status', '3': 2, '4': 1, '5': 11, '6': '.namespace.private.devbox.v1beta.DevBoxStatus', '10': 'devboxStatus'},
+    {
+      '1': 'devbox_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBoxSpec',
+      '10': 'devboxSpec'
+    },
+    {
+      '1': 'devbox_status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.devbox.v1beta.DevBoxStatus',
+      '10': 'devboxStatus'
+    },
   ],
 };
 
@@ -185,11 +253,39 @@ const DevBoxStatus$json = {
     {'1': 'devbox_id', '3': 1, '4': 1, '5': 9, '10': 'devboxId'},
     {'1': 'tenant_id', '3': 2, '4': 1, '5': 9, '10': 'tenantId'},
     {'1': 'version', '3': 3, '4': 1, '5': 3, '10': 'version'},
-    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
-    {'1': 'updated_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
-    {'1': 'deleted_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deletedAt'},
+    {
+      '1': 'created_at',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createdAt'
+    },
+    {
+      '1': 'updated_at',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updatedAt'
+    },
+    {
+      '1': 'deleted_at',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deletedAt'
+    },
     {'1': 'ssh_endpoint', '3': 7, '4': 1, '5': 9, '10': 'sshEndpoint'},
-    {'1': 'status', '3': 8, '4': 1, '5': 14, '6': '.namespace.private.devbox.v1beta.DevBoxStatus.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.private.devbox.v1beta.DevBoxStatus.Status',
+      '10': 'status'
+    },
   ],
   '4': [DevBoxStatus_Status$json],
 };
@@ -218,30 +314,60 @@ final $typed_data.Uint8List devBoxStatusDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> DevBoxServiceBase$json = {
   '1': 'DevBoxService',
   '2': [
-    {'1': 'CreateDevBox', '2': '.namespace.private.devbox.v1beta.CreateDevBoxRequest', '3': '.namespace.private.devbox.v1beta.CreateDevBoxResponse'},
-    {'1': 'UpdateDevBox', '2': '.namespace.private.devbox.v1beta.UpdateDevBoxRequest', '3': '.namespace.private.devbox.v1beta.UpdateDevBoxResponse'},
-    {'1': 'DeleteDevBox', '2': '.namespace.private.devbox.v1beta.DeleteDevBoxRequest', '3': '.google.protobuf.Empty'},
-    {'1': 'ListDevBoxes', '2': '.namespace.private.devbox.v1beta.ListDevBoxesRequest', '3': '.namespace.private.devbox.v1beta.ListDevBoxesResponse'},
-    {'1': 'EnsureDevBox', '2': '.namespace.private.devbox.v1beta.EnsureDevBoxRequest', '3': '.namespace.private.devbox.v1beta.EnsureDevBoxResponse'},
+    {
+      '1': 'CreateDevBox',
+      '2': '.namespace.private.devbox.v1beta.CreateDevBoxRequest',
+      '3': '.namespace.private.devbox.v1beta.CreateDevBoxResponse'
+    },
+    {
+      '1': 'UpdateDevBox',
+      '2': '.namespace.private.devbox.v1beta.UpdateDevBoxRequest',
+      '3': '.namespace.private.devbox.v1beta.UpdateDevBoxResponse'
+    },
+    {
+      '1': 'DeleteDevBox',
+      '2': '.namespace.private.devbox.v1beta.DeleteDevBoxRequest',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'ListDevBoxes',
+      '2': '.namespace.private.devbox.v1beta.ListDevBoxesRequest',
+      '3': '.namespace.private.devbox.v1beta.ListDevBoxesResponse'
+    },
+    {
+      '1': 'EnsureDevBox',
+      '2': '.namespace.private.devbox.v1beta.EnsureDevBoxRequest',
+      '3': '.namespace.private.devbox.v1beta.EnsureDevBoxResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use devBoxServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> DevBoxServiceBase$messageJson = {
-  '.namespace.private.devbox.v1beta.CreateDevBoxRequest': CreateDevBoxRequest$json,
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    DevBoxServiceBase$messageJson = {
+  '.namespace.private.devbox.v1beta.CreateDevBoxRequest':
+      CreateDevBoxRequest$json,
   '.namespace.private.devbox.v1beta.DevBoxSpec': DevBoxSpec$json,
-  '.namespace.private.devbox.v1beta.CreateDevBoxResponse': CreateDevBoxResponse$json,
+  '.namespace.private.devbox.v1beta.CreateDevBoxResponse':
+      CreateDevBoxResponse$json,
   '.namespace.private.devbox.v1beta.DevBox': DevBox$json,
   '.namespace.private.devbox.v1beta.DevBoxStatus': DevBoxStatus$json,
   '.google.protobuf.Timestamp': $0.Timestamp$json,
-  '.namespace.private.devbox.v1beta.UpdateDevBoxRequest': UpdateDevBoxRequest$json,
-  '.namespace.private.devbox.v1beta.UpdateDevBoxResponse': UpdateDevBoxResponse$json,
-  '.namespace.private.devbox.v1beta.DeleteDevBoxRequest': DeleteDevBoxRequest$json,
+  '.namespace.private.devbox.v1beta.UpdateDevBoxRequest':
+      UpdateDevBoxRequest$json,
+  '.namespace.private.devbox.v1beta.UpdateDevBoxResponse':
+      UpdateDevBoxResponse$json,
+  '.namespace.private.devbox.v1beta.DeleteDevBoxRequest':
+      DeleteDevBoxRequest$json,
   '.google.protobuf.Empty': $1.Empty$json,
-  '.namespace.private.devbox.v1beta.ListDevBoxesRequest': ListDevBoxesRequest$json,
-  '.namespace.private.devbox.v1beta.ListDevBoxesResponse': ListDevBoxesResponse$json,
-  '.namespace.private.devbox.v1beta.EnsureDevBoxRequest': EnsureDevBoxRequest$json,
-  '.namespace.private.devbox.v1beta.EnsureDevBoxResponse': EnsureDevBoxResponse$json,
+  '.namespace.private.devbox.v1beta.ListDevBoxesRequest':
+      ListDevBoxesRequest$json,
+  '.namespace.private.devbox.v1beta.ListDevBoxesResponse':
+      ListDevBoxesResponse$json,
+  '.namespace.private.devbox.v1beta.EnsureDevBoxRequest':
+      EnsureDevBoxRequest$json,
+  '.namespace.private.devbox.v1beta.EnsureDevBoxResponse':
+      EnsureDevBoxResponse$json,
 };
 
 /// Descriptor for `DevBoxService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -257,4 +383,3 @@ final $typed_data.Uint8List devBoxServiceDescriptor = $convert.base64Decode(
     'aXZhdGUuZGV2Ym94LnYxYmV0YS5MaXN0RGV2Qm94ZXNSZXNwb25zZRJ7CgxFbnN1cmVEZXZCb3'
     'gSNC5uYW1lc3BhY2UucHJpdmF0ZS5kZXZib3gudjFiZXRhLkVuc3VyZURldkJveFJlcXVlc3Qa'
     'NS5uYW1lc3BhY2UucHJpdmF0ZS5kZXZib3gudjFiZXRhLkVuc3VyZURldkJveFJlc3BvbnNl');
-

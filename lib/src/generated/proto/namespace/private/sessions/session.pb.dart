@@ -57,10 +57,18 @@ class RequestMetadata extends $pb.GeneratedMessage {
 
   RequestMetadata._();
 
-  factory RequestMetadata.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory RequestMetadata.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory RequestMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory RequestMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.sessions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RequestMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.sessions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'requestId')
     ..aOS(2, _omitFieldNames ? '' : 'userAgent')
     ..aOS(3, _omitFieldNames ? '' : 'ipAddress')
@@ -69,18 +77,23 @@ class RequestMetadata extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'uaOs')
     ..aOS(7, _omitFieldNames ? '' : 'uaOsVersion')
     ..aOS(8, _omitFieldNames ? '' : 'uaDevice')
-    ..e<RequestMetadata_UaDeviceKind>(9, _omitFieldNames ? '' : 'uaDeviceKind', $pb.PbFieldType.OE, defaultOrMaker: RequestMetadata_UaDeviceKind.UA_DEVICE_KIND_UNKNOWN, valueOf: RequestMetadata_UaDeviceKind.valueOf, enumValues: RequestMetadata_UaDeviceKind.values)
+    ..e<RequestMetadata_UaDeviceKind>(
+        9, _omitFieldNames ? '' : 'uaDeviceKind', $pb.PbFieldType.OE,
+        defaultOrMaker: RequestMetadata_UaDeviceKind.UA_DEVICE_KIND_UNKNOWN,
+        valueOf: RequestMetadata_UaDeviceKind.valueOf,
+        enumValues: RequestMetadata_UaDeviceKind.values)
     ..aInt64(10, _omitFieldNames ? '' : 'ipCityId')
     ..aOS(11, _omitFieldNames ? '' : 'ipCityEn')
     ..aOS(12, _omitFieldNames ? '' : 'ipCountryIso')
     ..aOS(13, _omitFieldNames ? '' : 'ipCountryEn')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestMetadata clone() => RequestMetadata()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RequestMetadata copyWith(void Function(RequestMetadata) updates) => super.copyWith((message) => updates(message as RequestMetadata)) as RequestMetadata;
+  RequestMetadata copyWith(void Function(RequestMetadata) updates) =>
+      super.copyWith((message) => updates(message as RequestMetadata))
+          as RequestMetadata;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -89,9 +102,11 @@ class RequestMetadata extends $pb.GeneratedMessage {
   static RequestMetadata create() => RequestMetadata._();
   @$core.override
   RequestMetadata createEmptyInstance() => create();
-  static $pb.PbList<RequestMetadata> createRepeated() => $pb.PbList<RequestMetadata>();
+  static $pb.PbList<RequestMetadata> createRepeated() =>
+      $pb.PbList<RequestMetadata>();
   @$core.pragma('dart2js:noInline')
-  static RequestMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestMetadata>(create);
+  static RequestMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RequestMetadata>(create);
   static RequestMetadata? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -232,33 +247,48 @@ class Session extends $pb.GeneratedMessage {
     if (expiresAt != null) result.expiresAt = expiresAt;
     if (invalidatedAt != null) result.invalidatedAt = invalidatedAt;
     if (creationMetadata != null) result.creationMetadata = creationMetadata;
-    if (invalidationMetadata != null) result.invalidationMetadata = invalidationMetadata;
+    if (invalidationMetadata != null)
+      result.invalidationMetadata = invalidationMetadata;
     if (lastUsedAt != null) result.lastUsedAt = lastUsedAt;
     return result;
   }
 
   Session._();
 
-  factory Session.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Session.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Session.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Session.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Session', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.sessions.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Session',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.sessions.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'ownerId')
     ..aOS(3, _omitFieldNames ? '' : 'tenantId')
-    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'expiresAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'invalidatedAt', subBuilder: $0.Timestamp.create)
-    ..aOM<RequestMetadata>(7, _omitFieldNames ? '' : 'creationMetadata', subBuilder: RequestMetadata.create)
-    ..aOM<RequestMetadata>(8, _omitFieldNames ? '' : 'invalidationMetadata', subBuilder: RequestMetadata.create)
-    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'lastUsedAt', subBuilder: $0.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'invalidatedAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<RequestMetadata>(7, _omitFieldNames ? '' : 'creationMetadata',
+        subBuilder: RequestMetadata.create)
+    ..aOM<RequestMetadata>(8, _omitFieldNames ? '' : 'invalidationMetadata',
+        subBuilder: RequestMetadata.create)
+    ..aOM<$0.Timestamp>(9, _omitFieldNames ? '' : 'lastUsedAt',
+        subBuilder: $0.Timestamp.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Session clone() => Session()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Session copyWith(void Function(Session) updates) => super.copyWith((message) => updates(message as Session)) as Session;
+  Session copyWith(void Function(Session) updates) =>
+      super.copyWith((message) => updates(message as Session)) as Session;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -269,7 +299,8 @@ class Session extends $pb.GeneratedMessage {
   Session createEmptyInstance() => create();
   static $pb.PbList<Session> createRepeated() => $pb.PbList<Session>();
   @$core.pragma('dart2js:noInline')
-  static Session getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Session>(create);
+  static Session getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Session>(create);
   static Session? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -366,6 +397,7 @@ class Session extends $pb.GeneratedMessage {
   $0.Timestamp ensureLastUsedAt() => $_ensure(8);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

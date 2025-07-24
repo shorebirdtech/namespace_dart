@@ -15,13 +15,23 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class RequestMetadata_UaDeviceKind extends $pb.ProtobufEnum {
-  static const RequestMetadata_UaDeviceKind UA_DEVICE_KIND_UNKNOWN = RequestMetadata_UaDeviceKind._(0, _omitEnumNames ? '' : 'UA_DEVICE_KIND_UNKNOWN');
-  static const RequestMetadata_UaDeviceKind UA_DEVICE_MOBILE = RequestMetadata_UaDeviceKind._(1, _omitEnumNames ? '' : 'UA_DEVICE_MOBILE');
-  static const RequestMetadata_UaDeviceKind UA_DEVICE_TABLET = RequestMetadata_UaDeviceKind._(2, _omitEnumNames ? '' : 'UA_DEVICE_TABLET');
-  static const RequestMetadata_UaDeviceKind UA_DEVICE_DESKTOP = RequestMetadata_UaDeviceKind._(3, _omitEnumNames ? '' : 'UA_DEVICE_DESKTOP');
-  static const RequestMetadata_UaDeviceKind UA_DEVICE_BOT = RequestMetadata_UaDeviceKind._(4, _omitEnumNames ? '' : 'UA_DEVICE_BOT');
+  static const RequestMetadata_UaDeviceKind UA_DEVICE_KIND_UNKNOWN =
+      RequestMetadata_UaDeviceKind._(
+          0, _omitEnumNames ? '' : 'UA_DEVICE_KIND_UNKNOWN');
+  static const RequestMetadata_UaDeviceKind UA_DEVICE_MOBILE =
+      RequestMetadata_UaDeviceKind._(
+          1, _omitEnumNames ? '' : 'UA_DEVICE_MOBILE');
+  static const RequestMetadata_UaDeviceKind UA_DEVICE_TABLET =
+      RequestMetadata_UaDeviceKind._(
+          2, _omitEnumNames ? '' : 'UA_DEVICE_TABLET');
+  static const RequestMetadata_UaDeviceKind UA_DEVICE_DESKTOP =
+      RequestMetadata_UaDeviceKind._(
+          3, _omitEnumNames ? '' : 'UA_DEVICE_DESKTOP');
+  static const RequestMetadata_UaDeviceKind UA_DEVICE_BOT =
+      RequestMetadata_UaDeviceKind._(4, _omitEnumNames ? '' : 'UA_DEVICE_BOT');
 
-  static const $core.List<RequestMetadata_UaDeviceKind> values = <RequestMetadata_UaDeviceKind> [
+  static const $core.List<RequestMetadata_UaDeviceKind> values =
+      <RequestMetadata_UaDeviceKind>[
     UA_DEVICE_KIND_UNKNOWN,
     UA_DEVICE_MOBILE,
     UA_DEVICE_TABLET,
@@ -29,11 +39,13 @@ class RequestMetadata_UaDeviceKind extends $pb.ProtobufEnum {
     UA_DEVICE_BOT,
   ];
 
-  static final $core.List<RequestMetadata_UaDeviceKind?> _byValue = $pb.ProtobufEnum.$_initByValueList(values, 4);
-  static RequestMetadata_UaDeviceKind? valueOf($core.int value) =>  value < 0 || value >= _byValue.length ? null : _byValue[value];
+  static final $core.List<RequestMetadata_UaDeviceKind?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 4);
+  static RequestMetadata_UaDeviceKind? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const RequestMetadata_UaDeviceKind._(super.value, super.name);
 }
 
-
-const $core.bool _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

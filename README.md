@@ -1,6 +1,6 @@
 # Dart bindings for namespace.so
 
-To update run `buf generate`
+To update, run `./buf_gen.sh`
 
 You will need to install `buf` first:
 `brew install bufbuild/buf/buf`

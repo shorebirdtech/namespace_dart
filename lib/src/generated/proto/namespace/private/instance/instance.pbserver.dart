@@ -22,23 +22,29 @@ import 'instance.pbjson.dart';
 export 'instance.pb.dart';
 
 abstract class InstanceServiceBase extends $pb.GeneratedService {
-  $async.Future<$0.Empty> addAttachment($pb.ServerContext ctx, $1.AddAttachmentRequest request);
+  $async.Future<$0.Empty> addAttachment(
+      $pb.ServerContext ctx, $1.AddAttachmentRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'AddAttachment': return $1.AddAttachmentRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'AddAttachment':
+        return $1.AddAttachmentRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'AddAttachment': return addAttachment(ctx, request as $1.AddAttachmentRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'AddAttachment':
+        return addAttachment(ctx, request as $1.AddAttachmentRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => InstanceServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => InstanceServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => InstanceServiceBase$messageJson;
 }
-

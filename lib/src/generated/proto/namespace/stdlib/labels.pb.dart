@@ -34,19 +34,27 @@ class Label extends $pb.GeneratedMessage {
 
   Label._();
 
-  factory Label.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Label.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Label.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Label.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Label', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Label',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Label clone() => Label()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Label copyWith(void Function(Label) updates) => super.copyWith((message) => updates(message as Label)) as Label;
+  Label copyWith(void Function(Label) updates) =>
+      super.copyWith((message) => updates(message as Label)) as Label;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -57,7 +65,8 @@ class Label extends $pb.GeneratedMessage {
   Label createEmptyInstance() => create();
   static $pb.PbList<Label> createRepeated() => $pb.PbList<Label>();
   @$core.pragma('dart2js:noInline')
-  static Label getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Label>(create);
+  static Label getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Label>(create);
   static Label? _defaultInstance;
 
   /// A name is an string up to 63 bytes that matches the regular expression `[a-zA-Z0-9][a-zA-Z0-9-_.]*`.
@@ -96,20 +105,33 @@ class LabelFilterEntry extends $pb.GeneratedMessage {
 
   LabelFilterEntry._();
 
-  factory LabelFilterEntry.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory LabelFilterEntry.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory LabelFilterEntry.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory LabelFilterEntry.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelFilterEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LabelFilterEntry',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..e<LabelFilterEntry_LabelFilterOp>(3, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: LabelFilterEntry_LabelFilterOp.UNKNOWN, valueOf: LabelFilterEntry_LabelFilterOp.valueOf, enumValues: LabelFilterEntry_LabelFilterOp.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<LabelFilterEntry_LabelFilterOp>(
+        3, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE,
+        defaultOrMaker: LabelFilterEntry_LabelFilterOp.UNKNOWN,
+        valueOf: LabelFilterEntry_LabelFilterOp.valueOf,
+        enumValues: LabelFilterEntry_LabelFilterOp.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LabelFilterEntry clone() => LabelFilterEntry()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LabelFilterEntry copyWith(void Function(LabelFilterEntry) updates) => super.copyWith((message) => updates(message as LabelFilterEntry)) as LabelFilterEntry;
+  LabelFilterEntry copyWith(void Function(LabelFilterEntry) updates) =>
+      super.copyWith((message) => updates(message as LabelFilterEntry))
+          as LabelFilterEntry;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -118,9 +140,11 @@ class LabelFilterEntry extends $pb.GeneratedMessage {
   static LabelFilterEntry create() => LabelFilterEntry._();
   @$core.override
   LabelFilterEntry createEmptyInstance() => create();
-  static $pb.PbList<LabelFilterEntry> createRepeated() => $pb.PbList<LabelFilterEntry>();
+  static $pb.PbList<LabelFilterEntry> createRepeated() =>
+      $pb.PbList<LabelFilterEntry>();
   @$core.pragma('dart2js:noInline')
-  static LabelFilterEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LabelFilterEntry>(create);
+  static LabelFilterEntry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LabelFilterEntry>(create);
   static LabelFilterEntry? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -151,6 +175,7 @@ class LabelFilterEntry extends $pb.GeneratedMessage {
   void clearOp() => $_clearField(3);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

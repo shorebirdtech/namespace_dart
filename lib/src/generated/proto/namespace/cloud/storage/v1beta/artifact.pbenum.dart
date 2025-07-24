@@ -15,36 +15,47 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class ListArtifactsRequest_OrderBy extends $pb.ProtobufEnum {
-  static const ListArtifactsRequest_OrderBy ORDER_BY_UNKNOWN = ListArtifactsRequest_OrderBy._(0, _omitEnumNames ? '' : 'ORDER_BY_UNKNOWN');
-  static const ListArtifactsRequest_OrderBy CreatedAt_Desc = ListArtifactsRequest_OrderBy._(1, _omitEnumNames ? '' : 'CreatedAt_Desc');
+  static const ListArtifactsRequest_OrderBy ORDER_BY_UNKNOWN =
+      ListArtifactsRequest_OrderBy._(
+          0, _omitEnumNames ? '' : 'ORDER_BY_UNKNOWN');
+  static const ListArtifactsRequest_OrderBy CreatedAt_Desc =
+      ListArtifactsRequest_OrderBy._(1, _omitEnumNames ? '' : 'CreatedAt_Desc');
 
-  static const $core.List<ListArtifactsRequest_OrderBy> values = <ListArtifactsRequest_OrderBy> [
+  static const $core.List<ListArtifactsRequest_OrderBy> values =
+      <ListArtifactsRequest_OrderBy>[
     ORDER_BY_UNKNOWN,
     CreatedAt_Desc,
   ];
 
-  static final $core.List<ListArtifactsRequest_OrderBy?> _byValue = $pb.ProtobufEnum.$_initByValueList(values, 1);
-  static ListArtifactsRequest_OrderBy? valueOf($core.int value) =>  value < 0 || value >= _byValue.length ? null : _byValue[value];
+  static final $core.List<ListArtifactsRequest_OrderBy?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 1);
+  static ListArtifactsRequest_OrderBy? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const ListArtifactsRequest_OrderBy._(super.value, super.name);
 }
 
 class Artifact_Status extends $pb.ProtobufEnum {
-  static const Artifact_Status STATE_UNKNOWN = Artifact_Status._(0, _omitEnumNames ? '' : 'STATE_UNKNOWN');
-  static const Artifact_Status LIVE = Artifact_Status._(1, _omitEnumNames ? '' : 'LIVE');
-  static const Artifact_Status EXPIRED = Artifact_Status._(2, _omitEnumNames ? '' : 'EXPIRED');
+  static const Artifact_Status STATE_UNKNOWN =
+      Artifact_Status._(0, _omitEnumNames ? '' : 'STATE_UNKNOWN');
+  static const Artifact_Status LIVE =
+      Artifact_Status._(1, _omitEnumNames ? '' : 'LIVE');
+  static const Artifact_Status EXPIRED =
+      Artifact_Status._(2, _omitEnumNames ? '' : 'EXPIRED');
 
-  static const $core.List<Artifact_Status> values = <Artifact_Status> [
+  static const $core.List<Artifact_Status> values = <Artifact_Status>[
     STATE_UNKNOWN,
     LIVE,
     EXPIRED,
   ];
 
-  static final $core.List<Artifact_Status?> _byValue = $pb.ProtobufEnum.$_initByValueList(values, 2);
-  static Artifact_Status? valueOf($core.int value) =>  value < 0 || value >= _byValue.length ? null : _byValue[value];
+  static final $core.List<Artifact_Status?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
+  static Artifact_Status? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const Artifact_Status._(super.value, super.name);
 }
 
-
-const $core.bool _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

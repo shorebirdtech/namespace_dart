@@ -21,23 +21,29 @@ import 'tokens.pbjson.dart';
 export 'tokens.pb.dart';
 
 abstract class TokenServiceBase extends $pb.GeneratedService {
-  $async.Future<$0.IssueIdTokenResponse> issueIdToken($pb.ServerContext ctx, $0.IssueIdTokenRequest request);
+  $async.Future<$0.IssueIdTokenResponse> issueIdToken(
+      $pb.ServerContext ctx, $0.IssueIdTokenRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'IssueIdToken': return $0.IssueIdTokenRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'IssueIdToken':
+        return $0.IssueIdTokenRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'IssueIdToken': return issueIdToken(ctx, request as $0.IssueIdTokenRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'IssueIdToken':
+        return issueIdToken(ctx, request as $0.IssueIdTokenRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => TokenServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => TokenServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => TokenServiceBase$messageJson;
 }
-

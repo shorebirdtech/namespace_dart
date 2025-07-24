@@ -24,7 +24,7 @@ import "tokens.connect.spec.dart" as specs;
 /// ```
 /// Authorization: Bearer {token}
 /// ```
-extension type TokenServiceClient (connect.Transport _transport) {
+extension type TokenServiceClient(connect.Transport _transport) {
   /// Exchange a Namespace tenant token for an OIDC token for identity federation.
   /// The generated token identifies Namespace tenants with the provided target audience.
   /// ### Errors

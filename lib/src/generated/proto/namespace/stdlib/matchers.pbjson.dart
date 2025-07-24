@@ -19,7 +19,14 @@ const StringMatcher$json = {
   '1': 'StringMatcher',
   '2': [
     {'1': 'values', '3': 1, '4': 3, '5': 9, '10': 'values'},
-    {'1': 'op', '3': 2, '4': 1, '5': 14, '6': '.namespace.stdlib.StringMatcher.Operator', '10': 'op'},
+    {
+      '1': 'op',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.stdlib.StringMatcher.Operator',
+      '10': 'op'
+    },
   ],
   '4': [StringMatcher_Operator$json],
 };
@@ -40,3 +47,31 @@ final $typed_data.Uint8List stringMatcherDescriptor = $convert.base64Decode(
     'FtZXNwYWNlLnN0ZGxpYi5TdHJpbmdNYXRjaGVyLk9wZXJhdG9yUgJvcCI7CghPcGVyYXRvchIU'
     'ChBPUEVSQVRPUl9VTktOT1dOEAASDQoJSVNfQU5ZX09GEAESCgoGSVNfTk9UEAI=');
 
+@$core.Deprecated('Use timestampRangeDescriptor instead')
+const TimestampRange$json = {
+  '1': 'TimestampRange',
+  '2': [
+    {
+      '1': 'after',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'after'
+    },
+    {
+      '1': 'before',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'before'
+    },
+  ],
+};
+
+/// Descriptor for `TimestampRange`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List timestampRangeDescriptor = $convert.base64Decode(
+    'Cg5UaW1lc3RhbXBSYW5nZRIwCgVhZnRlchgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3'
+    'RhbXBSBWFmdGVyEjIKBmJlZm9yZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBS'
+    'BmJlZm9yZQ==');

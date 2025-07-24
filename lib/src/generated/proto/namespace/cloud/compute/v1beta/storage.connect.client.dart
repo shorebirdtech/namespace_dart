@@ -26,9 +26,10 @@ import "../../../../../google/protobuf/empty.pb.dart" as googleprotobufempty;
 /// may also constrain the set of actions that the caller may do.
 /// A *tenant token* can be obtained using the
 /// [IAM API](https://buf.build/namespace/cloud/docs/main:namespace.cloud.iam.v1beta).
-extension type StorageServiceClient (connect.Transport _transport) {
+extension type StorageServiceClient(connect.Transport _transport) {
   /// Returns a Cache Volume.
-  Future<protonamespacecloudcomputev1betastorage.GetCacheVolumeResponse> getCacheVolume(
+  Future<protonamespacecloudcomputev1betastorage.GetCacheVolumeResponse>
+  getCacheVolume(
     protonamespacecloudcomputev1betastorage.GetCacheVolumeRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -46,7 +47,8 @@ extension type StorageServiceClient (connect.Transport _transport) {
   }
 
   /// Returns a list of all Cache Volumes used by this tenant.
-  Future<protonamespacecloudcomputev1betastorage.ListCacheVolumesResponse> listCacheVolumes(
+  Future<protonamespacecloudcomputev1betastorage.ListCacheVolumesResponse>
+  listCacheVolumes(
     protonamespacecloudcomputev1betastorage.ListCacheVolumesRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -64,7 +66,8 @@ extension type StorageServiceClient (connect.Transport _transport) {
   }
 
   /// Produces a summary for a Cache Volume tag used by this tenant.
-  Future<protonamespacecloudcomputev1betastorage.GetVolumeTagSummaryResponse> getVolumeTagSummary(
+  Future<protonamespacecloudcomputev1betastorage.GetVolumeTagSummaryResponse>
+  getVolumeTagSummary(
     protonamespacecloudcomputev1betastorage.GetVolumeTagSummaryRequest input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
@@ -82,8 +85,10 @@ extension type StorageServiceClient (connect.Transport _transport) {
   }
 
   /// Produces a summary for each Cache Volume tag used by this tenant.
-  Future<protonamespacecloudcomputev1betastorage.ListVolumeTagSummariesResponse> listVolumeTagSummaries(
-    protonamespacecloudcomputev1betastorage.ListVolumeTagSummariesRequest input, {
+  Future<protonamespacecloudcomputev1betastorage.ListVolumeTagSummariesResponse>
+  listVolumeTagSummaries(
+    protonamespacecloudcomputev1betastorage.ListVolumeTagSummariesRequest
+    input, {
     connect.Headers? headers,
     connect.AbortSignal? signal,
     Function(connect.Headers)? onHeader,
