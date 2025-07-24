@@ -19,11 +19,39 @@ const TimeSeries$json = {
   '1': 'TimeSeries',
   '2': [
     {'1': 'timestamps', '3': 1, '4': 3, '5': 3, '10': 'timestamps'},
-    {'1': 'doubles', '3': 2, '4': 3, '5': 11, '6': '.namespace.stdlib.TimeSeries.DoublesEntry', '10': 'doubles'},
-    {'1': 'integers', '3': 3, '4': 3, '5': 11, '6': '.namespace.stdlib.TimeSeries.IntegersEntry', '10': 'integers'},
-    {'1': 'strings', '3': 4, '4': 3, '5': 11, '6': '.namespace.stdlib.TimeSeries.StringsEntry', '10': 'strings'},
+    {
+      '1': 'doubles',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.DoublesEntry',
+      '10': 'doubles'
+    },
+    {
+      '1': 'integers',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.IntegersEntry',
+      '10': 'integers'
+    },
+    {
+      '1': 'strings',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.StringsEntry',
+      '10': 'strings'
+    },
   ],
-  '3': [TimeSeries_DoublesEntry$json, TimeSeries_IntegersEntry$json, TimeSeries_StringsEntry$json, TimeSeries_Doubles$json, TimeSeries_Integers$json, TimeSeries_Strings$json],
+  '3': [
+    TimeSeries_DoublesEntry$json,
+    TimeSeries_IntegersEntry$json,
+    TimeSeries_StringsEntry$json,
+    TimeSeries_Doubles$json,
+    TimeSeries_Integers$json,
+    TimeSeries_Strings$json
+  ],
 };
 
 @$core.Deprecated('Use timeSeriesDescriptor instead')
@@ -31,7 +59,14 @@ const TimeSeries_DoublesEntry$json = {
   '1': 'DoublesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.namespace.stdlib.TimeSeries.Doubles', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.Doubles',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -41,7 +76,14 @@ const TimeSeries_IntegersEntry$json = {
   '1': 'IntegersEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.namespace.stdlib.TimeSeries.Integers', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.Integers',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -51,7 +93,14 @@ const TimeSeries_StringsEntry$json = {
   '1': 'StringsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.namespace.stdlib.TimeSeries.Strings', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.stdlib.TimeSeries.Strings',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -94,4 +143,3 @@ final $typed_data.Uint8List timeSeriesDescriptor = $convert.base64Decode(
     'gLMiQubmFtZXNwYWNlLnN0ZGxpYi5UaW1lU2VyaWVzLlN0cmluZ3NSBXZhbHVlOgI4ARohCgdE'
     'b3VibGVzEhYKBnZhbHVlcxgBIAMoAVIGdmFsdWVzGiIKCEludGVnZXJzEhYKBnZhbHVlcxgBIA'
     'MoA1IGdmFsdWVzGiEKB1N0cmluZ3MSFgoGdmFsdWVzGAEgAygJUgZ2YWx1ZXM=');
-

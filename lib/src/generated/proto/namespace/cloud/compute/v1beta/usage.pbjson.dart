@@ -18,8 +18,22 @@ import 'dart:typed_data' as $typed_data;
 const GetUsageRequest$json = {
   '1': 'GetUsageRequest',
   '2': [
-    {'1': 'period_start', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.GetUsageRequest.Date', '10': 'periodStart'},
-    {'1': 'period_end', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.GetUsageRequest.Date', '10': 'periodEnd'},
+    {
+      '1': 'period_start',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.GetUsageRequest.Date',
+      '10': 'periodStart'
+    },
+    {
+      '1': 'period_end',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.GetUsageRequest.Date',
+      '10': 'periodEnd'
+    },
   ],
   '3': [GetUsageRequest_Date$json],
 };
@@ -46,8 +60,22 @@ final $typed_data.Uint8List getUsageRequestDescriptor = $convert.base64Decode(
 const GetUsageResponse$json = {
   '1': 'GetUsageResponse',
   '2': [
-    {'1': 'total', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsageRecord.Usage', '10': 'total'},
-    {'1': 'per_day', '3': 2, '4': 3, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsageRecord', '10': 'perDay'},
+    {
+      '1': 'total',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsageRecord.Usage',
+      '10': 'total'
+    },
+    {
+      '1': 'per_day',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsageRecord',
+      '10': 'perDay'
+    },
   ],
 };
 
@@ -64,17 +92,42 @@ const UsageRecord$json = {
     {'1': 'year', '3': 1, '4': 1, '5': 5, '10': 'year'},
     {'1': 'month', '3': 2, '4': 1, '5': 5, '10': 'month'},
     {'1': 'day', '3': 3, '4': 1, '5': 5, '10': 'day'},
-    {'1': 'total', '3': 4, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsageRecord.Usage', '10': 'total'},
+    {
+      '1': 'total',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsageRecord.Usage',
+      '10': 'total'
+    },
   ],
-  '3': [UsageRecord_Usage$json, UsageRecord_Minutes$json, UsageRecord_Builds$json],
+  '3': [
+    UsageRecord_Usage$json,
+    UsageRecord_Minutes$json,
+    UsageRecord_Builds$json
+  ],
 };
 
 @$core.Deprecated('Use usageRecordDescriptor instead')
 const UsageRecord_Usage$json = {
   '1': 'Usage',
   '2': [
-    {'1': 'instance_minutes', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsageRecord.Minutes', '10': 'instanceMinutes'},
-    {'1': 'builds', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsageRecord.Builds', '10': 'builds'},
+    {
+      '1': 'instance_minutes',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsageRecord.Minutes',
+      '10': 'instanceMinutes'
+    },
+    {
+      '1': 'builds',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsageRecord.Builds',
+      '10': 'builds'
+    },
   ],
 };
 
@@ -112,17 +165,24 @@ final $typed_data.Uint8List usageRecordDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> UsageServiceBase$json = {
   '1': 'UsageService',
   '2': [
-    {'1': 'GetUsage', '2': '.namespace.cloud.compute.v1beta.GetUsageRequest', '3': '.namespace.cloud.compute.v1beta.GetUsageResponse'},
+    {
+      '1': 'GetUsage',
+      '2': '.namespace.cloud.compute.v1beta.GetUsageRequest',
+      '3': '.namespace.cloud.compute.v1beta.GetUsageResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use usageServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> UsageServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    UsageServiceBase$messageJson = {
   '.namespace.cloud.compute.v1beta.GetUsageRequest': GetUsageRequest$json,
-  '.namespace.cloud.compute.v1beta.GetUsageRequest.Date': GetUsageRequest_Date$json,
+  '.namespace.cloud.compute.v1beta.GetUsageRequest.Date':
+      GetUsageRequest_Date$json,
   '.namespace.cloud.compute.v1beta.GetUsageResponse': GetUsageResponse$json,
   '.namespace.cloud.compute.v1beta.UsageRecord.Usage': UsageRecord_Usage$json,
-  '.namespace.cloud.compute.v1beta.UsageRecord.Minutes': UsageRecord_Minutes$json,
+  '.namespace.cloud.compute.v1beta.UsageRecord.Minutes':
+      UsageRecord_Minutes$json,
   '.namespace.cloud.compute.v1beta.UsageRecord.Builds': UsageRecord_Builds$json,
   '.namespace.cloud.compute.v1beta.UsageRecord': UsageRecord$json,
 };
@@ -132,4 +192,3 @@ final $typed_data.Uint8List usageServiceDescriptor = $convert.base64Decode(
     'CgxVc2FnZVNlcnZpY2USbQoIR2V0VXNhZ2USLy5uYW1lc3BhY2UuY2xvdWQuY29tcHV0ZS52MW'
     'JldGEuR2V0VXNhZ2VSZXF1ZXN0GjAubmFtZXNwYWNlLmNsb3VkLmNvbXB1dGUudjFiZXRhLkdl'
     'dFVzYWdlUmVzcG9uc2U=');
-

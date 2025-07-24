@@ -22,35 +22,53 @@ import 'service.pbjson.dart';
 export 'service.pb.dart';
 
 abstract class DevBoxServiceBase extends $pb.GeneratedService {
-  $async.Future<$2.CreateDevBoxResponse> createDevBox($pb.ServerContext ctx, $2.CreateDevBoxRequest request);
-  $async.Future<$2.UpdateDevBoxResponse> updateDevBox($pb.ServerContext ctx, $2.UpdateDevBoxRequest request);
-  $async.Future<$1.Empty> deleteDevBox($pb.ServerContext ctx, $2.DeleteDevBoxRequest request);
-  $async.Future<$2.ListDevBoxesResponse> listDevBoxes($pb.ServerContext ctx, $2.ListDevBoxesRequest request);
-  $async.Future<$2.EnsureDevBoxResponse> ensureDevBox($pb.ServerContext ctx, $2.EnsureDevBoxRequest request);
+  $async.Future<$2.CreateDevBoxResponse> createDevBox(
+      $pb.ServerContext ctx, $2.CreateDevBoxRequest request);
+  $async.Future<$2.UpdateDevBoxResponse> updateDevBox(
+      $pb.ServerContext ctx, $2.UpdateDevBoxRequest request);
+  $async.Future<$1.Empty> deleteDevBox(
+      $pb.ServerContext ctx, $2.DeleteDevBoxRequest request);
+  $async.Future<$2.ListDevBoxesResponse> listDevBoxes(
+      $pb.ServerContext ctx, $2.ListDevBoxesRequest request);
+  $async.Future<$2.EnsureDevBoxResponse> ensureDevBox(
+      $pb.ServerContext ctx, $2.EnsureDevBoxRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'CreateDevBox': return $2.CreateDevBoxRequest();
-      case 'UpdateDevBox': return $2.UpdateDevBoxRequest();
-      case 'DeleteDevBox': return $2.DeleteDevBoxRequest();
-      case 'ListDevBoxes': return $2.ListDevBoxesRequest();
-      case 'EnsureDevBox': return $2.EnsureDevBoxRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'CreateDevBox':
+        return $2.CreateDevBoxRequest();
+      case 'UpdateDevBox':
+        return $2.UpdateDevBoxRequest();
+      case 'DeleteDevBox':
+        return $2.DeleteDevBoxRequest();
+      case 'ListDevBoxes':
+        return $2.ListDevBoxesRequest();
+      case 'EnsureDevBox':
+        return $2.EnsureDevBoxRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'CreateDevBox': return createDevBox(ctx, request as $2.CreateDevBoxRequest);
-      case 'UpdateDevBox': return updateDevBox(ctx, request as $2.UpdateDevBoxRequest);
-      case 'DeleteDevBox': return deleteDevBox(ctx, request as $2.DeleteDevBoxRequest);
-      case 'ListDevBoxes': return listDevBoxes(ctx, request as $2.ListDevBoxesRequest);
-      case 'EnsureDevBox': return ensureDevBox(ctx, request as $2.EnsureDevBoxRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'CreateDevBox':
+        return createDevBox(ctx, request as $2.CreateDevBoxRequest);
+      case 'UpdateDevBox':
+        return updateDevBox(ctx, request as $2.UpdateDevBoxRequest);
+      case 'DeleteDevBox':
+        return deleteDevBox(ctx, request as $2.DeleteDevBoxRequest);
+      case 'ListDevBoxes':
+        return listDevBoxes(ctx, request as $2.ListDevBoxesRequest);
+      case 'EnsureDevBox':
+        return ensureDevBox(ctx, request as $2.EnsureDevBoxRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => DevBoxServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => DevBoxServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => DevBoxServiceBase$messageJson;
 }
-

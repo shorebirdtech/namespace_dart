@@ -21,7 +21,14 @@ import '../../../../../google/protobuf/timestamp.pbjson.dart' as $0;
 const SetKnownImagesRequest$json = {
   '1': 'SetKnownImagesRequest',
   '2': [
-    {'1': 'known_images', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.compute.v1beta.KnownImage', '10': 'knownImages'},
+    {
+      '1': 'known_images',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.KnownImage',
+      '10': 'knownImages'
+    },
   ],
 };
 
@@ -34,21 +41,36 @@ final $typed_data.Uint8List setKnownImagesRequestDescriptor = $convert.base64Dec
 const GetKnownImagesResponse$json = {
   '1': 'GetKnownImagesResponse',
   '2': [
-    {'1': 'images', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.compute.v1beta.ImageState', '10': 'images'},
+    {
+      '1': 'images',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.ImageState',
+      '10': 'images'
+    },
   ],
 };
 
 /// Descriptor for `GetKnownImagesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getKnownImagesResponseDescriptor = $convert.base64Decode(
-    'ChZHZXRLbm93bkltYWdlc1Jlc3BvbnNlEkIKBmltYWdlcxgBIAMoCzIqLm5hbWVzcGFjZS5jbG'
-    '91ZC5jb21wdXRlLnYxYmV0YS5JbWFnZVN0YXRlUgZpbWFnZXM=');
+final $typed_data.Uint8List getKnownImagesResponseDescriptor =
+    $convert.base64Decode(
+        'ChZHZXRLbm93bkltYWdlc1Jlc3BvbnNlEkIKBmltYWdlcxgBIAMoCzIqLm5hbWVzcGFjZS5jbG'
+        '91ZC5jb21wdXRlLnYxYmV0YS5JbWFnZVN0YXRlUgZpbWFnZXM=');
 
 @$core.Deprecated('Use knownImageDescriptor instead')
 const KnownImage$json = {
   '1': 'KnownImage',
   '2': [
     {'1': 'image_ref', '3': 1, '4': 1, '5': 9, '10': 'imageRef'},
-    {'1': 'purpose', '3': 2, '4': 1, '5': 14, '6': '.namespace.cloud.compute.v1beta.KnownImage.Purpose', '10': 'purpose'},
+    {
+      '1': 'purpose',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.compute.v1beta.KnownImage.Purpose',
+      '10': 'purpose'
+    },
   ],
   '4': [KnownImage_Purpose$json],
 };
@@ -73,9 +95,30 @@ final $typed_data.Uint8List knownImageDescriptor = $convert.base64Decode(
 const ImageState$json = {
   '1': 'ImageState',
   '2': [
-    {'1': 'known_image', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.KnownImage', '10': 'knownImage'},
-    {'1': 'known_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'knownAt'},
-    {'1': 'distribution_state', '3': 3, '4': 1, '5': 14, '6': '.namespace.cloud.compute.v1beta.ImageState.DistributionState', '10': 'distributionState'},
+    {
+      '1': 'known_image',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.KnownImage',
+      '10': 'knownImage'
+    },
+    {
+      '1': 'known_at',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'knownAt'
+    },
+    {
+      '1': 'distribution_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.compute.v1beta.ImageState.DistributionState',
+      '10': 'distributionState'
+    },
   ],
   '4': [ImageState_DistributionState$json],
 };
@@ -104,17 +147,28 @@ final $typed_data.Uint8List imageStateDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> ManagementServiceBase$json = {
   '1': 'ManagementService',
   '2': [
-    {'1': 'SetKnownImages', '2': '.namespace.cloud.compute.v1beta.SetKnownImagesRequest', '3': '.google.protobuf.Empty'},
-    {'1': 'GetKnownImages', '2': '.google.protobuf.Empty', '3': '.namespace.cloud.compute.v1beta.GetKnownImagesResponse'},
+    {
+      '1': 'SetKnownImages',
+      '2': '.namespace.cloud.compute.v1beta.SetKnownImagesRequest',
+      '3': '.google.protobuf.Empty'
+    },
+    {
+      '1': 'GetKnownImages',
+      '2': '.google.protobuf.Empty',
+      '3': '.namespace.cloud.compute.v1beta.GetKnownImagesResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use managementServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> ManagementServiceBase$messageJson = {
-  '.namespace.cloud.compute.v1beta.SetKnownImagesRequest': SetKnownImagesRequest$json,
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    ManagementServiceBase$messageJson = {
+  '.namespace.cloud.compute.v1beta.SetKnownImagesRequest':
+      SetKnownImagesRequest$json,
   '.namespace.cloud.compute.v1beta.KnownImage': KnownImage$json,
   '.google.protobuf.Empty': $1.Empty$json,
-  '.namespace.cloud.compute.v1beta.GetKnownImagesResponse': GetKnownImagesResponse$json,
+  '.namespace.cloud.compute.v1beta.GetKnownImagesResponse':
+      GetKnownImagesResponse$json,
   '.namespace.cloud.compute.v1beta.ImageState': ImageState$json,
   '.google.protobuf.Timestamp': $0.Timestamp$json,
 };
@@ -125,4 +179,3 @@ final $typed_data.Uint8List managementServiceDescriptor = $convert.base64Decode(
     '5jb21wdXRlLnYxYmV0YS5TZXRLbm93bkltYWdlc1JlcXVlc3QaFi5nb29nbGUucHJvdG9idWYu'
     'RW1wdHkSYAoOR2V0S25vd25JbWFnZXMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaNi5uYW1lc3'
     'BhY2UuY2xvdWQuY29tcHV0ZS52MWJldGEuR2V0S25vd25JbWFnZXNSZXNwb25zZQ==');
-

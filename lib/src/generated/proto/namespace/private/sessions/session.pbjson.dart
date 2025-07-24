@@ -25,7 +25,14 @@ const RequestMetadata$json = {
     {'1': 'ua_os', '3': 6, '4': 1, '5': 9, '10': 'uaOs'},
     {'1': 'ua_os_version', '3': 7, '4': 1, '5': 9, '10': 'uaOsVersion'},
     {'1': 'ua_device', '3': 8, '4': 1, '5': 9, '10': 'uaDevice'},
-    {'1': 'ua_device_kind', '3': 9, '4': 1, '5': 14, '6': '.namespace.private.sessions.v1beta.RequestMetadata.UaDeviceKind', '10': 'uaDeviceKind'},
+    {
+      '1': 'ua_device_kind',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.private.sessions.v1beta.RequestMetadata.UaDeviceKind',
+      '10': 'uaDeviceKind'
+    },
     {'1': 'ip_address', '3': 3, '4': 1, '5': 9, '10': 'ipAddress'},
     {'1': 'ip_city_id', '3': 10, '4': 1, '5': 3, '10': 'ipCityId'},
     {'1': 'ip_city_en', '3': 11, '4': 1, '5': 9, '10': 'ipCityEn'},
@@ -69,12 +76,54 @@ const Session$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'owner_id', '3': 2, '4': 1, '5': 9, '10': 'ownerId'},
     {'1': 'tenant_id', '3': 3, '4': 1, '5': 9, '10': 'tenantId'},
-    {'1': 'created_at', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
-    {'1': 'expires_at', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
-    {'1': 'invalidated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'invalidatedAt'},
-    {'1': 'last_used_at', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastUsedAt'},
-    {'1': 'creation_metadata', '3': 7, '4': 1, '5': 11, '6': '.namespace.private.sessions.v1beta.RequestMetadata', '10': 'creationMetadata'},
-    {'1': 'invalidation_metadata', '3': 8, '4': 1, '5': 11, '6': '.namespace.private.sessions.v1beta.RequestMetadata', '10': 'invalidationMetadata'},
+    {
+      '1': 'created_at',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createdAt'
+    },
+    {
+      '1': 'expires_at',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
+    {
+      '1': 'invalidated_at',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'invalidatedAt'
+    },
+    {
+      '1': 'last_used_at',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastUsedAt'
+    },
+    {
+      '1': 'creation_metadata',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.sessions.v1beta.RequestMetadata',
+      '10': 'creationMetadata'
+    },
+    {
+      '1': 'invalidation_metadata',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.sessions.v1beta.RequestMetadata',
+      '10': 'invalidationMetadata'
+    },
   ],
 };
 
@@ -90,4 +139,3 @@ final $typed_data.Uint8List sessionDescriptor = $convert.base64Decode(
     'V0YS5SZXF1ZXN0TWV0YWRhdGFSEGNyZWF0aW9uTWV0YWRhdGESZwoVaW52YWxpZGF0aW9uX21l'
     'dGFkYXRhGAggASgLMjIubmFtZXNwYWNlLnByaXZhdGUuc2Vzc2lvbnMudjFiZXRhLlJlcXVlc3'
     'RNZXRhZGF0YVIUaW52YWxpZGF0aW9uTWV0YWRhdGE=');
-

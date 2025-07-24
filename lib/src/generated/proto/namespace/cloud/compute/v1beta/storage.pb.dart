@@ -35,18 +35,29 @@ class GetCacheVolumeRequest extends $pb.GeneratedMessage {
 
   GetCacheVolumeRequest._();
 
-  factory GetCacheVolumeRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetCacheVolumeRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetCacheVolumeRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetCacheVolumeRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCacheVolumeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetCacheVolumeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetCacheVolumeRequest clone() => GetCacheVolumeRequest()..mergeFromMessage(this);
+  GetCacheVolumeRequest clone() =>
+      GetCacheVolumeRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetCacheVolumeRequest copyWith(void Function(GetCacheVolumeRequest) updates) => super.copyWith((message) => updates(message as GetCacheVolumeRequest)) as GetCacheVolumeRequest;
+  GetCacheVolumeRequest copyWith(
+          void Function(GetCacheVolumeRequest) updates) =>
+      super.copyWith((message) => updates(message as GetCacheVolumeRequest))
+          as GetCacheVolumeRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -55,9 +66,11 @@ class GetCacheVolumeRequest extends $pb.GeneratedMessage {
   static GetCacheVolumeRequest create() => GetCacheVolumeRequest._();
   @$core.override
   GetCacheVolumeRequest createEmptyInstance() => create();
-  static $pb.PbList<GetCacheVolumeRequest> createRepeated() => $pb.PbList<GetCacheVolumeRequest>();
+  static $pb.PbList<GetCacheVolumeRequest> createRepeated() =>
+      $pb.PbList<GetCacheVolumeRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetCacheVolumeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetCacheVolumeRequest>(create);
+  static GetCacheVolumeRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetCacheVolumeRequest>(create);
   static GetCacheVolumeRequest? _defaultInstance;
 
   /// The unique identifier of this cache volume instance. Within a single cache volume tag,
@@ -83,18 +96,30 @@ class GetCacheVolumeResponse extends $pb.GeneratedMessage {
 
   GetCacheVolumeResponse._();
 
-  factory GetCacheVolumeResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetCacheVolumeResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetCacheVolumeResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetCacheVolumeResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetCacheVolumeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<CacheVolume>(1, _omitFieldNames ? '' : 'cacheVolume', subBuilder: CacheVolume.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetCacheVolumeResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<CacheVolume>(1, _omitFieldNames ? '' : 'cacheVolume',
+        subBuilder: CacheVolume.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetCacheVolumeResponse clone() => GetCacheVolumeResponse()..mergeFromMessage(this);
+  GetCacheVolumeResponse clone() =>
+      GetCacheVolumeResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetCacheVolumeResponse copyWith(void Function(GetCacheVolumeResponse) updates) => super.copyWith((message) => updates(message as GetCacheVolumeResponse)) as GetCacheVolumeResponse;
+  GetCacheVolumeResponse copyWith(
+          void Function(GetCacheVolumeResponse) updates) =>
+      super.copyWith((message) => updates(message as GetCacheVolumeResponse))
+          as GetCacheVolumeResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -103,9 +128,11 @@ class GetCacheVolumeResponse extends $pb.GeneratedMessage {
   static GetCacheVolumeResponse create() => GetCacheVolumeResponse._();
   @$core.override
   GetCacheVolumeResponse createEmptyInstance() => create();
-  static $pb.PbList<GetCacheVolumeResponse> createRepeated() => $pb.PbList<GetCacheVolumeResponse>();
+  static $pb.PbList<GetCacheVolumeResponse> createRepeated() =>
+      $pb.PbList<GetCacheVolumeResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetCacheVolumeResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetCacheVolumeResponse>(create);
+  static GetCacheVolumeResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetCacheVolumeResponse>(create);
   static GetCacheVolumeResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -125,17 +152,28 @@ class ListCacheVolumesRequest extends $pb.GeneratedMessage {
 
   ListCacheVolumesRequest._();
 
-  factory ListCacheVolumesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListCacheVolumesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListCacheVolumesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListCacheVolumesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCacheVolumesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCacheVolumesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListCacheVolumesRequest clone() => ListCacheVolumesRequest()..mergeFromMessage(this);
+  ListCacheVolumesRequest clone() =>
+      ListCacheVolumesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListCacheVolumesRequest copyWith(void Function(ListCacheVolumesRequest) updates) => super.copyWith((message) => updates(message as ListCacheVolumesRequest)) as ListCacheVolumesRequest;
+  ListCacheVolumesRequest copyWith(
+          void Function(ListCacheVolumesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListCacheVolumesRequest))
+          as ListCacheVolumesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -144,9 +182,11 @@ class ListCacheVolumesRequest extends $pb.GeneratedMessage {
   static ListCacheVolumesRequest create() => ListCacheVolumesRequest._();
   @$core.override
   ListCacheVolumesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListCacheVolumesRequest> createRepeated() => $pb.PbList<ListCacheVolumesRequest>();
+  static $pb.PbList<ListCacheVolumesRequest> createRepeated() =>
+      $pb.PbList<ListCacheVolumesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListCacheVolumesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCacheVolumesRequest>(create);
+  static ListCacheVolumesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCacheVolumesRequest>(create);
   static ListCacheVolumesRequest? _defaultInstance;
 }
 
@@ -161,18 +201,31 @@ class ListCacheVolumesResponse extends $pb.GeneratedMessage {
 
   ListCacheVolumesResponse._();
 
-  factory ListCacheVolumesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListCacheVolumesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListCacheVolumesResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListCacheVolumesResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCacheVolumesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..pc<CacheVolume>(1, _omitFieldNames ? '' : 'cacheVolume', $pb.PbFieldType.PM, subBuilder: CacheVolume.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListCacheVolumesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..pc<CacheVolume>(
+        1, _omitFieldNames ? '' : 'cacheVolume', $pb.PbFieldType.PM,
+        subBuilder: CacheVolume.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListCacheVolumesResponse clone() => ListCacheVolumesResponse()..mergeFromMessage(this);
+  ListCacheVolumesResponse clone() =>
+      ListCacheVolumesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListCacheVolumesResponse copyWith(void Function(ListCacheVolumesResponse) updates) => super.copyWith((message) => updates(message as ListCacheVolumesResponse)) as ListCacheVolumesResponse;
+  ListCacheVolumesResponse copyWith(
+          void Function(ListCacheVolumesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListCacheVolumesResponse))
+          as ListCacheVolumesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -181,9 +234,11 @@ class ListCacheVolumesResponse extends $pb.GeneratedMessage {
   static ListCacheVolumesResponse create() => ListCacheVolumesResponse._();
   @$core.override
   ListCacheVolumesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListCacheVolumesResponse> createRepeated() => $pb.PbList<ListCacheVolumesResponse>();
+  static $pb.PbList<ListCacheVolumesResponse> createRepeated() =>
+      $pb.PbList<ListCacheVolumesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListCacheVolumesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListCacheVolumesResponse>(create);
+  static ListCacheVolumesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListCacheVolumesResponse>(create);
   static ListCacheVolumesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -207,21 +262,32 @@ class CacheVolume extends $pb.GeneratedMessage {
 
   CacheVolume._();
 
-  factory CacheVolume.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CacheVolume.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CacheVolume.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CacheVolume.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CacheVolume', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CacheVolume',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'tag')
-    ..aOM<VolumeMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: VolumeMetadata.create)
-    ..aOM<VolumeAttachment>(4, _omitFieldNames ? '' : 'attachment', subBuilder: VolumeAttachment.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<VolumeMetadata>(3, _omitFieldNames ? '' : 'metadata',
+        subBuilder: VolumeMetadata.create)
+    ..aOM<VolumeAttachment>(4, _omitFieldNames ? '' : 'attachment',
+        subBuilder: VolumeAttachment.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CacheVolume clone() => CacheVolume()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CacheVolume copyWith(void Function(CacheVolume) updates) => super.copyWith((message) => updates(message as CacheVolume)) as CacheVolume;
+  CacheVolume copyWith(void Function(CacheVolume) updates) =>
+      super.copyWith((message) => updates(message as CacheVolume))
+          as CacheVolume;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -232,7 +298,8 @@ class CacheVolume extends $pb.GeneratedMessage {
   CacheVolume createEmptyInstance() => create();
   static $pb.PbList<CacheVolume> createRepeated() => $pb.PbList<CacheVolume>();
   @$core.pragma('dart2js:noInline')
-  static CacheVolume getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CacheVolume>(create);
+  static CacheVolume getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CacheVolume>(create);
   static CacheVolume? _defaultInstance;
 
   /// The unique identifier of this cache volume instance. Within a single cache volume tag,
@@ -301,21 +368,36 @@ class VolumeMetadata extends $pb.GeneratedMessage {
 
   VolumeMetadata._();
 
-  factory VolumeMetadata.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory VolumeMetadata.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory VolumeMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VolumeMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'destroyedAt', subBuilder: $0.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VolumeMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$0.Timestamp>(1, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'destroyedAt',
+        subBuilder: $0.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'sizeMb', $pb.PbFieldType.OU3)
-    ..e<VolumeMetadata_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VolumeMetadata_State.STATE_UNKNOWN, valueOf: VolumeMetadata_State.valueOf, enumValues: VolumeMetadata_State.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<VolumeMetadata_State>(
+        4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: VolumeMetadata_State.STATE_UNKNOWN,
+        valueOf: VolumeMetadata_State.valueOf,
+        enumValues: VolumeMetadata_State.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VolumeMetadata clone() => VolumeMetadata()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VolumeMetadata copyWith(void Function(VolumeMetadata) updates) => super.copyWith((message) => updates(message as VolumeMetadata)) as VolumeMetadata;
+  VolumeMetadata copyWith(void Function(VolumeMetadata) updates) =>
+      super.copyWith((message) => updates(message as VolumeMetadata))
+          as VolumeMetadata;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -324,9 +406,11 @@ class VolumeMetadata extends $pb.GeneratedMessage {
   static VolumeMetadata create() => VolumeMetadata._();
   @$core.override
   VolumeMetadata createEmptyInstance() => create();
-  static $pb.PbList<VolumeMetadata> createRepeated() => $pb.PbList<VolumeMetadata>();
+  static $pb.PbList<VolumeMetadata> createRepeated() =>
+      $pb.PbList<VolumeMetadata>();
   @$core.pragma('dart2js:noInline')
-  static VolumeMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VolumeMetadata>(create);
+  static VolumeMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VolumeMetadata>(create);
   static VolumeMetadata? _defaultInstance;
 
   /// The timestamp of when the volume was created (in UTC).
@@ -378,52 +462,78 @@ class VolumeMetadata extends $pb.GeneratedMessage {
 class VolumeAttachment extends $pb.GeneratedMessage {
   factory VolumeAttachment({
     $core.String? attachedTo,
-  @$core.Deprecated('This field is deprecated.')
-    $0.Timestamp? lastAttachedAt,
-  @$core.Deprecated('This field is deprecated.')
-    $0.Timestamp? lastDetachedAt,
+    @$core.Deprecated('This field is deprecated.') $0.Timestamp? lastAttachedAt,
+    @$core.Deprecated('This field is deprecated.') $0.Timestamp? lastDetachedAt,
     $0.Timestamp? attachedAt,
     $core.int? usedMbWhenAttached,
     $0.Timestamp? detachedAt,
     $core.int? usedMbWhenDetached,
     ContainerImageCache? containerImageCache,
-    $core.Iterable<$core.MapEntry<$core.String, PathUtilization>>? pathUtilization,
+    $core.Iterable<$core.MapEntry<$core.String, PathUtilization>>?
+        pathUtilization,
   }) {
     final result = create();
     if (attachedTo != null) result.attachedTo = attachedTo;
     if (lastAttachedAt != null) result.lastAttachedAt = lastAttachedAt;
     if (lastDetachedAt != null) result.lastDetachedAt = lastDetachedAt;
     if (attachedAt != null) result.attachedAt = attachedAt;
-    if (usedMbWhenAttached != null) result.usedMbWhenAttached = usedMbWhenAttached;
+    if (usedMbWhenAttached != null)
+      result.usedMbWhenAttached = usedMbWhenAttached;
     if (detachedAt != null) result.detachedAt = detachedAt;
-    if (usedMbWhenDetached != null) result.usedMbWhenDetached = usedMbWhenDetached;
-    if (containerImageCache != null) result.containerImageCache = containerImageCache;
-    if (pathUtilization != null) result.pathUtilization.addEntries(pathUtilization);
+    if (usedMbWhenDetached != null)
+      result.usedMbWhenDetached = usedMbWhenDetached;
+    if (containerImageCache != null)
+      result.containerImageCache = containerImageCache;
+    if (pathUtilization != null)
+      result.pathUtilization.addEntries(pathUtilization);
     return result;
   }
 
   VolumeAttachment._();
 
-  factory VolumeAttachment.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory VolumeAttachment.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory VolumeAttachment.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory VolumeAttachment.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeAttachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VolumeAttachment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'attachedTo')
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'lastAttachedAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'lastDetachedAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'attachedAt', subBuilder: $0.Timestamp.create)
-    ..a<$core.int>(5, _omitFieldNames ? '' : 'usedMbWhenAttached', $pb.PbFieldType.OU3)
-    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'detachedAt', subBuilder: $0.Timestamp.create)
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'usedMbWhenDetached', $pb.PbFieldType.OU3)
-    ..aOM<ContainerImageCache>(8, _omitFieldNames ? '' : 'containerImageCache', subBuilder: ContainerImageCache.create)
-    ..m<$core.String, PathUtilization>(9, _omitFieldNames ? '' : 'pathUtilization', entryClassName: 'VolumeAttachment.PathUtilizationEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: PathUtilization.create, valueDefaultOrMaker: PathUtilization.getDefault, packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'lastAttachedAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'lastDetachedAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'attachedAt',
+        subBuilder: $0.Timestamp.create)
+    ..a<$core.int>(
+        5, _omitFieldNames ? '' : 'usedMbWhenAttached', $pb.PbFieldType.OU3)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'detachedAt',
+        subBuilder: $0.Timestamp.create)
+    ..a<$core.int>(
+        7, _omitFieldNames ? '' : 'usedMbWhenDetached', $pb.PbFieldType.OU3)
+    ..aOM<ContainerImageCache>(8, _omitFieldNames ? '' : 'containerImageCache',
+        subBuilder: ContainerImageCache.create)
+    ..m<$core.String, PathUtilization>(
+        9, _omitFieldNames ? '' : 'pathUtilization',
+        entryClassName: 'VolumeAttachment.PathUtilizationEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: PathUtilization.create,
+        valueDefaultOrMaker: PathUtilization.getDefault,
+        packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VolumeAttachment clone() => VolumeAttachment()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  VolumeAttachment copyWith(void Function(VolumeAttachment) updates) => super.copyWith((message) => updates(message as VolumeAttachment)) as VolumeAttachment;
+  VolumeAttachment copyWith(void Function(VolumeAttachment) updates) =>
+      super.copyWith((message) => updates(message as VolumeAttachment))
+          as VolumeAttachment;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -432,9 +542,11 @@ class VolumeAttachment extends $pb.GeneratedMessage {
   static VolumeAttachment create() => VolumeAttachment._();
   @$core.override
   VolumeAttachment createEmptyInstance() => create();
-  static $pb.PbList<VolumeAttachment> createRepeated() => $pb.PbList<VolumeAttachment>();
+  static $pb.PbList<VolumeAttachment> createRepeated() =>
+      $pb.PbList<VolumeAttachment>();
   @$core.pragma('dart2js:noInline')
-  static VolumeAttachment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VolumeAttachment>(create);
+  static VolumeAttachment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VolumeAttachment>(create);
   static VolumeAttachment? _defaultInstance;
 
   /// The ID of the compute instance that this volume is attached to.
@@ -561,18 +673,27 @@ class ContainerImageCache extends $pb.GeneratedMessage {
 
   ContainerImageCache._();
 
-  factory ContainerImageCache.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ContainerImageCache.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ContainerImageCache.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ContainerImageCache.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContainerImageCache', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ContainerImageCache',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerImageCache clone() => ContainerImageCache()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ContainerImageCache copyWith(void Function(ContainerImageCache) updates) => super.copyWith((message) => updates(message as ContainerImageCache)) as ContainerImageCache;
+  ContainerImageCache copyWith(void Function(ContainerImageCache) updates) =>
+      super.copyWith((message) => updates(message as ContainerImageCache))
+          as ContainerImageCache;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -581,9 +702,11 @@ class ContainerImageCache extends $pb.GeneratedMessage {
   static ContainerImageCache create() => ContainerImageCache._();
   @$core.override
   ContainerImageCache createEmptyInstance() => create();
-  static $pb.PbList<ContainerImageCache> createRepeated() => $pb.PbList<ContainerImageCache>();
+  static $pb.PbList<ContainerImageCache> createRepeated() =>
+      $pb.PbList<ContainerImageCache>();
   @$core.pragma('dart2js:noInline')
-  static ContainerImageCache getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContainerImageCache>(create);
+  static ContainerImageCache getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ContainerImageCache>(create);
   static ContainerImageCache? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -615,22 +738,34 @@ class PathUtilization extends $pb.GeneratedMessage {
 
   PathUtilization._();
 
-  factory PathUtilization.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory PathUtilization.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory PathUtilization.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory PathUtilization.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PathUtilization', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PathUtilization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cacheFramework')
     ..pPS(2, _omitFieldNames ? '' : 'mountTarget')
     ..aOS(3, _omitFieldNames ? '' : 'source')
-    ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'utilizationMb', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$fixnum.Int64>(
+        4, _omitFieldNames ? '' : 'utilizationMb', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PathUtilization clone() => PathUtilization()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  PathUtilization copyWith(void Function(PathUtilization) updates) => super.copyWith((message) => updates(message as PathUtilization)) as PathUtilization;
+  PathUtilization copyWith(void Function(PathUtilization) updates) =>
+      super.copyWith((message) => updates(message as PathUtilization))
+          as PathUtilization;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -639,9 +774,11 @@ class PathUtilization extends $pb.GeneratedMessage {
   static PathUtilization create() => PathUtilization._();
   @$core.override
   PathUtilization createEmptyInstance() => create();
-  static $pb.PbList<PathUtilization> createRepeated() => $pb.PbList<PathUtilization>();
+  static $pb.PbList<PathUtilization> createRepeated() =>
+      $pb.PbList<PathUtilization>();
   @$core.pragma('dart2js:noInline')
-  static PathUtilization getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PathUtilization>(create);
+  static PathUtilization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PathUtilization>(create);
   static PathUtilization? _defaultInstance;
 
   /// What framework/purpose is this cache path used for?
@@ -702,18 +839,30 @@ class GetVolumeTagSummaryRequest extends $pb.GeneratedMessage {
 
   GetVolumeTagSummaryRequest._();
 
-  factory GetVolumeTagSummaryRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetVolumeTagSummaryRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetVolumeTagSummaryRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetVolumeTagSummaryRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVolumeTagSummaryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetVolumeTagSummaryRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetVolumeTagSummaryRequest clone() => GetVolumeTagSummaryRequest()..mergeFromMessage(this);
+  GetVolumeTagSummaryRequest clone() =>
+      GetVolumeTagSummaryRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetVolumeTagSummaryRequest copyWith(void Function(GetVolumeTagSummaryRequest) updates) => super.copyWith((message) => updates(message as GetVolumeTagSummaryRequest)) as GetVolumeTagSummaryRequest;
+  GetVolumeTagSummaryRequest copyWith(
+          void Function(GetVolumeTagSummaryRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetVolumeTagSummaryRequest))
+          as GetVolumeTagSummaryRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -722,9 +871,11 @@ class GetVolumeTagSummaryRequest extends $pb.GeneratedMessage {
   static GetVolumeTagSummaryRequest create() => GetVolumeTagSummaryRequest._();
   @$core.override
   GetVolumeTagSummaryRequest createEmptyInstance() => create();
-  static $pb.PbList<GetVolumeTagSummaryRequest> createRepeated() => $pb.PbList<GetVolumeTagSummaryRequest>();
+  static $pb.PbList<GetVolumeTagSummaryRequest> createRepeated() =>
+      $pb.PbList<GetVolumeTagSummaryRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetVolumeTagSummaryRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetVolumeTagSummaryRequest>(create);
+  static GetVolumeTagSummaryRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetVolumeTagSummaryRequest>(create);
   static GetVolumeTagSummaryRequest? _defaultInstance;
 
   /// The name of the tag.
@@ -749,29 +900,45 @@ class GetVolumeTagSummaryResponse extends $pb.GeneratedMessage {
 
   GetVolumeTagSummaryResponse._();
 
-  factory GetVolumeTagSummaryResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetVolumeTagSummaryResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetVolumeTagSummaryResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetVolumeTagSummaryResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVolumeTagSummaryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<TagSummary>(1, _omitFieldNames ? '' : 'summary', subBuilder: TagSummary.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetVolumeTagSummaryResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<TagSummary>(1, _omitFieldNames ? '' : 'summary',
+        subBuilder: TagSummary.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetVolumeTagSummaryResponse clone() => GetVolumeTagSummaryResponse()..mergeFromMessage(this);
+  GetVolumeTagSummaryResponse clone() =>
+      GetVolumeTagSummaryResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetVolumeTagSummaryResponse copyWith(void Function(GetVolumeTagSummaryResponse) updates) => super.copyWith((message) => updates(message as GetVolumeTagSummaryResponse)) as GetVolumeTagSummaryResponse;
+  GetVolumeTagSummaryResponse copyWith(
+          void Function(GetVolumeTagSummaryResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetVolumeTagSummaryResponse))
+          as GetVolumeTagSummaryResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetVolumeTagSummaryResponse create() => GetVolumeTagSummaryResponse._();
+  static GetVolumeTagSummaryResponse create() =>
+      GetVolumeTagSummaryResponse._();
   @$core.override
   GetVolumeTagSummaryResponse createEmptyInstance() => create();
-  static $pb.PbList<GetVolumeTagSummaryResponse> createRepeated() => $pb.PbList<GetVolumeTagSummaryResponse>();
+  static $pb.PbList<GetVolumeTagSummaryResponse> createRepeated() =>
+      $pb.PbList<GetVolumeTagSummaryResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetVolumeTagSummaryResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetVolumeTagSummaryResponse>(create);
+  static GetVolumeTagSummaryResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetVolumeTagSummaryResponse>(create);
   static GetVolumeTagSummaryResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -791,28 +958,43 @@ class ListVolumeTagSummariesRequest extends $pb.GeneratedMessage {
 
   ListVolumeTagSummariesRequest._();
 
-  factory ListVolumeTagSummariesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListVolumeTagSummariesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListVolumeTagSummariesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListVolumeTagSummariesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListVolumeTagSummariesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListVolumeTagSummariesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListVolumeTagSummariesRequest clone() => ListVolumeTagSummariesRequest()..mergeFromMessage(this);
+  ListVolumeTagSummariesRequest clone() =>
+      ListVolumeTagSummariesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListVolumeTagSummariesRequest copyWith(void Function(ListVolumeTagSummariesRequest) updates) => super.copyWith((message) => updates(message as ListVolumeTagSummariesRequest)) as ListVolumeTagSummariesRequest;
+  ListVolumeTagSummariesRequest copyWith(
+          void Function(ListVolumeTagSummariesRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListVolumeTagSummariesRequest))
+          as ListVolumeTagSummariesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListVolumeTagSummariesRequest create() => ListVolumeTagSummariesRequest._();
+  static ListVolumeTagSummariesRequest create() =>
+      ListVolumeTagSummariesRequest._();
   @$core.override
   ListVolumeTagSummariesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListVolumeTagSummariesRequest> createRepeated() => $pb.PbList<ListVolumeTagSummariesRequest>();
+  static $pb.PbList<ListVolumeTagSummariesRequest> createRepeated() =>
+      $pb.PbList<ListVolumeTagSummariesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListVolumeTagSummariesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListVolumeTagSummariesRequest>(create);
+  static ListVolumeTagSummariesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListVolumeTagSummariesRequest>(create);
   static ListVolumeTagSummariesRequest? _defaultInstance;
 }
 
@@ -827,29 +1009,45 @@ class ListVolumeTagSummariesResponse extends $pb.GeneratedMessage {
 
   ListVolumeTagSummariesResponse._();
 
-  factory ListVolumeTagSummariesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListVolumeTagSummariesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListVolumeTagSummariesResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListVolumeTagSummariesResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListVolumeTagSummariesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..pc<TagSummary>(1, _omitFieldNames ? '' : 'summaries', $pb.PbFieldType.PM, subBuilder: TagSummary.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListVolumeTagSummariesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..pc<TagSummary>(1, _omitFieldNames ? '' : 'summaries', $pb.PbFieldType.PM,
+        subBuilder: TagSummary.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListVolumeTagSummariesResponse clone() => ListVolumeTagSummariesResponse()..mergeFromMessage(this);
+  ListVolumeTagSummariesResponse clone() =>
+      ListVolumeTagSummariesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListVolumeTagSummariesResponse copyWith(void Function(ListVolumeTagSummariesResponse) updates) => super.copyWith((message) => updates(message as ListVolumeTagSummariesResponse)) as ListVolumeTagSummariesResponse;
+  ListVolumeTagSummariesResponse copyWith(
+          void Function(ListVolumeTagSummariesResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as ListVolumeTagSummariesResponse))
+          as ListVolumeTagSummariesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListVolumeTagSummariesResponse create() => ListVolumeTagSummariesResponse._();
+  static ListVolumeTagSummariesResponse create() =>
+      ListVolumeTagSummariesResponse._();
   @$core.override
   ListVolumeTagSummariesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListVolumeTagSummariesResponse> createRepeated() => $pb.PbList<ListVolumeTagSummariesResponse>();
+  static $pb.PbList<ListVolumeTagSummariesResponse> createRepeated() =>
+      $pb.PbList<ListVolumeTagSummariesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListVolumeTagSummariesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListVolumeTagSummariesResponse>(create);
+  static ListVolumeTagSummariesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListVolumeTagSummariesResponse>(create);
   static ListVolumeTagSummariesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -860,10 +1058,10 @@ class TagSummary extends $pb.GeneratedMessage {
   factory TagSummary({
     $core.String? tag,
     $core.int? sizeMb,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $core.Iterable<CacheVolume>? atRest,
     $0.Timestamp? createdAt,
-  @$core.Deprecated('This field is deprecated.')
+    @$core.Deprecated('This field is deprecated.')
     $core.Iterable<CacheVolume>? inUse,
     $core.Iterable<CacheVolume>? generations,
   }) {
@@ -879,23 +1077,36 @@ class TagSummary extends $pb.GeneratedMessage {
 
   TagSummary._();
 
-  factory TagSummary.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory TagSummary.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory TagSummary.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory TagSummary.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TagSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TagSummary',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tag')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'sizeMb', $pb.PbFieldType.OU3)
-    ..pc<CacheVolume>(3, _omitFieldNames ? '' : 'atRest', $pb.PbFieldType.PM, subBuilder: CacheVolume.create)
-    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
-    ..pc<CacheVolume>(5, _omitFieldNames ? '' : 'inUse', $pb.PbFieldType.PM, subBuilder: CacheVolume.create)
-    ..pc<CacheVolume>(6, _omitFieldNames ? '' : 'generations', $pb.PbFieldType.PM, subBuilder: CacheVolume.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<CacheVolume>(3, _omitFieldNames ? '' : 'atRest', $pb.PbFieldType.PM,
+        subBuilder: CacheVolume.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
+    ..pc<CacheVolume>(5, _omitFieldNames ? '' : 'inUse', $pb.PbFieldType.PM,
+        subBuilder: CacheVolume.create)
+    ..pc<CacheVolume>(
+        6, _omitFieldNames ? '' : 'generations', $pb.PbFieldType.PM,
+        subBuilder: CacheVolume.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TagSummary clone() => TagSummary()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TagSummary copyWith(void Function(TagSummary) updates) => super.copyWith((message) => updates(message as TagSummary)) as TagSummary;
+  TagSummary copyWith(void Function(TagSummary) updates) =>
+      super.copyWith((message) => updates(message as TagSummary)) as TagSummary;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -906,7 +1117,8 @@ class TagSummary extends $pb.GeneratedMessage {
   TagSummary createEmptyInstance() => create();
   static $pb.PbList<TagSummary> createRepeated() => $pb.PbList<TagSummary>();
   @$core.pragma('dart2js:noInline')
-  static TagSummary getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TagSummary>(create);
+  static TagSummary getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TagSummary>(create);
   static TagSummary? _defaultInstance;
 
   /// The name of the tag.
@@ -985,18 +1197,29 @@ class DestroyCacheVolumeRequest extends $pb.GeneratedMessage {
 
   DestroyCacheVolumeRequest._();
 
-  factory DestroyCacheVolumeRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DestroyCacheVolumeRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DestroyCacheVolumeRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DestroyCacheVolumeRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DestroyCacheVolumeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DestroyCacheVolumeRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DestroyCacheVolumeRequest clone() => DestroyCacheVolumeRequest()..mergeFromMessage(this);
+  DestroyCacheVolumeRequest clone() =>
+      DestroyCacheVolumeRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DestroyCacheVolumeRequest copyWith(void Function(DestroyCacheVolumeRequest) updates) => super.copyWith((message) => updates(message as DestroyCacheVolumeRequest)) as DestroyCacheVolumeRequest;
+  DestroyCacheVolumeRequest copyWith(
+          void Function(DestroyCacheVolumeRequest) updates) =>
+      super.copyWith((message) => updates(message as DestroyCacheVolumeRequest))
+          as DestroyCacheVolumeRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1005,9 +1228,11 @@ class DestroyCacheVolumeRequest extends $pb.GeneratedMessage {
   static DestroyCacheVolumeRequest create() => DestroyCacheVolumeRequest._();
   @$core.override
   DestroyCacheVolumeRequest createEmptyInstance() => create();
-  static $pb.PbList<DestroyCacheVolumeRequest> createRepeated() => $pb.PbList<DestroyCacheVolumeRequest>();
+  static $pb.PbList<DestroyCacheVolumeRequest> createRepeated() =>
+      $pb.PbList<DestroyCacheVolumeRequest>();
   @$core.pragma('dart2js:noInline')
-  static DestroyCacheVolumeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DestroyCacheVolumeRequest>(create);
+  static DestroyCacheVolumeRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DestroyCacheVolumeRequest>(create);
   static DestroyCacheVolumeRequest? _defaultInstance;
 
   /// Required input.
@@ -1040,20 +1265,36 @@ class CacheMetadata extends $pb.GeneratedMessage {
 
   CacheMetadata._();
 
-  factory CacheMetadata.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CacheMetadata.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CacheMetadata.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CacheMetadata.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CacheMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CacheMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'version', $pb.PbFieldType.OU3)
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
-    ..m<$core.String, CachePathUsage>(3, _omitFieldNames ? '' : 'userRequest', entryClassName: 'CacheMetadata.UserRequestEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: CachePathUsage.create, valueDefaultOrMaker: CachePathUsage.getDefault, packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'updatedAt',
+        subBuilder: $0.Timestamp.create)
+    ..m<$core.String, CachePathUsage>(3, _omitFieldNames ? '' : 'userRequest',
+        entryClassName: 'CacheMetadata.UserRequestEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: CachePathUsage.create,
+        valueDefaultOrMaker: CachePathUsage.getDefault,
+        packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CacheMetadata clone() => CacheMetadata()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CacheMetadata copyWith(void Function(CacheMetadata) updates) => super.copyWith((message) => updates(message as CacheMetadata)) as CacheMetadata;
+  CacheMetadata copyWith(void Function(CacheMetadata) updates) =>
+      super.copyWith((message) => updates(message as CacheMetadata))
+          as CacheMetadata;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1062,9 +1303,11 @@ class CacheMetadata extends $pb.GeneratedMessage {
   static CacheMetadata create() => CacheMetadata._();
   @$core.override
   CacheMetadata createEmptyInstance() => create();
-  static $pb.PbList<CacheMetadata> createRepeated() => $pb.PbList<CacheMetadata>();
+  static $pb.PbList<CacheMetadata> createRepeated() =>
+      $pb.PbList<CacheMetadata>();
   @$core.pragma('dart2js:noInline')
-  static CacheMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CacheMetadata>(create);
+  static CacheMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CacheMetadata>(create);
   static CacheMetadata? _defaultInstance;
 
   /// Version of the metadata spec. Currently, only version 1 is supported.
@@ -1109,20 +1352,29 @@ class CachePathUsage extends $pb.GeneratedMessage {
 
   CachePathUsage._();
 
-  factory CachePathUsage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CachePathUsage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CachePathUsage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CachePathUsage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CachePathUsage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CachePathUsage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'source')
     ..aOS(2, _omitFieldNames ? '' : 'cacheFramework')
     ..pPS(3, _omitFieldNames ? '' : 'mountTarget')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CachePathUsage clone() => CachePathUsage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CachePathUsage copyWith(void Function(CachePathUsage) updates) => super.copyWith((message) => updates(message as CachePathUsage)) as CachePathUsage;
+  CachePathUsage copyWith(void Function(CachePathUsage) updates) =>
+      super.copyWith((message) => updates(message as CachePathUsage))
+          as CachePathUsage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1131,9 +1383,11 @@ class CachePathUsage extends $pb.GeneratedMessage {
   static CachePathUsage create() => CachePathUsage._();
   @$core.override
   CachePathUsage createEmptyInstance() => create();
-  static $pb.PbList<CachePathUsage> createRepeated() => $pb.PbList<CachePathUsage>();
+  static $pb.PbList<CachePathUsage> createRepeated() =>
+      $pb.PbList<CachePathUsage>();
   @$core.pragma('dart2js:noInline')
-  static CachePathUsage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CachePathUsage>(create);
+  static CachePathUsage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CachePathUsage>(create);
   static CachePathUsage? _defaultInstance;
 
   /// Name of the system that configured this cache path usage.
@@ -1192,31 +1446,41 @@ class StorageServiceApi {
   StorageServiceApi(this._client);
 
   /// Returns a Cache Volume.
-  $async.Future<GetCacheVolumeResponse> getCacheVolume($pb.ClientContext? ctx, GetCacheVolumeRequest request) =>
-    _client.invoke<GetCacheVolumeResponse>(ctx, 'StorageService', 'GetCacheVolume', request, GetCacheVolumeResponse())
-  ;
+  $async.Future<GetCacheVolumeResponse> getCacheVolume(
+          $pb.ClientContext? ctx, GetCacheVolumeRequest request) =>
+      _client.invoke<GetCacheVolumeResponse>(ctx, 'StorageService',
+          'GetCacheVolume', request, GetCacheVolumeResponse());
+
   /// Returns a list of all Cache Volumes used by this tenant.
-  $async.Future<ListCacheVolumesResponse> listCacheVolumes($pb.ClientContext? ctx, ListCacheVolumesRequest request) =>
-    _client.invoke<ListCacheVolumesResponse>(ctx, 'StorageService', 'ListCacheVolumes', request, ListCacheVolumesResponse())
-  ;
+  $async.Future<ListCacheVolumesResponse> listCacheVolumes(
+          $pb.ClientContext? ctx, ListCacheVolumesRequest request) =>
+      _client.invoke<ListCacheVolumesResponse>(ctx, 'StorageService',
+          'ListCacheVolumes', request, ListCacheVolumesResponse());
+
   /// Produces a summary for a Cache Volume tag used by this tenant.
-  $async.Future<GetVolumeTagSummaryResponse> getVolumeTagSummary($pb.ClientContext? ctx, GetVolumeTagSummaryRequest request) =>
-    _client.invoke<GetVolumeTagSummaryResponse>(ctx, 'StorageService', 'GetVolumeTagSummary', request, GetVolumeTagSummaryResponse())
-  ;
+  $async.Future<GetVolumeTagSummaryResponse> getVolumeTagSummary(
+          $pb.ClientContext? ctx, GetVolumeTagSummaryRequest request) =>
+      _client.invoke<GetVolumeTagSummaryResponse>(ctx, 'StorageService',
+          'GetVolumeTagSummary', request, GetVolumeTagSummaryResponse());
+
   /// Produces a summary for each Cache Volume tag used by this tenant.
-  $async.Future<ListVolumeTagSummariesResponse> listVolumeTagSummaries($pb.ClientContext? ctx, ListVolumeTagSummariesRequest request) =>
-    _client.invoke<ListVolumeTagSummariesResponse>(ctx, 'StorageService', 'ListVolumeTagSummaries', request, ListVolumeTagSummariesResponse())
-  ;
+  $async.Future<ListVolumeTagSummariesResponse> listVolumeTagSummaries(
+          $pb.ClientContext? ctx, ListVolumeTagSummariesRequest request) =>
+      _client.invoke<ListVolumeTagSummariesResponse>(ctx, 'StorageService',
+          'ListVolumeTagSummaries', request, ListVolumeTagSummariesResponse());
+
   /// Release all Cache Volumes belonging to a selected `tag`. This operation cannot be undone.
   ///
   /// ### Errors
   /// - If no volume tag is provided, a `InvalidArgument` status is returned.
   /// - If the provided volume tag does not match any known volume tag, a `NotFound` status is returned.
-  $async.Future<$1.Empty> destroyCacheVolume($pb.ClientContext? ctx, DestroyCacheVolumeRequest request) =>
-    _client.invoke<$1.Empty>(ctx, 'StorageService', 'DestroyCacheVolume', request, $1.Empty())
-  ;
+  $async.Future<$1.Empty> destroyCacheVolume(
+          $pb.ClientContext? ctx, DestroyCacheVolumeRequest request) =>
+      _client.invoke<$1.Empty>(
+          ctx, 'StorageService', 'DestroyCacheVolume', request, $1.Empty());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

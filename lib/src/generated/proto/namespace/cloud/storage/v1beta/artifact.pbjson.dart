@@ -24,8 +24,22 @@ const CreateArtifactRequest$json = {
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'namespace', '3': 2, '4': 1, '5': 9, '10': 'namespace'},
-    {'1': 'expires_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'expires_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
   ],
 };
 
@@ -42,7 +56,14 @@ const CreateArtifactResponse$json = {
   '2': [
     {'1': 'signed_upload_url', '3': 1, '4': 1, '5': 9, '10': 'signedUploadUrl'},
     {'1': 'upload_id', '3': 2, '4': 1, '5': 9, '10': 'uploadId'},
-    {'1': 'expires_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
+    {
+      '1': 'expires_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
   ],
 };
 
@@ -57,7 +78,14 @@ const FinalizeArtifactRequest$json = {
   '1': 'FinalizeArtifactRequest',
   '2': [
     {'1': 'upload_id', '3': 3, '4': 1, '5': 9, '10': 'uploadId'},
-    {'1': 'add_labels', '3': 4, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'addLabels'},
+    {
+      '1': 'add_labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'addLabels'
+    },
     {
       '1': 'path',
       '3': 1,
@@ -88,14 +116,22 @@ final $typed_data.Uint8List finalizeArtifactRequestDescriptor = $convert.base64D
 const FinalizeArtifactResponse$json = {
   '1': 'FinalizeArtifactResponse',
   '2': [
-    {'1': 'description', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.storage.v1beta.Artifact', '10': 'description'},
+    {
+      '1': 'description',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.storage.v1beta.Artifact',
+      '10': 'description'
+    },
   ],
 };
 
 /// Descriptor for `FinalizeArtifactResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List finalizeArtifactResponseDescriptor = $convert.base64Decode(
-    'ChhGaW5hbGl6ZUFydGlmYWN0UmVzcG9uc2USSgoLZGVzY3JpcHRpb24YASABKAsyKC5uYW1lc3'
-    'BhY2UuY2xvdWQuc3RvcmFnZS52MWJldGEuQXJ0aWZhY3RSC2Rlc2NyaXB0aW9u');
+final $typed_data.Uint8List finalizeArtifactResponseDescriptor =
+    $convert.base64Decode(
+        'ChhGaW5hbGl6ZUFydGlmYWN0UmVzcG9uc2USSgoLZGVzY3JpcHRpb24YASABKAsyKC5uYW1lc3'
+        'BhY2UuY2xvdWQuc3RvcmFnZS52MWJldGEuQXJ0aWZhY3RSC2Rlc2NyaXB0aW9u');
 
 @$core.Deprecated('Use resolveArtifactRequestDescriptor instead')
 const ResolveArtifactRequest$json = {
@@ -116,9 +152,29 @@ final $typed_data.Uint8List resolveArtifactRequestDescriptor = $convert.base64De
 const ResolveArtifactResponse$json = {
   '1': 'ResolveArtifactResponse',
   '2': [
-    {'1': 'description', '3': 3, '4': 1, '5': 11, '6': '.namespace.cloud.storage.v1beta.Artifact', '10': 'description'},
-    {'1': 'signed_download_url', '3': 1, '4': 1, '5': 9, '10': 'signedDownloadUrl'},
-    {'1': 'expires_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
+    {
+      '1': 'description',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.storage.v1beta.Artifact',
+      '10': 'description'
+    },
+    {
+      '1': 'signed_download_url',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'signedDownloadUrl'
+    },
+    {
+      '1': 'expires_at',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
   ],
 };
 
@@ -148,11 +204,31 @@ const ListArtifactsRequest$json = {
   '1': 'ListArtifactsRequest',
   '2': [
     {'1': 'namespaces', '3': 1, '4': 3, '5': 9, '10': 'namespaces'},
-    {'1': 'label_filter', '3': 2, '4': 3, '5': 11, '6': '.namespace.stdlib.LabelFilterEntry', '10': 'labelFilter'},
+    {
+      '1': 'label_filter',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.LabelFilterEntry',
+      '10': 'labelFilter'
+    },
     {'1': 'max_entries', '3': 3, '4': 1, '5': 5, '10': 'maxEntries'},
     {'1': 'skip_expired', '3': 5, '4': 1, '5': 8, '10': 'skipExpired'},
-    {'1': 'pagination_cursor', '3': 4, '4': 1, '5': 12, '10': 'paginationCursor'},
-    {'1': 'order_by', '3': 6, '4': 1, '5': 14, '6': '.namespace.cloud.storage.v1beta.ListArtifactsRequest.OrderBy', '10': 'orderBy'},
+    {
+      '1': 'pagination_cursor',
+      '3': 4,
+      '4': 1,
+      '5': 12,
+      '10': 'paginationCursor'
+    },
+    {
+      '1': 'order_by',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.storage.v1beta.ListArtifactsRequest.OrderBy',
+      '10': 'orderBy'
+    },
   ],
   '4': [ListArtifactsRequest_OrderBy$json],
 };
@@ -180,8 +256,21 @@ final $typed_data.Uint8List listArtifactsRequestDescriptor = $convert.base64Deco
 const ListArtifactsResponse$json = {
   '1': 'ListArtifactsResponse',
   '2': [
-    {'1': 'artifacts', '3': 1, '4': 3, '5': 11, '6': '.namespace.cloud.storage.v1beta.Artifact', '10': 'artifacts'},
-    {'1': 'pagination_cursor', '3': 2, '4': 1, '5': 12, '10': 'paginationCursor'},
+    {
+      '1': 'artifacts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.storage.v1beta.Artifact',
+      '10': 'artifacts'
+    },
+    {
+      '1': 'pagination_cursor',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '10': 'paginationCursor'
+    },
   ],
 };
 
@@ -198,12 +287,40 @@ const Artifact$json = {
     {'1': 'id', '3': 10, '4': 1, '5': 9, '10': 'id'},
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'namespace', '3': 2, '4': 1, '5': 9, '10': 'namespace'},
-    {'1': 'created_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createdAt'},
-    {'1': 'expires_at', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiresAt'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.namespace.stdlib.Label', '10': 'labels'},
+    {
+      '1': 'created_at',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createdAt'
+    },
+    {
+      '1': 'expires_at',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiresAt'
+    },
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.stdlib.Label',
+      '10': 'labels'
+    },
     {'1': 'size', '3': 7, '4': 1, '5': 3, '10': 'size'},
     {'1': 'web_url', '3': 8, '4': 1, '5': 9, '10': 'webUrl'},
-    {'1': 'status', '3': 9, '4': 1, '5': 14, '6': '.namespace.cloud.storage.v1beta.Artifact.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.cloud.storage.v1beta.Artifact.Status',
+      '10': 'status'
+    },
   ],
   '4': [Artifact_Status$json],
 };
@@ -232,29 +349,59 @@ final $typed_data.Uint8List artifactDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> ArtifactsServiceBase$json = {
   '1': 'ArtifactsService',
   '2': [
-    {'1': 'CreateArtifact', '2': '.namespace.cloud.storage.v1beta.CreateArtifactRequest', '3': '.namespace.cloud.storage.v1beta.CreateArtifactResponse'},
-    {'1': 'FinalizeArtifact', '2': '.namespace.cloud.storage.v1beta.FinalizeArtifactRequest', '3': '.namespace.cloud.storage.v1beta.FinalizeArtifactResponse'},
-    {'1': 'ResolveArtifact', '2': '.namespace.cloud.storage.v1beta.ResolveArtifactRequest', '3': '.namespace.cloud.storage.v1beta.ResolveArtifactResponse'},
-    {'1': 'ListArtifacts', '2': '.namespace.cloud.storage.v1beta.ListArtifactsRequest', '3': '.namespace.cloud.storage.v1beta.ListArtifactsResponse'},
-    {'1': 'ExpireArtifact', '2': '.namespace.cloud.storage.v1beta.ExpireArtifactRequest', '3': '.google.protobuf.Empty'},
+    {
+      '1': 'CreateArtifact',
+      '2': '.namespace.cloud.storage.v1beta.CreateArtifactRequest',
+      '3': '.namespace.cloud.storage.v1beta.CreateArtifactResponse'
+    },
+    {
+      '1': 'FinalizeArtifact',
+      '2': '.namespace.cloud.storage.v1beta.FinalizeArtifactRequest',
+      '3': '.namespace.cloud.storage.v1beta.FinalizeArtifactResponse'
+    },
+    {
+      '1': 'ResolveArtifact',
+      '2': '.namespace.cloud.storage.v1beta.ResolveArtifactRequest',
+      '3': '.namespace.cloud.storage.v1beta.ResolveArtifactResponse'
+    },
+    {
+      '1': 'ListArtifacts',
+      '2': '.namespace.cloud.storage.v1beta.ListArtifactsRequest',
+      '3': '.namespace.cloud.storage.v1beta.ListArtifactsResponse'
+    },
+    {
+      '1': 'ExpireArtifact',
+      '2': '.namespace.cloud.storage.v1beta.ExpireArtifactRequest',
+      '3': '.google.protobuf.Empty'
+    },
   ],
 };
 
 @$core.Deprecated('Use artifactsServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> ArtifactsServiceBase$messageJson = {
-  '.namespace.cloud.storage.v1beta.CreateArtifactRequest': CreateArtifactRequest$json,
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    ArtifactsServiceBase$messageJson = {
+  '.namespace.cloud.storage.v1beta.CreateArtifactRequest':
+      CreateArtifactRequest$json,
   '.google.protobuf.Timestamp': $0.Timestamp$json,
   '.namespace.stdlib.Label': $1.Label$json,
-  '.namespace.cloud.storage.v1beta.CreateArtifactResponse': CreateArtifactResponse$json,
-  '.namespace.cloud.storage.v1beta.FinalizeArtifactRequest': FinalizeArtifactRequest$json,
-  '.namespace.cloud.storage.v1beta.FinalizeArtifactResponse': FinalizeArtifactResponse$json,
+  '.namespace.cloud.storage.v1beta.CreateArtifactResponse':
+      CreateArtifactResponse$json,
+  '.namespace.cloud.storage.v1beta.FinalizeArtifactRequest':
+      FinalizeArtifactRequest$json,
+  '.namespace.cloud.storage.v1beta.FinalizeArtifactResponse':
+      FinalizeArtifactResponse$json,
   '.namespace.cloud.storage.v1beta.Artifact': Artifact$json,
-  '.namespace.cloud.storage.v1beta.ResolveArtifactRequest': ResolveArtifactRequest$json,
-  '.namespace.cloud.storage.v1beta.ResolveArtifactResponse': ResolveArtifactResponse$json,
-  '.namespace.cloud.storage.v1beta.ListArtifactsRequest': ListArtifactsRequest$json,
+  '.namespace.cloud.storage.v1beta.ResolveArtifactRequest':
+      ResolveArtifactRequest$json,
+  '.namespace.cloud.storage.v1beta.ResolveArtifactResponse':
+      ResolveArtifactResponse$json,
+  '.namespace.cloud.storage.v1beta.ListArtifactsRequest':
+      ListArtifactsRequest$json,
   '.namespace.stdlib.LabelFilterEntry': $1.LabelFilterEntry$json,
-  '.namespace.cloud.storage.v1beta.ListArtifactsResponse': ListArtifactsResponse$json,
-  '.namespace.cloud.storage.v1beta.ExpireArtifactRequest': ExpireArtifactRequest$json,
+  '.namespace.cloud.storage.v1beta.ListArtifactsResponse':
+      ListArtifactsResponse$json,
+  '.namespace.cloud.storage.v1beta.ExpireArtifactRequest':
+      ExpireArtifactRequest$json,
   '.google.protobuf.Empty': $2.Empty$json,
 };
 
@@ -272,4 +419,3 @@ final $typed_data.Uint8List artifactsServiceDescriptor = $convert.base64Decode(
     '5jbG91ZC5zdG9yYWdlLnYxYmV0YS5MaXN0QXJ0aWZhY3RzUmVzcG9uc2USXwoORXhwaXJlQXJ0'
     'aWZhY3QSNS5uYW1lc3BhY2UuY2xvdWQuc3RvcmFnZS52MWJldGEuRXhwaXJlQXJ0aWZhY3RSZX'
     'F1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5');
-

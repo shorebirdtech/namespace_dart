@@ -35,18 +35,28 @@ class CreateDevBoxRequest extends $pb.GeneratedMessage {
 
   CreateDevBoxRequest._();
 
-  factory CreateDevBoxRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CreateDevBoxRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CreateDevBoxRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CreateDevBoxRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDevBoxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
-    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec', subBuilder: DevBoxSpec.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDevBoxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec',
+        subBuilder: DevBoxSpec.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateDevBoxRequest clone() => CreateDevBoxRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateDevBoxRequest copyWith(void Function(CreateDevBoxRequest) updates) => super.copyWith((message) => updates(message as CreateDevBoxRequest)) as CreateDevBoxRequest;
+  CreateDevBoxRequest copyWith(void Function(CreateDevBoxRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateDevBoxRequest))
+          as CreateDevBoxRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -55,9 +65,11 @@ class CreateDevBoxRequest extends $pb.GeneratedMessage {
   static CreateDevBoxRequest create() => CreateDevBoxRequest._();
   @$core.override
   CreateDevBoxRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateDevBoxRequest> createRepeated() => $pb.PbList<CreateDevBoxRequest>();
+  static $pb.PbList<CreateDevBoxRequest> createRepeated() =>
+      $pb.PbList<CreateDevBoxRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateDevBoxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDevBoxRequest>(create);
+  static CreateDevBoxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDevBoxRequest>(create);
   static CreateDevBoxRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -83,18 +95,28 @@ class CreateDevBoxResponse extends $pb.GeneratedMessage {
 
   CreateDevBoxResponse._();
 
-  factory CreateDevBoxResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CreateDevBoxResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CreateDevBoxResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CreateDevBoxResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDevBoxResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateDevBoxResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOM<DevBox>(1, _omitFieldNames ? '' : 'devbox', subBuilder: DevBox.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateDevBoxResponse clone() => CreateDevBoxResponse()..mergeFromMessage(this);
+  CreateDevBoxResponse clone() =>
+      CreateDevBoxResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateDevBoxResponse copyWith(void Function(CreateDevBoxResponse) updates) => super.copyWith((message) => updates(message as CreateDevBoxResponse)) as CreateDevBoxResponse;
+  CreateDevBoxResponse copyWith(void Function(CreateDevBoxResponse) updates) =>
+      super.copyWith((message) => updates(message as CreateDevBoxResponse))
+          as CreateDevBoxResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -103,9 +125,11 @@ class CreateDevBoxResponse extends $pb.GeneratedMessage {
   static CreateDevBoxResponse create() => CreateDevBoxResponse._();
   @$core.override
   CreateDevBoxResponse createEmptyInstance() => create();
-  static $pb.PbList<CreateDevBoxResponse> createRepeated() => $pb.PbList<CreateDevBoxResponse>();
+  static $pb.PbList<CreateDevBoxResponse> createRepeated() =>
+      $pb.PbList<CreateDevBoxResponse>();
   @$core.pragma('dart2js:noInline')
-  static CreateDevBoxResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateDevBoxResponse>(create);
+  static CreateDevBoxResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateDevBoxResponse>(create);
   static CreateDevBoxResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -133,19 +157,29 @@ class UpdateDevBoxRequest extends $pb.GeneratedMessage {
 
   UpdateDevBoxRequest._();
 
-  factory UpdateDevBoxRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UpdateDevBoxRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UpdateDevBoxRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UpdateDevBoxRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDevBoxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
-    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec', subBuilder: DevBoxSpec.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDevBoxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec',
+        subBuilder: DevBoxSpec.create)
     ..aInt64(2, _omitFieldNames ? '' : 'updateVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateDevBoxRequest clone() => UpdateDevBoxRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateDevBoxRequest copyWith(void Function(UpdateDevBoxRequest) updates) => super.copyWith((message) => updates(message as UpdateDevBoxRequest)) as UpdateDevBoxRequest;
+  UpdateDevBoxRequest copyWith(void Function(UpdateDevBoxRequest) updates) =>
+      super.copyWith((message) => updates(message as UpdateDevBoxRequest))
+          as UpdateDevBoxRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -154,9 +188,11 @@ class UpdateDevBoxRequest extends $pb.GeneratedMessage {
   static UpdateDevBoxRequest create() => UpdateDevBoxRequest._();
   @$core.override
   UpdateDevBoxRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateDevBoxRequest> createRepeated() => $pb.PbList<UpdateDevBoxRequest>();
+  static $pb.PbList<UpdateDevBoxRequest> createRepeated() =>
+      $pb.PbList<UpdateDevBoxRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDevBoxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDevBoxRequest>(create);
+  static UpdateDevBoxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDevBoxRequest>(create);
   static UpdateDevBoxRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -191,18 +227,28 @@ class UpdateDevBoxResponse extends $pb.GeneratedMessage {
 
   UpdateDevBoxResponse._();
 
-  factory UpdateDevBoxResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UpdateDevBoxResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UpdateDevBoxResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UpdateDevBoxResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDevBoxResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateDevBoxResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOM<DevBox>(1, _omitFieldNames ? '' : 'devbox', subBuilder: DevBox.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateDevBoxResponse clone() => UpdateDevBoxResponse()..mergeFromMessage(this);
+  UpdateDevBoxResponse clone() =>
+      UpdateDevBoxResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateDevBoxResponse copyWith(void Function(UpdateDevBoxResponse) updates) => super.copyWith((message) => updates(message as UpdateDevBoxResponse)) as UpdateDevBoxResponse;
+  UpdateDevBoxResponse copyWith(void Function(UpdateDevBoxResponse) updates) =>
+      super.copyWith((message) => updates(message as UpdateDevBoxResponse))
+          as UpdateDevBoxResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -211,9 +257,11 @@ class UpdateDevBoxResponse extends $pb.GeneratedMessage {
   static UpdateDevBoxResponse create() => UpdateDevBoxResponse._();
   @$core.override
   UpdateDevBoxResponse createEmptyInstance() => create();
-  static $pb.PbList<UpdateDevBoxResponse> createRepeated() => $pb.PbList<UpdateDevBoxResponse>();
+  static $pb.PbList<UpdateDevBoxResponse> createRepeated() =>
+      $pb.PbList<UpdateDevBoxResponse>();
   @$core.pragma('dart2js:noInline')
-  static UpdateDevBoxResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateDevBoxResponse>(create);
+  static UpdateDevBoxResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateDevBoxResponse>(create);
   static UpdateDevBoxResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -239,18 +287,27 @@ class DeleteDevBoxRequest extends $pb.GeneratedMessage {
 
   DeleteDevBoxRequest._();
 
-  factory DeleteDevBoxRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DeleteDevBoxRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DeleteDevBoxRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DeleteDevBoxRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDevBoxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DeleteDevBoxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'devboxTag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteDevBoxRequest clone() => DeleteDevBoxRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteDevBoxRequest copyWith(void Function(DeleteDevBoxRequest) updates) => super.copyWith((message) => updates(message as DeleteDevBoxRequest)) as DeleteDevBoxRequest;
+  DeleteDevBoxRequest copyWith(void Function(DeleteDevBoxRequest) updates) =>
+      super.copyWith((message) => updates(message as DeleteDevBoxRequest))
+          as DeleteDevBoxRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -259,9 +316,11 @@ class DeleteDevBoxRequest extends $pb.GeneratedMessage {
   static DeleteDevBoxRequest create() => DeleteDevBoxRequest._();
   @$core.override
   DeleteDevBoxRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteDevBoxRequest> createRepeated() => $pb.PbList<DeleteDevBoxRequest>();
+  static $pb.PbList<DeleteDevBoxRequest> createRepeated() =>
+      $pb.PbList<DeleteDevBoxRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteDevBoxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteDevBoxRequest>(create);
+  static DeleteDevBoxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DeleteDevBoxRequest>(create);
   static DeleteDevBoxRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -289,20 +348,29 @@ class ListDevBoxesRequest extends $pb.GeneratedMessage {
 
   ListDevBoxesRequest._();
 
-  factory ListDevBoxesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListDevBoxesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListDevBoxesRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListDevBoxesRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDevBoxesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDevBoxesRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'limit')
     ..pPS(2, _omitFieldNames ? '' : 'tagFilter')
     ..aOB(3, _omitFieldNames ? '' : 'includeDeleted')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListDevBoxesRequest clone() => ListDevBoxesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListDevBoxesRequest copyWith(void Function(ListDevBoxesRequest) updates) => super.copyWith((message) => updates(message as ListDevBoxesRequest)) as ListDevBoxesRequest;
+  ListDevBoxesRequest copyWith(void Function(ListDevBoxesRequest) updates) =>
+      super.copyWith((message) => updates(message as ListDevBoxesRequest))
+          as ListDevBoxesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -311,9 +379,11 @@ class ListDevBoxesRequest extends $pb.GeneratedMessage {
   static ListDevBoxesRequest create() => ListDevBoxesRequest._();
   @$core.override
   ListDevBoxesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListDevBoxesRequest> createRepeated() => $pb.PbList<ListDevBoxesRequest>();
+  static $pb.PbList<ListDevBoxesRequest> createRepeated() =>
+      $pb.PbList<ListDevBoxesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListDevBoxesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDevBoxesRequest>(create);
+  static ListDevBoxesRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDevBoxesRequest>(create);
   static ListDevBoxesRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -349,18 +419,29 @@ class ListDevBoxesResponse extends $pb.GeneratedMessage {
 
   ListDevBoxesResponse._();
 
-  factory ListDevBoxesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListDevBoxesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListDevBoxesResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListDevBoxesResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDevBoxesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
-    ..pc<DevBox>(1, _omitFieldNames ? '' : 'devBoxes', $pb.PbFieldType.PM, subBuilder: DevBox.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListDevBoxesResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
+    ..pc<DevBox>(1, _omitFieldNames ? '' : 'devBoxes', $pb.PbFieldType.PM,
+        subBuilder: DevBox.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListDevBoxesResponse clone() => ListDevBoxesResponse()..mergeFromMessage(this);
+  ListDevBoxesResponse clone() =>
+      ListDevBoxesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListDevBoxesResponse copyWith(void Function(ListDevBoxesResponse) updates) => super.copyWith((message) => updates(message as ListDevBoxesResponse)) as ListDevBoxesResponse;
+  ListDevBoxesResponse copyWith(void Function(ListDevBoxesResponse) updates) =>
+      super.copyWith((message) => updates(message as ListDevBoxesResponse))
+          as ListDevBoxesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -369,9 +450,11 @@ class ListDevBoxesResponse extends $pb.GeneratedMessage {
   static ListDevBoxesResponse create() => ListDevBoxesResponse._();
   @$core.override
   ListDevBoxesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListDevBoxesResponse> createRepeated() => $pb.PbList<ListDevBoxesResponse>();
+  static $pb.PbList<ListDevBoxesResponse> createRepeated() =>
+      $pb.PbList<ListDevBoxesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListDevBoxesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListDevBoxesResponse>(create);
+  static ListDevBoxesResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListDevBoxesResponse>(create);
   static ListDevBoxesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -389,18 +472,27 @@ class EnsureDevBoxRequest extends $pb.GeneratedMessage {
 
   EnsureDevBoxRequest._();
 
-  factory EnsureDevBoxRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureDevBoxRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureDevBoxRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureDevBoxRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureDevBoxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureDevBoxRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'devboxTag')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnsureDevBoxRequest clone() => EnsureDevBoxRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureDevBoxRequest copyWith(void Function(EnsureDevBoxRequest) updates) => super.copyWith((message) => updates(message as EnsureDevBoxRequest)) as EnsureDevBoxRequest;
+  EnsureDevBoxRequest copyWith(void Function(EnsureDevBoxRequest) updates) =>
+      super.copyWith((message) => updates(message as EnsureDevBoxRequest))
+          as EnsureDevBoxRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -409,9 +501,11 @@ class EnsureDevBoxRequest extends $pb.GeneratedMessage {
   static EnsureDevBoxRequest create() => EnsureDevBoxRequest._();
   @$core.override
   EnsureDevBoxRequest createEmptyInstance() => create();
-  static $pb.PbList<EnsureDevBoxRequest> createRepeated() => $pb.PbList<EnsureDevBoxRequest>();
+  static $pb.PbList<EnsureDevBoxRequest> createRepeated() =>
+      $pb.PbList<EnsureDevBoxRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnsureDevBoxRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureDevBoxRequest>(create);
+  static EnsureDevBoxRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnsureDevBoxRequest>(create);
   static EnsureDevBoxRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -432,27 +526,39 @@ class EnsureDevBoxResponse extends $pb.GeneratedMessage {
   }) {
     final result = create();
     if (devbox != null) result.devbox = devbox;
-    if (regionalSshEndpoint != null) result.regionalSshEndpoint = regionalSshEndpoint;
-    if (regionalInstanceId != null) result.regionalInstanceId = regionalInstanceId;
+    if (regionalSshEndpoint != null)
+      result.regionalSshEndpoint = regionalSshEndpoint;
+    if (regionalInstanceId != null)
+      result.regionalInstanceId = regionalInstanceId;
     return result;
   }
 
   EnsureDevBoxResponse._();
 
-  factory EnsureDevBoxResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureDevBoxResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureDevBoxResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureDevBoxResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureDevBoxResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureDevBoxResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOM<DevBox>(1, _omitFieldNames ? '' : 'devbox', subBuilder: DevBox.create)
     ..aOS(2, _omitFieldNames ? '' : 'regionalSshEndpoint')
     ..aOS(3, _omitFieldNames ? '' : 'regionalInstanceId')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureDevBoxResponse clone() => EnsureDevBoxResponse()..mergeFromMessage(this);
+  EnsureDevBoxResponse clone() =>
+      EnsureDevBoxResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureDevBoxResponse copyWith(void Function(EnsureDevBoxResponse) updates) => super.copyWith((message) => updates(message as EnsureDevBoxResponse)) as EnsureDevBoxResponse;
+  EnsureDevBoxResponse copyWith(void Function(EnsureDevBoxResponse) updates) =>
+      super.copyWith((message) => updates(message as EnsureDevBoxResponse))
+          as EnsureDevBoxResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -461,9 +567,11 @@ class EnsureDevBoxResponse extends $pb.GeneratedMessage {
   static EnsureDevBoxResponse create() => EnsureDevBoxResponse._();
   @$core.override
   EnsureDevBoxResponse createEmptyInstance() => create();
-  static $pb.PbList<EnsureDevBoxResponse> createRepeated() => $pb.PbList<EnsureDevBoxResponse>();
+  static $pb.PbList<EnsureDevBoxResponse> createRepeated() =>
+      $pb.PbList<EnsureDevBoxResponse>();
   @$core.pragma('dart2js:noInline')
-  static EnsureDevBoxResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureDevBoxResponse>(create);
+  static EnsureDevBoxResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnsureDevBoxResponse>(create);
   static EnsureDevBoxResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -509,19 +617,29 @@ class DevBox extends $pb.GeneratedMessage {
 
   DevBox._();
 
-  factory DevBox.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DevBox.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DevBox.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DevBox.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DevBox', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
-    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec', subBuilder: DevBoxSpec.create)
-    ..aOM<DevBoxStatus>(2, _omitFieldNames ? '' : 'devboxStatus', subBuilder: DevBoxStatus.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DevBox',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<DevBoxSpec>(1, _omitFieldNames ? '' : 'devboxSpec',
+        subBuilder: DevBoxSpec.create)
+    ..aOM<DevBoxStatus>(2, _omitFieldNames ? '' : 'devboxStatus',
+        subBuilder: DevBoxStatus.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DevBox clone() => DevBox()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DevBox copyWith(void Function(DevBox) updates) => super.copyWith((message) => updates(message as DevBox)) as DevBox;
+  DevBox copyWith(void Function(DevBox) updates) =>
+      super.copyWith((message) => updates(message as DevBox)) as DevBox;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -532,7 +650,8 @@ class DevBox extends $pb.GeneratedMessage {
   DevBox createEmptyInstance() => create();
   static $pb.PbList<DevBox> createRepeated() => $pb.PbList<DevBox>();
   @$core.pragma('dart2js:noInline')
-  static DevBox getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DevBox>(create);
+  static DevBox getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DevBox>(create);
   static DevBox? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -577,22 +696,30 @@ class DevBoxSpec extends $pb.GeneratedMessage {
 
   DevBoxSpec._();
 
-  factory DevBoxSpec.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DevBoxSpec.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DevBoxSpec.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DevBoxSpec.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DevBoxSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DevBoxSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tag')
     ..aOS(2, _omitFieldNames ? '' : 'machineType')
     ..aOS(3, _omitFieldNames ? '' : 'baseImageRef')
     ..aOS(4, _omitFieldNames ? '' : 'region')
     ..aOS(6, _omitFieldNames ? '' : 'continent')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DevBoxSpec clone() => DevBoxSpec()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DevBoxSpec copyWith(void Function(DevBoxSpec) updates) => super.copyWith((message) => updates(message as DevBoxSpec)) as DevBoxSpec;
+  DevBoxSpec copyWith(void Function(DevBoxSpec) updates) =>
+      super.copyWith((message) => updates(message as DevBoxSpec)) as DevBoxSpec;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -603,7 +730,8 @@ class DevBoxSpec extends $pb.GeneratedMessage {
   DevBoxSpec createEmptyInstance() => create();
   static $pb.PbList<DevBoxSpec> createRepeated() => $pb.PbList<DevBoxSpec>();
   @$core.pragma('dart2js:noInline')
-  static DevBoxSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DevBoxSpec>(create);
+  static DevBoxSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DevBoxSpec>(create);
   static DevBoxSpec? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -677,25 +805,41 @@ class DevBoxStatus extends $pb.GeneratedMessage {
 
   DevBoxStatus._();
 
-  factory DevBoxStatus.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory DevBoxStatus.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory DevBoxStatus.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory DevBoxStatus.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DevBoxStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.devbox.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DevBoxStatus',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.devbox.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'devboxId')
     ..aOS(2, _omitFieldNames ? '' : 'tenantId')
     ..aInt64(3, _omitFieldNames ? '' : 'version')
-    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt', subBuilder: $0.Timestamp.create)
-    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'deletedAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(4, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'updatedAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'deletedAt',
+        subBuilder: $0.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'sshEndpoint')
-    ..e<DevBoxStatus_Status>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: DevBoxStatus_Status.STATUS_UNKNOWN, valueOf: DevBoxStatus_Status.valueOf, enumValues: DevBoxStatus_Status.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<DevBoxStatus_Status>(
+        8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: DevBoxStatus_Status.STATUS_UNKNOWN,
+        valueOf: DevBoxStatus_Status.valueOf,
+        enumValues: DevBoxStatus_Status.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DevBoxStatus clone() => DevBoxStatus()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DevBoxStatus copyWith(void Function(DevBoxStatus) updates) => super.copyWith((message) => updates(message as DevBoxStatus)) as DevBoxStatus;
+  DevBoxStatus copyWith(void Function(DevBoxStatus) updates) =>
+      super.copyWith((message) => updates(message as DevBoxStatus))
+          as DevBoxStatus;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -704,9 +848,11 @@ class DevBoxStatus extends $pb.GeneratedMessage {
   static DevBoxStatus create() => DevBoxStatus._();
   @$core.override
   DevBoxStatus createEmptyInstance() => create();
-  static $pb.PbList<DevBoxStatus> createRepeated() => $pb.PbList<DevBoxStatus>();
+  static $pb.PbList<DevBoxStatus> createRepeated() =>
+      $pb.PbList<DevBoxStatus>();
   @$core.pragma('dart2js:noInline')
-  static DevBoxStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DevBoxStatus>(create);
+  static DevBoxStatus getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DevBoxStatus>(create);
   static DevBoxStatus? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -793,23 +939,29 @@ class DevBoxServiceApi {
 
   DevBoxServiceApi(this._client);
 
-  $async.Future<CreateDevBoxResponse> createDevBox($pb.ClientContext? ctx, CreateDevBoxRequest request) =>
-    _client.invoke<CreateDevBoxResponse>(ctx, 'DevBoxService', 'CreateDevBox', request, CreateDevBoxResponse())
-  ;
-  $async.Future<UpdateDevBoxResponse> updateDevBox($pb.ClientContext? ctx, UpdateDevBoxRequest request) =>
-    _client.invoke<UpdateDevBoxResponse>(ctx, 'DevBoxService', 'UpdateDevBox', request, UpdateDevBoxResponse())
-  ;
-  $async.Future<$1.Empty> deleteDevBox($pb.ClientContext? ctx, DeleteDevBoxRequest request) =>
-    _client.invoke<$1.Empty>(ctx, 'DevBoxService', 'DeleteDevBox', request, $1.Empty())
-  ;
-  $async.Future<ListDevBoxesResponse> listDevBoxes($pb.ClientContext? ctx, ListDevBoxesRequest request) =>
-    _client.invoke<ListDevBoxesResponse>(ctx, 'DevBoxService', 'ListDevBoxes', request, ListDevBoxesResponse())
-  ;
-  $async.Future<EnsureDevBoxResponse> ensureDevBox($pb.ClientContext? ctx, EnsureDevBoxRequest request) =>
-    _client.invoke<EnsureDevBoxResponse>(ctx, 'DevBoxService', 'EnsureDevBox', request, EnsureDevBoxResponse())
-  ;
+  $async.Future<CreateDevBoxResponse> createDevBox(
+          $pb.ClientContext? ctx, CreateDevBoxRequest request) =>
+      _client.invoke<CreateDevBoxResponse>(ctx, 'DevBoxService', 'CreateDevBox',
+          request, CreateDevBoxResponse());
+  $async.Future<UpdateDevBoxResponse> updateDevBox(
+          $pb.ClientContext? ctx, UpdateDevBoxRequest request) =>
+      _client.invoke<UpdateDevBoxResponse>(ctx, 'DevBoxService', 'UpdateDevBox',
+          request, UpdateDevBoxResponse());
+  $async.Future<$1.Empty> deleteDevBox(
+          $pb.ClientContext? ctx, DeleteDevBoxRequest request) =>
+      _client.invoke<$1.Empty>(
+          ctx, 'DevBoxService', 'DeleteDevBox', request, $1.Empty());
+  $async.Future<ListDevBoxesResponse> listDevBoxes(
+          $pb.ClientContext? ctx, ListDevBoxesRequest request) =>
+      _client.invoke<ListDevBoxesResponse>(ctx, 'DevBoxService', 'ListDevBoxes',
+          request, ListDevBoxesResponse());
+  $async.Future<EnsureDevBoxResponse> ensureDevBox(
+          $pb.ClientContext? ctx, EnsureDevBoxRequest request) =>
+      _client.invoke<EnsureDevBoxResponse>(ctx, 'DevBoxService', 'EnsureDevBox',
+          request, EnsureDevBoxResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

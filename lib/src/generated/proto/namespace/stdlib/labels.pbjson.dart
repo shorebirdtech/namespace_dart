@@ -33,7 +33,14 @@ const LabelFilterEntry$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
-    {'1': 'op', '3': 3, '4': 1, '5': 14, '6': '.namespace.stdlib.LabelFilterEntry.LabelFilterOp', '10': 'op'},
+    {
+      '1': 'op',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.stdlib.LabelFilterEntry.LabelFilterOp',
+      '10': 'op'
+    },
   ],
   '4': [LabelFilterEntry_LabelFilterOp$json],
 };
@@ -55,4 +62,3 @@ final $typed_data.Uint8List labelFilterEntryDescriptor = $convert.base64Decode(
     'ZhbHVlEkAKAm9wGAMgASgOMjAubmFtZXNwYWNlLnN0ZGxpYi5MYWJlbEZpbHRlckVudHJ5Lkxh'
     'YmVsRmlsdGVyT3BSAm9wIkEKDUxhYmVsRmlsdGVyT3ASCwoHVU5LTk9XThAAEgkKBUVRVUFMEA'
     'ESDQoJTk9UX0VRVUFMEAISCQoFRVhJU1QQAw==');
-

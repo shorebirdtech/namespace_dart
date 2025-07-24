@@ -30,18 +30,29 @@ class AddAttachmentRequest extends $pb.GeneratedMessage {
 
   AddAttachmentRequest._();
 
-  factory AddAttachmentRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory AddAttachmentRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory AddAttachmentRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory AddAttachmentRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddAttachmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.instance.v1beta'), createEmptyInstance: create)
-    ..aOM<BuildAttachment>(1, _omitFieldNames ? '' : 'buildAttachment', subBuilder: BuildAttachment.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AddAttachmentRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.instance.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<BuildAttachment>(1, _omitFieldNames ? '' : 'buildAttachment',
+        subBuilder: BuildAttachment.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AddAttachmentRequest clone() => AddAttachmentRequest()..mergeFromMessage(this);
+  AddAttachmentRequest clone() =>
+      AddAttachmentRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  AddAttachmentRequest copyWith(void Function(AddAttachmentRequest) updates) => super.copyWith((message) => updates(message as AddAttachmentRequest)) as AddAttachmentRequest;
+  AddAttachmentRequest copyWith(void Function(AddAttachmentRequest) updates) =>
+      super.copyWith((message) => updates(message as AddAttachmentRequest))
+          as AddAttachmentRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -50,9 +61,11 @@ class AddAttachmentRequest extends $pb.GeneratedMessage {
   static AddAttachmentRequest create() => AddAttachmentRequest._();
   @$core.override
   AddAttachmentRequest createEmptyInstance() => create();
-  static $pb.PbList<AddAttachmentRequest> createRepeated() => $pb.PbList<AddAttachmentRequest>();
+  static $pb.PbList<AddAttachmentRequest> createRepeated() =>
+      $pb.PbList<AddAttachmentRequest>();
   @$core.pragma('dart2js:noInline')
-  static AddAttachmentRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AddAttachmentRequest>(create);
+  static AddAttachmentRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AddAttachmentRequest>(create);
   static AddAttachmentRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -78,18 +91,27 @@ class BuildAttachment extends $pb.GeneratedMessage {
 
   BuildAttachment._();
 
-  factory BuildAttachment.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BuildAttachment.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BuildAttachment.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BuildAttachment.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildAttachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.private.instance.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildAttachment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.private.instance.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildRef')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildAttachment clone() => BuildAttachment()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BuildAttachment copyWith(void Function(BuildAttachment) updates) => super.copyWith((message) => updates(message as BuildAttachment)) as BuildAttachment;
+  BuildAttachment copyWith(void Function(BuildAttachment) updates) =>
+      super.copyWith((message) => updates(message as BuildAttachment))
+          as BuildAttachment;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -98,9 +120,11 @@ class BuildAttachment extends $pb.GeneratedMessage {
   static BuildAttachment create() => BuildAttachment._();
   @$core.override
   BuildAttachment createEmptyInstance() => create();
-  static $pb.PbList<BuildAttachment> createRepeated() => $pb.PbList<BuildAttachment>();
+  static $pb.PbList<BuildAttachment> createRepeated() =>
+      $pb.PbList<BuildAttachment>();
   @$core.pragma('dart2js:noInline')
-  static BuildAttachment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildAttachment>(create);
+  static BuildAttachment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildAttachment>(create);
   static BuildAttachment? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -118,11 +142,13 @@ class InstanceServiceApi {
 
   InstanceServiceApi(this._client);
 
-  $async.Future<$0.Empty> addAttachment($pb.ClientContext? ctx, AddAttachmentRequest request) =>
-    _client.invoke<$0.Empty>(ctx, 'InstanceService', 'AddAttachment', request, $0.Empty())
-  ;
+  $async.Future<$0.Empty> addAttachment(
+          $pb.ClientContext? ctx, AddAttachmentRequest request) =>
+      _client.invoke<$0.Empty>(
+          ctx, 'InstanceService', 'AddAttachment', request, $0.Empty());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

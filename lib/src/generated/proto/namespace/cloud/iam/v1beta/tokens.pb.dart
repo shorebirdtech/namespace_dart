@@ -28,18 +28,27 @@ class IssueIdTokenRequest extends $pb.GeneratedMessage {
 
   IssueIdTokenRequest._();
 
-  factory IssueIdTokenRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueIdTokenRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueIdTokenRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueIdTokenRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueIdTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueIdTokenRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'audience')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   IssueIdTokenRequest clone() => IssueIdTokenRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueIdTokenRequest copyWith(void Function(IssueIdTokenRequest) updates) => super.copyWith((message) => updates(message as IssueIdTokenRequest)) as IssueIdTokenRequest;
+  IssueIdTokenRequest copyWith(void Function(IssueIdTokenRequest) updates) =>
+      super.copyWith((message) => updates(message as IssueIdTokenRequest))
+          as IssueIdTokenRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -48,9 +57,11 @@ class IssueIdTokenRequest extends $pb.GeneratedMessage {
   static IssueIdTokenRequest create() => IssueIdTokenRequest._();
   @$core.override
   IssueIdTokenRequest createEmptyInstance() => create();
-  static $pb.PbList<IssueIdTokenRequest> createRepeated() => $pb.PbList<IssueIdTokenRequest>();
+  static $pb.PbList<IssueIdTokenRequest> createRepeated() =>
+      $pb.PbList<IssueIdTokenRequest>();
   @$core.pragma('dart2js:noInline')
-  static IssueIdTokenRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueIdTokenRequest>(create);
+  static IssueIdTokenRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IssueIdTokenRequest>(create);
   static IssueIdTokenRequest? _defaultInstance;
 
   /// Target audience for the generated identity token.
@@ -75,18 +86,28 @@ class IssueIdTokenResponse extends $pb.GeneratedMessage {
 
   IssueIdTokenResponse._();
 
-  factory IssueIdTokenResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory IssueIdTokenResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory IssueIdTokenResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory IssueIdTokenResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueIdTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IssueIdTokenResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.iam.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'idToken')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueIdTokenResponse clone() => IssueIdTokenResponse()..mergeFromMessage(this);
+  IssueIdTokenResponse clone() =>
+      IssueIdTokenResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  IssueIdTokenResponse copyWith(void Function(IssueIdTokenResponse) updates) => super.copyWith((message) => updates(message as IssueIdTokenResponse)) as IssueIdTokenResponse;
+  IssueIdTokenResponse copyWith(void Function(IssueIdTokenResponse) updates) =>
+      super.copyWith((message) => updates(message as IssueIdTokenResponse))
+          as IssueIdTokenResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -95,9 +116,11 @@ class IssueIdTokenResponse extends $pb.GeneratedMessage {
   static IssueIdTokenResponse create() => IssueIdTokenResponse._();
   @$core.override
   IssueIdTokenResponse createEmptyInstance() => create();
-  static $pb.PbList<IssueIdTokenResponse> createRepeated() => $pb.PbList<IssueIdTokenResponse>();
+  static $pb.PbList<IssueIdTokenResponse> createRepeated() =>
+      $pb.PbList<IssueIdTokenResponse>();
   @$core.pragma('dart2js:noInline')
-  static IssueIdTokenResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IssueIdTokenResponse>(create);
+  static IssueIdTokenResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IssueIdTokenResponse>(create);
   static IssueIdTokenResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -145,11 +168,13 @@ class TokenServiceApi {
   ///
   /// ### Errors
   /// - If no audience is provided, a `InvalidArgument` status is returned.
-  $async.Future<IssueIdTokenResponse> issueIdToken($pb.ClientContext? ctx, IssueIdTokenRequest request) =>
-    _client.invoke<IssueIdTokenResponse>(ctx, 'TokenService', 'IssueIdToken', request, IssueIdTokenResponse())
-  ;
+  $async.Future<IssueIdTokenResponse> issueIdToken(
+          $pb.ClientContext? ctx, IssueIdTokenRequest request) =>
+      _client.invoke<IssueIdTokenResponse>(
+          ctx, 'TokenService', 'IssueIdToken', request, IssueIdTokenResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -31,20 +31,28 @@ class Date extends $pb.GeneratedMessage {
 
   Date._();
 
-  factory Date.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Date.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Date.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Date.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Date', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib.time'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Date',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.stdlib.time'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Date clone() => Date()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Date copyWith(void Function(Date) updates) => super.copyWith((message) => updates(message as Date)) as Date;
+  Date copyWith(void Function(Date) updates) =>
+      super.copyWith((message) => updates(message as Date)) as Date;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -55,7 +63,8 @@ class Date extends $pb.GeneratedMessage {
   Date createEmptyInstance() => create();
   static $pb.PbList<Date> createRepeated() => $pb.PbList<Date>();
   @$core.pragma('dart2js:noInline')
-  static Date getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Date>(create);
+  static Date getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Date>(create);
   static Date? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -86,6 +95,7 @@ class Date extends $pb.GeneratedMessage {
   void clearDay() => $_clearField(3);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

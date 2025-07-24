@@ -32,31 +32,46 @@ class UsagePolicy_ConcurrencyLimits extends $pb.GeneratedMessage {
 
   UsagePolicy_ConcurrencyLimits._();
 
-  factory UsagePolicy_ConcurrencyLimits.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_ConcurrencyLimits.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_ConcurrencyLimits.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_ConcurrencyLimits.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.ConcurrencyLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.ConcurrencyLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxCpu')
     ..aInt64(2, _omitFieldNames ? '' : 'maxMemoryMb')
     ..aInt64(3, _omitFieldNames ? '' : 'maxInstanceCount')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_ConcurrencyLimits clone() => UsagePolicy_ConcurrencyLimits()..mergeFromMessage(this);
+  UsagePolicy_ConcurrencyLimits clone() =>
+      UsagePolicy_ConcurrencyLimits()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_ConcurrencyLimits copyWith(void Function(UsagePolicy_ConcurrencyLimits) updates) => super.copyWith((message) => updates(message as UsagePolicy_ConcurrencyLimits)) as UsagePolicy_ConcurrencyLimits;
+  UsagePolicy_ConcurrencyLimits copyWith(
+          void Function(UsagePolicy_ConcurrencyLimits) updates) =>
+      super.copyWith(
+              (message) => updates(message as UsagePolicy_ConcurrencyLimits))
+          as UsagePolicy_ConcurrencyLimits;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_ConcurrencyLimits create() => UsagePolicy_ConcurrencyLimits._();
+  static UsagePolicy_ConcurrencyLimits create() =>
+      UsagePolicy_ConcurrencyLimits._();
   @$core.override
   UsagePolicy_ConcurrencyLimits createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_ConcurrencyLimits> createRepeated() => $pb.PbList<UsagePolicy_ConcurrencyLimits>();
+  static $pb.PbList<UsagePolicy_ConcurrencyLimits> createRepeated() =>
+      $pb.PbList<UsagePolicy_ConcurrencyLimits>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_ConcurrencyLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_ConcurrencyLimits>(create);
+  static UsagePolicy_ConcurrencyLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_ConcurrencyLimits>(create);
   static UsagePolicy_ConcurrencyLimits? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -102,20 +117,31 @@ class UsagePolicy_UsageLimits extends $pb.GeneratedMessage {
 
   UsagePolicy_UsageLimits._();
 
-  factory UsagePolicy_UsageLimits.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_UsageLimits.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_UsageLimits.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_UsageLimits.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.UsageLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.UsageLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'unitMinutes', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'builds', $pb.PbFieldType.O3)
     ..aInt64(3, _omitFieldNames ? '' : 'wallSeconds')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_UsageLimits clone() => UsagePolicy_UsageLimits()..mergeFromMessage(this);
+  UsagePolicy_UsageLimits clone() =>
+      UsagePolicy_UsageLimits()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_UsageLimits copyWith(void Function(UsagePolicy_UsageLimits) updates) => super.copyWith((message) => updates(message as UsagePolicy_UsageLimits)) as UsagePolicy_UsageLimits;
+  UsagePolicy_UsageLimits copyWith(
+          void Function(UsagePolicy_UsageLimits) updates) =>
+      super.copyWith((message) => updates(message as UsagePolicy_UsageLimits))
+          as UsagePolicy_UsageLimits;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -124,9 +150,11 @@ class UsagePolicy_UsageLimits extends $pb.GeneratedMessage {
   static UsagePolicy_UsageLimits create() => UsagePolicy_UsageLimits._();
   @$core.override
   UsagePolicy_UsageLimits createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_UsageLimits> createRepeated() => $pb.PbList<UsagePolicy_UsageLimits>();
+  static $pb.PbList<UsagePolicy_UsageLimits> createRepeated() =>
+      $pb.PbList<UsagePolicy_UsageLimits>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_UsageLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_UsageLimits>(create);
+  static UsagePolicy_UsageLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_UsageLimits>(create);
   static UsagePolicy_UsageLimits? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -162,24 +190,38 @@ class UsagePolicy_ShapeLimits extends $pb.GeneratedMessage {
     UsagePolicy_MachineShapeSize? largestAcceptableShape,
   }) {
     final result = create();
-    if (largestAcceptableShape != null) result.largestAcceptableShape = largestAcceptableShape;
+    if (largestAcceptableShape != null)
+      result.largestAcceptableShape = largestAcceptableShape;
     return result;
   }
 
   UsagePolicy_ShapeLimits._();
 
-  factory UsagePolicy_ShapeLimits.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_ShapeLimits.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_ShapeLimits.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_ShapeLimits.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.ShapeLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsagePolicy_MachineShapeSize>(1, _omitFieldNames ? '' : 'largestAcceptableShape', subBuilder: UsagePolicy_MachineShapeSize.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.ShapeLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsagePolicy_MachineShapeSize>(
+        1, _omitFieldNames ? '' : 'largestAcceptableShape',
+        subBuilder: UsagePolicy_MachineShapeSize.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_ShapeLimits clone() => UsagePolicy_ShapeLimits()..mergeFromMessage(this);
+  UsagePolicy_ShapeLimits clone() =>
+      UsagePolicy_ShapeLimits()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_ShapeLimits copyWith(void Function(UsagePolicy_ShapeLimits) updates) => super.copyWith((message) => updates(message as UsagePolicy_ShapeLimits)) as UsagePolicy_ShapeLimits;
+  UsagePolicy_ShapeLimits copyWith(
+          void Function(UsagePolicy_ShapeLimits) updates) =>
+      super.copyWith((message) => updates(message as UsagePolicy_ShapeLimits))
+          as UsagePolicy_ShapeLimits;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -188,15 +230,18 @@ class UsagePolicy_ShapeLimits extends $pb.GeneratedMessage {
   static UsagePolicy_ShapeLimits create() => UsagePolicy_ShapeLimits._();
   @$core.override
   UsagePolicy_ShapeLimits createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_ShapeLimits> createRepeated() => $pb.PbList<UsagePolicy_ShapeLimits>();
+  static $pb.PbList<UsagePolicy_ShapeLimits> createRepeated() =>
+      $pb.PbList<UsagePolicy_ShapeLimits>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_ShapeLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_ShapeLimits>(create);
+  static UsagePolicy_ShapeLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_ShapeLimits>(create);
   static UsagePolicy_ShapeLimits? _defaultInstance;
 
   @$pb.TagNumber(1)
   UsagePolicy_MachineShapeSize get largestAcceptableShape => $_getN(0);
   @$pb.TagNumber(1)
-  set largestAcceptableShape(UsagePolicy_MachineShapeSize value) => $_setField(1, value);
+  set largestAcceptableShape(UsagePolicy_MachineShapeSize value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasLargestAcceptableShape() => $_has(0);
   @$pb.TagNumber(1)
@@ -220,37 +265,58 @@ class UsagePolicy_PerPlatformLimits extends $pb.GeneratedMessage {
 
   UsagePolicy_PerPlatformLimits._();
 
-  factory UsagePolicy_PerPlatformLimits.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_PerPlatformLimits.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_PerPlatformLimits.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_PerPlatformLimits.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.PerPlatformLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsagePolicy_ConcurrencyLimits>(1, _omitFieldNames ? '' : 'concurrencyLimits', subBuilder: UsagePolicy_ConcurrencyLimits.create)
-    ..aOM<UsagePolicy_ShapeLimits>(2, _omitFieldNames ? '' : 'shapeLimits', subBuilder: UsagePolicy_ShapeLimits.create)
-    ..pc<UsagePolicy_PerShapeLimits>(3, _omitFieldNames ? '' : 'perShapeLimits', $pb.PbFieldType.PM, subBuilder: UsagePolicy_PerShapeLimits.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.PerPlatformLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsagePolicy_ConcurrencyLimits>(
+        1, _omitFieldNames ? '' : 'concurrencyLimits',
+        subBuilder: UsagePolicy_ConcurrencyLimits.create)
+    ..aOM<UsagePolicy_ShapeLimits>(2, _omitFieldNames ? '' : 'shapeLimits',
+        subBuilder: UsagePolicy_ShapeLimits.create)
+    ..pc<UsagePolicy_PerShapeLimits>(
+        3, _omitFieldNames ? '' : 'perShapeLimits', $pb.PbFieldType.PM,
+        subBuilder: UsagePolicy_PerShapeLimits.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_PerPlatformLimits clone() => UsagePolicy_PerPlatformLimits()..mergeFromMessage(this);
+  UsagePolicy_PerPlatformLimits clone() =>
+      UsagePolicy_PerPlatformLimits()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_PerPlatformLimits copyWith(void Function(UsagePolicy_PerPlatformLimits) updates) => super.copyWith((message) => updates(message as UsagePolicy_PerPlatformLimits)) as UsagePolicy_PerPlatformLimits;
+  UsagePolicy_PerPlatformLimits copyWith(
+          void Function(UsagePolicy_PerPlatformLimits) updates) =>
+      super.copyWith(
+              (message) => updates(message as UsagePolicy_PerPlatformLimits))
+          as UsagePolicy_PerPlatformLimits;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_PerPlatformLimits create() => UsagePolicy_PerPlatformLimits._();
+  static UsagePolicy_PerPlatformLimits create() =>
+      UsagePolicy_PerPlatformLimits._();
   @$core.override
   UsagePolicy_PerPlatformLimits createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_PerPlatformLimits> createRepeated() => $pb.PbList<UsagePolicy_PerPlatformLimits>();
+  static $pb.PbList<UsagePolicy_PerPlatformLimits> createRepeated() =>
+      $pb.PbList<UsagePolicy_PerPlatformLimits>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_PerPlatformLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_PerPlatformLimits>(create);
+  static UsagePolicy_PerPlatformLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_PerPlatformLimits>(create);
   static UsagePolicy_PerPlatformLimits? _defaultInstance;
 
   @$pb.TagNumber(1)
   UsagePolicy_ConcurrencyLimits get concurrencyLimits => $_getN(0);
   @$pb.TagNumber(1)
-  set concurrencyLimits(UsagePolicy_ConcurrencyLimits value) => $_setField(1, value);
+  set concurrencyLimits(UsagePolicy_ConcurrencyLimits value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasConcurrencyLimits() => $_has(0);
   @$pb.TagNumber(1)
@@ -286,30 +352,45 @@ class UsagePolicy_MachineShapeSize extends $pb.GeneratedMessage {
 
   UsagePolicy_MachineShapeSize._();
 
-  factory UsagePolicy_MachineShapeSize.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_MachineShapeSize.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_MachineShapeSize.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_MachineShapeSize.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.MachineShapeSize', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.MachineShapeSize',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'cpu')
     ..aInt64(2, _omitFieldNames ? '' : 'memoryMb')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_MachineShapeSize clone() => UsagePolicy_MachineShapeSize()..mergeFromMessage(this);
+  UsagePolicy_MachineShapeSize clone() =>
+      UsagePolicy_MachineShapeSize()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_MachineShapeSize copyWith(void Function(UsagePolicy_MachineShapeSize) updates) => super.copyWith((message) => updates(message as UsagePolicy_MachineShapeSize)) as UsagePolicy_MachineShapeSize;
+  UsagePolicy_MachineShapeSize copyWith(
+          void Function(UsagePolicy_MachineShapeSize) updates) =>
+      super.copyWith(
+              (message) => updates(message as UsagePolicy_MachineShapeSize))
+          as UsagePolicy_MachineShapeSize;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_MachineShapeSize create() => UsagePolicy_MachineShapeSize._();
+  static UsagePolicy_MachineShapeSize create() =>
+      UsagePolicy_MachineShapeSize._();
   @$core.override
   UsagePolicy_MachineShapeSize createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_MachineShapeSize> createRepeated() => $pb.PbList<UsagePolicy_MachineShapeSize>();
+  static $pb.PbList<UsagePolicy_MachineShapeSize> createRepeated() =>
+      $pb.PbList<UsagePolicy_MachineShapeSize>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_MachineShapeSize getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_MachineShapeSize>(create);
+  static UsagePolicy_MachineShapeSize getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_MachineShapeSize>(create);
   static UsagePolicy_MachineShapeSize? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -344,19 +425,33 @@ class UsagePolicy_PerShapeLimits extends $pb.GeneratedMessage {
 
   UsagePolicy_PerShapeLimits._();
 
-  factory UsagePolicy_PerShapeLimits.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy_PerShapeLimits.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy_PerShapeLimits.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy_PerShapeLimits.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy.PerShapeLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsagePolicy_MachineShapeSize>(1, _omitFieldNames ? '' : 'shape', subBuilder: UsagePolicy_MachineShapeSize.create)
-    ..aOM<UsagePolicy_ConcurrencyLimits>(2, _omitFieldNames ? '' : 'limits', subBuilder: UsagePolicy_ConcurrencyLimits.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy.PerShapeLimits',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsagePolicy_MachineShapeSize>(1, _omitFieldNames ? '' : 'shape',
+        subBuilder: UsagePolicy_MachineShapeSize.create)
+    ..aOM<UsagePolicy_ConcurrencyLimits>(2, _omitFieldNames ? '' : 'limits',
+        subBuilder: UsagePolicy_ConcurrencyLimits.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_PerShapeLimits clone() => UsagePolicy_PerShapeLimits()..mergeFromMessage(this);
+  UsagePolicy_PerShapeLimits clone() =>
+      UsagePolicy_PerShapeLimits()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy_PerShapeLimits copyWith(void Function(UsagePolicy_PerShapeLimits) updates) => super.copyWith((message) => updates(message as UsagePolicy_PerShapeLimits)) as UsagePolicy_PerShapeLimits;
+  UsagePolicy_PerShapeLimits copyWith(
+          void Function(UsagePolicy_PerShapeLimits) updates) =>
+      super.copyWith(
+              (message) => updates(message as UsagePolicy_PerShapeLimits))
+          as UsagePolicy_PerShapeLimits;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -365,9 +460,11 @@ class UsagePolicy_PerShapeLimits extends $pb.GeneratedMessage {
   static UsagePolicy_PerShapeLimits create() => UsagePolicy_PerShapeLimits._();
   @$core.override
   UsagePolicy_PerShapeLimits createEmptyInstance() => create();
-  static $pb.PbList<UsagePolicy_PerShapeLimits> createRepeated() => $pb.PbList<UsagePolicy_PerShapeLimits>();
+  static $pb.PbList<UsagePolicy_PerShapeLimits> createRepeated() =>
+      $pb.PbList<UsagePolicy_PerShapeLimits>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy_PerShapeLimits getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy_PerShapeLimits>(create);
+  static UsagePolicy_PerShapeLimits getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy_PerShapeLimits>(create);
   static UsagePolicy_PerShapeLimits? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -398,33 +495,55 @@ class UsagePolicy extends $pb.GeneratedMessage {
     UsagePolicy_ConcurrencyLimits? concurrencyLimits,
     UsagePolicy_UsageLimits? usageLimits,
     $core.Iterable<$core.String>? enabledPlatforms,
-    $core.Iterable<$core.MapEntry<$core.String, UsagePolicy_PerPlatformLimits>>? perPlatformLimits,
+    $core.Iterable<$core.MapEntry<$core.String, UsagePolicy_PerPlatformLimits>>?
+        perPlatformLimits,
   }) {
     final result = create();
     if (concurrencyLimits != null) result.concurrencyLimits = concurrencyLimits;
     if (usageLimits != null) result.usageLimits = usageLimits;
-    if (enabledPlatforms != null) result.enabledPlatforms.addAll(enabledPlatforms);
-    if (perPlatformLimits != null) result.perPlatformLimits.addEntries(perPlatformLimits);
+    if (enabledPlatforms != null)
+      result.enabledPlatforms.addAll(enabledPlatforms);
+    if (perPlatformLimits != null)
+      result.perPlatformLimits.addEntries(perPlatformLimits);
     return result;
   }
 
   UsagePolicy._();
 
-  factory UsagePolicy.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsagePolicy.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsagePolicy.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsagePolicy.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsagePolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsagePolicy_ConcurrencyLimits>(1, _omitFieldNames ? '' : 'concurrencyLimits', subBuilder: UsagePolicy_ConcurrencyLimits.create)
-    ..aOM<UsagePolicy_UsageLimits>(2, _omitFieldNames ? '' : 'usageLimits', subBuilder: UsagePolicy_UsageLimits.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsagePolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsagePolicy_ConcurrencyLimits>(
+        1, _omitFieldNames ? '' : 'concurrencyLimits',
+        subBuilder: UsagePolicy_ConcurrencyLimits.create)
+    ..aOM<UsagePolicy_UsageLimits>(2, _omitFieldNames ? '' : 'usageLimits',
+        subBuilder: UsagePolicy_UsageLimits.create)
     ..pPS(3, _omitFieldNames ? '' : 'enabledPlatforms')
-    ..m<$core.String, UsagePolicy_PerPlatformLimits>(4, _omitFieldNames ? '' : 'perPlatformLimits', entryClassName: 'UsagePolicy.PerPlatformLimitsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: UsagePolicy_PerPlatformLimits.create, valueDefaultOrMaker: UsagePolicy_PerPlatformLimits.getDefault, packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, UsagePolicy_PerPlatformLimits>(
+        4, _omitFieldNames ? '' : 'perPlatformLimits',
+        entryClassName: 'UsagePolicy.PerPlatformLimitsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: UsagePolicy_PerPlatformLimits.create,
+        valueDefaultOrMaker: UsagePolicy_PerPlatformLimits.getDefault,
+        packageName: const $pb.PackageName('namespace.cloud.compute.v1beta'))
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UsagePolicy clone() => UsagePolicy()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsagePolicy copyWith(void Function(UsagePolicy) updates) => super.copyWith((message) => updates(message as UsagePolicy)) as UsagePolicy;
+  UsagePolicy copyWith(void Function(UsagePolicy) updates) =>
+      super.copyWith((message) => updates(message as UsagePolicy))
+          as UsagePolicy;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -435,13 +554,15 @@ class UsagePolicy extends $pb.GeneratedMessage {
   UsagePolicy createEmptyInstance() => create();
   static $pb.PbList<UsagePolicy> createRepeated() => $pb.PbList<UsagePolicy>();
   @$core.pragma('dart2js:noInline')
-  static UsagePolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsagePolicy>(create);
+  static UsagePolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsagePolicy>(create);
   static UsagePolicy? _defaultInstance;
 
   @$pb.TagNumber(1)
   UsagePolicy_ConcurrencyLimits get concurrencyLimits => $_getN(0);
   @$pb.TagNumber(1)
-  set concurrencyLimits(UsagePolicy_ConcurrencyLimits value) => $_setField(1, value);
+  set concurrencyLimits(UsagePolicy_ConcurrencyLimits value) =>
+      $_setField(1, value);
   @$pb.TagNumber(1)
   $core.bool hasConcurrencyLimits() => $_has(0);
   @$pb.TagNumber(1)
@@ -464,9 +585,11 @@ class UsagePolicy extends $pb.GeneratedMessage {
   $pb.PbList<$core.String> get enabledPlatforms => $_getList(2);
 
   @$pb.TagNumber(4)
-  $pb.PbMap<$core.String, UsagePolicy_PerPlatformLimits> get perPlatformLimits => $_getMap(3);
+  $pb.PbMap<$core.String, UsagePolicy_PerPlatformLimits>
+      get perPlatformLimits => $_getMap(3);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

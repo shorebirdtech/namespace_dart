@@ -24,10 +24,38 @@ const BaseImage$json = {
     {'1': 'os_name', '3': 3, '4': 1, '5': 9, '10': 'osName'},
     {'1': 'os_version', '3': 4, '4': 1, '5': 9, '10': 'osVersion'},
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'updated_at', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updatedAt'},
-    {'1': 'packages', '3': 7, '4': 3, '5': 11, '6': '.namespace.private.images.v1beta.Package', '10': 'packages'},
-    {'1': 'default_packages', '3': 11, '4': 3, '5': 11, '6': '.namespace.private.images.v1beta.Package', '10': 'defaultPackages'},
-    {'1': 'release_stage', '3': 9, '4': 1, '5': 14, '6': '.namespace.private.images.v1beta.BaseImage.ReleaseStage', '10': 'releaseStage'},
+    {
+      '1': 'updated_at',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updatedAt'
+    },
+    {
+      '1': 'packages',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.private.images.v1beta.Package',
+      '10': 'packages'
+    },
+    {
+      '1': 'default_packages',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.private.images.v1beta.Package',
+      '10': 'defaultPackages'
+    },
+    {
+      '1': 'release_stage',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.namespace.private.images.v1beta.BaseImage.ReleaseStage',
+      '10': 'releaseStage'
+    },
     {'1': 'features', '3': 10, '4': 3, '5': 9, '10': 'features'},
   ],
   '4': [BaseImage_ReleaseStage$json],
@@ -75,8 +103,22 @@ final $typed_data.Uint8List packageDescriptor = $convert.base64Decode(
 const ResolvedBaseImage$json = {
   '1': 'ResolvedBaseImage',
   '2': [
-    {'1': 'spec', '3': 1, '4': 1, '5': 11, '6': '.namespace.private.images.v1beta.BaseImage', '10': 'spec'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.namespace.private.images.v1beta.BaseImageStatus', '10': 'status'},
+    {
+      '1': 'spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.images.v1beta.BaseImage',
+      '10': 'spec'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.private.images.v1beta.BaseImageStatus',
+      '10': 'status'
+    },
   ],
 };
 
@@ -91,10 +133,36 @@ const BaseImageStatus$json = {
   '1': 'BaseImageStatus',
   '2': [
     {'1': 'image_ref', '3': 1, '4': 1, '5': 9, '10': 'imageRef'},
-    {'1': 'built_at', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'builtAt'},
-    {'1': 'prewarm_after', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'prewarmAfter'},
-    {'1': 'prewarm_in_regions', '3': 4, '4': 3, '5': 9, '10': 'prewarmInRegions'},
-    {'1': 'skip_staggered_baking', '3': 5, '4': 1, '5': 8, '10': 'skipStaggeredBaking'},
+    {
+      '1': 'built_at',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'builtAt'
+    },
+    {
+      '1': 'prewarm_after',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'prewarmAfter'
+    },
+    {
+      '1': 'prewarm_in_regions',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'prewarmInRegions'
+    },
+    {
+      '1': 'skip_staggered_baking',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'skipStaggeredBaking'
+    },
     {'1': 'image_repository', '3': 6, '4': 1, '5': 9, '10': 'imageRepository'},
     {'1': 'image_digest', '3': 7, '4': 1, '5': 9, '10': 'imageDigest'},
   ],
@@ -109,4 +177,3 @@ final $typed_data.Uint8List baseImageStatusDescriptor = $convert.base64Decode(
     'dGFnZ2VyZWRfYmFraW5nGAUgASgIUhNza2lwU3RhZ2dlcmVkQmFraW5nEikKEGltYWdlX3JlcG'
     '9zaXRvcnkYBiABKAlSD2ltYWdlUmVwb3NpdG9yeRIhCgxpbWFnZV9kaWdlc3QYByABKAlSC2lt'
     'YWdlRGlnZXN0');
-

@@ -22,26 +22,36 @@ import 'management.pbjson.dart';
 export 'management.pb.dart';
 
 abstract class ManagementServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.Empty> setKnownImages($pb.ServerContext ctx, $2.SetKnownImagesRequest request);
-  $async.Future<$2.GetKnownImagesResponse> getKnownImages($pb.ServerContext ctx, $1.Empty request);
+  $async.Future<$1.Empty> setKnownImages(
+      $pb.ServerContext ctx, $2.SetKnownImagesRequest request);
+  $async.Future<$2.GetKnownImagesResponse> getKnownImages(
+      $pb.ServerContext ctx, $1.Empty request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'SetKnownImages': return $2.SetKnownImagesRequest();
-      case 'GetKnownImages': return $1.Empty();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'SetKnownImages':
+        return $2.SetKnownImagesRequest();
+      case 'GetKnownImages':
+        return $1.Empty();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'SetKnownImages': return setKnownImages(ctx, request as $2.SetKnownImagesRequest);
-      case 'GetKnownImages': return getKnownImages(ctx, request as $1.Empty);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'SetKnownImages':
+        return setKnownImages(ctx, request as $2.SetKnownImagesRequest);
+      case 'GetKnownImages':
+        return getKnownImages(ctx, request as $1.Empty);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $core.Map<$core.String, $core.dynamic> get $json => ManagementServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => ManagementServiceBase$messageJson;
+  $core.Map<$core.String, $core.dynamic> get $json =>
+      ManagementServiceBase$json;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => ManagementServiceBase$messageJson;
 }
-

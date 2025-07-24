@@ -33,20 +33,30 @@ class GetUsageRequest_Date extends $pb.GeneratedMessage {
 
   GetUsageRequest_Date._();
 
-  factory GetUsageRequest_Date.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetUsageRequest_Date.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetUsageRequest_Date.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetUsageRequest_Date.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetUsageRequest.Date', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetUsageRequest.Date',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetUsageRequest_Date clone() => GetUsageRequest_Date()..mergeFromMessage(this);
+  GetUsageRequest_Date clone() =>
+      GetUsageRequest_Date()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetUsageRequest_Date copyWith(void Function(GetUsageRequest_Date) updates) => super.copyWith((message) => updates(message as GetUsageRequest_Date)) as GetUsageRequest_Date;
+  GetUsageRequest_Date copyWith(void Function(GetUsageRequest_Date) updates) =>
+      super.copyWith((message) => updates(message as GetUsageRequest_Date))
+          as GetUsageRequest_Date;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -55,9 +65,11 @@ class GetUsageRequest_Date extends $pb.GeneratedMessage {
   static GetUsageRequest_Date create() => GetUsageRequest_Date._();
   @$core.override
   GetUsageRequest_Date createEmptyInstance() => create();
-  static $pb.PbList<GetUsageRequest_Date> createRepeated() => $pb.PbList<GetUsageRequest_Date>();
+  static $pb.PbList<GetUsageRequest_Date> createRepeated() =>
+      $pb.PbList<GetUsageRequest_Date>();
   @$core.pragma('dart2js:noInline')
-  static GetUsageRequest_Date getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetUsageRequest_Date>(create);
+  static GetUsageRequest_Date getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetUsageRequest_Date>(create);
   static GetUsageRequest_Date? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -101,19 +113,30 @@ class GetUsageRequest extends $pb.GeneratedMessage {
 
   GetUsageRequest._();
 
-  factory GetUsageRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetUsageRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetUsageRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetUsageRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetUsageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<GetUsageRequest_Date>(1, _omitFieldNames ? '' : 'periodStart', subBuilder: GetUsageRequest_Date.create)
-    ..aOM<GetUsageRequest_Date>(2, _omitFieldNames ? '' : 'periodEnd', subBuilder: GetUsageRequest_Date.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetUsageRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<GetUsageRequest_Date>(1, _omitFieldNames ? '' : 'periodStart',
+        subBuilder: GetUsageRequest_Date.create)
+    ..aOM<GetUsageRequest_Date>(2, _omitFieldNames ? '' : 'periodEnd',
+        subBuilder: GetUsageRequest_Date.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetUsageRequest clone() => GetUsageRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetUsageRequest copyWith(void Function(GetUsageRequest) updates) => super.copyWith((message) => updates(message as GetUsageRequest)) as GetUsageRequest;
+  GetUsageRequest copyWith(void Function(GetUsageRequest) updates) =>
+      super.copyWith((message) => updates(message as GetUsageRequest))
+          as GetUsageRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -122,9 +145,11 @@ class GetUsageRequest extends $pb.GeneratedMessage {
   static GetUsageRequest create() => GetUsageRequest._();
   @$core.override
   GetUsageRequest createEmptyInstance() => create();
-  static $pb.PbList<GetUsageRequest> createRepeated() => $pb.PbList<GetUsageRequest>();
+  static $pb.PbList<GetUsageRequest> createRepeated() =>
+      $pb.PbList<GetUsageRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetUsageRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetUsageRequest>(create);
+  static GetUsageRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetUsageRequest>(create);
   static GetUsageRequest? _defaultInstance;
 
   /// Optional: If no start date is provided, then return the compute usage starting from
@@ -168,19 +193,30 @@ class GetUsageResponse extends $pb.GeneratedMessage {
 
   GetUsageResponse._();
 
-  factory GetUsageResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetUsageResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetUsageResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetUsageResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetUsageResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsageRecord_Usage>(1, _omitFieldNames ? '' : 'total', subBuilder: UsageRecord_Usage.create)
-    ..pc<UsageRecord>(2, _omitFieldNames ? '' : 'perDay', $pb.PbFieldType.PM, subBuilder: UsageRecord.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetUsageResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsageRecord_Usage>(1, _omitFieldNames ? '' : 'total',
+        subBuilder: UsageRecord_Usage.create)
+    ..pc<UsageRecord>(2, _omitFieldNames ? '' : 'perDay', $pb.PbFieldType.PM,
+        subBuilder: UsageRecord.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetUsageResponse clone() => GetUsageResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetUsageResponse copyWith(void Function(GetUsageResponse) updates) => super.copyWith((message) => updates(message as GetUsageResponse)) as GetUsageResponse;
+  GetUsageResponse copyWith(void Function(GetUsageResponse) updates) =>
+      super.copyWith((message) => updates(message as GetUsageResponse))
+          as GetUsageResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -189,9 +225,11 @@ class GetUsageResponse extends $pb.GeneratedMessage {
   static GetUsageResponse create() => GetUsageResponse._();
   @$core.override
   GetUsageResponse createEmptyInstance() => create();
-  static $pb.PbList<GetUsageResponse> createRepeated() => $pb.PbList<GetUsageResponse>();
+  static $pb.PbList<GetUsageResponse> createRepeated() =>
+      $pb.PbList<GetUsageResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetUsageResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetUsageResponse>(create);
+  static GetUsageResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetUsageResponse>(create);
   static GetUsageResponse? _defaultInstance;
 
   /// Cumulated usage summary for the current billing period.
@@ -224,19 +262,30 @@ class UsageRecord_Usage extends $pb.GeneratedMessage {
 
   UsageRecord_Usage._();
 
-  factory UsageRecord_Usage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsageRecord_Usage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsageRecord_Usage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsageRecord_Usage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageRecord.Usage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
-    ..aOM<UsageRecord_Minutes>(1, _omitFieldNames ? '' : 'instanceMinutes', subBuilder: UsageRecord_Minutes.create)
-    ..aOM<UsageRecord_Builds>(2, _omitFieldNames ? '' : 'builds', subBuilder: UsageRecord_Builds.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsageRecord.Usage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<UsageRecord_Minutes>(1, _omitFieldNames ? '' : 'instanceMinutes',
+        subBuilder: UsageRecord_Minutes.create)
+    ..aOM<UsageRecord_Builds>(2, _omitFieldNames ? '' : 'builds',
+        subBuilder: UsageRecord_Builds.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UsageRecord_Usage clone() => UsageRecord_Usage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsageRecord_Usage copyWith(void Function(UsageRecord_Usage) updates) => super.copyWith((message) => updates(message as UsageRecord_Usage)) as UsageRecord_Usage;
+  UsageRecord_Usage copyWith(void Function(UsageRecord_Usage) updates) =>
+      super.copyWith((message) => updates(message as UsageRecord_Usage))
+          as UsageRecord_Usage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -245,9 +294,11 @@ class UsageRecord_Usage extends $pb.GeneratedMessage {
   static UsageRecord_Usage create() => UsageRecord_Usage._();
   @$core.override
   UsageRecord_Usage createEmptyInstance() => create();
-  static $pb.PbList<UsageRecord_Usage> createRepeated() => $pb.PbList<UsageRecord_Usage>();
+  static $pb.PbList<UsageRecord_Usage> createRepeated() =>
+      $pb.PbList<UsageRecord_Usage>();
   @$core.pragma('dart2js:noInline')
-  static UsageRecord_Usage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRecord_Usage>(create);
+  static UsageRecord_Usage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsageRecord_Usage>(create);
   static UsageRecord_Usage? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -286,19 +337,28 @@ class UsageRecord_Minutes extends $pb.GeneratedMessage {
 
   UsageRecord_Minutes._();
 
-  factory UsageRecord_Minutes.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsageRecord_Minutes.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsageRecord_Minutes.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsageRecord_Minutes.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageRecord.Minutes', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsageRecord.Minutes',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'unit')
     ..aInt64(2, _omitFieldNames ? '' : 'wall')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UsageRecord_Minutes clone() => UsageRecord_Minutes()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsageRecord_Minutes copyWith(void Function(UsageRecord_Minutes) updates) => super.copyWith((message) => updates(message as UsageRecord_Minutes)) as UsageRecord_Minutes;
+  UsageRecord_Minutes copyWith(void Function(UsageRecord_Minutes) updates) =>
+      super.copyWith((message) => updates(message as UsageRecord_Minutes))
+          as UsageRecord_Minutes;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -307,9 +367,11 @@ class UsageRecord_Minutes extends $pb.GeneratedMessage {
   static UsageRecord_Minutes create() => UsageRecord_Minutes._();
   @$core.override
   UsageRecord_Minutes createEmptyInstance() => create();
-  static $pb.PbList<UsageRecord_Minutes> createRepeated() => $pb.PbList<UsageRecord_Minutes>();
+  static $pb.PbList<UsageRecord_Minutes> createRepeated() =>
+      $pb.PbList<UsageRecord_Minutes>();
   @$core.pragma('dart2js:noInline')
-  static UsageRecord_Minutes getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRecord_Minutes>(create);
+  static UsageRecord_Minutes getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsageRecord_Minutes>(create);
   static UsageRecord_Minutes? _defaultInstance;
 
   /// A compute unit represents using 1 vCPU and 2GB of RAM for a minute.
@@ -350,20 +412,29 @@ class UsageRecord_Builds extends $pb.GeneratedMessage {
 
   UsageRecord_Builds._();
 
-  factory UsageRecord_Builds.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsageRecord_Builds.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsageRecord_Builds.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsageRecord_Builds.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageRecord.Builds', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsageRecord.Builds',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'count')
     ..aInt64(2, _omitFieldNames ? '' : 'unitMinutes')
     ..aInt64(3, _omitFieldNames ? '' : 'wallMinutes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UsageRecord_Builds clone() => UsageRecord_Builds()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsageRecord_Builds copyWith(void Function(UsageRecord_Builds) updates) => super.copyWith((message) => updates(message as UsageRecord_Builds)) as UsageRecord_Builds;
+  UsageRecord_Builds copyWith(void Function(UsageRecord_Builds) updates) =>
+      super.copyWith((message) => updates(message as UsageRecord_Builds))
+          as UsageRecord_Builds;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -372,9 +443,11 @@ class UsageRecord_Builds extends $pb.GeneratedMessage {
   static UsageRecord_Builds create() => UsageRecord_Builds._();
   @$core.override
   UsageRecord_Builds createEmptyInstance() => create();
-  static $pb.PbList<UsageRecord_Builds> createRepeated() => $pb.PbList<UsageRecord_Builds>();
+  static $pb.PbList<UsageRecord_Builds> createRepeated() =>
+      $pb.PbList<UsageRecord_Builds>();
   @$core.pragma('dart2js:noInline')
-  static UsageRecord_Builds getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRecord_Builds>(create);
+  static UsageRecord_Builds getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsageRecord_Builds>(create);
   static UsageRecord_Builds? _defaultInstance;
 
   /// The count represents the amount of build requests that were processed in the given period.
@@ -429,21 +502,31 @@ class UsageRecord extends $pb.GeneratedMessage {
 
   UsageRecord._();
 
-  factory UsageRecord.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory UsageRecord.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory UsageRecord.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory UsageRecord.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UsageRecord',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.compute.v1beta'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
-    ..aOM<UsageRecord_Usage>(4, _omitFieldNames ? '' : 'total', subBuilder: UsageRecord_Usage.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<UsageRecord_Usage>(4, _omitFieldNames ? '' : 'total',
+        subBuilder: UsageRecord_Usage.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UsageRecord clone() => UsageRecord()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UsageRecord copyWith(void Function(UsageRecord) updates) => super.copyWith((message) => updates(message as UsageRecord)) as UsageRecord;
+  UsageRecord copyWith(void Function(UsageRecord) updates) =>
+      super.copyWith((message) => updates(message as UsageRecord))
+          as UsageRecord;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -454,7 +537,8 @@ class UsageRecord extends $pb.GeneratedMessage {
   UsageRecord createEmptyInstance() => create();
   static $pb.PbList<UsageRecord> createRepeated() => $pb.PbList<UsageRecord>();
   @$core.pragma('dart2js:noInline')
-  static UsageRecord getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UsageRecord>(create);
+  static UsageRecord getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UsageRecord>(create);
   static UsageRecord? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -530,11 +614,13 @@ class UsageServiceApi {
   /// Returns the compute usage of a tenant starting from the provided start date. If no start
   /// date is provided, then it returns the compute usage starting from first day of the
   /// current month.
-  $async.Future<GetUsageResponse> getUsage($pb.ClientContext? ctx, GetUsageRequest request) =>
-    _client.invoke<GetUsageResponse>(ctx, 'UsageService', 'GetUsage', request, GetUsageResponse())
-  ;
+  $async.Future<GetUsageResponse> getUsage(
+          $pb.ClientContext? ctx, GetUsageRequest request) =>
+      _client.invoke<GetUsageResponse>(
+          ctx, 'UsageService', 'GetUsage', request, GetUsageResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

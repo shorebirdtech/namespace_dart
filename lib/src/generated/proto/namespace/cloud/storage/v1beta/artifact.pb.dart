@@ -42,21 +42,34 @@ class CreateArtifactRequest extends $pb.GeneratedMessage {
 
   CreateArtifactRequest._();
 
-  factory CreateArtifactRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CreateArtifactRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CreateArtifactRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CreateArtifactRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateArtifactRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateArtifactRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'namespace')
-    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt', subBuilder: $0.Timestamp.create)
-    ..pc<$1.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $1.Label.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $0.Timestamp.create)
+    ..pc<$1.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $1.Label.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateArtifactRequest clone() => CreateArtifactRequest()..mergeFromMessage(this);
+  CreateArtifactRequest clone() =>
+      CreateArtifactRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateArtifactRequest copyWith(void Function(CreateArtifactRequest) updates) => super.copyWith((message) => updates(message as CreateArtifactRequest)) as CreateArtifactRequest;
+  CreateArtifactRequest copyWith(
+          void Function(CreateArtifactRequest) updates) =>
+      super.copyWith((message) => updates(message as CreateArtifactRequest))
+          as CreateArtifactRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -65,9 +78,11 @@ class CreateArtifactRequest extends $pb.GeneratedMessage {
   static CreateArtifactRequest create() => CreateArtifactRequest._();
   @$core.override
   CreateArtifactRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateArtifactRequest> createRepeated() => $pb.PbList<CreateArtifactRequest>();
+  static $pb.PbList<CreateArtifactRequest> createRepeated() =>
+      $pb.PbList<CreateArtifactRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateArtifactRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateArtifactRequest>(create);
+  static CreateArtifactRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateArtifactRequest>(create);
   static CreateArtifactRequest? _defaultInstance;
 
   /// The file path for the artifact to be stored.
@@ -124,20 +139,32 @@ class CreateArtifactResponse extends $pb.GeneratedMessage {
 
   CreateArtifactResponse._();
 
-  factory CreateArtifactResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory CreateArtifactResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory CreateArtifactResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory CreateArtifactResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateArtifactResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CreateArtifactResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'signedUploadUrl')
     ..aOS(2, _omitFieldNames ? '' : 'uploadId')
-    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt', subBuilder: $0.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $0.Timestamp.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateArtifactResponse clone() => CreateArtifactResponse()..mergeFromMessage(this);
+  CreateArtifactResponse clone() =>
+      CreateArtifactResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateArtifactResponse copyWith(void Function(CreateArtifactResponse) updates) => super.copyWith((message) => updates(message as CreateArtifactResponse)) as CreateArtifactResponse;
+  CreateArtifactResponse copyWith(
+          void Function(CreateArtifactResponse) updates) =>
+      super.copyWith((message) => updates(message as CreateArtifactResponse))
+          as CreateArtifactResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -146,9 +173,11 @@ class CreateArtifactResponse extends $pb.GeneratedMessage {
   static CreateArtifactResponse create() => CreateArtifactResponse._();
   @$core.override
   CreateArtifactResponse createEmptyInstance() => create();
-  static $pb.PbList<CreateArtifactResponse> createRepeated() => $pb.PbList<CreateArtifactResponse>();
+  static $pb.PbList<CreateArtifactResponse> createRepeated() =>
+      $pb.PbList<CreateArtifactResponse>();
   @$core.pragma('dart2js:noInline')
-  static CreateArtifactResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateArtifactResponse>(create);
+  static CreateArtifactResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CreateArtifactResponse>(create);
   static CreateArtifactResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -185,10 +214,8 @@ class CreateArtifactResponse extends $pb.GeneratedMessage {
 
 class FinalizeArtifactRequest extends $pb.GeneratedMessage {
   factory FinalizeArtifactRequest({
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? path,
-  @$core.Deprecated('This field is deprecated.')
-    $core.String? namespace,
+    @$core.Deprecated('This field is deprecated.') $core.String? path,
+    @$core.Deprecated('This field is deprecated.') $core.String? namespace,
     $core.String? uploadId,
     $core.Iterable<$1.Label>? addLabels,
   }) {
@@ -202,21 +229,33 @@ class FinalizeArtifactRequest extends $pb.GeneratedMessage {
 
   FinalizeArtifactRequest._();
 
-  factory FinalizeArtifactRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory FinalizeArtifactRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory FinalizeArtifactRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FinalizeArtifactRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinalizeArtifactRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FinalizeArtifactRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'namespace')
     ..aOS(3, _omitFieldNames ? '' : 'uploadId')
-    ..pc<$1.Label>(4, _omitFieldNames ? '' : 'addLabels', $pb.PbFieldType.PM, subBuilder: $1.Label.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<$1.Label>(4, _omitFieldNames ? '' : 'addLabels', $pb.PbFieldType.PM,
+        subBuilder: $1.Label.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FinalizeArtifactRequest clone() => FinalizeArtifactRequest()..mergeFromMessage(this);
+  FinalizeArtifactRequest clone() =>
+      FinalizeArtifactRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FinalizeArtifactRequest copyWith(void Function(FinalizeArtifactRequest) updates) => super.copyWith((message) => updates(message as FinalizeArtifactRequest)) as FinalizeArtifactRequest;
+  FinalizeArtifactRequest copyWith(
+          void Function(FinalizeArtifactRequest) updates) =>
+      super.copyWith((message) => updates(message as FinalizeArtifactRequest))
+          as FinalizeArtifactRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -225,9 +264,11 @@ class FinalizeArtifactRequest extends $pb.GeneratedMessage {
   static FinalizeArtifactRequest create() => FinalizeArtifactRequest._();
   @$core.override
   FinalizeArtifactRequest createEmptyInstance() => create();
-  static $pb.PbList<FinalizeArtifactRequest> createRepeated() => $pb.PbList<FinalizeArtifactRequest>();
+  static $pb.PbList<FinalizeArtifactRequest> createRepeated() =>
+      $pb.PbList<FinalizeArtifactRequest>();
   @$core.pragma('dart2js:noInline')
-  static FinalizeArtifactRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FinalizeArtifactRequest>(create);
+  static FinalizeArtifactRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FinalizeArtifactRequest>(create);
   static FinalizeArtifactRequest? _defaultInstance;
 
   /// Unused, upload_id is sufficient.
@@ -283,18 +324,30 @@ class FinalizeArtifactResponse extends $pb.GeneratedMessage {
 
   FinalizeArtifactResponse._();
 
-  factory FinalizeArtifactResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory FinalizeArtifactResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory FinalizeArtifactResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory FinalizeArtifactResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinalizeArtifactResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
-    ..aOM<Artifact>(1, _omitFieldNames ? '' : 'description', subBuilder: Artifact.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FinalizeArtifactResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<Artifact>(1, _omitFieldNames ? '' : 'description',
+        subBuilder: Artifact.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FinalizeArtifactResponse clone() => FinalizeArtifactResponse()..mergeFromMessage(this);
+  FinalizeArtifactResponse clone() =>
+      FinalizeArtifactResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  FinalizeArtifactResponse copyWith(void Function(FinalizeArtifactResponse) updates) => super.copyWith((message) => updates(message as FinalizeArtifactResponse)) as FinalizeArtifactResponse;
+  FinalizeArtifactResponse copyWith(
+          void Function(FinalizeArtifactResponse) updates) =>
+      super.copyWith((message) => updates(message as FinalizeArtifactResponse))
+          as FinalizeArtifactResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -303,9 +356,11 @@ class FinalizeArtifactResponse extends $pb.GeneratedMessage {
   static FinalizeArtifactResponse create() => FinalizeArtifactResponse._();
   @$core.override
   FinalizeArtifactResponse createEmptyInstance() => create();
-  static $pb.PbList<FinalizeArtifactResponse> createRepeated() => $pb.PbList<FinalizeArtifactResponse>();
+  static $pb.PbList<FinalizeArtifactResponse> createRepeated() =>
+      $pb.PbList<FinalizeArtifactResponse>();
   @$core.pragma('dart2js:noInline')
-  static FinalizeArtifactResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FinalizeArtifactResponse>(create);
+  static FinalizeArtifactResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FinalizeArtifactResponse>(create);
   static FinalizeArtifactResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -335,20 +390,31 @@ class ResolveArtifactRequest extends $pb.GeneratedMessage {
 
   ResolveArtifactRequest._();
 
-  factory ResolveArtifactRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ResolveArtifactRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ResolveArtifactRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResolveArtifactRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResolveArtifactRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResolveArtifactRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'namespace')
     ..aOB(3, _omitFieldNames ? '' : 'metadataOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveArtifactRequest clone() => ResolveArtifactRequest()..mergeFromMessage(this);
+  ResolveArtifactRequest clone() =>
+      ResolveArtifactRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveArtifactRequest copyWith(void Function(ResolveArtifactRequest) updates) => super.copyWith((message) => updates(message as ResolveArtifactRequest)) as ResolveArtifactRequest;
+  ResolveArtifactRequest copyWith(
+          void Function(ResolveArtifactRequest) updates) =>
+      super.copyWith((message) => updates(message as ResolveArtifactRequest))
+          as ResolveArtifactRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -357,9 +423,11 @@ class ResolveArtifactRequest extends $pb.GeneratedMessage {
   static ResolveArtifactRequest create() => ResolveArtifactRequest._();
   @$core.override
   ResolveArtifactRequest createEmptyInstance() => create();
-  static $pb.PbList<ResolveArtifactRequest> createRepeated() => $pb.PbList<ResolveArtifactRequest>();
+  static $pb.PbList<ResolveArtifactRequest> createRepeated() =>
+      $pb.PbList<ResolveArtifactRequest>();
   @$core.pragma('dart2js:noInline')
-  static ResolveArtifactRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResolveArtifactRequest>(create);
+  static ResolveArtifactRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResolveArtifactRequest>(create);
   static ResolveArtifactRequest? _defaultInstance;
 
   /// The file path for the stored artifact.
@@ -408,20 +476,33 @@ class ResolveArtifactResponse extends $pb.GeneratedMessage {
 
   ResolveArtifactResponse._();
 
-  factory ResolveArtifactResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ResolveArtifactResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ResolveArtifactResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ResolveArtifactResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResolveArtifactResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResolveArtifactResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'signedDownloadUrl')
-    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'expiresAt', subBuilder: $0.Timestamp.create)
-    ..aOM<Artifact>(3, _omitFieldNames ? '' : 'description', subBuilder: Artifact.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Timestamp>(2, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $0.Timestamp.create)
+    ..aOM<Artifact>(3, _omitFieldNames ? '' : 'description',
+        subBuilder: Artifact.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveArtifactResponse clone() => ResolveArtifactResponse()..mergeFromMessage(this);
+  ResolveArtifactResponse clone() =>
+      ResolveArtifactResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveArtifactResponse copyWith(void Function(ResolveArtifactResponse) updates) => super.copyWith((message) => updates(message as ResolveArtifactResponse)) as ResolveArtifactResponse;
+  ResolveArtifactResponse copyWith(
+          void Function(ResolveArtifactResponse) updates) =>
+      super.copyWith((message) => updates(message as ResolveArtifactResponse))
+          as ResolveArtifactResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -430,9 +511,11 @@ class ResolveArtifactResponse extends $pb.GeneratedMessage {
   static ResolveArtifactResponse create() => ResolveArtifactResponse._();
   @$core.override
   ResolveArtifactResponse createEmptyInstance() => create();
-  static $pb.PbList<ResolveArtifactResponse> createRepeated() => $pb.PbList<ResolveArtifactResponse>();
+  static $pb.PbList<ResolveArtifactResponse> createRepeated() =>
+      $pb.PbList<ResolveArtifactResponse>();
   @$core.pragma('dart2js:noInline')
-  static ResolveArtifactResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResolveArtifactResponse>(create);
+  static ResolveArtifactResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResolveArtifactResponse>(create);
   static ResolveArtifactResponse? _defaultInstance;
 
   /// Direct URL to download the artifact without authentication.
@@ -484,19 +567,30 @@ class ExpireArtifactRequest extends $pb.GeneratedMessage {
 
   ExpireArtifactRequest._();
 
-  factory ExpireArtifactRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ExpireArtifactRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ExpireArtifactRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ExpireArtifactRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExpireArtifactRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ExpireArtifactRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'namespace')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExpireArtifactRequest clone() => ExpireArtifactRequest()..mergeFromMessage(this);
+  ExpireArtifactRequest clone() =>
+      ExpireArtifactRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExpireArtifactRequest copyWith(void Function(ExpireArtifactRequest) updates) => super.copyWith((message) => updates(message as ExpireArtifactRequest)) as ExpireArtifactRequest;
+  ExpireArtifactRequest copyWith(
+          void Function(ExpireArtifactRequest) updates) =>
+      super.copyWith((message) => updates(message as ExpireArtifactRequest))
+          as ExpireArtifactRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -505,9 +599,11 @@ class ExpireArtifactRequest extends $pb.GeneratedMessage {
   static ExpireArtifactRequest create() => ExpireArtifactRequest._();
   @$core.override
   ExpireArtifactRequest createEmptyInstance() => create();
-  static $pb.PbList<ExpireArtifactRequest> createRepeated() => $pb.PbList<ExpireArtifactRequest>();
+  static $pb.PbList<ExpireArtifactRequest> createRepeated() =>
+      $pb.PbList<ExpireArtifactRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExpireArtifactRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExpireArtifactRequest>(create);
+  static ExpireArtifactRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ExpireArtifactRequest>(create);
   static ExpireArtifactRequest? _defaultInstance;
 
   /// The file path for the stored artifact.
@@ -552,23 +648,40 @@ class ListArtifactsRequest extends $pb.GeneratedMessage {
 
   ListArtifactsRequest._();
 
-  factory ListArtifactsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListArtifactsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListArtifactsRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListArtifactsRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListArtifactsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListArtifactsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'namespaces')
-    ..pc<$1.LabelFilterEntry>(2, _omitFieldNames ? '' : 'labelFilter', $pb.PbFieldType.PM, subBuilder: $1.LabelFilterEntry.create)
+    ..pc<$1.LabelFilterEntry>(
+        2, _omitFieldNames ? '' : 'labelFilter', $pb.PbFieldType.PM,
+        subBuilder: $1.LabelFilterEntry.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxEntries', $pb.PbFieldType.O3)
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'paginationCursor', $pb.PbFieldType.OY)
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 'paginationCursor', $pb.PbFieldType.OY)
     ..aOB(5, _omitFieldNames ? '' : 'skipExpired')
-    ..e<ListArtifactsRequest_OrderBy>(6, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.OE, defaultOrMaker: ListArtifactsRequest_OrderBy.ORDER_BY_UNKNOWN, valueOf: ListArtifactsRequest_OrderBy.valueOf, enumValues: ListArtifactsRequest_OrderBy.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ListArtifactsRequest_OrderBy>(
+        6, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.OE,
+        defaultOrMaker: ListArtifactsRequest_OrderBy.ORDER_BY_UNKNOWN,
+        valueOf: ListArtifactsRequest_OrderBy.valueOf,
+        enumValues: ListArtifactsRequest_OrderBy.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListArtifactsRequest clone() => ListArtifactsRequest()..mergeFromMessage(this);
+  ListArtifactsRequest clone() =>
+      ListArtifactsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListArtifactsRequest copyWith(void Function(ListArtifactsRequest) updates) => super.copyWith((message) => updates(message as ListArtifactsRequest)) as ListArtifactsRequest;
+  ListArtifactsRequest copyWith(void Function(ListArtifactsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListArtifactsRequest))
+          as ListArtifactsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -577,9 +690,11 @@ class ListArtifactsRequest extends $pb.GeneratedMessage {
   static ListArtifactsRequest create() => ListArtifactsRequest._();
   @$core.override
   ListArtifactsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListArtifactsRequest> createRepeated() => $pb.PbList<ListArtifactsRequest>();
+  static $pb.PbList<ListArtifactsRequest> createRepeated() =>
+      $pb.PbList<ListArtifactsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListArtifactsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListArtifactsRequest>(create);
+  static ListArtifactsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListArtifactsRequest>(create);
   static ListArtifactsRequest? _defaultInstance;
 
   /// If set, only return artifacts that belong to any of these namespaces.
@@ -644,19 +759,32 @@ class ListArtifactsResponse extends $pb.GeneratedMessage {
 
   ListArtifactsResponse._();
 
-  factory ListArtifactsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListArtifactsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListArtifactsResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListArtifactsResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListArtifactsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
-    ..pc<Artifact>(1, _omitFieldNames ? '' : 'artifacts', $pb.PbFieldType.PM, subBuilder: Artifact.create)
-    ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'paginationCursor', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListArtifactsResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
+    ..pc<Artifact>(1, _omitFieldNames ? '' : 'artifacts', $pb.PbFieldType.PM,
+        subBuilder: Artifact.create)
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'paginationCursor', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListArtifactsResponse clone() => ListArtifactsResponse()..mergeFromMessage(this);
+  ListArtifactsResponse clone() =>
+      ListArtifactsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListArtifactsResponse copyWith(void Function(ListArtifactsResponse) updates) => super.copyWith((message) => updates(message as ListArtifactsResponse)) as ListArtifactsResponse;
+  ListArtifactsResponse copyWith(
+          void Function(ListArtifactsResponse) updates) =>
+      super.copyWith((message) => updates(message as ListArtifactsResponse))
+          as ListArtifactsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -665,9 +793,11 @@ class ListArtifactsResponse extends $pb.GeneratedMessage {
   static ListArtifactsResponse create() => ListArtifactsResponse._();
   @$core.override
   ListArtifactsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListArtifactsResponse> createRepeated() => $pb.PbList<ListArtifactsResponse>();
+  static $pb.PbList<ListArtifactsResponse> createRepeated() =>
+      $pb.PbList<ListArtifactsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListArtifactsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListArtifactsResponse>(create);
+  static ListArtifactsResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListArtifactsResponse>(create);
   static ListArtifactsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -711,26 +841,40 @@ class Artifact extends $pb.GeneratedMessage {
 
   Artifact._();
 
-  factory Artifact.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory Artifact.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory Artifact.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory Artifact.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Artifact', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Artifact',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.storage.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..aOS(2, _omitFieldNames ? '' : 'namespace')
-    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt', subBuilder: $0.Timestamp.create)
-    ..pc<$1.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $1.Label.create)
-    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $0.Timestamp.create)
+    ..aOM<$0.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $0.Timestamp.create)
+    ..pc<$1.Label>(5, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
+        subBuilder: $1.Label.create)
+    ..aOM<$0.Timestamp>(6, _omitFieldNames ? '' : 'createdAt',
+        subBuilder: $0.Timestamp.create)
     ..aInt64(7, _omitFieldNames ? '' : 'size')
     ..aOS(8, _omitFieldNames ? '' : 'webUrl')
-    ..e<Artifact_Status>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Artifact_Status.STATE_UNKNOWN, valueOf: Artifact_Status.valueOf, enumValues: Artifact_Status.values)
+    ..e<Artifact_Status>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: Artifact_Status.STATE_UNKNOWN,
+        valueOf: Artifact_Status.valueOf,
+        enumValues: Artifact_Status.values)
     ..aOS(10, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Artifact clone() => Artifact()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  Artifact copyWith(void Function(Artifact) updates) => super.copyWith((message) => updates(message as Artifact)) as Artifact;
+  Artifact copyWith(void Function(Artifact) updates) =>
+      super.copyWith((message) => updates(message as Artifact)) as Artifact;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -741,7 +885,8 @@ class Artifact extends $pb.GeneratedMessage {
   Artifact createEmptyInstance() => create();
   static $pb.PbList<Artifact> createRepeated() => $pb.PbList<Artifact>();
   @$core.pragma('dart2js:noInline')
-  static Artifact getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Artifact>(create);
+  static Artifact getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Artifact>(create);
   static Artifact? _defaultInstance;
 
   /// The file path for the stored artifact.
@@ -862,27 +1007,37 @@ class ArtifactsServiceApi {
   /// Artifact creation follows a two-phase commit model.
   /// Creating an artifact generates an upload URL.
   /// After uploading all data, a call to FinalizeArtifact is required to commit the content.
-  $async.Future<CreateArtifactResponse> createArtifact($pb.ClientContext? ctx, CreateArtifactRequest request) =>
-    _client.invoke<CreateArtifactResponse>(ctx, 'ArtifactsService', 'CreateArtifact', request, CreateArtifactResponse())
-  ;
+  $async.Future<CreateArtifactResponse> createArtifact(
+          $pb.ClientContext? ctx, CreateArtifactRequest request) =>
+      _client.invoke<CreateArtifactResponse>(ctx, 'ArtifactsService',
+          'CreateArtifact', request, CreateArtifactResponse());
+
   /// Finalize a fully uploaded artifact (making it available for download).
-  $async.Future<FinalizeArtifactResponse> finalizeArtifact($pb.ClientContext? ctx, FinalizeArtifactRequest request) =>
-    _client.invoke<FinalizeArtifactResponse>(ctx, 'ArtifactsService', 'FinalizeArtifact', request, FinalizeArtifactResponse())
-  ;
+  $async.Future<FinalizeArtifactResponse> finalizeArtifact(
+          $pb.ClientContext? ctx, FinalizeArtifactRequest request) =>
+      _client.invoke<FinalizeArtifactResponse>(ctx, 'ArtifactsService',
+          'FinalizeArtifact', request, FinalizeArtifactResponse());
+
   /// Resolves a finalized artifact and generates a download URL.
-  $async.Future<ResolveArtifactResponse> resolveArtifact($pb.ClientContext? ctx, ResolveArtifactRequest request) =>
-    _client.invoke<ResolveArtifactResponse>(ctx, 'ArtifactsService', 'ResolveArtifact', request, ResolveArtifactResponse())
-  ;
+  $async.Future<ResolveArtifactResponse> resolveArtifact(
+          $pb.ClientContext? ctx, ResolveArtifactRequest request) =>
+      _client.invoke<ResolveArtifactResponse>(ctx, 'ArtifactsService',
+          'ResolveArtifact', request, ResolveArtifactResponse());
+
   /// List finalized artifacts.
-  $async.Future<ListArtifactsResponse> listArtifacts($pb.ClientContext? ctx, ListArtifactsRequest request) =>
-    _client.invoke<ListArtifactsResponse>(ctx, 'ArtifactsService', 'ListArtifacts', request, ListArtifactsResponse())
-  ;
+  $async.Future<ListArtifactsResponse> listArtifacts(
+          $pb.ClientContext? ctx, ListArtifactsRequest request) =>
+      _client.invoke<ListArtifactsResponse>(ctx, 'ArtifactsService',
+          'ListArtifacts', request, ListArtifactsResponse());
+
   /// Mark an artifact as eligible for garbage-collection.
-  $async.Future<$2.Empty> expireArtifact($pb.ClientContext? ctx, ExpireArtifactRequest request) =>
-    _client.invoke<$2.Empty>(ctx, 'ArtifactsService', 'ExpireArtifact', request, $2.Empty())
-  ;
+  $async.Future<$2.Empty> expireArtifact(
+          $pb.ClientContext? ctx, ExpireArtifactRequest request) =>
+      _client.invoke<$2.Empty>(
+          ctx, 'ArtifactsService', 'ExpireArtifact', request, $2.Empty());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -31,20 +31,30 @@ class StatusError_Detail extends $pb.GeneratedMessage {
 
   StatusError_Detail._();
 
-  factory StatusError_Detail.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory StatusError_Detail.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory StatusError_Detail.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory StatusError_Detail.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatusError.Detail', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StatusError.Detail',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'typeUrl')
     ..aOS(2, _omitFieldNames ? '' : 'serializedJson')
-    ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'serializedProto', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        3, _omitFieldNames ? '' : 'serializedProto', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StatusError_Detail clone() => StatusError_Detail()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StatusError_Detail copyWith(void Function(StatusError_Detail) updates) => super.copyWith((message) => updates(message as StatusError_Detail)) as StatusError_Detail;
+  StatusError_Detail copyWith(void Function(StatusError_Detail) updates) =>
+      super.copyWith((message) => updates(message as StatusError_Detail))
+          as StatusError_Detail;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -53,9 +63,11 @@ class StatusError_Detail extends $pb.GeneratedMessage {
   static StatusError_Detail create() => StatusError_Detail._();
   @$core.override
   StatusError_Detail createEmptyInstance() => create();
-  static $pb.PbList<StatusError_Detail> createRepeated() => $pb.PbList<StatusError_Detail>();
+  static $pb.PbList<StatusError_Detail> createRepeated() =>
+      $pb.PbList<StatusError_Detail>();
   @$core.pragma('dart2js:noInline')
-  static StatusError_Detail getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StatusError_Detail>(create);
+  static StatusError_Detail getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StatusError_Detail>(create);
   static StatusError_Detail? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -101,20 +113,31 @@ class StatusError extends $pb.GeneratedMessage {
 
   StatusError._();
 
-  factory StatusError.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory StatusError.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory StatusError.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory StatusError.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatusError', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StatusError',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..pc<StatusError_Detail>(3, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM, subBuilder: StatusError_Detail.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<StatusError_Detail>(
+        3, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM,
+        subBuilder: StatusError_Detail.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StatusError clone() => StatusError()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StatusError copyWith(void Function(StatusError) updates) => super.copyWith((message) => updates(message as StatusError)) as StatusError;
+  StatusError copyWith(void Function(StatusError) updates) =>
+      super.copyWith((message) => updates(message as StatusError))
+          as StatusError;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -125,7 +148,8 @@ class StatusError extends $pb.GeneratedMessage {
   StatusError createEmptyInstance() => create();
   static $pb.PbList<StatusError> createRepeated() => $pb.PbList<StatusError>();
   @$core.pragma('dart2js:noInline')
-  static StatusError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StatusError>(create);
+  static StatusError getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StatusError>(create);
   static StatusError? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -163,19 +187,27 @@ class KnownError extends $pb.GeneratedMessage {
 
   KnownError._();
 
-  factory KnownError.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory KnownError.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory KnownError.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory KnownError.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KnownError', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KnownError',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'namespace.stdlib'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KnownError clone() => KnownError()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  KnownError copyWith(void Function(KnownError) updates) => super.copyWith((message) => updates(message as KnownError)) as KnownError;
+  KnownError copyWith(void Function(KnownError) updates) =>
+      super.copyWith((message) => updates(message as KnownError)) as KnownError;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -186,7 +218,8 @@ class KnownError extends $pb.GeneratedMessage {
   KnownError createEmptyInstance() => create();
   static $pb.PbList<KnownError> createRepeated() => $pb.PbList<KnownError>();
   @$core.pragma('dart2js:noInline')
-  static KnownError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KnownError>(create);
+  static KnownError getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<KnownError>(create);
   static KnownError? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -208,6 +241,7 @@ class KnownError extends $pb.GeneratedMessage {
   void clearDescription() => $_clearField(2);
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

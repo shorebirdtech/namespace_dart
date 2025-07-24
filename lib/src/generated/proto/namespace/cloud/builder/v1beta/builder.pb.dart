@@ -25,7 +25,8 @@ export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'builder.pbenum.dart';
 
-class EnsureBuildInstanceRequest_ExperimentalFeatures extends $pb.GeneratedMessage {
+class EnsureBuildInstanceRequest_ExperimentalFeatures
+    extends $pb.GeneratedMessage {
   factory EnsureBuildInstanceRequest_ExperimentalFeatures({
     $0.InstanceShape? shape,
     $fixnum.Int64? cacheSizeMb,
@@ -42,32 +43,56 @@ class EnsureBuildInstanceRequest_ExperimentalFeatures extends $pb.GeneratedMessa
 
   EnsureBuildInstanceRequest_ExperimentalFeatures._();
 
-  factory EnsureBuildInstanceRequest_ExperimentalFeatures.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureBuildInstanceRequest_ExperimentalFeatures.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureBuildInstanceRequest_ExperimentalFeatures.fromBuffer(
+          $core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureBuildInstanceRequest_ExperimentalFeatures.fromJson(
+          $core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureBuildInstanceRequest.ExperimentalFeatures', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
-    ..aOM<$0.InstanceShape>(1, _omitFieldNames ? '' : 'shape', subBuilder: $0.InstanceShape.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'EnsureBuildInstanceRequest.ExperimentalFeatures',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$0.InstanceShape>(1, _omitFieldNames ? '' : 'shape',
+        subBuilder: $0.InstanceShape.create)
     ..aInt64(2, _omitFieldNames ? '' : 'cacheSizeMb')
     ..aOS(3, _omitFieldNames ? '' : 'builderName')
     ..aOS(4, _omitFieldNames ? '' : 'sku')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceRequest_ExperimentalFeatures clone() => EnsureBuildInstanceRequest_ExperimentalFeatures()..mergeFromMessage(this);
+  EnsureBuildInstanceRequest_ExperimentalFeatures clone() =>
+      EnsureBuildInstanceRequest_ExperimentalFeatures()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceRequest_ExperimentalFeatures copyWith(void Function(EnsureBuildInstanceRequest_ExperimentalFeatures) updates) => super.copyWith((message) => updates(message as EnsureBuildInstanceRequest_ExperimentalFeatures)) as EnsureBuildInstanceRequest_ExperimentalFeatures;
+  EnsureBuildInstanceRequest_ExperimentalFeatures copyWith(
+          void Function(EnsureBuildInstanceRequest_ExperimentalFeatures)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as EnsureBuildInstanceRequest_ExperimentalFeatures))
+          as EnsureBuildInstanceRequest_ExperimentalFeatures;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EnsureBuildInstanceRequest_ExperimentalFeatures create() => EnsureBuildInstanceRequest_ExperimentalFeatures._();
+  static EnsureBuildInstanceRequest_ExperimentalFeatures create() =>
+      EnsureBuildInstanceRequest_ExperimentalFeatures._();
   @$core.override
-  EnsureBuildInstanceRequest_ExperimentalFeatures createEmptyInstance() => create();
-  static $pb.PbList<EnsureBuildInstanceRequest_ExperimentalFeatures> createRepeated() => $pb.PbList<EnsureBuildInstanceRequest_ExperimentalFeatures>();
+  EnsureBuildInstanceRequest_ExperimentalFeatures createEmptyInstance() =>
+      create();
+  static $pb.PbList<EnsureBuildInstanceRequest_ExperimentalFeatures>
+      createRepeated() =>
+          $pb.PbList<EnsureBuildInstanceRequest_ExperimentalFeatures>();
   @$core.pragma('dart2js:noInline')
-  static EnsureBuildInstanceRequest_ExperimentalFeatures getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureBuildInstanceRequest_ExperimentalFeatures>(create);
+  static EnsureBuildInstanceRequest_ExperimentalFeatures getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          EnsureBuildInstanceRequest_ExperimentalFeatures>(create);
   static EnsureBuildInstanceRequest_ExperimentalFeatures? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -117,27 +142,42 @@ class EnsureBuildInstanceRequest extends $pb.GeneratedMessage {
   }) {
     final result = create();
     if (platform != null) result.platform = platform;
-    if (experimentalConsistencyKey != null) result.experimentalConsistencyKey = experimentalConsistencyKey;
+    if (experimentalConsistencyKey != null)
+      result.experimentalConsistencyKey = experimentalConsistencyKey;
     if (experimental != null) result.experimental = experimental;
     return result;
   }
 
   EnsureBuildInstanceRequest._();
 
-  factory EnsureBuildInstanceRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureBuildInstanceRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureBuildInstanceRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureBuildInstanceRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureBuildInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureBuildInstanceRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'platform')
     ..aOS(2, _omitFieldNames ? '' : 'experimentalConsistencyKey')
-    ..aOM<EnsureBuildInstanceRequest_ExperimentalFeatures>(3, _omitFieldNames ? '' : 'experimental', subBuilder: EnsureBuildInstanceRequest_ExperimentalFeatures.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<EnsureBuildInstanceRequest_ExperimentalFeatures>(
+        3, _omitFieldNames ? '' : 'experimental',
+        subBuilder: EnsureBuildInstanceRequest_ExperimentalFeatures.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceRequest clone() => EnsureBuildInstanceRequest()..mergeFromMessage(this);
+  EnsureBuildInstanceRequest clone() =>
+      EnsureBuildInstanceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceRequest copyWith(void Function(EnsureBuildInstanceRequest) updates) => super.copyWith((message) => updates(message as EnsureBuildInstanceRequest)) as EnsureBuildInstanceRequest;
+  EnsureBuildInstanceRequest copyWith(
+          void Function(EnsureBuildInstanceRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as EnsureBuildInstanceRequest))
+          as EnsureBuildInstanceRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -146,9 +186,11 @@ class EnsureBuildInstanceRequest extends $pb.GeneratedMessage {
   static EnsureBuildInstanceRequest create() => EnsureBuildInstanceRequest._();
   @$core.override
   EnsureBuildInstanceRequest createEmptyInstance() => create();
-  static $pb.PbList<EnsureBuildInstanceRequest> createRepeated() => $pb.PbList<EnsureBuildInstanceRequest>();
+  static $pb.PbList<EnsureBuildInstanceRequest> createRepeated() =>
+      $pb.PbList<EnsureBuildInstanceRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnsureBuildInstanceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureBuildInstanceRequest>(create);
+  static EnsureBuildInstanceRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnsureBuildInstanceRequest>(create);
   static EnsureBuildInstanceRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -173,13 +215,15 @@ class EnsureBuildInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   EnsureBuildInstanceRequest_ExperimentalFeatures get experimental => $_getN(2);
   @$pb.TagNumber(3)
-  set experimental(EnsureBuildInstanceRequest_ExperimentalFeatures value) => $_setField(3, value);
+  set experimental(EnsureBuildInstanceRequest_ExperimentalFeatures value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasExperimental() => $_has(2);
   @$pb.TagNumber(3)
   void clearExperimental() => $_clearField(3);
   @$pb.TagNumber(3)
-  EnsureBuildInstanceRequest_ExperimentalFeatures ensureExperimental() => $_ensure(2);
+  EnsureBuildInstanceRequest_ExperimentalFeatures ensureExperimental() =>
+      $_ensure(2);
 }
 
 class EnsureBuildInstanceResponse extends $pb.GeneratedMessage {
@@ -199,32 +243,55 @@ class EnsureBuildInstanceResponse extends $pb.GeneratedMessage {
 
   EnsureBuildInstanceResponse._();
 
-  factory EnsureBuildInstanceResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory EnsureBuildInstanceResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory EnsureBuildInstanceResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EnsureBuildInstanceResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureBuildInstanceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EnsureBuildInstanceResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceId')
     ..aOS(2, _omitFieldNames ? '' : 'endpoint')
-    ..e<Encapsulation>(3, _omitFieldNames ? '' : 'encapsulation', $pb.PbFieldType.OE, defaultOrMaker: Encapsulation.ENCAPSULATION_UNKNOWN, valueOf: Encapsulation.valueOf, enumValues: Encapsulation.values)
-    ..e<Authentication>(4, _omitFieldNames ? '' : 'authentication', $pb.PbFieldType.OE, defaultOrMaker: Authentication.AUTHENTICATION_UNKNOWN, valueOf: Authentication.valueOf, enumValues: Authentication.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<Encapsulation>(
+        3, _omitFieldNames ? '' : 'encapsulation', $pb.PbFieldType.OE,
+        defaultOrMaker: Encapsulation.ENCAPSULATION_UNKNOWN,
+        valueOf: Encapsulation.valueOf,
+        enumValues: Encapsulation.values)
+    ..e<Authentication>(
+        4, _omitFieldNames ? '' : 'authentication', $pb.PbFieldType.OE,
+        defaultOrMaker: Authentication.AUTHENTICATION_UNKNOWN,
+        valueOf: Authentication.valueOf,
+        enumValues: Authentication.values)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceResponse clone() => EnsureBuildInstanceResponse()..mergeFromMessage(this);
+  EnsureBuildInstanceResponse clone() =>
+      EnsureBuildInstanceResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureBuildInstanceResponse copyWith(void Function(EnsureBuildInstanceResponse) updates) => super.copyWith((message) => updates(message as EnsureBuildInstanceResponse)) as EnsureBuildInstanceResponse;
+  EnsureBuildInstanceResponse copyWith(
+          void Function(EnsureBuildInstanceResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as EnsureBuildInstanceResponse))
+          as EnsureBuildInstanceResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EnsureBuildInstanceResponse create() => EnsureBuildInstanceResponse._();
+  static EnsureBuildInstanceResponse create() =>
+      EnsureBuildInstanceResponse._();
   @$core.override
   EnsureBuildInstanceResponse createEmptyInstance() => create();
-  static $pb.PbList<EnsureBuildInstanceResponse> createRepeated() => $pb.PbList<EnsureBuildInstanceResponse>();
+  static $pb.PbList<EnsureBuildInstanceResponse> createRepeated() =>
+      $pb.PbList<EnsureBuildInstanceResponse>();
   @$core.pragma('dart2js:noInline')
-  static EnsureBuildInstanceResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureBuildInstanceResponse>(create);
+  static EnsureBuildInstanceResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EnsureBuildInstanceResponse>(create);
   static EnsureBuildInstanceResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -275,18 +342,29 @@ class GetBuildRecordRequest extends $pb.GeneratedMessage {
 
   GetBuildRecordRequest._();
 
-  factory GetBuildRecordRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuildRecordRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuildRecordRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuildRecordRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuildRecordRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuildRecordRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildRef')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuildRecordRequest clone() => GetBuildRecordRequest()..mergeFromMessage(this);
+  GetBuildRecordRequest clone() =>
+      GetBuildRecordRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuildRecordRequest copyWith(void Function(GetBuildRecordRequest) updates) => super.copyWith((message) => updates(message as GetBuildRecordRequest)) as GetBuildRecordRequest;
+  GetBuildRecordRequest copyWith(
+          void Function(GetBuildRecordRequest) updates) =>
+      super.copyWith((message) => updates(message as GetBuildRecordRequest))
+          as GetBuildRecordRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -295,9 +373,11 @@ class GetBuildRecordRequest extends $pb.GeneratedMessage {
   static GetBuildRecordRequest create() => GetBuildRecordRequest._();
   @$core.override
   GetBuildRecordRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBuildRecordRequest> createRepeated() => $pb.PbList<GetBuildRecordRequest>();
+  static $pb.PbList<GetBuildRecordRequest> createRepeated() =>
+      $pb.PbList<GetBuildRecordRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBuildRecordRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuildRecordRequest>(create);
+  static GetBuildRecordRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuildRecordRequest>(create);
   static GetBuildRecordRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -325,20 +405,31 @@ class ListBuildsRequest extends $pb.GeneratedMessage {
 
   ListBuildsRequest._();
 
-  factory ListBuildsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListBuildsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListBuildsRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListBuildsRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBuildsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBuildsRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxEntries')
-    ..aOM<$1.Timestamp>(2, _omitFieldNames ? '' : 'olderThan', subBuilder: $1.Timestamp.create)
-    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'notOlderThan', subBuilder: $1.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$1.Timestamp>(2, _omitFieldNames ? '' : 'olderThan',
+        subBuilder: $1.Timestamp.create)
+    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'notOlderThan',
+        subBuilder: $1.Timestamp.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListBuildsRequest clone() => ListBuildsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListBuildsRequest copyWith(void Function(ListBuildsRequest) updates) => super.copyWith((message) => updates(message as ListBuildsRequest)) as ListBuildsRequest;
+  ListBuildsRequest copyWith(void Function(ListBuildsRequest) updates) =>
+      super.copyWith((message) => updates(message as ListBuildsRequest))
+          as ListBuildsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -347,9 +438,11 @@ class ListBuildsRequest extends $pb.GeneratedMessage {
   static ListBuildsRequest create() => ListBuildsRequest._();
   @$core.override
   ListBuildsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListBuildsRequest> createRepeated() => $pb.PbList<ListBuildsRequest>();
+  static $pb.PbList<ListBuildsRequest> createRepeated() =>
+      $pb.PbList<ListBuildsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListBuildsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBuildsRequest>(create);
+  static ListBuildsRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBuildsRequest>(create);
   static ListBuildsRequest? _defaultInstance;
 
   /// Optional.
@@ -398,18 +491,28 @@ class ListBuildsChunk extends $pb.GeneratedMessage {
 
   ListBuildsChunk._();
 
-  factory ListBuildsChunk.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory ListBuildsChunk.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory ListBuildsChunk.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory ListBuildsChunk.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBuildsChunk', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
-    ..pc<BuildRecord>(1, _omitFieldNames ? '' : 'build', $pb.PbFieldType.PM, subBuilder: BuildRecord.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ListBuildsChunk',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
+    ..pc<BuildRecord>(1, _omitFieldNames ? '' : 'build', $pb.PbFieldType.PM,
+        subBuilder: BuildRecord.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListBuildsChunk clone() => ListBuildsChunk()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListBuildsChunk copyWith(void Function(ListBuildsChunk) updates) => super.copyWith((message) => updates(message as ListBuildsChunk)) as ListBuildsChunk;
+  ListBuildsChunk copyWith(void Function(ListBuildsChunk) updates) =>
+      super.copyWith((message) => updates(message as ListBuildsChunk))
+          as ListBuildsChunk;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -418,9 +521,11 @@ class ListBuildsChunk extends $pb.GeneratedMessage {
   static ListBuildsChunk create() => ListBuildsChunk._();
   @$core.override
   ListBuildsChunk createEmptyInstance() => create();
-  static $pb.PbList<ListBuildsChunk> createRepeated() => $pb.PbList<ListBuildsChunk>();
+  static $pb.PbList<ListBuildsChunk> createRepeated() =>
+      $pb.PbList<ListBuildsChunk>();
   @$core.pragma('dart2js:noInline')
-  static ListBuildsChunk getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListBuildsChunk>(create);
+  static ListBuildsChunk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ListBuildsChunk>(create);
   static ListBuildsChunk? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -446,22 +551,38 @@ class BuildRecord extends $pb.GeneratedMessage {
 
   BuildRecord._();
 
-  factory BuildRecord.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BuildRecord.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BuildRecord.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BuildRecord.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildRecord',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildRef')
-    ..aOM<$1.Timestamp>(2, _omitFieldNames ? '' : 'startedAt', subBuilder: $1.Timestamp.create)
-    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'completedAt', subBuilder: $1.Timestamp.create)
-    ..e<BuildRecord_Status>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: BuildRecord_Status.STATUS_UNKNOWN, valueOf: BuildRecord_Status.valueOf, enumValues: BuildRecord_Status.values)
-    ..aOM<BuildMachine>(5, _omitFieldNames ? '' : 'buildMachine', subBuilder: BuildMachine.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$1.Timestamp>(2, _omitFieldNames ? '' : 'startedAt',
+        subBuilder: $1.Timestamp.create)
+    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'completedAt',
+        subBuilder: $1.Timestamp.create)
+    ..e<BuildRecord_Status>(
+        4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
+        defaultOrMaker: BuildRecord_Status.STATUS_UNKNOWN,
+        valueOf: BuildRecord_Status.valueOf,
+        enumValues: BuildRecord_Status.values)
+    ..aOM<BuildMachine>(5, _omitFieldNames ? '' : 'buildMachine',
+        subBuilder: BuildMachine.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildRecord clone() => BuildRecord()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BuildRecord copyWith(void Function(BuildRecord) updates) => super.copyWith((message) => updates(message as BuildRecord)) as BuildRecord;
+  BuildRecord copyWith(void Function(BuildRecord) updates) =>
+      super.copyWith((message) => updates(message as BuildRecord))
+          as BuildRecord;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -472,7 +593,8 @@ class BuildRecord extends $pb.GeneratedMessage {
   BuildRecord createEmptyInstance() => create();
   static $pb.PbList<BuildRecord> createRepeated() => $pb.PbList<BuildRecord>();
   @$core.pragma('dart2js:noInline')
-  static BuildRecord getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildRecord>(create);
+  static BuildRecord getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildRecord>(create);
   static BuildRecord? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -542,20 +664,30 @@ class BuildMachine extends $pb.GeneratedMessage {
 
   BuildMachine._();
 
-  factory BuildMachine.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BuildMachine.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BuildMachine.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BuildMachine.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildMachine', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuildMachine',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceId')
-    ..aOM<$0.InstanceShape>(2, _omitFieldNames ? '' : 'shape', subBuilder: $0.InstanceShape.create)
+    ..aOM<$0.InstanceShape>(2, _omitFieldNames ? '' : 'shape',
+        subBuilder: $0.InstanceShape.create)
     ..aOB(3, _omitFieldNames ? '' : 'local')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildMachine clone() => BuildMachine()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BuildMachine copyWith(void Function(BuildMachine) updates) => super.copyWith((message) => updates(message as BuildMachine)) as BuildMachine;
+  BuildMachine copyWith(void Function(BuildMachine) updates) =>
+      super.copyWith((message) => updates(message as BuildMachine))
+          as BuildMachine;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -564,9 +696,11 @@ class BuildMachine extends $pb.GeneratedMessage {
   static BuildMachine create() => BuildMachine._();
   @$core.override
   BuildMachine createEmptyInstance() => create();
-  static $pb.PbList<BuildMachine> createRepeated() => $pb.PbList<BuildMachine>();
+  static $pb.PbList<BuildMachine> createRepeated() =>
+      $pb.PbList<BuildMachine>();
   @$core.pragma('dart2js:noInline')
-  static BuildMachine getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildMachine>(create);
+  static BuildMachine getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuildMachine>(create);
   static BuildMachine? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -612,19 +746,32 @@ class GetBuilderUsageRequest extends $pb.GeneratedMessage {
 
   GetBuilderUsageRequest._();
 
-  factory GetBuilderUsageRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderUsageRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderUsageRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderUsageRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderUsageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
-    ..aOM<$2.Date>(1, _omitFieldNames ? '' : 'periodStart', subBuilder: $2.Date.create)
-    ..aOM<$2.Date>(2, _omitFieldNames ? '' : 'periodEnd', subBuilder: $2.Date.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderUsageRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$2.Date>(1, _omitFieldNames ? '' : 'periodStart',
+        subBuilder: $2.Date.create)
+    ..aOM<$2.Date>(2, _omitFieldNames ? '' : 'periodEnd',
+        subBuilder: $2.Date.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageRequest clone() => GetBuilderUsageRequest()..mergeFromMessage(this);
+  GetBuilderUsageRequest clone() =>
+      GetBuilderUsageRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageRequest copyWith(void Function(GetBuilderUsageRequest) updates) => super.copyWith((message) => updates(message as GetBuilderUsageRequest)) as GetBuilderUsageRequest;
+  GetBuilderUsageRequest copyWith(
+          void Function(GetBuilderUsageRequest) updates) =>
+      super.copyWith((message) => updates(message as GetBuilderUsageRequest))
+          as GetBuilderUsageRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -633,9 +780,11 @@ class GetBuilderUsageRequest extends $pb.GeneratedMessage {
   static GetBuilderUsageRequest create() => GetBuilderUsageRequest._();
   @$core.override
   GetBuilderUsageRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderUsageRequest> createRepeated() => $pb.PbList<GetBuilderUsageRequest>();
+  static $pb.PbList<GetBuilderUsageRequest> createRepeated() =>
+      $pb.PbList<GetBuilderUsageRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageRequest>(create);
+  static GetBuilderUsageRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageRequest>(create);
   static GetBuilderUsageRequest? _defaultInstance;
 
   /// Required
@@ -678,31 +827,49 @@ class GetBuilderUsageResponse_PerDay extends $pb.GeneratedMessage {
 
   GetBuilderUsageResponse_PerDay._();
 
-  factory GetBuilderUsageResponse_PerDay.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderUsageResponse_PerDay.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderUsageResponse_PerDay.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderUsageResponse_PerDay.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderUsageResponse.PerDay', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderUsageResponse.PerDay',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOM<$2.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $2.Date.create)
-    ..aOM<GetBuilderUsageResponse_Usage>(2, _omitFieldNames ? '' : 'usage', subBuilder: GetBuilderUsageResponse_Usage.create)
-    ..aOM<GetBuilderUsageResponse_Usage>(3, _omitFieldNames ? '' : 'pendingUsage', subBuilder: GetBuilderUsageResponse_Usage.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<GetBuilderUsageResponse_Usage>(2, _omitFieldNames ? '' : 'usage',
+        subBuilder: GetBuilderUsageResponse_Usage.create)
+    ..aOM<GetBuilderUsageResponse_Usage>(
+        3, _omitFieldNames ? '' : 'pendingUsage',
+        subBuilder: GetBuilderUsageResponse_Usage.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse_PerDay clone() => GetBuilderUsageResponse_PerDay()..mergeFromMessage(this);
+  GetBuilderUsageResponse_PerDay clone() =>
+      GetBuilderUsageResponse_PerDay()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse_PerDay copyWith(void Function(GetBuilderUsageResponse_PerDay) updates) => super.copyWith((message) => updates(message as GetBuilderUsageResponse_PerDay)) as GetBuilderUsageResponse_PerDay;
+  GetBuilderUsageResponse_PerDay copyWith(
+          void Function(GetBuilderUsageResponse_PerDay) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetBuilderUsageResponse_PerDay))
+          as GetBuilderUsageResponse_PerDay;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageResponse_PerDay create() => GetBuilderUsageResponse_PerDay._();
+  static GetBuilderUsageResponse_PerDay create() =>
+      GetBuilderUsageResponse_PerDay._();
   @$core.override
   GetBuilderUsageResponse_PerDay createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderUsageResponse_PerDay> createRepeated() => $pb.PbList<GetBuilderUsageResponse_PerDay>();
+  static $pb.PbList<GetBuilderUsageResponse_PerDay> createRepeated() =>
+      $pb.PbList<GetBuilderUsageResponse_PerDay>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageResponse_PerDay getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse_PerDay>(create);
+  static GetBuilderUsageResponse_PerDay getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse_PerDay>(create);
   static GetBuilderUsageResponse_PerDay? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -756,31 +923,46 @@ class GetBuilderUsageResponse_Usage extends $pb.GeneratedMessage {
 
   GetBuilderUsageResponse_Usage._();
 
-  factory GetBuilderUsageResponse_Usage.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderUsageResponse_Usage.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderUsageResponse_Usage.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderUsageResponse_Usage.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderUsageResponse.Usage', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderUsageResponse.Usage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'buildCount')
     ..aInt64(2, _omitFieldNames ? '' : 'buildWallMinutes')
     ..aInt64(3, _omitFieldNames ? '' : 'buildUnitMinutes')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse_Usage clone() => GetBuilderUsageResponse_Usage()..mergeFromMessage(this);
+  GetBuilderUsageResponse_Usage clone() =>
+      GetBuilderUsageResponse_Usage()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse_Usage copyWith(void Function(GetBuilderUsageResponse_Usage) updates) => super.copyWith((message) => updates(message as GetBuilderUsageResponse_Usage)) as GetBuilderUsageResponse_Usage;
+  GetBuilderUsageResponse_Usage copyWith(
+          void Function(GetBuilderUsageResponse_Usage) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetBuilderUsageResponse_Usage))
+          as GetBuilderUsageResponse_Usage;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageResponse_Usage create() => GetBuilderUsageResponse_Usage._();
+  static GetBuilderUsageResponse_Usage create() =>
+      GetBuilderUsageResponse_Usage._();
   @$core.override
   GetBuilderUsageResponse_Usage createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderUsageResponse_Usage> createRepeated() => $pb.PbList<GetBuilderUsageResponse_Usage>();
+  static $pb.PbList<GetBuilderUsageResponse_Usage> createRepeated() =>
+      $pb.PbList<GetBuilderUsageResponse_Usage>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageResponse_Usage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse_Usage>(create);
+  static GetBuilderUsageResponse_Usage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse_Usage>(create);
   static GetBuilderUsageResponse_Usage? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -826,20 +1008,36 @@ class GetBuilderUsageResponse extends $pb.GeneratedMessage {
 
   GetBuilderUsageResponse._();
 
-  factory GetBuilderUsageResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderUsageResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderUsageResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderUsageResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderUsageResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
-    ..pc<GetBuilderUsageResponse_PerDay>(1, _omitFieldNames ? '' : 'perDay', $pb.PbFieldType.PM, subBuilder: GetBuilderUsageResponse_PerDay.create)
-    ..aOM<GetBuilderUsageResponse_Usage>(2, _omitFieldNames ? '' : 'total', subBuilder: GetBuilderUsageResponse_Usage.create)
-    ..aOM<GetBuilderUsageResponse_Usage>(3, _omitFieldNames ? '' : 'pendingTotal', subBuilder: GetBuilderUsageResponse_Usage.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderUsageResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
+    ..pc<GetBuilderUsageResponse_PerDay>(
+        1, _omitFieldNames ? '' : 'perDay', $pb.PbFieldType.PM,
+        subBuilder: GetBuilderUsageResponse_PerDay.create)
+    ..aOM<GetBuilderUsageResponse_Usage>(2, _omitFieldNames ? '' : 'total',
+        subBuilder: GetBuilderUsageResponse_Usage.create)
+    ..aOM<GetBuilderUsageResponse_Usage>(
+        3, _omitFieldNames ? '' : 'pendingTotal',
+        subBuilder: GetBuilderUsageResponse_Usage.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse clone() => GetBuilderUsageResponse()..mergeFromMessage(this);
+  GetBuilderUsageResponse clone() =>
+      GetBuilderUsageResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderUsageResponse copyWith(void Function(GetBuilderUsageResponse) updates) => super.copyWith((message) => updates(message as GetBuilderUsageResponse)) as GetBuilderUsageResponse;
+  GetBuilderUsageResponse copyWith(
+          void Function(GetBuilderUsageResponse) updates) =>
+      super.copyWith((message) => updates(message as GetBuilderUsageResponse))
+          as GetBuilderUsageResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -848,9 +1046,11 @@ class GetBuilderUsageResponse extends $pb.GeneratedMessage {
   static GetBuilderUsageResponse create() => GetBuilderUsageResponse._();
   @$core.override
   GetBuilderUsageResponse createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderUsageResponse> createRepeated() => $pb.PbList<GetBuilderUsageResponse>();
+  static $pb.PbList<GetBuilderUsageResponse> createRepeated() =>
+      $pb.PbList<GetBuilderUsageResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderUsageResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse>(create);
+  static GetBuilderUsageResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderUsageResponse>(create);
   static GetBuilderUsageResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -892,8 +1092,10 @@ class GetBuilderConfigurationRequest extends $pb.GeneratedMessage {
   }) {
     final result = create();
     if (platform != null) result.platform = platform;
-    if (skipBuilderPreSpawn != null) result.skipBuilderPreSpawn = skipBuilderPreSpawn;
-    if (returnNewCredentials != null) result.returnNewCredentials = returnNewCredentials;
+    if (skipBuilderPreSpawn != null)
+      result.skipBuilderPreSpawn = skipBuilderPreSpawn;
+    if (returnNewCredentials != null)
+      result.returnNewCredentials = returnNewCredentials;
     if (builderName != null) result.builderName = builderName;
     if (builderShape != null) result.builderShape = builderShape;
     if (cacheSizeMb != null) result.cacheSizeMb = cacheSizeMb;
@@ -903,35 +1105,51 @@ class GetBuilderConfigurationRequest extends $pb.GeneratedMessage {
 
   GetBuilderConfigurationRequest._();
 
-  factory GetBuilderConfigurationRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderConfigurationRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderConfigurationRequest.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderConfigurationRequest.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderConfigurationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderConfigurationRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'platform')
     ..aOB(2, _omitFieldNames ? '' : 'skipBuilderPreSpawn')
     ..aOB(3, _omitFieldNames ? '' : 'returnNewCredentials')
     ..aOS(4, _omitFieldNames ? '' : 'builderName')
-    ..aOM<$0.InstanceShape>(5, _omitFieldNames ? '' : 'builderShape', subBuilder: $0.InstanceShape.create)
+    ..aOM<$0.InstanceShape>(5, _omitFieldNames ? '' : 'builderShape',
+        subBuilder: $0.InstanceShape.create)
     ..aInt64(6, _omitFieldNames ? '' : 'cacheSizeMb')
     ..aOS(7, _omitFieldNames ? '' : 'experimental')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderConfigurationRequest clone() => GetBuilderConfigurationRequest()..mergeFromMessage(this);
+  GetBuilderConfigurationRequest clone() =>
+      GetBuilderConfigurationRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderConfigurationRequest copyWith(void Function(GetBuilderConfigurationRequest) updates) => super.copyWith((message) => updates(message as GetBuilderConfigurationRequest)) as GetBuilderConfigurationRequest;
+  GetBuilderConfigurationRequest copyWith(
+          void Function(GetBuilderConfigurationRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetBuilderConfigurationRequest))
+          as GetBuilderConfigurationRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetBuilderConfigurationRequest create() => GetBuilderConfigurationRequest._();
+  static GetBuilderConfigurationRequest create() =>
+      GetBuilderConfigurationRequest._();
   @$core.override
   GetBuilderConfigurationRequest createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderConfigurationRequest> createRepeated() => $pb.PbList<GetBuilderConfigurationRequest>();
+  static $pb.PbList<GetBuilderConfigurationRequest> createRepeated() =>
+      $pb.PbList<GetBuilderConfigurationRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderConfigurationRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderConfigurationRequest>(create);
+  static GetBuilderConfigurationRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderConfigurationRequest>(create);
   static GetBuilderConfigurationRequest? _defaultInstance;
 
   /// E.g. linux/amd64, linux/arm64.
@@ -1024,7 +1242,8 @@ class GetBuilderConfigurationResponse extends $pb.GeneratedMessage {
     if (shape != null) result.shape = shape;
     if (buildkitEndpoint != null) result.buildkitEndpoint = buildkitEndpoint;
     if (serverCaPem != null) result.serverCaPem = serverCaPem;
-    if (fullBuildkitEndpoint != null) result.fullBuildkitEndpoint = fullBuildkitEndpoint;
+    if (fullBuildkitEndpoint != null)
+      result.fullBuildkitEndpoint = fullBuildkitEndpoint;
     if (credentials != null) result.credentials = credentials;
     if (cacheSizeMb != null) result.cacheSizeMb = cacheSizeMb;
     return result;
@@ -1032,34 +1251,52 @@ class GetBuilderConfigurationResponse extends $pb.GeneratedMessage {
 
   GetBuilderConfigurationResponse._();
 
-  factory GetBuilderConfigurationResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory GetBuilderConfigurationResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory GetBuilderConfigurationResponse.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory GetBuilderConfigurationResponse.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBuilderConfigurationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
-    ..aOM<$0.InstanceShape>(1, _omitFieldNames ? '' : 'shape', subBuilder: $0.InstanceShape.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GetBuilderConfigurationResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<$0.InstanceShape>(1, _omitFieldNames ? '' : 'shape',
+        subBuilder: $0.InstanceShape.create)
     ..aOS(2, _omitFieldNames ? '' : 'buildkitEndpoint')
     ..aOS(3, _omitFieldNames ? '' : 'serverCaPem')
     ..aOS(4, _omitFieldNames ? '' : 'fullBuildkitEndpoint')
-    ..aOM<BuilderCredentials>(5, _omitFieldNames ? '' : 'credentials', subBuilder: BuilderCredentials.create)
+    ..aOM<BuilderCredentials>(5, _omitFieldNames ? '' : 'credentials',
+        subBuilder: BuilderCredentials.create)
     ..aInt64(6, _omitFieldNames ? '' : 'cacheSizeMb')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderConfigurationResponse clone() => GetBuilderConfigurationResponse()..mergeFromMessage(this);
+  GetBuilderConfigurationResponse clone() =>
+      GetBuilderConfigurationResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetBuilderConfigurationResponse copyWith(void Function(GetBuilderConfigurationResponse) updates) => super.copyWith((message) => updates(message as GetBuilderConfigurationResponse)) as GetBuilderConfigurationResponse;
+  GetBuilderConfigurationResponse copyWith(
+          void Function(GetBuilderConfigurationResponse) updates) =>
+      super.copyWith(
+              (message) => updates(message as GetBuilderConfigurationResponse))
+          as GetBuilderConfigurationResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetBuilderConfigurationResponse create() => GetBuilderConfigurationResponse._();
+  static GetBuilderConfigurationResponse create() =>
+      GetBuilderConfigurationResponse._();
   @$core.override
   GetBuilderConfigurationResponse createEmptyInstance() => create();
-  static $pb.PbList<GetBuilderConfigurationResponse> createRepeated() => $pb.PbList<GetBuilderConfigurationResponse>();
+  static $pb.PbList<GetBuilderConfigurationResponse> createRepeated() =>
+      $pb.PbList<GetBuilderConfigurationResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetBuilderConfigurationResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetBuilderConfigurationResponse>(create);
+  static GetBuilderConfigurationResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GetBuilderConfigurationResponse>(
+          create);
   static GetBuilderConfigurationResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1135,7 +1372,8 @@ class BuilderCredentials extends $pb.GeneratedMessage {
     $1.Timestamp? expiresAt,
   }) {
     final result = create();
-    if (clientCertificatePem != null) result.clientCertificatePem = clientCertificatePem;
+    if (clientCertificatePem != null)
+      result.clientCertificatePem = clientCertificatePem;
     if (privateKeyPem != null) result.privateKeyPem = privateKeyPem;
     if (expiresAt != null) result.expiresAt = expiresAt;
     return result;
@@ -1143,20 +1381,30 @@ class BuilderCredentials extends $pb.GeneratedMessage {
 
   BuilderCredentials._();
 
-  factory BuilderCredentials.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
-  factory BuilderCredentials.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
+  factory BuilderCredentials.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory BuilderCredentials.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuilderCredentials', package: const $pb.PackageName(_omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BuilderCredentials',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'namespace.cloud.builder.v1beta'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'clientCertificatePem')
     ..aOS(2, _omitFieldNames ? '' : 'privateKeyPem')
-    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt', subBuilder: $1.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$1.Timestamp>(3, _omitFieldNames ? '' : 'expiresAt',
+        subBuilder: $1.Timestamp.create)
+    ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuilderCredentials clone() => BuilderCredentials()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  BuilderCredentials copyWith(void Function(BuilderCredentials) updates) => super.copyWith((message) => updates(message as BuilderCredentials)) as BuilderCredentials;
+  BuilderCredentials copyWith(void Function(BuilderCredentials) updates) =>
+      super.copyWith((message) => updates(message as BuilderCredentials))
+          as BuilderCredentials;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1165,9 +1413,11 @@ class BuilderCredentials extends $pb.GeneratedMessage {
   static BuilderCredentials create() => BuilderCredentials._();
   @$core.override
   BuilderCredentials createEmptyInstance() => create();
-  static $pb.PbList<BuilderCredentials> createRepeated() => $pb.PbList<BuilderCredentials>();
+  static $pb.PbList<BuilderCredentials> createRepeated() =>
+      $pb.PbList<BuilderCredentials>();
   @$core.pragma('dart2js:noInline')
-  static BuilderCredentials getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuilderCredentials>(create);
+  static BuilderCredentials getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BuilderCredentials>(create);
   static BuilderCredentials? _defaultInstance;
 
   /// The PEM-encoded client certificate that has been issued. The PEM
@@ -1246,27 +1496,41 @@ class BuilderServiceApi {
 
   /// Creates a builder for the specified platform for the specified tenant, or
   /// returns an existing one if one is already running.
-  $async.Future<EnsureBuildInstanceResponse> ensureBuildInstance($pb.ClientContext? ctx, EnsureBuildInstanceRequest request) =>
-    _client.invoke<EnsureBuildInstanceResponse>(ctx, 'BuilderService', 'EnsureBuildInstance', request, EnsureBuildInstanceResponse())
-  ;
+  $async.Future<EnsureBuildInstanceResponse> ensureBuildInstance(
+          $pb.ClientContext? ctx, EnsureBuildInstanceRequest request) =>
+      _client.invoke<EnsureBuildInstanceResponse>(ctx, 'BuilderService',
+          'EnsureBuildInstance', request, EnsureBuildInstanceResponse());
+
   /// Get the build record for a single build reference.
-  $async.Future<BuildRecord> getBuildRecord($pb.ClientContext? ctx, GetBuildRecordRequest request) =>
-    _client.invoke<BuildRecord>(ctx, 'BuilderService', 'GetBuildRecord', request, BuildRecord())
-  ;
+  $async.Future<BuildRecord> getBuildRecord(
+          $pb.ClientContext? ctx, GetBuildRecordRequest request) =>
+      _client.invoke<BuildRecord>(
+          ctx, 'BuilderService', 'GetBuildRecord', request, BuildRecord());
+
   /// Lists all known builds.
-  $async.Future<ListBuildsChunk> listBuilds($pb.ClientContext? ctx, ListBuildsRequest request) =>
-    _client.invoke<ListBuildsChunk>(ctx, 'BuilderService', 'ListBuilds', request, ListBuildsChunk())
-  ;
+  $async.Future<ListBuildsChunk> listBuilds(
+          $pb.ClientContext? ctx, ListBuildsRequest request) =>
+      _client.invoke<ListBuildsChunk>(
+          ctx, 'BuilderService', 'ListBuilds', request, ListBuildsChunk());
+
   /// Returns build usage for a specified period.
-  $async.Future<GetBuilderUsageResponse> getBuilderUsage($pb.ClientContext? ctx, GetBuilderUsageRequest request) =>
-    _client.invoke<GetBuilderUsageResponse>(ctx, 'BuilderService', 'GetBuilderUsage', request, GetBuilderUsageResponse())
-  ;
+  $async.Future<GetBuilderUsageResponse> getBuilderUsage(
+          $pb.ClientContext? ctx, GetBuilderUsageRequest request) =>
+      _client.invoke<GetBuilderUsageResponse>(ctx, 'BuilderService',
+          'GetBuilderUsage', request, GetBuilderUsageResponse());
+
   /// Returns the configuration of a builder.
-  $async.Future<GetBuilderConfigurationResponse> getBuilderConfiguration($pb.ClientContext? ctx, GetBuilderConfigurationRequest request) =>
-    _client.invoke<GetBuilderConfigurationResponse>(ctx, 'BuilderService', 'GetBuilderConfiguration', request, GetBuilderConfigurationResponse())
-  ;
+  $async.Future<GetBuilderConfigurationResponse> getBuilderConfiguration(
+          $pb.ClientContext? ctx, GetBuilderConfigurationRequest request) =>
+      _client.invoke<GetBuilderConfigurationResponse>(
+          ctx,
+          'BuilderService',
+          'GetBuilderConfiguration',
+          request,
+          GetBuilderConfigurationResponse());
 }
 
-
-const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

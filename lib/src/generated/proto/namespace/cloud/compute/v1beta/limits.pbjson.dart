@@ -18,12 +18,47 @@ import 'dart:typed_data' as $typed_data;
 const UsagePolicy$json = {
   '1': 'UsagePolicy',
   '2': [
-    {'1': 'concurrency_limits', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits', '10': 'concurrencyLimits'},
-    {'1': 'usage_limits', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.UsageLimits', '10': 'usageLimits'},
-    {'1': 'enabled_platforms', '3': 3, '4': 3, '5': 9, '10': 'enabledPlatforms'},
-    {'1': 'per_platform_limits', '3': 4, '4': 3, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerPlatformLimitsEntry', '10': 'perPlatformLimits'},
+    {
+      '1': 'concurrency_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits',
+      '10': 'concurrencyLimits'
+    },
+    {
+      '1': 'usage_limits',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.UsageLimits',
+      '10': 'usageLimits'
+    },
+    {
+      '1': 'enabled_platforms',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'enabledPlatforms'
+    },
+    {
+      '1': 'per_platform_limits',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerPlatformLimitsEntry',
+      '10': 'perPlatformLimits'
+    },
   ],
-  '3': [UsagePolicy_PerPlatformLimitsEntry$json, UsagePolicy_ConcurrencyLimits$json, UsagePolicy_UsageLimits$json, UsagePolicy_ShapeLimits$json, UsagePolicy_PerPlatformLimits$json, UsagePolicy_MachineShapeSize$json, UsagePolicy_PerShapeLimits$json],
+  '3': [
+    UsagePolicy_PerPlatformLimitsEntry$json,
+    UsagePolicy_ConcurrencyLimits$json,
+    UsagePolicy_UsageLimits$json,
+    UsagePolicy_ShapeLimits$json,
+    UsagePolicy_PerPlatformLimits$json,
+    UsagePolicy_MachineShapeSize$json,
+    UsagePolicy_PerShapeLimits$json
+  ],
 };
 
 @$core.Deprecated('Use usagePolicyDescriptor instead')
@@ -31,7 +66,14 @@ const UsagePolicy_PerPlatformLimitsEntry$json = {
   '1': 'PerPlatformLimitsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerPlatformLimits', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerPlatformLimits',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -42,7 +84,13 @@ const UsagePolicy_ConcurrencyLimits$json = {
   '2': [
     {'1': 'max_cpu', '3': 1, '4': 1, '5': 3, '10': 'maxCpu'},
     {'1': 'max_memory_mb', '3': 2, '4': 1, '5': 3, '10': 'maxMemoryMb'},
-    {'1': 'max_instance_count', '3': 3, '4': 1, '5': 3, '10': 'maxInstanceCount'},
+    {
+      '1': 'max_instance_count',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '10': 'maxInstanceCount'
+    },
   ],
 };
 
@@ -60,7 +108,14 @@ const UsagePolicy_UsageLimits$json = {
 const UsagePolicy_ShapeLimits$json = {
   '1': 'ShapeLimits',
   '2': [
-    {'1': 'largest_acceptable_shape', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.MachineShapeSize', '10': 'largestAcceptableShape'},
+    {
+      '1': 'largest_acceptable_shape',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.MachineShapeSize',
+      '10': 'largestAcceptableShape'
+    },
   ],
 };
 
@@ -68,9 +123,30 @@ const UsagePolicy_ShapeLimits$json = {
 const UsagePolicy_PerPlatformLimits$json = {
   '1': 'PerPlatformLimits',
   '2': [
-    {'1': 'concurrency_limits', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits', '10': 'concurrencyLimits'},
-    {'1': 'shape_limits', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ShapeLimits', '10': 'shapeLimits'},
-    {'1': 'per_shape_limits', '3': 3, '4': 3, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerShapeLimits', '10': 'perShapeLimits'},
+    {
+      '1': 'concurrency_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits',
+      '10': 'concurrencyLimits'
+    },
+    {
+      '1': 'shape_limits',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ShapeLimits',
+      '10': 'shapeLimits'
+    },
+    {
+      '1': 'per_shape_limits',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.PerShapeLimits',
+      '10': 'perShapeLimits'
+    },
   ],
 };
 
@@ -87,8 +163,22 @@ const UsagePolicy_MachineShapeSize$json = {
 const UsagePolicy_PerShapeLimits$json = {
   '1': 'PerShapeLimits',
   '2': [
-    {'1': 'shape', '3': 1, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.MachineShapeSize', '10': 'shape'},
-    {'1': 'limits', '3': 2, '4': 1, '5': 11, '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits', '10': 'limits'},
+    {
+      '1': 'shape',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.MachineShapeSize',
+      '10': 'shape'
+    },
+    {
+      '1': 'limits',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.namespace.cloud.compute.v1beta.UsagePolicy.ConcurrencyLimits',
+      '10': 'limits'
+    },
   ],
 };
 
@@ -121,4 +211,3 @@ final $typed_data.Uint8List usagePolicyDescriptor = $convert.base64Decode(
     'cHV0ZS52MWJldGEuVXNhZ2VQb2xpY3kuTWFjaGluZVNoYXBlU2l6ZVIFc2hhcGUSVQoGbGltaX'
     'RzGAIgASgLMj0ubmFtZXNwYWNlLmNsb3VkLmNvbXB1dGUudjFiZXRhLlVzYWdlUG9saWN5LkNv'
     'bmN1cnJlbmN5TGltaXRzUgZsaW1pdHM=');
-

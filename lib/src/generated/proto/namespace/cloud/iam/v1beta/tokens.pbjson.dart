@@ -23,8 +23,9 @@ const IssueIdTokenRequest$json = {
 };
 
 /// Descriptor for `IssueIdTokenRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueIdTokenRequestDescriptor = $convert.base64Decode(
-    'ChNJc3N1ZUlkVG9rZW5SZXF1ZXN0EhoKCGF1ZGllbmNlGAEgASgJUghhdWRpZW5jZQ==');
+final $typed_data.Uint8List issueIdTokenRequestDescriptor =
+    $convert.base64Decode(
+        'ChNJc3N1ZUlkVG9rZW5SZXF1ZXN0EhoKCGF1ZGllbmNlGAEgASgJUghhdWRpZW5jZQ==');
 
 @$core.Deprecated('Use issueIdTokenResponseDescriptor instead')
 const IssueIdTokenResponse$json = {
@@ -35,18 +36,24 @@ const IssueIdTokenResponse$json = {
 };
 
 /// Descriptor for `IssueIdTokenResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List issueIdTokenResponseDescriptor = $convert.base64Decode(
-    'ChRJc3N1ZUlkVG9rZW5SZXNwb25zZRIZCghpZF90b2tlbhgBIAEoCVIHaWRUb2tlbg==');
+final $typed_data.Uint8List issueIdTokenResponseDescriptor =
+    $convert.base64Decode(
+        'ChRJc3N1ZUlkVG9rZW5SZXNwb25zZRIZCghpZF90b2tlbhgBIAEoCVIHaWRUb2tlbg==');
 
 const $core.Map<$core.String, $core.dynamic> TokenServiceBase$json = {
   '1': 'TokenService',
   '2': [
-    {'1': 'IssueIdToken', '2': '.namespace.cloud.iam.v1beta.IssueIdTokenRequest', '3': '.namespace.cloud.iam.v1beta.IssueIdTokenResponse'},
+    {
+      '1': 'IssueIdToken',
+      '2': '.namespace.cloud.iam.v1beta.IssueIdTokenRequest',
+      '3': '.namespace.cloud.iam.v1beta.IssueIdTokenResponse'
+    },
   ],
 };
 
 @$core.Deprecated('Use tokenServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> TokenServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+    TokenServiceBase$messageJson = {
   '.namespace.cloud.iam.v1beta.IssueIdTokenRequest': IssueIdTokenRequest$json,
   '.namespace.cloud.iam.v1beta.IssueIdTokenResponse': IssueIdTokenResponse$json,
 };
@@ -56,4 +63,3 @@ final $typed_data.Uint8List tokenServiceDescriptor = $convert.base64Decode(
     'CgxUb2tlblNlcnZpY2UScQoMSXNzdWVJZFRva2VuEi8ubmFtZXNwYWNlLmNsb3VkLmlhbS52MW'
     'JldGEuSXNzdWVJZFRva2VuUmVxdWVzdBowLm5hbWVzcGFjZS5jbG91ZC5pYW0udjFiZXRhLklz'
     'c3VlSWRUb2tlblJlc3BvbnNl');
-

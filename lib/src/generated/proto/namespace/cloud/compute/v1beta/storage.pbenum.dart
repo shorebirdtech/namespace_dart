@@ -15,20 +15,29 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class VolumeMetadata_State extends $pb.ProtobufEnum {
-  static const VolumeMetadata_State STATE_UNKNOWN = VolumeMetadata_State._(0, _omitEnumNames ? '' : 'STATE_UNKNOWN');
+  static const VolumeMetadata_State STATE_UNKNOWN =
+      VolumeMetadata_State._(0, _omitEnumNames ? '' : 'STATE_UNKNOWN');
+
   /// The volume is currently attached to an instance. Once detached, it gets
   /// stored at rest and becomes a candidate to clone new Cache Volumes from.
-  static const VolumeMetadata_State STATE_IN_USE = VolumeMetadata_State._(1, _omitEnumNames ? '' : 'STATE_IN_USE');
+  static const VolumeMetadata_State STATE_IN_USE =
+      VolumeMetadata_State._(1, _omitEnumNames ? '' : 'STATE_IN_USE');
+
   /// This volume is a candidate to clone new Cache Volumes from.
-  static const VolumeMetadata_State STATE_AT_REST = VolumeMetadata_State._(2, _omitEnumNames ? '' : 'STATE_AT_REST');
+  static const VolumeMetadata_State STATE_AT_REST =
+      VolumeMetadata_State._(2, _omitEnumNames ? '' : 'STATE_AT_REST');
+
   /// This volume is no longer a candidate to clone new Cache Volumes from.
   /// It has been superceded by a newer candidate.
-  static const VolumeMetadata_State STATE_EXPIRED = VolumeMetadata_State._(3, _omitEnumNames ? '' : 'STATE_EXPIRED');
+  static const VolumeMetadata_State STATE_EXPIRED =
+      VolumeMetadata_State._(3, _omitEnumNames ? '' : 'STATE_EXPIRED');
+
   /// This volume was used by an instance, but was not promoted to be a candidate
   /// for future clones (e.g. because that instance's workload did not complete successfully).
-  static const VolumeMetadata_State STATE_ABANDONED = VolumeMetadata_State._(4, _omitEnumNames ? '' : 'STATE_ABANDONED');
+  static const VolumeMetadata_State STATE_ABANDONED =
+      VolumeMetadata_State._(4, _omitEnumNames ? '' : 'STATE_ABANDONED');
 
-  static const $core.List<VolumeMetadata_State> values = <VolumeMetadata_State> [
+  static const $core.List<VolumeMetadata_State> values = <VolumeMetadata_State>[
     STATE_UNKNOWN,
     STATE_IN_USE,
     STATE_AT_REST,
@@ -36,11 +45,13 @@ class VolumeMetadata_State extends $pb.ProtobufEnum {
     STATE_ABANDONED,
   ];
 
-  static final $core.List<VolumeMetadata_State?> _byValue = $pb.ProtobufEnum.$_initByValueList(values, 4);
-  static VolumeMetadata_State? valueOf($core.int value) =>  value < 0 || value >= _byValue.length ? null : _byValue[value];
+  static final $core.List<VolumeMetadata_State?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 4);
+  static VolumeMetadata_State? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
   const VolumeMetadata_State._(super.value, super.name);
 }
 
-
-const $core.bool _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');

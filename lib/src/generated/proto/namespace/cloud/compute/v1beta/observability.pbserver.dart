@@ -15,29 +15,42 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'observability.pb.dart' as $1;
+import 'observability.pb.dart' as $2;
 import 'observability.pbjson.dart';
 
 export 'observability.pb.dart';
 
 abstract class ObservabilityServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.LogBlock> streamInstanceLogs($pb.ServerContext ctx, $1.StreamInstanceLogsRequest request);
+  $async.Future<$2.LogBlock> streamInstanceLogs(
+      $pb.ServerContext ctx, $2.StreamInstanceLogsRequest request);
+  $async.Future<$2.FetchInstanceLogsResponse> fetchInstanceLogs(
+      $pb.ServerContext ctx, $2.FetchInstanceLogsRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'StreamInstanceLogs': return $1.StreamInstanceLogsRequest();
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'StreamInstanceLogs':
+        return $2.StreamInstanceLogsRequest();
+      case 'FetchInstanceLogs':
+        return $2.FetchInstanceLogsRequest();
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
+      $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'StreamInstanceLogs': return streamInstanceLogs(ctx, request as $1.StreamInstanceLogsRequest);
-      default: throw $core.ArgumentError('Unknown method: $methodName');
+      case 'StreamInstanceLogs':
+        return streamInstanceLogs(ctx, request as $2.StreamInstanceLogsRequest);
+      case 'FetchInstanceLogs':
+        return fetchInstanceLogs(ctx, request as $2.FetchInstanceLogsRequest);
+      default:
+        throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $core.Map<$core.String, $core.dynamic> get $json => ObservabilityServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => ObservabilityServiceBase$messageJson;
+  $core.Map<$core.String, $core.dynamic> get $json =>
+      ObservabilityServiceBase$json;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
+      get $messageJson => ObservabilityServiceBase$messageJson;
 }
-
